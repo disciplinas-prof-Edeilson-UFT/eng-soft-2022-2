@@ -76,3 +76,6 @@ Para o estudo dessa atividade, será abordado ao longo do documento o User Story
     Campo     | Descrição    | Formato   
     --------- | ------------ | -------
     --        | --           | --   
+    
+## Link para o protótipo:
+- https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1

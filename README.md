@@ -29,6 +29,7 @@ O ator precisa estar logado na conta pessoal do mesmo e ter comprado o produto.
 - Opções do ator:
 
 | Opção  | Descrição |
+| ------------- | ------------- |
 | Avaliar Produto | Permite o ator escrever um breve comentário e classificar o produto com estrelas |
 | Enviar | Confirmação antes de enviar a avaliação |
 
@@ -45,6 +46,8 @@ FA02 - O ator não está logado
 Eu como ator, gostaria de avaliar o produto que comprei, para assim poder deixar minha opinião sobre o produto para outros usuários;
 
 - Protótipo
+
+
 ![RF07](prototipo_RF07.PNG)
 
 

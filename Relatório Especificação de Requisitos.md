@@ -37,3 +37,38 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+
+## RF10 - Adicionar Produto ao Carrinho
+
+- Atores:   
+Usuário - adicionar item;
+- Descrição sucinta:   
+adicionar um item que o autor tem interesse em comprar ao carrinho de compras.   
+- Pré condição:   
+está na página de um produto em específico.   
+- Fluxo principal:
+	1- Entrar na página principal ver o catalogo de produtos
+	2- Filtrar os produtos que tem interesse
+	3- Entar na página de detalhe do produto que escolheu
+	4- clicar no botão adicionar item ao carinho
+	5- ser redirecionado para página com o carinho com todo seus produtos   
+
+- Campos do formulário:   
+
+|Campo|Obrigatório?|Editável?|Formato|
+|---|---|---|---|
+|||||
+
+- Opções do ator:
+
+|Opção|Descrição|Atalho|
+|---|---|---|
+|adicionar item|adicionar item ao carrinho||
+
+- Fluxos alternativos:   
+
+- User story  
+
+Eu como ator, gostaria de adicionar um item que eu desejo no meu carrinho, para assim poder comprar os items que adicionei;   
+
+- Protótipo  

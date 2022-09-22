@@ -29,7 +29,7 @@ O ator precisa estar logado na conta pessoal do mesmo e o carrinho de compras n�
 
 - Fluxos alternativos:   
 FA01 - Se o carrinho estiver vazio   
-	1- O sistema exibirá uma mensagem avisando que o carrinho está vazio;
+	1- O sistema exibirá uma mensagem avisando que o carrinho está vazio;   
 FA02 - O ator não está logado   
 	1- O sistema exibirá a tela do carrinho, porém sem itens. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema;  
 

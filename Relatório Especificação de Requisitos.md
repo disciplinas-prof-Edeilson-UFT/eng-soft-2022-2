@@ -78,4 +78,4 @@ Eu como ator, gostaria de excluir um item que eu não desejo mais do meu carrinh
 
 - Protótipo  
 
-
+![Protótipo RF10](https://github.com/LarissaHirai/Engenharia-de-Software---2022-2/blob/main/Capturar.PNG)

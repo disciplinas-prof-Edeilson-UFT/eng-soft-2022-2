@@ -9,12 +9,12 @@ Avaliar um produto comprado no site.
 - Pré condição:
 O ator precisa estar logado na conta pessoal do mesmo e ter comprado o produto.
 - Fluxo principal:
-	1- O ator precisa fazer login na própria conta para automaticamente ser enviado para tela inicial do sistema;
-	2- O ator deve pesquisar o produto a ser avaliado;
-	3- O autor deve visualizar o produto a ser avaliado;
-	4- O ator deve então selecionar “Avaliar Produto” na seção Avaliações de Usuários;
-	5- Após o ator escrever seu comentário e selecionar a sua classificação com estrelas, deve confirmar a ação clicando no botão “Enviar”;
-	6- Logo o sistema irá retornar para a página do produto porém agora atualizado e mostrando a nova avaliação incluída;
+	1. O ator precisa fazer login na própria conta para automaticamente ser enviado para tela inicial do sistema;
+	2. O ator deve pesquisar o produto a ser avaliado;
+	3. O autor deve visualizar o produto a ser avaliado;
+	4. O ator deve então selecionar “Avaliar Produto” na seção Avaliações de Usuários;
+	5. Após o ator escrever seu comentário e selecionar a sua classificação com estrelas, deve confirmar a ação clicando no botão “Enviar”;
+	6. Logo o sistema irá retornar para a página do produto porém agora atualizado e mostrando a nova avaliação incluída;
 	
 - Campos do formulário:
 

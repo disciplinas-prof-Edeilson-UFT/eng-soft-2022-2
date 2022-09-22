@@ -37,3 +37,23 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+
+# RF05: Buscar um produto
+ 
+# 2 - Descrição dos casos de uso
+  ## RF05:
+   * Ator:
+      1. Cliente - Responsável por fazer a busca do produto desejado
+   * Descrição sucinta:
+      1. Buscar qualquer tipo de produto oferecido pela loja
+   * Fluxo principal:
+      1. O ator identifica a barra de busca e efetua a ação.
+      2. O sistema apresenta uma tela com os respectivos produtos buscado
+# 3 - Descrição do User Storie para o requisito:
+  ## RF05: 
+   * Como cliente, eu quero efetuar uma busca por um produto específico, tendo cadastro na loja ou não.
+# 4 - Protótipo das telas de cada um dos requisitos:
+  ## RF05
+
+<img src="https://uploaddeimagens.com.br/images/004/032/329/full/Buscar....png?1663873519" alt="drawing" width="200"/> 
+

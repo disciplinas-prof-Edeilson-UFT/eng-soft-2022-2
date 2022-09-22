@@ -27,14 +27,15 @@ O ator precisa estar logado na conta pessoal do mesmo e o carrinho de compras n�
 |Excluir|Exclui o item do carrinho||
 |Confirmar exclusão|Confirmação antes de excluir o item||
 
-- Fluxos alternativos:
-FA01 - Se o carrinho estiver vazio 
+- Fluxos alternativos:   
+FA01 - Se o carrinho estiver vazio   
 	1- O sistema exibirá uma mensagem avisando que o carrinho está vazio;
-FA02 - O ator não está logado
-	1- O sistema exibirá a tela do carrinho, porém sem itens. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema;
+FA02 - O ator não está logado   
+	1- O sistema exibirá a tela do carrinho, porém sem itens. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema;  
 
-- User story
+- User story  
 
-Eu como ator, gostaria de excluir um item que eu não desejo mais do meu carrinho, para assim poder obter apenas os item que eu desejo e gostaria de comprar;
+Eu como ator, gostaria de excluir um item que eu não desejo mais do meu carrinho, para assim poder obter apenas os item que eu desejo e gostaria de comprar;   
 
-- Protótipo
+- Protótipo  
+![Protótipo RF10](RF10_prototipo.PNG)

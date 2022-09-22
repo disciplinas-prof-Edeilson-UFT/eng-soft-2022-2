@@ -37,3 +37,45 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+
+---
+
+## RF13 - Excluir item da lista de desejo.
+
+### User Stories
+Como um Usuario(a) do e-commerce logado na minha conta, eu quero remover um produto da minha lista de desejos pois não tenho mais interesse e nao quero(a0 mais ser lembrado.
+
+### Caso de Uso Expandido
+
+- **Descrição geral**:<br>
+	remoção de um item/Produto contido na lista de desejo.
+  
+- **Atores**:<br>
+	Usuário/dono da lista
+
+- **Pré-condição**:<br>
+	Ator logado em sua conta.
+	O produto a ser removido já pertence a lista.
+
+- **Garantia de sucesso(pós-condições)**:<br>
+	remoção do item/produto selecionado da lista de desejo.
+
+- **Requisitos especiais**:<br>
+ 	Nenhum.
+
+- **Fluxo principal**:<br>
+	i.Ator o realiza o login em sua conta.
+	ii. Ator  clica na pagina do produto.
+  iii. Se o Produto ja estiver na sua lista de desejo, aparecerá botão Remover da lista de desejo. O ator poderá clicar nele e o produto sera removido.
+  iv. Retorna a pagina do produto, com o botão agora em estado de Adicinar a lista de desejos.
+
+- **Opções do Usuário:**
+    Opção            | Descrição                            
+    ---------        | ------------                         
+    Excluir produto  | Exclui o produto da lista de desejos  
+    
+    ### Protótipo
+  https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
+  
+  ---
+    

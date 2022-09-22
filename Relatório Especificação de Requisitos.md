@@ -37,3 +37,72 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+
+
+# User Story - Efetuar Compra 
+
+“**Como** um cliente **eu quero** efetuar a compra do meu pedido **para que** eu possa receber meu pedido e poder usufrui do mesmo.”
+
+
+# Caso de uso expandido - Efetuar Compra
+
+RF06 - Efetuar Compra 
+
+* **Atores**:
+
+  - Cliente;
+
+* **Descrição sucinta**: 
+  
+  - Permitir que o cliente realize um pedido de um produto do catálogo;
+  
+* **Pré-condição**:
+
+  - RF01 - Efetuar Login;
+  
+* **Fluxo principal**: 
+  1. O sistema disponibiliza as opções de pagamento.
+  2. O cliente escolhe uma das opções.
+  3. O sistema disponibiliza um formulário de inserção dos dados do cartão de crédito.
+  4. O cliente preenche o formulário e clica no botão de pagar compra.
+  5. O sistema direciona o cliente para uma tela com os dados do cliente e detalhes do pedido.
+  6. O cliente confirma a compra clicando em "finalizar compra".
+  7. O sistema computa as informações do pagamento e realiza sua validação.
+  8. O sistema retorna informando sucesso do pagamento.
+  
+  
+  
+ * **Campos do Formulário:**
+    Campo     | Obrigatório? | Editável? | Formato
+    --------- | ------------ | --------- | -------
+    Forma de pagamento    | Sim          | Sim       | Texto
+    
+    
+* **Opções do Usuário:**
+    Opção     | Descrição               | Atalho   
+    --------- | ------------            | -------
+     Confirmar Compra | Confirmar a Compra |  
+     
+    
+* **Relatório do Usuário:**
+    Campo     | Descrição    | Formato   
+    --------- | ------------ | -------
+    --        | --           | --   
+    
+    
+* **Fluxos alternativos:**
+
+ **FA01** - Pagamento por pix/boleto:
+ 
+  1. O sistema disponibiliza as opções de pagamento.
+  2. O cliente escolhe a opção de pix ou boleto.
+  3. O cliente clica no botão "pagar conta".
+  4. O sistema direciona o cliente para uma tela com os dados do cliente e detalhes do pedido.
+  5. O cliente confirma a compra clicando em "finalizar compra".
+  6. O sistema retorna com o codigo do pix ou boleto bancário.
+ 
+ 
+
+# Protótipo:
+
+https://www.figma.com/file/q5oklvxsCOQ1GluAsArLjB/RF06---Efetuar-Compra?node-id=1%3A2

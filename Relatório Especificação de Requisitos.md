@@ -37,3 +37,30 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+
+
+## RF03 - Visualizar Catálogo
+Para o estudo da atividade, o requisito funcional abordado ao longo do documento será a visualização do catálogo. 
+
+## User Story
+
+“Como **um cliente online** eu quero **visualizar o catálogo de produtos** para que **eu possa ser encorajado a comprar algum deles.**”
+
+## Caso de Uso Expandido
+
+- **Atores:**
+    - Cliente online - [Entra no site];
+
+- **Descrição sucinta:**
+	- Visualiza o catálogo para que possa encontrar algum produto que desperte seu interesse;
+
+- **Pré-condição:**
+	- O ator já deve ter acessado o site.
+
+- **Fluxo principal:**
+	1. O ator acessa o sistema de vendas (site);
+    2. O sistema inicia a tela de apresentação de produtos; 
+
+## **Protótipo**
+
+- https://www.figma.com/proto/zKriDa10csBIccQ3X5ZfMO/RF03-Visualizar-Cat%C3%A1logo?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1

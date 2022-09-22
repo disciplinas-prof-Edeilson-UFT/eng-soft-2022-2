@@ -15,6 +15,7 @@ O ator precisa estar logado na conta pessoal do mesmo e ter comprado o produto.
 	4- O ator deve então selecionar “Avaliar Produto” na seção Avaliações de Usuários;
 	5- Após o ator escrever seu comentário e selecionar a sua classificação com estrelas, deve confirmar a ação clicando no botão “Enviar”;
 	6- Logo o sistema irá retornar para a página do produto porém agora atualizado e mostrando a nova avaliação incluída;
+	
 - Campos do formulário:
 
 
@@ -32,6 +33,7 @@ O ator precisa estar logado na conta pessoal do mesmo e ter comprado o produto.
 | ------------- | ------------- |
 | Avaliar Produto | Permite o ator escrever um breve comentário e classificar o produto com estrelas |
 | Enviar | Confirmação antes de enviar a avaliação |
+
 
 
 

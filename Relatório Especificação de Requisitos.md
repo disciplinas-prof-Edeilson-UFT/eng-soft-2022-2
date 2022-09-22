@@ -37,3 +37,42 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+
+
+## RF12 - Adicionar à lista de desejos
+
+Para o estudo dessa atividade, será abordado ao longo do documento o User Story e Caso de Uso Expandido do requisito "RF12 - Adicionar à lista de desejos".
+
+## User Story
+
+"Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse à minha lista de desejos** para que **posteriormente eu possa ver somente os itens de meu insteresse em um único local**.
+
+## Caso de Uso Expandido
+### RF12 - Adicionar à lista de desejos
+
+- **Atores**:
+    - Usuário - Adiciona um produto/item de interesse na lista de desejos;
+
+- **Descrição sucinta**:
+    - Adiciona um produto/item de seu interesse à sua lista de desejos;
+
+- **Pré-condição**:
+    - O(s) ator(es) já deve está na tela de visualização do produto.
+
+- **Fluxo Principal**:
+    1. O ator, já na tela de vizualização do produto, clica no botão para adicionar o produto à lista de desejos;
+    2. Ao pressionar o botão, o produto é adicionado à lista de desejos do usuário e o botão indica que o produto está adicionado;
+
+- **Campos do Formulário:**
+    Campo     | Obrigatório? | Editável? | Formato
+    --------- | ------------ | --------- | -------
+ 
+- **Opções do Usuário:**
+    Opção                        | Descrição                              | Atalho   
+    ---------                    | ------------                           | -------
+    Adicionar à lista de desejos | Adiciona o produto na lista de desejos |       
+
+- **Relatório do Usuário:**
+    Campo     | Descrição    | Formato   
+    --------- | ------------ | -------
+    --        | --           | --   

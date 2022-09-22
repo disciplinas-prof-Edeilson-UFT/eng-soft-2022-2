@@ -45,7 +45,7 @@ FA02 - O ator não está logado
 Eu como ator, gostaria de avaliar o produto que comprei, para assim poder deixar minha opinião sobre o produto para outros usuários;
 
 - Protótipo
-
+![RF07](prototipo_RF07.PNG)
 
 
 

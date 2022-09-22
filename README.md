@@ -1,20 +1,20 @@
 # eng-soft-2022-2
 RF10 - Excluir item do carrinho
 
-- Atores:
-Usuário - Exclui item;
-- Descrição sucinta:
-Excluir um item que o autor não tem mais interesse do carrinho de compras.
-- Pré condição:
-O ator precisa estar logado na conta pessoal do mesmo e o carrinho de compras não pode estar vazio.
-- Fluxo principal:
-	1- O ator precisa fazer login na própria conta para automaticamente ser enviado para tela inicial do sistema;
-	2- No canto superior direito o ator vai encontrar um ícone de carrinho que ao selecioná-lo o ator é enviado para a tela do carrinho;
-	3- O autor deve então localizar o item que deseja excluir;
-	4- O ator deve então selecionar o ícone de lixeira que vai estar localizado em um espaço abaixo da quantidade;
-	5- Após o ator efetuar todos os procedimentos, ele deve confirmar a exclusão do produto do carrinho clicando no botão “Sim”;
-	6- Logo o sistema irá retornar para a página do carrinho porém agora atualizado e mostrando os itens existentes no carrinho antes de efetuar a exclusão, porém sem o item excluído;
-- Campos do formulário:
+- Atores:   
+Usuário - Exclui item;   
+- Descrição sucinta:   
+Excluir um item que o autor não tem mais interesse do carrinho de compras.   
+- Pré condição:   
+O ator precisa estar logado na conta pessoal do mesmo e o carrinho de compras não pode estar vazio.   
+- Fluxo principal:   
+	1- O ator precisa fazer login na própria conta para automaticamente ser enviado para tela inicial do sistema;   
+	2- No canto superior direito o ator vai encontrar um ícone de carrinho que ao selecioná-lo o ator é enviado para a tela do carrinho;   
+	3- O autor deve então localizar o item que deseja excluir;   
+	4- O ator deve então selecionar o ícone de lixeira que vai estar localizado em um espaço abaixo da quantidade;   
+	5- Após o ator efetuar todos os procedimentos, ele deve confirmar a exclusão do produto do carrinho clicando no botão “Sim”;   
+	6- Logo o sistema irá retornar para a página do carrinho porém agora atualizado e mostrando os itens existentes no carrinho antes de efetuar a exclusão, porém sem o item excluído;   
+- Campos do formulário:   
 
 |Campo|Obrigatório?|Editável?|Formato|
 |---|---|---|---|

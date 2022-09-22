@@ -48,26 +48,25 @@ Como um Usuario(a) do e-commerce logado na minha conta, eu quero remover um prod
 ### Caso de Uso Expandido
 
 - **Descrição geral**:<br>
-	remoção de um item/Produto contido na lista de desejo.
+	remoção de um produto contido na lista de desejo.
   
 - **Atores**:<br>
 	Usuário/dono da lista
 
 - **Pré-condição**:<br>
-	Ator logado em sua conta.
-	O produto a ser removido já pertence a lista.
+	Ator logado em sua conta e o produto a ser removido já pertence a lista.
 
 - **Garantia de sucesso(pós-condições)**:<br>
-	remoção do item/produto selecionado da lista de desejo.
+	remoção do produto selecionado da lista de desejo.
 
 - **Requisitos especiais**:<br>
  	Nenhum.
 
 - **Fluxo principal**:<br>
-	i.Ator o realiza o login em sua conta.
-	ii. Ator  clica na pagina do produto.
-  iii. Se o Produto ja estiver na sua lista de desejo, aparecerá botão Remover da lista de desejo. O ator poderá clicar nele e o produto sera removido.
-  iv. Retorna a pagina do produto, com o botão agora em estado de Adicinar a lista de desejos.
+	i.Ator realiza o login em sua conta.<br>
+	ii. Ator  clica na pagina do produto.<br>
+ 	iii. Se o produto ja estiver na sua lista de desejo, aparecerá botão Remover da lista de desejo. O ator poderá clicar nele e o produto sera removido.<br>
+ 	iv. Retorna a pagina do produto, com o botão agora em estado de Adicinar a lista de desejos.<br>
 
 - **Opções do Usuário:**
     Opção            | Descrição                            

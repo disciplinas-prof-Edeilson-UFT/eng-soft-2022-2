@@ -62,7 +62,7 @@ Passo 2 | Esperar a página do produto carregar.
 
 Campo                                | Obrigatório | Editável | Formato
 -------------------------------------|-------------|----------|--------
-Fazer login/ cadastrar               | Não         | Não      | Texto
+Fazer login/ cadastrar               | Não         | sim      | Texto
 
 #### Opções de usuário
 

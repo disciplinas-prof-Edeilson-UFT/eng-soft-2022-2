@@ -37,3 +37,39 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+
+# Relátorio Especificação de Requisitos.md
+
+## requisitos RF11
+
+ Os requisitos funcionais.
+
+ Requisitos RF11
+
+ 
+     *Nome: Carinho de compra.
+     *Atores: Cliente e Sistemas. 
+     *Finalidade: Vereficar produtos.
+     *Visão geral: O caso de uso tem o dever de fazer o cliente conferir o estado do seu carinho de compra.
+     *Tipo: Importante.
+
+## Ações dos Atores: Carinho:
+     1)	Cliente entra na página deferida a carinho.
+     2)	Cliente informa endereço para a realização da entrega.
+     3)	Opção de deseja garantia estendida.
+     4)	Opções de frete.
+     5)	Opção de desconto.
+
+## Respostas do Sistema: Carinho:
+     1)	Tela inicial de compra mostra o produto que está no carinho.
+     2)	Exibi quantidade e valor dos determinados. produtos. apresenta um subtotal.
+     3)	Opções de ir para o pagamento ou continuar na compra.
+
+## User store:
+
+    Como cliente eu desejo conferir o produto, frete e preço de entrega.
+
+
+## Protótipo de tela: 
+
+https://www.figma.com/file/SAGu1K8XcD1mFQ0m0Nww54/RF11-Visualizar-carrinho

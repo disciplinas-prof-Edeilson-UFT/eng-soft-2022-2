@@ -14,6 +14,34 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [ ] RF07 - Avaliar Produto. 1.3
 
+- [ ] RF10 - Remover um item do Carrinho. 1.4
+
+- [ ] RF13 - Remover um item da lista de Desejos. 1.5
+
+## 2 - Grupo 2.
+
+- [ ] RF02 - Efetuar Cadastro de Usuário. 2.1
+
+- [ ] RF05 - Buscar um Produto. 2.2
+
+- [ ] RF08 - Solicitar Chamado/Suporte. 2.3
+
+- [ ] RF11 - Visualizar Carrinho. 2.4
+
+## 3 - Grupo 3.
+
+- [ ] RF03 - Visualizar Catalógo. 3.1
+
+- [ ] RF06 - Efetuar Compra. 3.2
+
+- [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
+
+- [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+
+
+
+### RF07 - Avaliar Produto. 1.3
+
     - Atores:
     Usuário - Avalia produto;
     - Descrição sucinta:
@@ -64,27 +92,3 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
     ![RF07](prototipo/prototipo_RF07.PNG)
 
-
-- [ ] RF10 - Remover um item do Carrinho. 1.4
-
-- [ ] RF13 - Remover um item da lista de Desejos. 1.5
-
-## 2 - Grupo 2.
-
-- [ ] RF02 - Efetuar Cadastro de Usuário. 2.1
-
-- [ ] RF05 - Buscar um Produto. 2.2
-
-- [ ] RF08 - Solicitar Chamado/Suporte. 2.3
-
-- [ ] RF11 - Visualizar Carrinho. 2.4
-
-## 3 - Grupo 3.
-
-- [ ] RF03 - Visualizar Catalógo. 3.1
-
-- [ ] RF06 - Efetuar Compra. 3.2
-
-- [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
-
-- [ ] RF12 - Adicionar produto à lista de Desejos. 3.4

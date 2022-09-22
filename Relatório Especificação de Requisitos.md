@@ -48,7 +48,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
       1. Buscar qualquer tipo de produto oferecido pela loja
    * Fluxo principal:
       1. O ator identifica a barra de busca e efetua a ação.
-      2. O sistema apresenta uma tela com os respectivos produtos buscado
+      2. O sistema apresenta uma tela com os respectivos produtos buscado 
 # 3 - Descrição do User Storie para o requisito:
   ## RF05: 
    * Como cliente, eu quero efetuar uma busca por um produto específico, tendo cadastro na loja ou não.

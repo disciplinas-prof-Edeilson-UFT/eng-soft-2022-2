@@ -62,7 +62,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
     - Prot√≥tipo
 
 
-    ![RF07](prototipo\prototipo_RF07.PNG)
+    ![RF07](eng-soft-2022-2/prototipo/prototipo_RF07.PNG)
 
 
 - [ ] RF10 - Remover um item do Carrinho. 1.4

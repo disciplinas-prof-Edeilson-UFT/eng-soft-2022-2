@@ -87,7 +87,7 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 - **Relatório do Usuário:**
   Campo | Descrição | Formato  
    --------- | ------------ | -------
-  -- | -- | --
+  Conta Criada com sucesso | Isso confirma e garante todo êxito na operação de cadastro do usuário | Texto
 
 - **Tratamento de Exceções:**
 

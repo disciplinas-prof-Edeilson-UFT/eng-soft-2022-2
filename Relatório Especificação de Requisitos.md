@@ -8,7 +8,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 
 ## 1 - Grupo 1.
 
-- [ ] RF01 - Efetuar Login. 1.1
+- [x] RF01 - Efetuar Login. 1.1
 
 - [ ] RF04 - Visuzalizar Produto. 1.2
 
@@ -20,13 +20,13 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 
 ## 2 - Grupo 2.
 
-- [ ] RF02 - Efetuar Cadastro de Usu√°rio. 2.1
+- [x] RF02 - Efetuar Cadastro de Usu√°rio. 2.1 (Jo√£o Pedro Silva Cunha @pixies0) Verificado e aceito por @fernandokozak
 
-- [ ] RF05 - Buscar um Produto. 2.2
+- [ ] RF05 - Buscar um Produto. 2.2 
 
 - [ ] RF08 - Solicitar Chamado/Suporte. 2.3
 
-- [ ] RF11 - Visualizar Carrinho. 2.4
+- [x] RF11 - Visualizar Carrinho. 2.4 (Luiz Fernando Kozak @fernandokozak) Verificado e aceito por @pixies0
 
 ## 3 - Grupo 3.
 

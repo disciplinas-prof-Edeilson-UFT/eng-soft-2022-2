@@ -97,3 +97,73 @@ Eu enquanto "usuário comum" quero "poder logar na minha conta para ter um melho
 
 ![image](https://user-images.githubusercontent.com/45723261/191869905-763d9ee5-a01d-4c02-8db0-d52f3efa67eb.png)
 
+## RF02.
+
+## Definindo o requisito:
+
+O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar cadastro de usuário**.
+
+### Descrevendo o caso de uso expandido dos requisito:
+
+#### **RQ02 - Tela de Cadastro**
+
+- **Atores:**
+
+  - Usuário - Cria uma conta no sistema;
+
+- **Descrição sucinta:**
+
+  - Cria uma nova conta no sistema para que possa executar o ato de compra;
+
+- **Pré-condição:**
+
+  - O(s) ator(es) não deve(m) ter conta criada no sistema.
+
+- **Fluxo principal:**
+
+  1.  O ator ao desejar finalizar uma compra o sistema o mesmo apresenta ao ator a tela de Login;
+  2.  Nessa tela é disposta um botão com título “Não tenho uma conta” que redireciona o usuário à tela de Cadastro;
+  3.  A aplicação dispõe ao autor um formulário para ser preenchido com seus respectivos dados;
+  4.  Ao preencher os campos o autor confirma os dados no botão de “criar conta”;
+  5.  Em seguida o ator passa para um processo de verificação a fim de confirmar sua conta recém criada.
+
+- **Campos do Formulário:**
+  Campo | Obrigatório? | Editável? | Formato
+  --------- | ------------ | --------- | -------
+  Nome | Sim | Sim | Texto
+  Email | Sim | Sim | Texto
+  Senha | Sim | Sim | Texto
+  CPF | Sim | Sim | Alfanumérico
+  Endereço | Não | Sim | Texto
+  Contato | Sim | Sim | Numérico
+  Gênero | Sim | Sim | Checkbox
+
+- **Opções do Usuário:**
+  Opção | Descrição | Atalho  
+   --------- | ------------ | -------
+  Criar conta | Confirmar Dados inseridos |
+
+- **Relatório do Usuário:**
+  Campo | Descrição | Formato  
+   --------- | ------------ | -------
+  Conta Criada com sucesso | Isso confirma e garante todo êxito na operação de cadastro do usuário | Texto
+
+- **Tratamento de Exceções:**
+
+  1.1. O ator ja tem uma conta.
+
+  1.2. Sistema exibe um botão "Fazer login" na tela de Cadastro, e assim o ator é redirecionado para a tela de Login.
+
+  2.1. Funcionário informa que não há disponibilidade naquela Data.
+
+  2.2. Sistema exibe horários disponiveis para o dia utíl seguinte.
+
+### **User Story - Tela de Cadastro**
+
+“Como **um usuário novo do sistema** eu quero **poder criar uma nova conta com os meus dados** para que **eu possa ter uma nova conta e efetuar compras**.”
+
+- **Protótipo:**
+
+<img src="https://uploaddeimagens.com.br/images/004/032/319/full/Captura_de_tela_de_2022-09-22_16-00-51.png?1663873305" alt="drawing" width="600"/>
+=======
+

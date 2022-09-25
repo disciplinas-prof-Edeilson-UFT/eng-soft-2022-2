@@ -38,6 +38,65 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
 
+
+# Caso de uso
+**RF01**
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Login.
+Resumo         | É esperado que quando o cliente tiver o contato com a tela de login ele possa fazer seu cadastro caso não seja cliente da loja, e o que os usuários já possam fazer login ao se depararem com a página.
+Ator principal | Usuário utilizador da plataforma e novos usuários.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
+Pós-condição   | É necessário que para fazer o login o usuário tenha sua própria conta.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Clcar em entrar na conta para fazer login ou cadastrar.
+Passo 2 | Esperar a página do produto carregar.
+
+#### Campos da aba de login
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+Fazer login/ cadastrar               | Não         | sim      | Texto
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Acessar o conta                      | Ao clicar nessa aba o usuário vai poder acessar sua conta na tela de login na qual será redirecionado | 
+
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso o usuário não clique em fazer login, deve-se ter como continuar navegando na loja mesmo assim.
+Passo 2.1.1 | O usuário será deslogado caso fique muito tempo sem utilizar a conta.
+Passo 2.1.2 | O usuário tem a opção de deslogar caso seja da sua escolha.
+Passo 2.1.3 | O usuário tem a opção de trocar senha.
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu enquanto "usuário comum" quero "poder logar na minha conta para ter um melhor controle e utilização da plataforma de compras" para "ter mais segurança e uma experiências mais completa com uma conta da loja". | Enquanto "usuário comum" preciso ter minhas informções salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.**
+
+![image](https://user-images.githubusercontent.com/45723261/191869905-763d9ee5-a01d-4c02-8db0-d52f3efa67eb.png)
+
 ## RF02.
 
 ## Definindo o requisito:
@@ -106,3 +165,5 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 - **Protótipo:**
 
 <img src="https://uploaddeimagens.com.br/images/004/032/319/full/Captura_de_tela_de_2022-09-22_16-00-51.png?1663873305" alt="drawing" width="600"/>
+=======
+

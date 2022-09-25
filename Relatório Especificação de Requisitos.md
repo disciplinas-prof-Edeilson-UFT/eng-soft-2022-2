@@ -47,21 +47,21 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
  Requisitos RF11
 
  
-     *Nome: Carinho de compra.
+     *Nome: Carrinho de compra.
      *Atores: Cliente e Sistemas. 
-     *Finalidade: Vereficar produtos.
-     *Visão geral: O caso de uso tem o dever de fazer o cliente conferir o estado do seu carinho de compra.
+     *Finalidade: Verificar produtos.
+     *Visão geral: O caso de uso tem o dever de fazer o cliente conferir o estado do seu carrinho de compra.
      *Tipo: Importante.
 
-## Ações dos Atores: Carinho:
-     1)	Cliente entra na página deferida a carinho.
+## Ações dos Atores: Carrinho:
+     1)	Cliente entra na página deferida a carrinho.
      2)	Cliente informa endereço para a realização da entrega.
      3)	Opção de deseja garantia estendida.
      4)	Opções de frete.
      5)	Opção de desconto.
 
-## Respostas do Sistema: Carinho:
-     1)	Tela inicial de compra mostra o produto que está no carinho.
+## Respostas do Sistema: Carrinho:
+     1)	Tela inicial de compra mostra o produto que está no carrinho.
      2)	Exibi quantidade e valor dos determinados. produtos. apresenta um subtotal.
      3)	Opções de ir para o pagamento ou continuar na compra.
 
@@ -72,4 +72,4 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## Protótipo de tela: 
 
-https://www.figma.com/file/SAGu1K8XcD1mFQ0m0Nww54/RF11-Visualizar-carrinho
+<img src="https://uploaddeimagens.com.br/images/004/035/650/full/Visualizar_Carrinho.png?1664065784" alt="drawing" width="600"/>

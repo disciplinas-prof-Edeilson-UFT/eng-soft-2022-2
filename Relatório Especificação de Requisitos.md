@@ -38,7 +38,6 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
 
-
 # Caso de uso
 **RF01**
 
@@ -105,7 +104,7 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 
 ### Descrevendo o caso de uso expandido dos requisito:
 
-#### **RQ02 - Tela de Cadastro**
+#### **RF02 - Tela de Cadastro**
 
 - **Atores:**
 
@@ -165,5 +164,38 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 - **Protótipo:**
 
 <img src="https://uploaddeimagens.com.br/images/004/032/319/full/Captura_de_tela_de_2022-09-22_16-00-51.png?1663873305" alt="drawing" width="600"/>
-=======
+
+## requisitos RF11
+
+ Os requisitos funcionais.
+
+ Requisitos RF11
+
+ 
+     *Nome: Carrinho de compra.
+     *Atores: Cliente e Sistemas. 
+     *Finalidade: Verificar produtos.
+     *Visão geral: O caso de uso tem o dever de fazer o cliente conferir o estado do seu carrinho de compra.
+     *Tipo: Importante.
+
+## Ações dos Atores: Carrinho:
+     1)	Cliente entra na página deferida a carrinho.
+     2)	Cliente informa endereço para a realização da entrega.
+     3)	Opção de deseja garantia estendida.
+     4)	Opções de frete.
+     5)	Opção de desconto.
+
+## Respostas do Sistema: Carrinho:
+     1)	Tela inicial de compra mostra o produto que está no carrinho.
+     2)	Exibi quantidade e valor dos determinados. produtos. apresenta um subtotal.
+     3)	Opções de ir para o pagamento ou continuar na compra.
+
+## User store:
+
+    Como cliente eu desejo conferir o produto, frete e preço de entrega.
+
+
+## Protótipo de tela: 
+
+<img src="https://uploaddeimagens.com.br/images/004/035/650/full/Visualizar_Carrinho.png?1664065784" alt="drawing" width="600"/>
 

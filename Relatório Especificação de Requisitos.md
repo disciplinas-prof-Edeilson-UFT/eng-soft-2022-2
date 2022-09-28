@@ -47,34 +47,37 @@ Como um Usuario(a) do e-commerce logado na minha conta, eu quero remover um prod
 
 ### Caso de Uso Expandido
 
-- **Descrição geral**:<br>
-	remoção de um produto contido na lista de desejo.
-  
-- **Atores**:<br>
-	Usuário/dono da lista
+Item           | Descrição
+---------------|----------
+Caso de uso    | Excluir item da lista de desejo.
+Resumo         | Opção de remover um produto contido na lista e desejos.
+Ator principal | Usuário utilizador da plataforma.
+Pré-condição   | Acesso a internet, ator logado em sua conta e o produto a ser removido já pertence a lista.
+Pós-condição   | Remoção do produto selecionado da lista de desejo.
 
-- **Pré-condição**:<br>
-	Ator logado em sua conta e o produto a ser removido já pertence a lista.
 
-- **Garantia de sucesso(pós-condições)**:<br>
-	remoção do produto selecionado da lista de desejo.
-
-- **Requisitos especiais**:<br>
- 	Nenhum.
 
 - **Fluxo principal**:<br>
-	i.Ator realiza o login em sua conta.<br>
-	ii. Ator  clica na pagina do produto.<br>
- 	iii. Se o produto ja estiver na sua lista de desejo, aparecerá botão Remover da lista de desejo. O ator poderá clicar nele e o produto sera removido.<br>
- 	iv. Retorna a pagina do produto, com o botão agora em estado de Adicinar a lista de desejos.<br>
 
+Passo          | Descrição
+---------------|-------------------------------------
+1              | Ator realiza o login em sua conta.
+2              | Ator  clica na pagina do produto.
+3              | Se o produto ja estiver na sua lista de desejo, aparecerá botão Remover da lista de desejo. O ator poderá clicar nele e o produto sera removido.
+4              | Retorna a pagina do produto, com o botão agora em estado de Adicinar a lista de desejos.
+	
 - **Opções do Usuário:**
-    Opção            | Descrição                            
-    ---------        | ------------                         
-    Excluir produto  | Exclui o produto da lista de desejos  
+
+Opção            | Descrição                            
+-----------------| ------------                         
+Excluir produto  | Exclui o produto da lista de desejos  
     
-    ### Protótipo
-  https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
-  
+### Protótipo
+
+![proto](https://github.com/Lucka10/hello-world/blob/master/excluirprod.png)
+
+https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
+ 
+
   ---
     

@@ -36,46 +36,58 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
-- [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+- [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0)
 
 
-## RF12 - Adicionar à lista de desejos
+# Caso de uso **RF12**
 
-Para o estudo dessa atividade, será abordado ao longo do documento o User Story e Caso de Uso Expandido do requisito "RF12 - Adicionar à lista de desejos".
+Item           | Descrição
+---------------|----------
+Caso de uso    | RF12 - Adicionar à lista de desejos
+Resumo	       | Adiciona um produto/item de seu interesse à sua lista de desejos
+Ator principal | Usuário - Adiciona um produto/item de interesse na lista de desejos
+Ator secundário| -
+Pré-condição   | O(s) ator(es) já deve está na tela de visualização do produto
+Pós-condição   | -
 
-## User Story
+#### Fluxo principal
 
-"Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse à minha lista de desejos** para que **posteriormente eu possa ver somente os itens de meu insteresse em um único local**.
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator, já na tela de vizualização do produto, clica no botão para adicionar o produto à lista de desejos
+Passo 2 | Ao pressionar o botão, o produto é adicionado à lista de desejos do usuário e o botão indica que o produto está adicionado
 
-## Caso de Uso Expandido
-### RF12 - Adicionar à lista de desejos
+#### Campos da aba de visualizar produtos
 
-- **Atores**:
-    - Usuário - Adiciona um produto/item de interesse na lista de desejos;
+Campo | Obrigatório | Editável | Formato
+------|-------------|----------|--------
+--    | --          | --       | --         
 
-- **Descrição sucinta**:
-    - Adiciona um produto/item de seu interesse à sua lista de desejos;
+#### Opções de usuário
 
-- **Pré-condição**:
-    - O(s) ator(es) já deve está na tela de visualização do produto.
+Opção                                | Descrição                              | Atalho
+-------------------------------------|-------------                           |-------
+Adicionar à lista de desejos         | Adiciona o produto na lista de desejos | --
 
-- **Fluxo Principal**:
-    1. O ator, já na tela de vizualização do produto, clica no botão para adicionar o produto à lista de desejos;
-    2. Ao pressionar o botão, o produto é adicionado à lista de desejos do usuário e o botão indica que o produto está adicionado;
+#### Relatório de usuário
 
-- **Campos do Formulário:**
-    Campo     | Obrigatório? | Editável? | Formato
-    --------- | ------------ | --------- | -------
- 
-- **Opções do Usuário:**
-    Opção                        | Descrição                              | Atalho   
-    ---------                    | ------------                           | -------
-    Adicionar à lista de desejos | Adiciona o produto na lista de desejos |       
+Campo | Descrição | Formato
+------|-----------|--------
+--    | --        | --
 
-- **Relatório do Usuário:**
-    Campo     | Descrição    | Formato   
-    --------- | ------------ | -------
-    --        | --           | --   
-    
-## Link para o protótipo:
-- https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+--          | --
+
+# User story
+
+
+**Persona um, usuário já na tela de visualização de um produto.**
+
+Epic	       					 |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse à minha lista de desejos** para que **posteriormente eu possa ver somente os itens de meu insteresse em um único local** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse à minha lista de desejos** para **posteriormente eu possa ver somente os itens de meu interesse em um único local**. | Certifique-se de que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir à sua lista de desejos**.
+
+[Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)

@@ -22,9 +22,9 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF02 - Efetuar Cadastro de Usuário. 2.1 (João Pedro Silva Cunha @pixies0) Verificado e aceito por @fernandokozak
 
-- [x] RF05 - Buscar um Produto. 2.2 
+- [x] RF05 - Buscar um Produto. 2.2 (Izann Rogério Geraldes de Brum @Izann-Brum) Verificado e aceito por @JulioNolasco
 
-- [x] RF08 - Solicitar Chamado/Suporte. 2.3
+- [x] RF08 - Solicitar Chamado/Suporte. 2.3 (Julio Cezar Nolasco dos Santos @JulioNolasco) Verificado e aceito por @Izann-Brum
 
 - [x] RF11 - Visualizar Carrinho. 2.4 (Luiz Fernando Kozak @fernandokozak) Verificado e aceito por @pixies0
 

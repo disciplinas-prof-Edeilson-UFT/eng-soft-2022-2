@@ -30,7 +30,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 3 - Grupo 3.
 
-- [ ] RF03 - Visualizar Catalógo. 3.1 [ianasampaio](https://github.com/ianasampaio)
+- [x] RF03 - Visualizar Catalógo. 3.1 - [ianasampaio](https://github.com/ianasampaio)
 
 - [ ] RF06 - Efetuar Compra. 3.2
 

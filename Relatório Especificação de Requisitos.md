@@ -184,8 +184,7 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
  * Como cliente , eu quero efetuar uma busca por um produto específico , tendo cadastro na loja ou não.
 # 4 - Protótipo das telas de cada um dos requisitos :
  ## RF05
-< img src = " https://uploaddeimagens.com.br/images/004/032/329/full/Buscar....png?1663873519 "
-alt = " drawing " width = " 200 " / >
+<img src="https://uploaddeimagens.com.br/images/004/032/329/full/Buscar....png?1663873519" alt="drawing" width = "200"/>
 
 ## RF08
 

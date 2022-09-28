@@ -50,7 +50,7 @@ Como um Usuario(a) do e-commerce logado na minha conta, eu quero remover um prod
 Item           | Descrição
 ---------------|----------
 Caso de uso    | Excluir item da lista de desejo.
-Resumo         | Opção de remover um produto contido na lista e desejos.
+Resumo         | Opção de remover um produto contido na lista de desejos.
 Ator principal | Usuário utilizador da plataforma.
 Pré-condição   | Acesso a internet, ator logado em sua conta e o produto a ser removido já pertence a lista.
 Pós-condição   | Remoção do produto selecionado da lista de desejo.
@@ -62,7 +62,7 @@ Pós-condição   | Remoção do produto selecionado da lista de desejo.
 Passo          | Descrição
 ---------------|-------------------------------------
 1              | Ator realiza o login em sua conta.
-2              | Ator  clica na pagina do produto.
+2              | Ator clica na pagina do produto.
 3              | Se o produto ja estiver na sua lista de desejo, aparecerá botão Remover da lista de desejo. O ator poderá clicar nele e o produto sera removido.
 4              | Retorna a pagina do produto, com o botão agora em estado de Adicinar a lista de desejos.
 	

@@ -165,6 +165,59 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 
 <img src="https://uploaddeimagens.com.br/images/004/032/319/full/Captura_de_tela_de_2022-09-22_16-00-51.png?1663873305" alt="drawing" width="600"/>
 
+## RF08
+
+Descrição:
+
+1) Requisito RF08 - Solicitar Chamado/Suporte.
+2) Descrever o Caso de Uso Expandido para o requisito RF08.
+3) Descrever User Storie o requisito RF08.
+4) Fazer o protótipo da tela.
+
+Utilizaremos, como referência, o sistema de SAC da loja virtual Kabum.
+
+1) Descrição do caso de uso expandido dos requisitos:
+
+Requisito RF08:
+    • Nome: Solicitar Chamado/Suporte.
+    • Número: 08.
+    • Atores: Cliente, funcionário.
+    • Finalidade: Solicitar ajuda/suporte ao SAC.
+    • Visão geral: Este caso de uso tem a finalidade de auxiliar clientes que necessitam de ajuda com o sistema.
+    • Tipo: Essencial
+
+Ações dos atores:
+
+1. Cliente entra em contato com o SAC.
+2. Cliente informa o assunto, seu nome, se pessoa física ou jurídica, e-mail e telefone.
+3. O sistema registra os dados informados pelo cliente.
+4. O cliente começa um chat com um atendente.
+
+Respostas do sistema:
+
+1. Mostra tela do SAC.
+2. Sistema coloca tabela em modo de inserção.
+3. Sistema grava informações.
+4. O sistema redireciona o cliente para um chat com um atendente.
+
+Tratamento de Exceções:
+1.1. Cliente não preenche os campos corretamente.
+
+1.2. Sistema avisa sobre os campos obrigatórios.
+
+2.1. Cliente não verifica o checkbox (reCAPTCHA).
+
+2.2. Sistema solicita a verificação do checkbox (reCAPTCHA).
+
+3) Descrição do User Storie para o requisito:
+
+Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvida.
+
+4) Protótipo da tela:
+
+![](https://i.imgur.com/dy28taW.png)
+![](https://i.imgur.com/fgFWSzj.png)
+
 ## requisitos RF11
 
  Os requisitos funcionais.

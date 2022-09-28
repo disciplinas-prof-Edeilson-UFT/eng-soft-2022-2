@@ -39,28 +39,58 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
 
 
-## RF03 - Visualizar Catálogo
-Para o estudo da atividade, o requisito funcional abordado ao longo do documento será a visualização do catálogo. 
 
-## User Story
+# Caso de uso **RF03**
 
-“Como **um cliente online** eu quero **visualizar o catálogo de produtos** para que **eu possa ser encorajado a comprar algum deles.**”
+Item           | Descrição
+---------------|----------
+Caso de uso    |RF03 - Visualizar o catálogo
+Resumo           | Visualiza o catálogo para que possa encontrar algum produto que desperte interesse;
+Ator principal |Usuário - vizualiza o catálogo
+Ator secundário|-
+Pré-condição   |O(s) ator(es) deve ter acessado o sistema de vendas (site)
+Pós-condição   |-
 
-## Caso de Uso Expandido
+#### Fluxo principal
 
-- **Atores:**
-    - Cliente online - [Entra no site];
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator acessa o sistema de vendas (site)
+Passo 2 | O sistema inicia a tela de apresentação de produtos
 
-- **Descrição sucinta:**
-	- Visualiza o catálogo para que possa encontrar algum produto que desperte seu interesse;
+#### Campos da aba de visualizar produtos
 
-- **Pré-condição:**
-	- O ator já deve ter acessado o site.
 
-- **Fluxo principal:**
-	1. O ator acessa o sistema de vendas (site);
-    2. O sistema inicia a tela de apresentação de produtos; 
+Campo | Obrigatório | Editável | Formato
+------|-------------|----------|--------
+--    | --          | --       | --         
 
-## **Protótipo**
+#### Opções de usuário
 
-- https://www.figma.com/proto/zKriDa10csBIccQ3X5ZfMO/RF03-Visualizar-Cat%C3%A1logo?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1
+Opção                                | Descrição                              | Atalho
+-------------------------------------|-------------                           |-------
+--         | -- | --
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+--    | --        | --
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+--          | --
+
+# User story
+
+
+
+**Persona um, usuário já na tela de visualização catálogo.**
+
+Epic	       					 |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+“Como **um cliente online** eu quero **visualizar o catálogo de produtos** para que **eu possa ser encorajado a comprar algum deles.**” | Enquanto **um cliente online** eu preciso ser capaz de **visualizar o catálogo de produtos** para que **posteriormente eu possa ser encorajado a comprar algum deles.** | Certifique-se de que o usuário é capaz de **acessar o site**.
+
+[Link para o protótipo](https://www.figma.com/proto/zKriDa10csBIccQ3X5ZfMO/RF03-Visualizar-Cat%C3%A1logo?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1)

@@ -87,7 +87,7 @@ Passos      | Descrição
 
 
 
-**Persona um, usuário já na tela de visualização catálogo.**
+**Persona um, usuário comum.**
 
 Epic	       					 |User Story| Critério de aceitação
 -----------------------|----------|----------------------

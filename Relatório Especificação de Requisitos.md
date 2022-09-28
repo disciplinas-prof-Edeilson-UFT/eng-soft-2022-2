@@ -40,21 +40,23 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 
 
-### RF07 - Avaliar Produto. 1.3
+### RF07 - Avaliar Produto. 1.3 - Peraefe -Fernanda Menezes Plessim de Melo
+Revisor: João Gabriel Alves de Souza (JoaoGabrielh)
 
     - Atores:
     Usuário - Avalia produto;
     - Descrição sucinta:
     Avaliar um produto comprado no site.
     - Pré condição:
-    O ator precisa estar logado na conta pessoal do mesmo e ter comprado o produto.
+    O ator precisa estar conectado à internet,logado na conta pessoal do mesmo e ter comprado um produto.
     - Fluxo principal:
         1. O ator precisa fazer login na própria conta para automaticamente ser enviado para tela inicial do sistema;
-        2. O ator deve pesquisar o produto a ser avaliado;
-        3. O autor deve visualizar o produto a ser avaliado;
+        2. O ator deve pesquisar o produto comprado a ser avaliado;
+        3. O ator deve ir para a página de visualização do produto;
         4. O ator deve então selecionar “Avaliar Produto” na seção Avaliações de Usuários;
-        5. Após o ator escrever seu comentário e selecionar a sua classificação com estrelas, deve confirmar a ação clicando no botão “Enviar”;
-        6. Logo o sistema irá retornar para a página do produto porém agora atualizado e mostrando a nova avaliação incluída;
+        5. O ator deve selecionar a nota desejada para o produto nas estrelas posicionadas abaixo da imagem do produto;
+        6. O ator deve confirmar a ação clicando no botão “Enviar”;
+        7. Logo o sistema irá retornar para a página do produto porém agora atualizado e mostrando a nova avaliação incluída;
         
     - Campos do formulário:
 
@@ -63,7 +65,6 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
     | ------------- | ------------- | ------------- | ------------- |
     | Título do comentário  | Não  | Sim  | Texto  |
     | Comentário  | Não  | Sim  | Texto  |
-    | Classificação por estrelas  | Sim  | Sim  |   |
 
 
 
@@ -90,5 +91,5 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
     - Protótipo
 
 
-    ![RF07](prototipo/prototipo_RF07.PNG)
+    ![RF07](https://github.com/Peraefe/prototipo_img/blob/main/prototipo_RF07.PNG)
 

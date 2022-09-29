@@ -63,7 +63,7 @@ Passo 2 | Esperar a página do produto carregar.
 
 Campo                                | Obrigatório | Editável | Formato
 -------------------------------------|-------------|----------|--------
-Avaliar produto                      | Não         | Não      | Texto
+Avaliar produto                      | Não         | Sim      | Texto
 
 #### Opções de usuário
 

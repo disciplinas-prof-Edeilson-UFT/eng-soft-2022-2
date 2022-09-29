@@ -184,7 +184,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ## Protótipo
 
-<img src="https://uploaddeimagens.com.br/images/004/032/319/full/Captura_de_tela_de_2022-09-22_16-00-51.png?1663873305" alt="drawing" width="600"/>
+<img src="https://uploaddeimagens.com.br/images/004/042/820/full/Desktop_-_1.png?1664482903" alt="drawing" width="600"/>
 
 ## **RF03 - Visualizar Catálogo**
 
@@ -660,57 +660,56 @@ Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvid
 
 Os requisitos funcionais.
 
-Item           | Descrição
----------------|----------
-Caso de uso    | RF11 - Visualizar Carrinho
-Resumo	       | Verificar produtos
-Ator principal | Cliente
-Ator secundário| Sistema
-Pré-condição   | Tem que ter algo no carrinho
-Pós-condição   | 
+| Item            | Descrição                    |
+| --------------- | ---------------------------- |
+| Caso de uso     | RF11 - Visualizar Carrinho   |
+| Resumo          | Verificar produtos           |
+| Ator principal  | Cliente                      |
+| Ator secundário | Sistema                      |
+| Pré-condição    | Tem que ter algo no carrinho |
+| Pós-condição    |
 
 #### Fluxo principal
 
-Passos  | Descrição
---------|----------
-Passo 1 | Cliente entra na página deferida a carrinho 
-Passo 2 | Cliente informa endereço para a realização de entrega.
-Passo 3 | Opção de desejo a garantia estendida 
-Passo 4 | Opções de frete
-Passo 5 | Opção de deseconto 
+| Passos  | Descrição                                              |
+| ------- | ------------------------------------------------------ |
+| Passo 1 | Cliente entra na página deferida a carrinho            |
+| Passo 2 | Cliente informa endereço para a realização de entrega. |
+| Passo 3 | Opção de desejo a garantia estendida                   |
+| Passo 4 | Opções de frete                                        |
+| Passo 5 | Opção de deseconto                                     |
 
 #### Campos da aba de visualizar produtos
 
-Campo                                | Obrigatório              | Editável                       | Formato
--------------------------------------|--------------------------|--------------                  |-------------
-Tela de carrinho                     |Adicionar algo ao carrinho| cep,endereço e remover produto | Tela e Texto
+| Campo            | Obrigatório                | Editável                       | Formato      |
+| ---------------- | -------------------------- | ------------------------------ | ------------ |
+| Tela de carrinho | Adicionar algo ao carrinho | cep,endereço e remover produto | Tela e Texto |
 
 #### Opções de usuário
 
-Opção                                | Descrição                                                                       | Atalho
-Acessar o carrinho                   | Ao clicar no carrinho ele dever se relacionado a página de carrinho             |
-Compra o produto                     | Ao clicar no botão de realizar compra vai para a página de efetuar o pagamento  |          
+Opção | Descrição | Atalho
+Acessar o carrinho | Ao clicar no carrinho ele dever se relacionado a página de carrinho |
+Compra o produto | Ao clicar no botão de realizar compra vai para a página de efetuar o pagamento |
 
 #### Relatório de usuário
 
-Campo | Descrição | Formato
-------|-----------|--------
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
 
 #### Fluxo alternativo
 
-Passos      | Descrição
-------------|----------
-Passo 1.1   | Caso o usuário não seleciona nenhum produto na loja, ele acaba visualizando a tela de carrinho em branco
-Passo 1.2   | Caso o passo 1.1 seja realizado o usuário e deve retorna a página de home para selecionar algum produto
+| Passos    | Descrição                                                                                                |
+| --------- | -------------------------------------------------------------------------------------------------------- |
+| Passo 1.1 | Caso o usuário não seleciona nenhum produto na loja, ele acaba visualizando a tela de carrinho em branco |
+| Passo 1.2 | Caso o passo 1.1 seja realizado o usuário e deve retorna a página de home para selecionar algum produto  |
 
 # User story
 
 **Persona um, usuário comum.**
 
-| Epic                                                                                                                                                        | User Story                                                                                                                                      | Critério de aceitação                                           |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Epic                                                                                       | User Story                                                                                                              | Critério de aceitação                                                                                                   |
+| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Eu enquanto "usuário comum" quero "visualizar carrinho" para "ver como está minha compra". | Enquanto "usuário comum" eu preciso ser capaz de "visualizar o carrinho para ter a certeza do que vou estar comprando". | Vai certificar o usuário ce está com o login na própria conta, ira visualizar um produto em específico que selecionado. |
-
 
 ## Protótipo de tela:
 

@@ -8,7 +8,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
-- [x] RF01 - Efetuar Login. 1.1
+- [ ] RF01 - Efetuar Login. 1.1
 
 - [ ] RF04 - Visuzalizar Produto. 1.2
 
@@ -20,13 +20,13 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 2 - Grupo 2.
 
-- [x] RF02 - Efetuar Cadastro de Usuário. 2.1 (João Pedro Silva Cunha @pixies0) Verificado e aceito por @fernandokozak
+- [ ] RF02 - Efetuar Cadastro de Usuário. 2.1
 
-- [x] RF05 - Buscar um Produto. 2.2 (Izann Rogério Geraldes de Brum @Izann-Brum) Verificado e aceito por @JulioNolasco
+- [ ] RF05 - Buscar um Produto. 2.2
 
-- [x] RF08 - Solicitar Chamado/Suporte. 2.3 (Julio Cezar Nolasco dos Santos @JulioNolasco) Verificado e aceito por @Izann-Brum
+- [ ] RF08 - Solicitar Chamado/Suporte. 2.3
 
-- [x] RF11 - Visualizar Carrinho. 2.4 (Luiz Fernando Kozak @fernandokozak) Verificado e aceito por @pixies0
+- [ ] RF11 - Visualizar Carrinho. 2.4
 
 ## 3 - Grupo 3.
 
@@ -36,7 +36,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
-- [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
+- [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0)
 
 # Caso de uso
 **RF01**
@@ -69,11 +69,11 @@ Opção                                | Descrição   | Atalho
 -------------------------------------|-------------|-------
 Acessar o conta                      | Ao clicar nessa aba o usuário vai poder acessar sua conta na tela de login na qual será redirecionado | 
 
-
 #### Relatório de usuário
 
 Campo | Descrição | Formato
 ------|-----------|--------
+--    | --        | --
 
 #### Fluxo alternativo
 
@@ -274,5 +274,57 @@ Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvid
 <img src="https://uploaddeimagens.com.br/images/004/035/650/full/Visualizar_Carrinho.png?1664065784" alt="drawing" width="600"/>
 
 
+# Caso de uso **RF12**
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | RF12 - Adicionar item/produto à lista de desejos
+Resumo	       | Adiciona um produto/item de seu interesse à sua lista de desejos
+Ator principal | Algum usuário - Adiciona um produto/item de interesse na lista de desejos
+Ator secundário| -
+Pré-condição   | O(s) ator(es) já deve ter uma conta, estar logado e estar na tela de visualização do produto
+Pós-condição   | O item deve ser salvo na lista de desejos do usuário
 
 
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator, já na tela de vizualização do produto, clica no botão para adicionar o produto à lista de desejos
+Passo 2 | Ao pressionar o botão, o produto é adicionado à lista de desejos do usuário e o botão indica que o produto está adicionado
+
+#### Campos da aba de visualizar produtos
+
+Campo | Obrigatório | Editável | Formato
+------|-------------|----------|--------
+--    | --          | --       | --         
+
+#### Opções de usuário
+
+Opção                                     | Descrição                                   | Atalho
+----------------------------------------- | -------------                               | -------
+Adicionar item/produto à lista de desejos | Adiciona o item/produto na lista de desejos | --
+
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+--    | --        | --
+
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+--          | --
+
+# User story
+
+**Persona um, usuário já na tela de visualização de um produto.**
+
+Epic	       					 |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse à minha lista de desejos** para que **posteriormente eu possa ver somente os itens de meu insteresse em um único local** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse à minha lista de desejos** para **posteriormente eu possa ver somente os itens de meu interesse em um único local**. | Certifique-se de que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir à sua lista de desejos**.
+
+[Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)

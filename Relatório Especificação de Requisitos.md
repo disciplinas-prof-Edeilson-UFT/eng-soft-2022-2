@@ -476,7 +476,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | Epic | User Story | Critério de aceitação |
 | ---- | ---------- | --------------------- |
 
-![imagem](https://github.com/Peraefe/prototipo_img/blob/main/prototipo_RF07.PNG)
+![image](https://user-images.githubusercontent.com/91492418/193123137-4ea22f2b-4b63-4737-9e36-00f630191ae9.png)
 
 ## **RF08 - Solicitar Chamado/Suporte**
 

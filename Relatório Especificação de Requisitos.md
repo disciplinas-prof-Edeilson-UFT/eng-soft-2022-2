@@ -40,16 +40,14 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ---
 
-## RF13 - Excluir item da lista de desejo.
+## RF13 - Remover item da lista de desejo. 1.5. Lucas Evangelista Freire - Lucka10
+Review: Larissa Mitie C. Hirai - LarissaHirai
 
-### User Stories
-Como um Usuario(a) do e-commerce logado na minha conta, eu quero remover um produto da minha lista de desejos pois não tenho mais interesse e nao quero(a0 mais ser lembrado.
-
-### Caso de Uso Expandido
+## Caso de Uso Expandido
 
 Item           | Descrição
 ---------------|----------
-Caso de uso    | Excluir item da lista de desejo.
+Caso de uso    | Remover item da lista de desejo.
 Resumo         | Opção de remover um produto contido na lista de desejos.
 Ator principal | Usuário utilizador da plataforma.
 Pré-condição   | Acesso a internet, ator logado em sua conta e o produto a ser removido já pertence a lista.
@@ -61,23 +59,48 @@ Pós-condição   | Remoção do produto selecionado da lista de desejo.
 
 Passo          | Descrição
 ---------------|-------------------------------------
-1              | Ator realiza o login em sua conta.
-2              | Ator clica na pagina do produto.
-3              | Se o produto ja estiver na sua lista de desejo, aparecerá botão Remover da lista de desejo. O ator poderá clicar nele e o produto sera removido.
-4              | Retorna a pagina do produto, com o botão agora em estado de Adicinar a lista de desejos.
+Passo 1        | Ator realiza o login em sua conta.
+Passo 2.1      | Ator clica na pagina do item.
+Passo 2.2      | Se o produto ja estiver na sua lista de desejo, aparecerá botão Remover da lista de desejo. O ator poderá clicar nele e o item será removido.
+Passo 2.3      | Retorna a pagina do item, com o botão agora em estado de Adicinar a lista de desejos.
+Passo 3.1      | Ator clica pagina da lista de desejos.
+Passo 3.2      | Se a lista de desejos não estiver vazia, os itens contidos nela terão a opção de remove-los da lista. O ator clica no botão e o item é removido da lista.
+Passo 3.3      | retorna para pagina da lista agora sem o item removido.
+
+
+- **Fluxo Alternativo**:<br>
+
+FA01 - Produto removido do catalogo
+
+Passo          | Descrição
+---------------|-------------------------------------
+1              | item foi removido do catalogo.
+2              | O item será removido da lista de desejos.
+
+FA02 - Lista de desejos vazia
+
+Passo          | Descrição
+---------------|-------------------------------------
+1              | Lista de desejos está vazia.
+2              | Não há items para se removido.
 	
 - **Opções do Usuário:**
 
 Opção            | Descrição                            
------------------| ------------                         
-Excluir produto  | Exclui o produto da lista de desejos  
-    
+-----------------| ----------------------                         
+Remover produto  | Remove o produto da lista de desejos  
+
+## User Stories
+
+Epic	       	       |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu como ator, gostaria de remover um item da minha lista de desejo, para assim ter acesso rápido apenas aos itens que considero comprar no futuro.| Enquanto ator na página do produto ou da lista de desejos, preciso ser capaz de remover itens que não tenho mais interesse, para manter apenas os itens que considero comprar posteriormente.| Certificar que o ator efetue o login na própria conta e que a lista de desejos não esteja vazia.
+
 ### Protótipo
 
-![proto](https://github.com/Lucka10/hello-world/blob/master/excluirprod.png)
+![proto](https://github.com/Lucka10/hello-world/blob/master/excluirdesej.png)
 
 https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
  
-
   ---
     

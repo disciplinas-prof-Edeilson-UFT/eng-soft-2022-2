@@ -165,25 +165,6 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 
 <img src="https://uploaddeimagens.com.br/images/004/032/319/full/Captura_de_tela_de_2022-09-22_16-00-51.png?1663873305" alt="drawing" width="600"/>
 
-## RF05: Buscar um produto
- 
-# 2 - Descrição dos casos de uso
- ## RF05 :
- * Ator :
-  1. Cliente - Responsável por fazer a busca do produto desejado
- * Descrição sucinta :
-  1. Buscar por produto e / ou por categorias de produtos oferecidos pela loja
- * Fluxo principal :
-  1. O ator identifica a barra de busca e efetua a ação de busca do produto.
-  2. O sistema apresenta uma tela com os respectivos produtos semelhantes ao buscado.
- * Fluxo alternativo :
-  1. O ator realiza a busca do produto .
-  2. O sistema apresenta uma tela com o aviso de que não encontrou nenhum produto semelhante.
-# 3 - Descrição do User Storie para o requisito :
- ## RF05 :
- * Como cliente , eu quero efetuar uma busca por um produto específico , tendo cadastro na loja ou não.
-# 4 - Protótipo das telas de cada um dos requisitos :
-
 # Caso de uso **RF03**
 
 Item           | Descrição
@@ -236,6 +217,25 @@ Epic	       					 |User Story| Critério de aceitação
 “Como **um cliente online** eu quero **visualizar o catálogo de produtos** para que **eu possa ser encorajado a comprar algum deles.**” | Enquanto **um cliente online** eu preciso ser capaz de **visualizar o catálogo de produtos** para que **posteriormente eu possa ser encorajado a comprar algum deles.** | Certifique-se de que o usuário é capaz de **acessar o site**.
 
 [Link para o protótipo](https://www.figma.com/proto/zKriDa10csBIccQ3X5ZfMO/RF03-Visualizar-Cat%C3%A1logo?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1)
+
+## RF05: Buscar um produto
+ 
+# 2 - Descrição dos casos de uso
+ ## RF05 :
+ * Ator :
+  1. Cliente - Responsável por fazer a busca do produto desejado
+ * Descrição sucinta :
+  1. Buscar por produto e / ou por categorias de produtos oferecidos pela loja
+ * Fluxo principal :
+  1. O ator identifica a barra de busca e efetua a ação de busca do produto.
+  2. O sistema apresenta uma tela com os respectivos produtos semelhantes ao buscado.
+ * Fluxo alternativo :
+  1. O ator realiza a busca do produto .
+  2. O sistema apresenta uma tela com o aviso de que não encontrou nenhum produto semelhante.
+# 3 - Descrição do User Storie para o requisito :
+ ## RF05 :
+ * Como cliente , eu quero efetuar uma busca por um produto específico , tendo cadastro na loja ou não.
+# 4 - Protótipo das telas de cada um dos requisitos :
 
  ## RF05
 <img src="https://uploaddeimagens.com.br/images/004/032/329/full/Buscar....png?1663873519" alt="drawing" width = "200"/>

@@ -69,10 +69,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 #### Campos
 
-| Campo   | Obrigatório                                             | Editável | Formato |
-| ------- | ------------------------------------------------------- | -------- | ------- |
+| Campo   | Obrigatório                                              | Editável | Formato |
+| ------- | -------------------------------------------------------- | -------- | ------- |
 | Passo 1 | Clicar em entrar na conta para fazer login ou cadastrar. |
-| Passo 2 | Esperar a página do produto carregar.                   |
+| Passo 2 | Esperar a página do produto carregar.                    |
 
 #### Campos da aba de login
 
@@ -122,70 +122,66 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ### Revisor: @fernandokozak - Luiz Fernando Kozak.
 
-## Definindo o requisito:
+| Item            | Descrição                                                              |
+| --------------- | ---------------------------------------------------------------------- |
+| Caso de uso     | RF02 - Efetuar Cadastro de Usuário.                                    |
+| Resumo          | Cria uma nova conta no sistema para que possa executar o ato de compra |
+| Ator principal  | Usuário - Cria uma conta no sistema                                    |
+| Ator secundário | -                                                                      |
+| Pré-condição    | O(s) ator(es) não deve(m) ter conta criada no sistema.                 |
+| Pós-condição    | -                                                                      |
 
-O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar cadastro de usuário**.
+#### Fluxo principal
 
-### Descrevendo o caso de uso expandido dos requisito:
+| Passos  | Descrição                                                                                                       |
+| ------- | --------------------------------------------------------------------------------------------------------------- |
+| Passo 1 | O ator ao desejar finalizar uma compra o sistema o mesmo apresenta ao ator a tela de Login;                     |
+| Passo 2 | Nesse momento é exibido um botão com título “Não tenho uma conta” que redireciona o usuário à tela de Cadastro; |
+| Passo 3 | A aplicação dispõe ao autor um formulário para ser preenchido com seus respectivos dados;                       |
+| Passo 4 | Ao preencher os campos o autor confirma os dados no botão de “criar conta”;                                     |
+| Passo 5 | Em seguida o ator passa para um processo de verificação a fim de confirmar sua conta recém criada.              |
 
-#### **RF02**
+#### Campos do formulário.
 
-- **Atores:**
+| Campo    | Obrigatório? | Editável? | Formato      |
+| -------- | ------------ | --------- | ------------ |
+| Nome     | Sim          | Sim       | Texto        |
+| Email    | Sim          | Sim       | Texto        |
+| Senha    | Sim          | Sim       | Texto        |
+| CPF      | Sim          | Sim       | Alfanumérico |
+| Endereço | Não          | Sim       | Texto        |
+| Contato  | Sim          | Sim       | Numérico     |
+| Gênero   | Sim          | Sim       | Checkbox     |
 
-  - Usuário - Cria uma conta no sistema;
+#### Opções de usuário
 
-- **Descrição sucinta:**
+| Opção       | Descrição                 | Atalho |
+| ----------- | ------------------------- | ------ |
+| Criar conta | Confirmar Dados inseridos |
 
-  - Cria uma nova conta no sistema para que possa executar o ato de compra;
+#### Relatório de usuário
 
-- **Pré-condição:**
+| Campo                    | Descrição                                                             | Formato |
+| ------------------------ | --------------------------------------------------------------------- | ------- |
+| Conta Criada com sucesso | Isso confirma e garante todo êxito na operação de cadastro do usuário | Texto   |
 
-  - O(s) ator(es) não deve(m) ter conta criada no sistema.
+#### Fluxo alternativo
 
-- **Fluxo principal:**
+| Passos    | Descrição                                                                                                      |
+| --------- | -------------------------------------------------------------------------------------------------------------- |
+| Passo 1.1 | O ator ja tem uma conta.                                                                                       |
+| Passo 1.2 | Sistema exibe um botão "Fazer login" na tela de Cadastro, e assim o ator é redirecionado para a tela de Login. |
+| Passo 2.1 | Funcionário informa que não há disponibilidade naquela Data.                                                   |
+| Passo 2.2 | Sistema exibe horários disponiveis para o dia utíl seguinte.                                                   |
 
-  1.  O ator ao desejar finalizar uma compra o sistema o mesmo apresenta ao ator a tela de Login;
-  2.  Nessa tela é disposta um botão com título “Não tenho uma conta” que redireciona o usuário à tela de Cadastro;
-  3.  A aplicação dispõe ao autor um formulário para ser preenchido com seus respectivos dados;
-  4.  Ao preencher os campos o autor confirma os dados no botão de “criar conta”;
-  5.  Em seguida o ator passa para um processo de verificação a fim de confirmar sua conta recém criada.
+# User story
 
-- **Campos do Formulário:**
-  Campo | Obrigatório? | Editável? | Formato
-  --------- | ------------ | --------- | -------
-  Nome | Sim | Sim | Texto
-  Email | Sim | Sim | Texto
-  Senha | Sim | Sim | Texto
-  CPF | Sim | Sim | Alfanumérico
-  Endereço | Não | Sim | Texto
-  Contato | Sim | Sim | Numérico
-  Gênero | Sim | Sim | Checkbox
+**Persona um, usuário comum.**
 
-- **Opções do Usuário:**
-  Opção | Descrição | Atalho  
-   --------- | ------------ | -------
-  Criar conta | Confirmar Dados inseridos |
+| Epic | User Story | Critério de aceitação |
+| “Como **um usuário novo do sistema** eu quero **poder criar uma nova conta com os meus dados** para que **eu possa ter uma nova conta e efetuar compras**.” | “Como **um usuário novo do sistema** eu desejo **ter meus dados guardados** para que **eu possa ter uma identidade e usufruir da plataforma**.” | Certificar que o usuário preencha todos os campos do formulário |
 
-- **Relatório do Usuário:**
-  Campo | Descrição | Formato  
-   --------- | ------------ | -------
-  Conta Criada com sucesso | Isso confirma e garante todo êxito na operação de cadastro do usuário | Texto
-
-- **Tratamento de Exceções:**
-
-  1.1. O ator ja tem uma conta.
-
-  1.2. Sistema exibe um botão "Fazer login" na tela de Cadastro, e assim o ator é redirecionado para a tela de Login.
-
-  2.1. Funcionário informa que não há disponibilidade naquela Data.
-
-  2.2. Sistema exibe horários disponiveis para o dia utíl seguinte.
-
-### **User Story**
-
-“Como **um usuário novo do sistema** eu quero **poder criar uma nova conta com os meus dados** para que **eu possa ter uma nova conta e efetuar compras**.”
-
-- **Protótipo:**
+## Protótipo
 
 <img src="https://uploaddeimagens.com.br/images/004/032/319/full/Captura_de_tela_de_2022-09-22_16-00-51.png?1663873305" alt="drawing" width="600"/>
 

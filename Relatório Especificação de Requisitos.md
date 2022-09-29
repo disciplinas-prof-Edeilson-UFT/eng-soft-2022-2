@@ -36,6 +36,21 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
+
+- [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0)
+
+
+# Caso de uso **RF12**
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | RF12 - Adicionar item/produto à lista de desejos
+Resumo	       | Adiciona um produto/item de seu interesse à sua lista de desejos
+Ator principal | Algum usuário - Adiciona um produto/item de interesse na lista de desejos
+Ator secundário| -
+Pré-condição   | O(s) ator(es) já deve ter uma conta, estar logado e estar na tela de visualização do produto
+Pós-condição   | O item deve ser salvo na lista de desejos do usuário
+
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
 
 # Caso de uso
@@ -50,10 +65,27 @@ Ator secundário| Não possui.
 Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
 Pós-condição   | É necessário que para fazer o login o usuário tenha sua própria conta.
 
+
 #### Fluxo principal
 
 Passos  | Descrição
 --------|----------
+
+Passo 1 | O ator, já na tela de vizualização do produto, clica no botão para adicionar o produto à lista de desejos
+Passo 2 | Ao pressionar o botão, o produto é adicionado à lista de desejos do usuário e o botão indica que o produto está adicionado
+
+#### Campos da aba de visualizar produtos
+
+Campo | Obrigatório | Editável | Formato
+------|-------------|----------|--------
+--    | --          | --       | --         
+
+#### Opções de usuário
+
+Opção                                     | Descrição                                   | Atalho
+----------------------------------------- | -------------                               | -------
+Adicionar item/produto à lista de desejos | Adiciona o item/produto na lista de desejos | --
+
 Passo 1 | Clcar em entrar na conta para fazer login ou cadastrar.
 Passo 2 | Esperar a página do produto carregar.
 
@@ -70,15 +102,32 @@ Opção                                | Descrição   | Atalho
 Acessar o conta                      | Ao clicar nessa aba o usuário vai poder acessar sua conta na tela de login na qual será redirecionado | 
 
 
+
 #### Relatório de usuário
 
 Campo | Descrição | Formato
 ------|-----------|--------
+--    | --        | --
+
 
 #### Fluxo alternativo
 
 Passos      | Descrição
 ------------|----------
+
+--          | --
+
+# User story
+
+
+**Persona um, usuário já na tela de visualização de um produto.**
+
+Epic	       					 |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse à minha lista de desejos** para que **posteriormente eu possa ver somente os itens de meu insteresse em um único local** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse à minha lista de desejos** para **posteriormente eu possa ver somente os itens de meu interesse em um único local**. | Certifique-se de que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir à sua lista de desejos**.
+
+[Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
+
 Passo 1.1   | Caso o usuário não clique em fazer login, deve-se ter como continuar navegando na loja mesmo assim.
 Passo 2.1.1 | O usuário será deslogado caso fique muito tempo sem utilizar a conta.
 Passo 2.1.2 | O usuário tem a opção de deslogar caso seja da sua escolha.

@@ -10,7 +10,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [ ] RF01 - Efetuar Login. 1.1
 
-- [ ] RF04 - Visuzalizar Produto. 1.2
+- [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves d Souza](https://github.com/JoaoGabrielh)
 
 - [ ] RF07 - Avaliar Produto. 1.3
 
@@ -40,8 +40,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ---
 
-# Caso de uso
-**RF04**
+# Caso de uso **RF04** - 1.2 Visualizar produto
+#### JoãoGabrielh - João Gabriel Alves de Souza
+---
+#### Revisor : João Pedro de Melo Pessoa (JPeeMP)
 
 Item           | Descrição
 ---------------|----------

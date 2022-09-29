@@ -10,7 +10,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF01 - Efetuar Login. 1.1
 
-- [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves d Souza](https://github.com/JoaoGabrielh)
+- [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh)
 
 - [ ] RF07 - Avaliar Produto. 1.3
 

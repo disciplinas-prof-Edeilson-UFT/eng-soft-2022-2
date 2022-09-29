@@ -34,7 +34,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 Ã
 
 - [ ] RF06 - Efetuar Compra. 3.2 - [weltonSantana](https://github.com/weltonSantana)
 
-- [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
+- [x] RF09 - Adicionar Produto ao Carrinho. 3.3
 
 - [x] RF12 - Adicionar produto Ã  lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0)
 

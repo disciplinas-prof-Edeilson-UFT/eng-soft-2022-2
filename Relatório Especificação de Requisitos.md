@@ -190,11 +190,11 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 
 ## **RF03 - Visualizar Catálogo**
 
-#### Autor: usuarioautor - Nome autor.
+#### Autor: @ianasampaio - Antonia Iana Sampaio da Silva.
 
 ---
 
-### Revisor: usuariorevisor - Nome revisor
+### Revisor: weltonSantana - Welton Santana de Andrade Júnior
 
 | Item            | Descrição                                                                           |
 | --------------- | ----------------------------------------------------------------------------------- |
@@ -244,7 +244,7 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | “Como **um cliente online** eu quero **visualizar o catálogo de produtos** para que **eu possa ser encorajado a comprar algum deles.**” | Enquanto **um cliente online** eu preciso ser capaz de **visualizar o catálogo de produtos** para que **posteriormente eu possa ser encorajado a comprar algum deles.** | Certifique-se de que o usuário é capaz de **acessar o site**. |
 
-[Link para o protótipo](https://www.figma.com/proto/zKriDa10csBIccQ3X5ZfMO/RF03-Visualizar-Cat%C3%A1logo?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1)
+![imagem](https://uploaddeimagens.com.br/images/004/042/554/full/prop.png?1664476837)
 
 ## **RF04 - Visualizar produto**
 
@@ -348,11 +348,11 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ## **RF06 - Efetuar Compra**
 
-#### Autor: usuarioautor - Nome autor.
+#### Autor: @weltonSantana - Welton Santana de Andrade Júnior.
 
 ---
 
-### Revisor: usuariorevisor - Nome revisor
+### Revisor: @ianasampaio - Antonia Iana Sampaio da Silva
 
 | Item            | Descrição                                                                                     |
 | --------------- | --------------------------------------------------------------------------------------------- |
@@ -413,7 +413,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Como "usuário comum" eu quero "efetuar uma compra" para "receber o produto". | Como "usuário comum" eu quero conseguir finalizar a compra do meu pedido atráves da forma de pagamento que eu deseje para que eu possa receber o produto e usufruir do mesmo | Certifique-se que o usuário consegue **fazer login na própria conta, escolher uma forma de pagamento e finalizar a compra.** |
 
-[Link para o protótipo](https://www.figma.com/file/q5oklvxsCOQ1GluAsArLjB/RF06---Efetuar-Compra?node-id=1%3A2)
+![imagem](https://uploaddeimagens.com.br/images/004/042/567/full/prop2.png?1664477011)
 
 ## **RF07 - Avaliar Produto.**
 
@@ -538,11 +538,11 @@ Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvid
 
 ## **RF09 - Adicionar Produto ao Carrinho**
 
-#### Autor: usuarioautor - Nome autor.
+#### Autor: @AfonsoDglan - Afonso Dglan.
 
 ---
 
-### Revisor: usuariorevisor - Nome revisor
+### Revisor: @edjunior0 - Edson Almeida Silva Júnior
 
 | Item            | Descrição                                                                      |
 | --------------- | ------------------------------------------------------------------------------ |
@@ -694,11 +694,11 @@ RF11
 
 ## **RF12 - Adicionar à lista de Desejos**
 
-#### Autor: usuarioautor - Nome autor.
+#### Autor: @edjunior - Edson Almeida Silva Júnior.
 
 ---
 
-### Revisor: usuariorevisor - Nome revisor
+### Revisor: @AfonsoDglan - Afonso Dglan
 
 | Item            | Descrição                                                                                    |
 | --------------- | -------------------------------------------------------------------------------------------- |
@@ -748,7 +748,7 @@ RF11
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse à minha lista de desejos** para que **posteriormente eu possa ver somente os itens de meu insteresse em um único local** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse à minha lista de desejos** para **posteriormente eu possa ver somente os itens de meu interesse em um único local**. | Certifique-se de que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir à sua lista de desejos**. |
 
-[Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
+![imagem](https://uploaddeimagens.com.br/images/004/042/575/full/prop3.png?1664477142)
 
 ## **RF13 - Remover item da lista de desejo.**
 

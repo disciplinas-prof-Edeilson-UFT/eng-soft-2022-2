@@ -42,11 +42,11 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## **RF01 - Efetuar Login**
 
-#### Autor: usuarioautor - Nome autor.
+#### Autor: @JPeeMP - João Pedro Melo Povoa.
 
 ---
 
-### Revisor: usuariorevisor - Nome revisor
+### Revisor: @JoaoGabrielh - João Gabriel Alves de Souza
 
 | Item            | Descrição                                                                                                                                                                                               |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

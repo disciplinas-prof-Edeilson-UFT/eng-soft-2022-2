@@ -10,13 +10,13 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF01 - Efetuar Login. 1.1
 
-- [ ] RF04 - Visuzalizar Produto. 1.2
+- [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh)
 
 - [ ] RF07 - Avaliar Produto. 1.3
 
-- [ ] RF10 - Remover um item do Carrinho. 1.4
+- [x] RF10 - Remover um item do Carrinho. 1.4 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai)
 
-- [ ] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10)
+- [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10)
 
 ## 2 - Grupo 2.
 
@@ -228,6 +228,68 @@ Epic	       					 |User Story| Critério de aceitação
 
 [Link para o protótipo](https://www.figma.com/proto/zKriDa10csBIccQ3X5ZfMO/RF03-Visualizar-Cat%C3%A1logo?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1)
 
+
+## Caso de uso **RF04** - 1.2 Visualizar produto
+#### JoãoGabrielh - João Gabriel Alves de Souza
+---
+#### Revisor : João Pedro de Melo Pessoa (JPeeMP)
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Visualizar produto.
+Resumo           | É esperado que ao ver um produto no catálogo caso o usuário clique seja aberta a página do produto em específico, mostrando preço, descrição do produto, botão de compra, de adicionar ao carrinho, de adicionar à lista de desejos, foto do produto, título do produto, avaliação dele, se ainda tem estoque e comentários sobre ele.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
+Pós-condição   | É necessário que para adicionar o produto ao carrinho, à lista de desejos, avaliar ou comprar o produto o usuário esteja na sua própria conta.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Clicar em cima da imagem do produto.
+Passo 2 | Esperar a página do produto carregar.
+
+#### Campos da aba de visualizar produtos
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+Avaliar produto                      | Não         | Sim      | Texto
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Acessar o produto                    | Ao clicar no produto mostrado no catálogo ele deve ser redirecionado para a página do produto em específico| 
+Comprar o produto                    | Ao clicar no botão de compra ele deve ser redirecionado para a aba de efetuar a compra do produto                        |
+Adicionar ao carrinho                | Ao clicar no botão de adicionar ao carrinho o item deve ser adicionado à ele |
+Adicionar à lista de desejos         | Ao clicar no botão de adicionar à lista de desejos o item deve ser adicionado a essa lista |
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso o usuário não clique, deve-se ter a opção de selecionar os produtos utilizando as setas do teclado e poder visualizar ele com a tecla de enter para confirmar.
+Passo 2.1.1 | Caso ocorra erro ao carregar a página, ela deve se auto recarregar a cada 25 segundos para tentar visualizar o produto.
+Passo 2.1.2 | Caso o produto não exista mais porque o vendedor o removeu, o usuário deve ser redirecionado para o catálogo de itens anterior.
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu enquanto "usuário comum" quero "visualizar produtos específicos" para "saber mais coisas sobre ele". | Enquanto "usuário comum" eu preciso ser capaz de visualizar um produto em específico para saber mais informações sobre ele | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e visualizar um produto em específico.**
+
+![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20produto.png)
+
 ## RF05: Buscar um produto
  
 # 2 - Descrição dos casos de uso
@@ -322,6 +384,78 @@ Epic                                |User Story| Critério de aceitação
 Como "usuário comum" eu quero "efetuar uma compra" para "receber o produto". | Como "usuário comum" eu  quero conseguir finalizar a compra do meu pedido atráves da forma de pagamento que eu deseje para que eu possa receber o produto e usufruir do mesmo | Certifique-se que o usuário consegue **fazer login na própria conta, escolher uma forma de pagamento e finalizar a compra.**
 
 [Link para o protótipo](https://www.figma.com/file/q5oklvxsCOQ1GluAsArLjB/RF06---Efetuar-Compra?node-id=1%3A2)
+
+
+# Caso de uso **RF07** - Avaliar Produto. 1.3 - Peraefe -Fernanda Menezes Plessim de Melo
+## Revisor: João Gabriel Alves de Souza (JoaoGabrielh)
+
+
+| Item           | Descrição |
+| --------------- | ---------- |
+| Caso de uso    | RF07 |
+| Resumo           | Avaliar um produto comprado no site. |
+| Ator principal | Usuário |
+| Pré-condição   | O ator precisa estar conectado à internet,logado na conta pessoal do mesmo e ter comprado um produto. |
+
+
+#### Fluxo principal
+
+
+| Passos  | Descrição |
+| -------- | ---------- |
+| Passo 1 | O ator precisa fazer login na própria conta para automaticamente ser enviado para tela inicial do sistema; |
+| Passo 2 |  O ator deve pesquisar o produto comprado a ser avaliado; |
+| Passo 3 | O ator deve ir para a página de visualização do produto; |
+| Passo 4 | O ator deve então selecionar “Avaliar Produto” na seção Avaliações de Usuários; |
+| Passo 5 | O ator deve selecionar a nota desejada para o produto nas estrelas posicionadas abaixo da imagem do produto; |
+| Passo 6 | O ator deve confirmar a ação clicando no botão “Enviar”; |
+| Passo 7 | Logo o sistema irá retornar para a página do produto porém agora atualizado e mostrando a nova avaliação incluída; |
+
+
+#### Campos da aba de visualizar produtos
+
+
+| Campo                                | Obrigatório | Editável | Formato |
+| ------------------------------------- | ------------- | ---------- | -------- |
+| Título do comentário  | Não  | Sim  | Texto  |
+| Comentário  | Não  | Sim  | Texto  |
+
+#### Opções de usuário
+
+
+| Opção                                | Descrição   |
+|-------------------------------------|-------------|
+| Avaliar Produto | Permite o ator escrever um breve comentário e classificar o produto com estrelas |
+| Enviar | Confirmação antes de enviar a avaliação |
+
+#### Relatório de usuário
+
+
+|Campo | Descrição | Formato|
+|------|-----------|--------|
+
+
+#### Fluxo alternativo
+
+
+|Fluxo     | Passos | Descrição |
+|------------|------------|----------|
+|FA01 - Se o ator não tiver comprado o produto | Passo 1.1 |O sistema exibirá uma mensagem avisando que não é possível avaliar um produto não comprado;|
+|FA02 - O ator não está logado | Passo 2.1 | O sistema exibirá a tela do produto, porém sem opção de avaliar produto. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema;|
+
+
+# User story
+
+
+
+** Eu como ator, gostaria de avaliar o produto que comprei, para assim poder deixar minha opinião sobre o produto para outros usuários; **
+
+
+|Epic                                |User Story| Critério de aceitação|
+|-----------------------|----------|----------------------|
+
+
+![imagem](https://github.com/Peraefe/prototipo_img/blob/main/prototipo_RF07.PNG)
 
 
 ## RF08
@@ -430,6 +564,68 @@ Epic	       					 |User Story| Critério de aceitação
 -----------------------|----------|----------------------
 Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse ao carinho de compras** para que **eu possa finalizar a compra com os items do carinho.** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse ao carinho de compras** para **que eu possa finalizar a compra com os items do carinho**. | Certifique-se de que o usuário **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir ao carinho e finalizar a compra**.
 
+
+# Caso de uso RF10 - 1.4 - Larissa Mitie C. Hirai - LarissaHirai
+Review - Fernanda Menezes Plessim de Melo - Peraefe
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Remover item do carrinho
+Resumo	       | Excluir um item que o autor não tem mais interesse do carrinho de compras.
+Ator principal | Usuário que possui um cadastro
+Pré-condição   | O ator precisa ter acesso a internet, ter efetuado o login na conta pessoal e o carrinho não pode estar vazio
+Pós-condição   | Remoção do produto do carrinho
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator precisa efetuar login na própria conta para automaticamente ser enviado para tela inicial do sistema
+Passo 2 | No canto superior direito o ator vai encontrar um ícone de carrinho que ao selecioná-lo o ator é enviado para a tela do carrinho
+Passo 3 | O autor deve então localizar o item que deseja excluir
+Passo 4 | O ator deve então selecionar o ícone de lixeira que vai estar localizado em um espaço abaixo da quantidade
+Passo 5 | Após o ator efetuar todos os procedimentos, ele deve confirmar a exclusão do produto do carrinho clicando no botão “Sim”
+Passo 6 | Logo o sistema irá retornar para a página do carrinho porém agora atualizado e mostrando os itens existentes no carrinho antes de efetuar a exclusão, porém sem o item excluído
+
+
+#### Opções de usuário
+
+Opção                                | Descrição   
+-------------------------------------|-------------
+Excluir|Exclui o item do carrinho
+Confirmar exclusão|Confirmação antes de excluir o item
+
+
+#### Fluxo alternativo
+
+##### FA01 - Carrinho vazio
+
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | O sistema exibirá uma mensagem avisando que o carrinho está vazio
+
+
+##### FA02 - O ator não está logado   
+
+
+Passos      | Descrição
+------------|----------
+Passo 2.1   | O sistema exibirá a tela do carrinho, porém sem itens
+Passo 2.2   | No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o ator será redirecionado para página de login do sistema
+
+# User story
+
+
+Epic	       	       |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu como ator, gostaria de excluir um item que eu não desejo mais do meu carrinho, para assim poder obter apenas os item que eu desejo e gostaria de comprar.| Enquanto ator na página do meu carrinho preciso ser capaz de excluir itens que não desejo mais do meu carrinho para manter apenas os itens que tenho desejo em adiquirir.| Certificar que o ator efetue o login na pópria conta e que o carrinho não esteja vazio.
+
+
+# Protótipo
+
+
+[Link protótipo](prototipo/Capturar.PNG)
 
 ## requisitos RF11
 
@@ -581,6 +777,7 @@ Eu como ator, gostaria de remover um item da minha lista de desejo, para assim t
 ![proto](https://github.com/Lucka10/hello-world/blob/master/excluirdesej.png)
 
 https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
- 
-  ---
     
+=======
+[Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
+

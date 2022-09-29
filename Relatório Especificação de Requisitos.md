@@ -12,7 +12,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 
 - [x] RF04 - Visuzalizar Produto. 1.2 [Jo√£o Gabriel Alves de Souza](https://github.com/JoaoGabrielh)
 
-- [ ] RF07 - Avaliar Produto. 1.3
+- [x] RF07 - Avaliar Produto. 1.3 [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe)
 
 - [x] RF10 - Remover um item do Carrinho. 1.4 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai)
 

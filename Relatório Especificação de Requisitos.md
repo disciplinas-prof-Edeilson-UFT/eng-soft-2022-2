@@ -8,7 +8,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
-- [ ] RF01 - Efetuar Login. 1.1
+- [x] RF01 - Efetuar Login. 1.1
 
 - [ ] RF04 - Visuzalizar Produto. 1.2
 
@@ -20,17 +20,17 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 2 - Grupo 2.
 
-- [ ] RF02 - Efetuar Cadastro de Usuário. 2.1
+- [x] RF02 - Efetuar Cadastro de Usuário. 2.1
 
-- [ ] RF05 - Buscar um Produto. 2.2
+- [x] RF05 - Buscar um Produto. 2.2
 
-- [ ] RF08 - Solicitar Chamado/Suporte. 2.3
+- [x] RF08 - Solicitar Chamado/Suporte. 2.3
 
-- [ ] RF11 - Visualizar Carrinho. 2.4
+- [x] RF11 - Visualizar Carrinho. 2.4
 
 ## 3 - Grupo 3.
 
-- [ ] RF03 - Visualizar Catalógo. 3.1
+- [x] RF03 - Visualizar Catalógo. 3.1 - [ianasampaio](https://github.com/ianasampaio)
 
 - [ ] RF06 - Efetuar Compra. 3.2
 
@@ -165,6 +165,59 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
 
 <img src="https://uploaddeimagens.com.br/images/004/032/319/full/Captura_de_tela_de_2022-09-22_16-00-51.png?1663873305" alt="drawing" width="600"/>
 
+# Caso de uso **RF03**
+
+Item           | Descrição
+---------------|----------
+Caso de uso    |RF03 - Visualizar o catálogo
+Resumo           | Visualiza o catálogo para que possa encontrar algum produto que desperte interesse;
+Ator principal |Usuário - vizualiza o catálogo
+Ator secundário|-
+Pré-condição   |O(s) ator(es) deve ter acessado o sistema de vendas (site)
+Pós-condição   |-
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator acessa o sistema de vendas (site)
+Passo 2 | O sistema inicia a tela de apresentação de produtos
+
+#### Campos da aba de visualizar produtos
+
+Campo | Obrigatório | Editável | Formato
+------|-------------|----------|--------
+--    | --          | --       | --      
+
+
+#### Opções de usuário
+
+Opção                                | Descrição                              | Atalho
+-------------------------------------|-------------                           |-------
+--         | -- | --
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+--    | --        | --
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+--          | --
+
+# User story
+
+**Persona um, usuário comum.**
+
+Epic	       					 |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+“Como **um cliente online** eu quero **visualizar o catálogo de produtos** para que **eu possa ser encorajado a comprar algum deles.**” | Enquanto **um cliente online** eu preciso ser capaz de **visualizar o catálogo de produtos** para que **posteriormente eu possa ser encorajado a comprar algum deles.** | Certifique-se de que o usuário é capaz de **acessar o site**.
+
+[Link para o protótipo](https://www.figma.com/proto/zKriDa10csBIccQ3X5ZfMO/RF03-Visualizar-Cat%C3%A1logo?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1)
+
 ## RF05: Buscar um produto
  
 # 2 - Descrição dos casos de uso
@@ -183,6 +236,7 @@ O requisitos funcional, descritos nesta nessão para o sistema, é: **Efetuar ca
  ## RF05 :
  * Como cliente , eu quero efetuar uma busca por um produto específico , tendo cadastro na loja ou não.
 # 4 - Protótipo das telas de cada um dos requisitos :
+
  ## RF05
 <img src="https://uploaddeimagens.com.br/images/004/032/329/full/Buscar....png?1663873519" alt="drawing" width = "200"/>
 
@@ -285,7 +339,6 @@ Ator secundário| -
 Pré-condição   | O(s) ator(es) já deve ter uma conta, estar logado e estar na tela de visualização do produto
 Pós-condição   | O item deve ser salvo na lista de desejos do usuário
 
-
 #### Fluxo principal
 
 Passos  | Descrição
@@ -304,7 +357,6 @@ Campo | Obrigatório | Editável | Formato
 Opção                                     | Descrição                                   | Atalho
 ----------------------------------------- | -------------                               | -------
 Adicionar item/produto à lista de desejos | Adiciona o item/produto na lista de desejos | --
-
 
 #### Relatório de usuário
 

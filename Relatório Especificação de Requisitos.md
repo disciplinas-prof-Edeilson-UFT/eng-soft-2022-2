@@ -415,7 +415,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 [Link para o protótipo](https://www.figma.com/file/q5oklvxsCOQ1GluAsArLjB/RF06---Efetuar-Compra?node-id=1%3A2)
 
-# **RF07 - Avaliar Produto.**
+## **RF07 - Avaliar Produto.**
 
 #### Autor: @Peraefe - Fernanda Menezes Plessim de Melo.
 

@@ -652,39 +652,65 @@ Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvid
 
 ## **RF11 - Visualizar Carrinho**
 
-#### Autor: usuarioautor - Nome autor.
+#### Autor: @fernandokozak - Luiz Fernando Kozak.
 
 ---
 
-### Revisor: usuariorevisor - Nome revisor
+### Revisor: @pixies0 - João Pedro Silva Cunha
 
 Os requisitos funcionais.
 
-RF11
+Item           | Descrição
+---------------|----------
+Caso de uso    | RF11 - Visualizar Carrinho
+Resumo	       | Verificar produtos
+Ator principal | Cliente
+Ator secundário| Sistema
+Pré-condição   | Tem que ter algo no carrinho
+Pós-condição   | 
 
-     *Nome: Carrinho de compra.
-     *Atores: Cliente e Sistemas.
-     *Finalidade: Verificar produtos.
-     *Visão geral: O caso de uso tem o dever de fazer o cliente conferir o estado do seu carrinho de compra.
-     *Tipo: Importante.
+#### Fluxo principal
 
-## Ações dos Atores: Carrinho:
+Passos  | Descrição
+--------|----------
+Passo 1 | Cliente entra na página deferida a carrinho 
+Passo 2 | Cliente informa endereço para a realização de entrega.
+Passo 3 | Opção de desejo a garantia estendida 
+Passo 4 | Opções de frete
+Passo 5 | Opção de deseconto 
 
-     1)	Cliente entra na página deferida a carrinho.
-     2)	Cliente informa endereço para a realização da entrega.
-     3)	Opção de deseja garantia estendida.
-     4)	Opções de frete.
-     5)	Opção de desconto.
+#### Campos da aba de visualizar produtos
 
-## Respostas do Sistema: Carrinho:
+Campo                                | Obrigatório              | Editável                       | Formato
+-------------------------------------|--------------------------|--------------                  |-------------
+Tela de carrinho                     |Adicionar algo ao carrinho| cep,endereço e remover produto | Tela e Texto
 
-     1)	Tela inicial de compra mostra o produto que está no carrinho.
-     2)	Exibi quantidade e valor dos determinados. produtos. apresenta um subtotal.
-     3)	Opções de ir para o pagamento ou continuar na compra.
+#### Opções de usuário
 
-## User store:
+Opção                                | Descrição                                                                       | Atalho
+Acessar o carrinho                   | Ao clicar no carrinho ele dever se relacionado a página de carrinho             |
+Compra o produto                     | Ao clicar no botão de realizar compra vai para a página de efetuar o pagamento  |          
 
-    Como cliente eu desejo conferir o produto, frete e preço de entrega.
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso o usuário não seleciona nenhum produto na loja, ele acaba visualizando a tela de carrinho em branco
+Passo 1.2   | Caso o passo 1.1 seja realizado o usuário e deve retorna a página de home para selecionar algum produto
+
+# User story
+
+**Persona um, usuário comum.**
+
+| Epic                                                                                                                                                        | User Story                                                                                                                                      | Critério de aceitação                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Eu enquanto "usuário comum" quero "visualizar carrinho" para "ver como está minha compra". | Enquanto "usuário comum" eu preciso ser capaz de "visualizar o carrinho para ter a certeza do que vou estar comprando". | Vai certificar o usuário ce está com o login na própria conta, ira visualizar um produto em específico que selecionado. |
+
 
 ## Protótipo de tela:
 

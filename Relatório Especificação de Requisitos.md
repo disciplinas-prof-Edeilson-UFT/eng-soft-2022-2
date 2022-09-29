@@ -477,62 +477,71 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ## **RF08 - Solicitar Chamado/Suporte**
 
-#### Autor: @Izann-Brum - Izann Rogério de Brum.
+#### Autor: @Izann-Brum - Izann Rogério Gerlades de Brum.
 
 ---
 
 ### Revisor: @JulioNolasco - Julio Cezar Nolasco.
 
-Descrição:
 
-1. Requisito RF08 - Solicitar Chamado/Suporte.
-2. Descrever o Caso de Uso Expandido para o requisito RF08.
-3. Descrever User Storie o requisito RF08.
-4. Fazer o protótipo da tela.
+Item           | Descrição
+---------------|----------
+Caso de uso    | Solicitar Chamado/Suporte.
+Resumo         | Este caso de uso tem a finalidade de auxiliar usuários que necessitam de ajuda com o sistema.
+Ator principal | Usuário utilizador da plataforma e novos usuários.
+Ator secundário| Atendente.
+Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
+Pós-condição   | É necessário que, para retornar ao chat do SAC, o usuário tenha sua própria conta.
 
-Utilizaremos, como referência, o sistema de SAC da loja virtual Kabum.
+#### Fluxo principal
 
-### Descrição do caso de uso expandido dos requisitos:
+Passos  | Descrição
+--------|----------
+Passo 1 | Cliente entra em contato com o SAC.
+Passo 2 | Cliente informa o assunto, seu nome, se pessoa física ou jurídica, e-mail e telefone.
+Passo 3 | O sistema registra os dados informados pelo cliente.
+Passo 4 | O cliente começa um chat com um atendente.
 
-Requisito RF08:
-• Nome: Solicitar Chamado/Suporte.
-• Número: 08.
-• Atores: Cliente, funcionário.
-• Finalidade: Solicitar ajuda/suporte ao SAC.
-• Visão geral: Este caso de uso tem a finalidade de auxiliar clientes que necessitam de ajuda com o sistema.
-• Tipo: Essencial
+#### Fluxo alternativo
 
-Ações dos atores:
+Passos      | Descrição
+------------|----------
+Passo 1    | Cliente não preenche os campos corretamente.
+Passo 1.1  | Sistema avisa sobre os campos obrigatórios.
+Passo 2    | Cliente não verifica o checkbox (reCAPTCHA).
+Passo 2.1  | Sistema solicita a verificação do checkbox (reCAPTCHA).
+Passo 3    | Cliente entra em contato em horário fora do limite.
+Passo 3.1  | Sistema mostra uma mensagem de aviso sobre os horários de atendimento, e possíveis alternativas para contato.
 
-1. Cliente entra em contato com o SAC.
-2. Cliente informa o assunto, seu nome, se pessoa física ou jurídica, e-mail e telefone.
-3. O sistema registra os dados informados pelo cliente.
-4. O cliente começa um chat com um atendente.
+ **Campos do Formulário:**
+  Campo | Obrigatório? | Editável? | Formato
+  --------- | ------------ | --------- | -------
+  Assunto | Sim | Sim | Texto
+  Nome | Sim | Sim | Texto
+  E-mail | sim | Sim | Texto
+  Telefone | Sim | Sim | Numérico
+  reCAPTCHA | Sim | Não | Checkbox
 
-Respostas do sistema:
+#### Opções de usuário
 
-1. Mostra tela do SAC.
-2. Sistema coloca tabela em modo de inserção.
-3. Sistema grava informações.
-4. O sistema redireciona o cliente para um chat com um atendente.
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Acessar o suporte.                      | Ao clicar nessa aba o usuário poderá entrar em contato com um atendente. |
 
-Tratamento de Exceções:
-1.1. Cliente não preenche os campos corretamente.
+# User story
 
-1.2. Sistema avisa sobre os campos obrigatórios.
+Agora iremos escrever uma história de usuário para uma persona.
 
-2.1. Cliente não verifica o checkbox (reCAPTCHA).
+**Persona um, usuário comum.**
 
-2.2. Sistema solicita a verificação do checkbox (reCAPTCHA).
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como um usuário comum, eu preciso solicitar um suporte para resolver um problema e/ou dúvida. | Enquanto "usuário comum" preciso ter minhas informções salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.**
 
-### Descrição do User Storie para o requisito:
+![image](https://i.imgur.com/dy28taW.png)
+![image](https://i.imgur.com/fgFWSzj.png)
+![image](https://i.imgur.com/pfJ6PfG.png)
 
-Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvida.
-
-### Protótipo da tela:
-
-![](https://i.imgur.com/dy28taW.png)
-![](https://i.imgur.com/fgFWSzj.png)
 
 ## **RF09 - Adicionar Produto ao Carrinho**
 

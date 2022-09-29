@@ -178,7 +178,8 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 **Persona um, usuário comum.**
 
-| Epic | User Story | Critério de aceitação |
+| Epic                                                                                                                                                        | User Story                                                                                                                                      | Critério de aceitação                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | “Como **um usuário novo do sistema** eu quero **poder criar uma nova conta com os meus dados** para que **eu possa ter uma nova conta e efetuar compras**.” | “Como **um usuário novo do sistema** eu desejo **ter meus dados guardados** para que **eu possa ter uma identidade e usufruir da plataforma**.” | Certificar que o usuário preencha todos os campos do formulário |
 
 ## Protótipo

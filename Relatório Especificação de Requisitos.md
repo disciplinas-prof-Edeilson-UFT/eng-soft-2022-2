@@ -8,15 +8,15 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
-- [x] RF01 - Efetuar Login. 1.1
+- [x] RF01 - Efetuar Login. 1.1 [João Pedro Melo Povoa] (https://github.com/JPeeMP) Revisador por @Lucka10
 
-- [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh)
+- [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
 
-- [x] RF07 - Avaliar Produto. 1.3 [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe)
+- [x] RF07 - Avaliar Produto. 1.3 [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe) Revisado por @JoaoGabrielh
 
-- [x] RF10 - Remover um item do Carrinho. 1.4 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai)
+- [x] RF10 - Remover um item do Carrinho. 1.4 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
 
-- [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10)
+- [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
 
 ## 2 - Grupo 2.
 

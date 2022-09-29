@@ -69,7 +69,7 @@ Avaliar produto                      | Não         | Não      | Texto
 
 Opção                                | Descrição   | Atalho
 -------------------------------------|-------------|-------
-Acessar o produto                    | Ao clicar no produto ele deve ser redirecionado para a aba do produto | 
+Acessar o produto                    | Ao clicar no produto mostrado no catálogo ele deve ser redirecionado para a página do produto em específico| 
 Comprar o produto                    | Ao clicar no botão de compra ele deve ser redirecionado para a aba de efetuar a compra do produto                        |
 Adicionar ao carrinho                | Ao clicar no botão de adicionar ao carrinho o item deve ser adicionado à ele |
 Adicionar à lista de desejos         | Ao clicar no botão de adicionar à lista de desejos o item deve ser adicionado a essa lista |

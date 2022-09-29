@@ -316,33 +316,57 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ### Revisor: @Izann-Brum - Izann Rogério de Brum.
 
-# Descrição dos casos de uso
+| Item            | Descrição                          |
+| --------------- | ---------------------------------- |
+| Caso de uso     | RF05 - Buscar Produto              |
+| Resumo          | Buscar por produtos                |
+| Ator principal  | Cliente                            |
+| Ator secundário | Sistema                            |
+| Pré-condição    | Ser um produto que a loja oferece. |
+| Pós-condição    |
 
-- Ator :
+#### Fluxo principal
 
-1. Cliente - Responsável por fazer a busca do produto desejado
+| Passos  | Descrição                                                                        |
+| ------- | -------------------------------------------------------------------------------- |
+| Passo 1 | O ator identifica a barra de busca e efetua a ação de busca do produto.          |
+| Passo 2 | O sistema apresenta uma tela com os respectivos produtos semelhantes ao buscado. |
 
-- Descrição sucinta :
+#### Campos da aba de buscar produtos
 
-1. Buscar por produto e / ou por categorias de produtos oferecidos pela loja
+| Campo            | Obrigatório   | Editável  | Formato  |
+| ---------------- | ------------- | --------- | -------- |
+| Barra de busca   | Não           | Sim       |  Texto   |
 
-- Fluxo principal :
+#### Opções de usuário
 
-1. O ator identifica a barra de busca e efetua a ação de busca do produto.
-2. O sistema apresenta uma tela com os respectivos produtos semelhantes ao buscado.
+| Opção               | Descrição                                                                                            | Atalho |
+| ------------------- | ---------------------------------------------------------------------------------------------------- | ------ |
+| Buscar um produto   | Ao clicar no botão de busca, o sistema apresenta uma tela com algumas opções sobre o produto buscado | ------ |
 
-- Fluxo alternativo :
+#### Relatório de usuário
 
-1. O ator realiza a busca do produto .
-2. O sistema apresenta uma tela com o aviso de que não encontrou nenhum produto semelhante.
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
 
-# Descrição do User Storie para o requisito :
+#### Fluxo alternativo
 
-- Como cliente , eu quero efetuar uma busca por um produto específico , tendo cadastro na loja ou não.
+| Passos    | Descrição                                                                                |
+| --------- | ---------------------------------------------------------------------------------------- |
+| Passo 1.1 | O ator realiza a busca do produto .                                                      |
+| Passo 1.2 | O sistema apresenta uma tela com o aviso de que não encontrou nenhum produto semelhante. |
 
-# Protótipo das telas de cada um dos requisitos :
+# User story
 
-<img src="https://uploaddeimagens.com.br/images/004/032/329/full/Buscar....png?1663873519" alt="drawing" width = "200"/>
+**Persona um, usuário comum.**
+
+| Epic                                                                                       | User Story                                                                                                              | Critério de aceitação                                                                                                   |
+| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Eu enquanto "usuário comum" quero "efetuar uma busca por um produto específico" para "uma possível compra". | Enquanto "usuário comum" eu preciso ser capaz de "buscar por um produto estando logado ou não". | Certifique-se que o usuário é capaz de acessar o site |
+
+## Protótipo de tela:
+
+<img src="https://imageup.me/images/c558b1bd-2c36-4841-a8aa-8ad6a6f2c2d0.jpeg" alt="drawing" width="600"/>
 
 ## **RF06 - Efetuar Compra**
 

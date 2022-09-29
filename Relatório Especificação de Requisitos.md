@@ -16,7 +16,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 Ã
 
 - [ ] RF10 - Remover um item do Carrinho. 1.4
 
-- [ ] RF13 - Remover um item da lista de Desejos. 1.5
+- [ ] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10)
 
 ## 2 - Grupo 2.
 

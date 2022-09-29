@@ -334,15 +334,15 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 #### Campos da aba de buscar produtos
 
-| Campo            | Obrigatório   | Editável  | Formato  |
-| ---------------- | ------------- | --------- | -------- |
-| Barra de busca   | Não           | Sim       |  Texto   |
+| Campo          | Obrigatório | Editável | Formato |
+| -------------- | ----------- | -------- | ------- |
+| Barra de busca | Não         | Sim      | Texto   |
 
 #### Opções de usuário
 
-| Opção               | Descrição                                                                                            | Atalho |
-| ------------------- | ---------------------------------------------------------------------------------------------------- | ------ |
-| Buscar um produto   | Ao clicar no botão de busca, o sistema apresenta uma tela com algumas opções sobre o produto buscado | ------ |
+| Opção             | Descrição                                                                                            | Atalho |
+| ----------------- | ---------------------------------------------------------------------------------------------------- | ------ |
+| Buscar um produto | Ao clicar no botão de busca, o sistema apresenta uma tela com algumas opções sobre o produto buscado | ------ |
 
 #### Relatório de usuário
 
@@ -360,8 +360,8 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 **Persona um, usuário comum.**
 
-| Epic                                                                                       | User Story                                                                                                              | Critério de aceitação                                                                                                   |
-| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Epic                                                                                                        | User Story                                                                                      | Critério de aceitação                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
 | Eu enquanto "usuário comum" quero "efetuar uma busca por um produto específico" para "uma possível compra". | Enquanto "usuário comum" eu preciso ser capaz de "buscar por um produto estando logado ou não". | Certifique-se que o usuário é capaz de acessar o site |
 
 ## Protótipo de tela:
@@ -507,50 +507,49 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ### Revisor: @JulioNolasco - Julio Cezar Nolasco.
 
-
-Item           | Descrição
----------------|----------
-Caso de uso    | Solicitar Chamado/Suporte.
-Resumo         | Este caso de uso tem a finalidade de auxiliar usuários que necessitam de ajuda com o sistema.
-Ator principal | Usuário utilizador da plataforma e novos usuários.
-Ator secundário| Atendente.
-Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
-Pós-condição   | É necessário que, para retornar ao chat do SAC, o usuário tenha sua própria conta.
+| Item            | Descrição                                                                                     |
+| --------------- | --------------------------------------------------------------------------------------------- |
+| Caso de uso     | Solicitar Chamado/Suporte.                                                                    |
+| Resumo          | Este caso de uso tem a finalidade de auxiliar usuários que necessitam de ajuda com o sistema. |
+| Ator principal  | Usuário utilizador da plataforma e novos usuários.                                            |
+| Ator secundário | Atendente.                                                                                    |
+| Pré-condição    | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.              |
+| Pós-condição    | É necessário que, para retornar ao chat do SAC, o usuário tenha sua própria conta.            |
 
 #### Fluxo principal
 
-Passos  | Descrição
---------|----------
-Passo 1 | Cliente entra em contato com o SAC.
-Passo 2 | Cliente informa o assunto, seu nome, se pessoa física ou jurídica, e-mail e telefone.
-Passo 3 | O sistema registra os dados informados pelo cliente.
-Passo 4 | O cliente começa um chat com um atendente.
+| Passos  | Descrição                                                                             |
+| ------- | ------------------------------------------------------------------------------------- |
+| Passo 1 | Cliente entra em contato com o SAC.                                                   |
+| Passo 2 | Cliente informa o assunto, seu nome, se pessoa física ou jurídica, e-mail e telefone. |
+| Passo 3 | O sistema registra os dados informados pelo cliente.                                  |
+| Passo 4 | O cliente começa um chat com um atendente.                                            |
 
 #### Fluxo alternativo
 
-Passos      | Descrição
-------------|----------
-Passo 1    | Cliente não preenche os campos corretamente.
-Passo 1.1  | Sistema avisa sobre os campos obrigatórios.
-Passo 2    | Cliente não verifica o checkbox (reCAPTCHA).
-Passo 2.1  | Sistema solicita a verificação do checkbox (reCAPTCHA).
-Passo 3    | Cliente entra em contato em horário fora do limite.
-Passo 3.1  | Sistema mostra uma mensagem de aviso sobre os horários de atendimento, e possíveis alternativas para contato.
+| Passos    | Descrição                                                                                                     |
+| --------- | ------------------------------------------------------------------------------------------------------------- |
+| Passo 1   | Cliente não preenche os campos corretamente.                                                                  |
+| Passo 1.1 | Sistema avisa sobre os campos obrigatórios.                                                                   |
+| Passo 2   | Cliente não verifica o checkbox (reCAPTCHA).                                                                  |
+| Passo 2.1 | Sistema solicita a verificação do checkbox (reCAPTCHA).                                                       |
+| Passo 3   | Cliente entra em contato em horário fora do limite.                                                           |
+| Passo 3.1 | Sistema mostra uma mensagem de aviso sobre os horários de atendimento, e possíveis alternativas para contato. |
 
- **Campos do Formulário:**
-  Campo | Obrigatório? | Editável? | Formato
-  --------- | ------------ | --------- | -------
-  Assunto | Sim | Sim | Texto
-  Nome | Sim | Sim | Texto
-  E-mail | sim | Sim | Texto
-  Telefone | Sim | Sim | Numérico
-  reCAPTCHA | Sim | Não | Checkbox
+**Campos do Formulário:**
+Campo | Obrigatório? | Editável? | Formato
+--------- | ------------ | --------- | -------
+Assunto | Sim | Sim | Texto
+Nome | Sim | Sim | Texto
+E-mail | sim | Sim | Texto
+Telefone | Sim | Sim | Numérico
+reCAPTCHA | Sim | Não | Checkbox
 
 #### Opções de usuário
 
-Opção                                | Descrição   | Atalho
--------------------------------------|-------------|-------
-Acessar o suporte.                      | Ao clicar nessa aba o usuário poderá entrar em contato com um atendente. |
+| Opção              | Descrição                                                                | Atalho |
+| ------------------ | ------------------------------------------------------------------------ | ------ |
+| Acessar o suporte. | Ao clicar nessa aba o usuário poderá entrar em contato com um atendente. |
 
 # User story
 
@@ -558,14 +557,13 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 **Persona um, usuário comum.**
 
-Epic                                |User Story| Critério de aceitação
------------------------|----------|----------------------
-Como um usuário comum, eu preciso solicitar um suporte para resolver um problema e/ou dúvida. | Enquanto "usuário comum" preciso ter minhas informções salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.**
+| Epic                                                                                          | User Story                                                                                                                                 | Critério de aceitação                                                    |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Como um usuário comum, eu preciso solicitar um suporte para resolver um problema e/ou dúvida. | Enquanto "usuário comum" preciso ter minhas informções salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.** |
 
 ![image](https://i.imgur.com/dy28taW.png)
 ![image](https://i.imgur.com/fgFWSzj.png)
 ![image](https://i.imgur.com/pfJ6PfG.png)
-
 
 ## **RF09 - Adicionar Produto ao Carrinho**
 
@@ -720,9 +718,10 @@ Os requisitos funcionais.
 
 #### Opções de usuário
 
-Opção | Descrição | Atalho
-Acessar o carrinho | Ao clicar no carrinho ele dever se relacionado a página de carrinho |
-Compra o produto | Ao clicar no botão de realizar compra vai para a página de efetuar o pagamento |
+| Opção              | Descrição                                                                      | Atalho |
+| ------------------ | ------------------------------------------------------------------------------ | ------ | ------ |
+| Acessar o carrinho | Ao clicar no carrinho ele dever se relacionado a página de carrinho            |        | ------ |
+| Compra o produto   | Ao clicar no botão de realizar compra vai para a página de efetuar o pagamento |        | ------ |
 
 #### Relatório de usuário
 

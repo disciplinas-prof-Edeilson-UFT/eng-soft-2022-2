@@ -38,12 +38,12 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [ ] RF12 - Adicionar produto à lista de Desejos. 3.4
 
-## RF10 - Adicionar Produto ao Carrinho
+## RF09 - Adicionar Produto ao Carrinho
 
 
 Item           | Descrição
 ---------------|----------
-Caso de uso    | RF10 - Adicionar Produto ao Carrinho
+Caso de uso    | RF09 - Adicionar Produto ao Carrinho
 Resumo	       | adicionar um item que o autor tem interesse em comprar ao carrinho de compras.
 Ator principal | Usuário - adicionar item ao carinho de compras;
 Ator secundário| 

@@ -88,5 +88,5 @@ Epic	       	       |User Story| Critério de aceitação
 Eu como ator, gostaria de excluir um item que eu não desejo mais do meu carrinho, para assim poder obter apenas os item que eu desejo e gostaria de comprar.| Enquanto ator na página do meu carrinho preciso ser capaz de excluir itens que não desejo mais do meu carrinho para manter apenas os itens que tenho desejo em adiquirir.| Certificar que o ator efetue o login na pópria conta e que o carrinho não esteja vazio.
 
 
-<prototipo/Capturar.PNG>
+[prototipo](prototipo/Capturar.PNG)
 

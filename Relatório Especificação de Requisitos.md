@@ -55,7 +55,7 @@ Pós-condição   | Remoção do produto selecionado da lista de desejo.
 
 
 
-- **Fluxo principal**:<br>
+**Fluxo principal**:<br>
 
 Passo          | Descrição
 ---------------|-------------------------------------
@@ -68,7 +68,7 @@ Passo 3.2      | Se a lista de desejos não estiver vazia, os itens contidos nel
 Passo 3.3      | retorna para pagina da lista agora sem o item removido.
 
 
-- **Fluxo Alternativo**:<br>
+**Fluxo Alternativo**:<br>
 
 FA01 - Produto removido do catalogo
 
@@ -84,7 +84,7 @@ Passo          | Descrição
 1              | Lista de desejos está vazia.
 2              | Não há items para se removido.
 	
-- **Opções do Usuário:**
+**Opções do Usuário:**
 
 Opção            | Descrição                            
 -----------------| ----------------------                         

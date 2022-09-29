@@ -71,12 +71,19 @@ Confirmar exclusão|Confirmação antes de excluir o item
 
 #### Fluxo alternativo
 
+##### FA01 - Carrinho vazio
+
 
 Passos      | Descrição
 ------------|----------
-FA01        | Carrinho vazio
 Passo 1.1   | O sistema exibirá uma mensagem avisando que o carrinho está vazio
-FA02        | O ator não está logado   
+
+
+##### FA02 - O ator não está logado   
+
+
+Passos      | Descrição
+------------|----------
 Passo 2.1   | O sistema exibirá a tela do carrinho, porém sem itens
 Passo 2.2   | No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o ator será redirecionado para página de login do sistema
 

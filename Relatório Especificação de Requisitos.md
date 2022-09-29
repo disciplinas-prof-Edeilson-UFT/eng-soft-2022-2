@@ -323,6 +323,7 @@ Como "usuário comum" eu quero "efetuar uma compra" para "receber o produto". | 
 
 [Link para o protótipo](https://www.figma.com/file/q5oklvxsCOQ1GluAsArLjB/RF06---Efetuar-Compra?node-id=1%3A2)
 
+
 # Caso de uso **RF07** - Avaliar Produto. 1.3 - Peraefe -Fernanda Menezes Plessim de Melo
 ## Revisor: João Gabriel Alves de Souza (JoaoGabrielh)
 
@@ -393,6 +394,7 @@ Como "usuário comum" eu quero "efetuar uma compra" para "receber o produto". | 
 
 
 ![imagem](https://github.com/Peraefe/prototipo_img/blob/main/prototipo_RF07.PNG)
+
 
 ## RF08
 

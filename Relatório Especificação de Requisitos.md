@@ -112,7 +112,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | Eu enquanto "usuário comum" quero "poder logar na minha conta para ter um melhor controle e utilização da plataforma de compras" para "ter mais segurança e uma experiências mais completa com uma conta da loja". | Enquanto "usuário comum" preciso ter minhas informções salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.** |
 
-![image](https://user-images.githubusercontent.com/45723261/191869905-763d9ee5-a01d-4c02-8db0-d52f3efa67eb.png)
+![image](https://user-images.githubusercontent.com/45723261/193125183-94278a21-41e1-49d2-a3de-834aef0fb533.png)
 
 ## **RF02 - Efetuar Cadastro do Usuário**.
 

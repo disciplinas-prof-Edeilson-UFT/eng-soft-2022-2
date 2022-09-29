@@ -45,76 +45,76 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 Revisor: João Gabriel Alves de Souza (JoaoGabrielh)# 
 
 
-Item           | Descrição
+|Item           | Descrição|
 
----------------|----------
+|---------------|----------|
 
-Caso de uso    | RF07
+|Caso de uso    | RF07|
 
-Resumo           | Avaliar um produto comprado no site.
+|Resumo           | Avaliar um produto comprado no site.|
 
-Ator principal | Usuário
+|Ator principal | Usuário|
 
-Pré-condição   | O ator precisa estar conectado à internet,logado na conta pessoal do mesmo e ter comprado um produto.
+|Pré-condição   | O ator precisa estar conectado à internet,logado na conta pessoal do mesmo e ter comprado um produto.|
 
 
 #### Fluxo principal
 
 
-Passos  | Descrição
+|Passos  | Descrição|
 
---------|----------
+|--------|----------|
 
-Passo 1 | O ator precisa fazer login na própria conta para automaticamente ser enviado para tela inicial do sistema;
+|Passo 1 | O ator precisa fazer login na própria conta para automaticamente ser enviado para tela inicial do sistema;|
 
-Passo 2 |  O ator deve pesquisar o produto comprado a ser avaliado;
+|Passo 2 |  O ator deve pesquisar o produto comprado a ser avaliado;|
 
-Passo 3 | O ator deve ir para a página de visualização do produto;
+|Passo 3 | O ator deve ir para a página de visualização do produto;|
 
-Passo 4 | O ator deve então selecionar “Avaliar Produto” na seção Avaliações de Usuários; 
+|Passo 4 | O ator deve então selecionar “Avaliar Produto” na seção Avaliações de Usuários; |
 
-Passo 5 | O ator deve selecionar a nota desejada para o produto nas estrelas posicionadas abaixo da imagem do produto;
+|Passo 5 | O ator deve selecionar a nota desejada para o produto nas estrelas posicionadas abaixo da imagem do produto;|
 
-Passo 6 | O ator deve confirmar a ação clicando no botão “Enviar”;
+|Passo 6 | O ator deve confirmar a ação clicando no botão “Enviar”;|
 
-Passo 7 | Logo o sistema irá retornar para a página do produto porém agora atualizado e mostrando a nova avaliação incluída;
+|Passo 7 | Logo o sistema irá retornar para a página do produto porém agora atualizado e mostrando a nova avaliação incluída;|
 
 
 #### Campos da aba de visualizar produtos
 
 
-Campo                                | Obrigatório | Editável | Formato
+|Campo                                | Obrigatório | Editável | Formato|
 
--------------------------------------|-------------|----------|--------
+|-------------------------------------|-------------|----------|--------|
 | Título do comentário  | Não  | Sim  | Texto  |
 | Comentário  | Não  | Sim  | Texto  |
 
 #### Opções de usuário
 
 
-Opção                                | Descrição   
+|Opção                                | Descrição   |
 
--------------------------------------|-------------
+|-------------------------------------|-------------|
 | Avaliar Produto | Permite o ator escrever um breve comentário e classificar o produto com estrelas |
 | Enviar | Confirmação antes de enviar a avaliação |
 
 #### Relatório de usuário
 
 
-Campo | Descrição | Formato
+|Campo | Descrição | Formato|
 
-------|-----------|--------
+|------|-----------|--------|
 
 
 #### Fluxo alternativo
 
 
-Fluxo     | Passos | Descrição
+|Fluxo     | Passos | Descrição|
 
-------------|------------|----------
+|------------|------------|----------|
 
-FA01 - Se o ator não tiver comprado o produto | Passo 1.1 |O sistema exibirá uma mensagem avisando que não é possível avaliar um produto não comprado;
-FA02 - O ator não está logado | Passo 2.1 | O sistema exibirá a tela do produto, porém sem opção de avaliar produto. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema;
+|FA01 - Se o ator não tiver comprado o produto | Passo 1.1 |O sistema exibirá uma mensagem avisando que não é possível avaliar um produto não comprado;|
+|FA02 - O ator não está logado | Passo 2.1 | O sistema exibirá a tela do produto, porém sem opção de avaliar produto. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema;|
 
 
 # User story
@@ -124,9 +124,9 @@ FA02 - O ator não está logado | Passo 2.1 | O sistema exibirá a tela do produ
 ** Eu como ator, gostaria de avaliar o produto que comprei, para assim poder deixar minha opinião sobre o produto para outros usuários;**
 
 
-Epic                                |User Story| Critério de aceitação
+|Epic                                |User Story| Critério de aceitação|
 
------------------------|----------|----------------------
+|-----------------------|----------|----------------------|
 
 
 ![imagem](https://github.com/Peraefe/prototipo_img/blob/main/prototipo_RF07.PNG)

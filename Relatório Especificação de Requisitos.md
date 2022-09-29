@@ -306,7 +306,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Eu enquanto "usuário comum" quero "visualizar produtos específicos" para "saber mais coisas sobre ele". | Enquanto "usuário comum" eu preciso ser capaz de visualizar um produto em específico para saber mais informações sobre ele | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e visualizar um produto em específico.** |
 
-![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20produto.png)
+![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/prototipos%20visualizar%20produto.png)
 
 ## **RF05 - Buscar um produto**
 

@@ -48,7 +48,7 @@ Resumo	       | Adiciona um produto/item de seu interesse à sua lista de desejo
 Ator principal | Algum usuário - Adiciona um produto/item de interesse na lista de desejos
 Ator secundário| -
 Pré-condição   | O(s) ator(es) já deve ter uma conta, estar logado e estar na tela de visualização do produto
-Pós-condição   | -
+Pós-condição   | O item deve ser salvo na lista de desejos do usuário
 
 #### Fluxo principal
 

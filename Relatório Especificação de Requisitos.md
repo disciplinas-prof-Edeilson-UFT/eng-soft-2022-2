@@ -65,13 +65,13 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 | Passo 2 | Filtrar os produtos que tem interesse                              |
 | Passo 3 | Entar na página de detalhe do produto que escolheu                 |
 | Passo 4 | clicar no botão adicionar item ao carinho                          |
-| Passo 5 | ser redirecionado para página com o carinho com todo seus produtos |
+| Passo 5 | Ser redirecionado para página com o carinho com todo seus produtos |
 
 #### Campos
 
 | Campo   | Obrigatório                                             | Editável | Formato |
 | ------- | ------------------------------------------------------- | -------- | ------- |
-| Passo 1 | Clcar em entrar na conta para fazer login ou cadastrar. |
+| Passo 1 | Clicar em entrar na conta para fazer login ou cadastrar. |
 | Passo 2 | Esperar a página do produto carregar.                   |
 
 #### Campos da aba de login
@@ -100,6 +100,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 | Passo 2.1.1 | O usuário será deslogado caso fique muito tempo sem utilizar a conta.                               |
 | Passo 2.1.2 | O usuário tem a opção de deslogar caso seja da sua escolha.                                         |
 | Passo 2.1.3 | O usuário tem a opção de trocar senha.                                                              |
+| Passo 2.1.4 | Notificar usuário, caso a senha esteja incorreta.                                                   |
 
 # User story
 
@@ -650,7 +651,7 @@ Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvid
 
 # Protótipo
 
-[Link protótipo](prototipo/Capturar.PNG)
+![image](https://user-images.githubusercontent.com/45723261/193121755-8ca3f59e-d461-4ede-9817-6fc52060503d.png)
 
 ## **RF11 - Visualizar Carrinho**
 

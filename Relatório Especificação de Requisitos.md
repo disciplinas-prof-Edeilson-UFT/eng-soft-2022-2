@@ -43,11 +43,11 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 Item           | Descrição
 ---------------|----------
-Caso de uso    | RF12 - Adicionar à lista de desejos
+Caso de uso    | RF12 - Adicionar item/produto à lista de desejos
 Resumo	       | Adiciona um produto/item de seu interesse à sua lista de desejos
-Ator principal | Usuário - Adiciona um produto/item de interesse na lista de desejos
+Ator principal | Algum usuário - Adiciona um produto/item de interesse na lista de desejos
 Ator secundário| -
-Pré-condição   | O(s) ator(es) já deve está na tela de visualização do produto
+Pré-condição   | O(s) ator(es) já deve ter uma conta, estar logado e estar na tela de visualização do produto
 Pós-condição   | -
 
 #### Fluxo principal
@@ -65,9 +65,9 @@ Campo | Obrigatório | Editável | Formato
 
 #### Opções de usuário
 
-Opção                                | Descrição                              | Atalho
--------------------------------------|-------------                           |-------
-Adicionar à lista de desejos         | Adiciona o produto na lista de desejos | --
+Opção                                     | Descrição                                   | Atalho
+----------------------------------------- | -------------                               | -------
+Adicionar item/produto à lista de desejos | Adiciona o item/produto na lista de desejos | --
 
 #### Relatório de usuário
 

@@ -32,7 +32,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 
 - [ ] RF03 - Visualizar Catal√≥go. 3.1
 
-- [ ] RF06 - Efetuar Compra. 3.2 - [Welton Santana](https://github.com/weltonSantana)
+- [ ] RF06 - Efetuar Compra. 3.2 - [weltonSantana](https://github.com/weltonSantana)
 
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 

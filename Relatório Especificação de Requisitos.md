@@ -63,10 +63,10 @@ Passo 6 | Logo o sistema irá retornar para a página do carrinho porém agora a
 
 #### Opções de usuário
 
-Opção                                | Descrição   | Atalho
--------------------------------------|-------------|-------
-Excluir|Exclui o item do carrinho|
-Confirmar exclusão|Confirmação antes de excluir o item|
+Opção                                | Descrição   
+-------------------------------------|-------------
+Excluir|Exclui o item do carrinho
+Confirmar exclusão|Confirmação antes de excluir o item
 
 
 #### Fluxo alternativo
@@ -88,5 +88,5 @@ Epic	       	       |User Story| Critério de aceitação
 Eu como ator, gostaria de excluir um item que eu não desejo mais do meu carrinho, para assim poder obter apenas os item que eu desejo e gostaria de comprar.| Enquanto ator na página do meu carrinho preciso ser capaz de excluir itens que não desejo mais do meu carrinho para manter apenas os itens que tenho desejo em adiquirir.| Certificar que o ator efetue o login na pópria conta e que o carrinho não esteja vazio.
 
 
-![prototipo](https://github.com/disciplinas-prof-Edeilson-UFT/eng-soft-2022-2/blob/feature/RF10/prototipo/Capturar.PNG)
+![prototipo](prototipo/Capturar.PNG)
 

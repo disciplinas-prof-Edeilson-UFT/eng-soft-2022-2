@@ -719,9 +719,9 @@ Os requisitos funcionais.
 #### Opções de usuário
 
 | Opção              | Descrição                                                                      | Atalho |
-| ------------------ | ------------------------------------------------------------------------------ | ------ | ------ |
-| Acessar o carrinho | Ao clicar no carrinho ele dever se relacionado a página de carrinho            |        | ------ |
-| Compra o produto   | Ao clicar no botão de realizar compra vai para a página de efetuar o pagamento |        | ------ |
+| ------------------ | ------------------------------------------------------------------------------ | ------ |
+| Acessar o carrinho | Ao clicar no carrinho ele dever se relacionado a página de carrinho            |
+| Compra o produto   | Ao clicar no botão de realizar compra vai para a página de efetuar o pagamento |
 
 #### Relatório de usuário
 

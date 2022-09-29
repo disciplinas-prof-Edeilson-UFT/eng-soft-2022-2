@@ -593,7 +593,7 @@ Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvid
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse ao carinho de compras** para que **eu possa finalizar a compra com os items do carinho.** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse ao carinho de compras** para **que eu possa finalizar a compra com os items do carinho**. | Certifique-se de que o usuário **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir ao carinho e finalizar a compra**. |
 
-# **Caso de uso RF10 - Excluir item do carrinho**
+## **Caso de uso RF10 - Excluir item do carrinho**
 
 #### Autor: @LarissaHirai - Larissa Mitie C. Hirai.
 
@@ -692,7 +692,7 @@ RF11
 
 <img src="https://uploaddeimagens.com.br/images/004/035/650/full/Visualizar_Carrinho.png?1664065784" alt="drawing" width="600"/>
 
-# **RF12 - Adicionar à lista de Desejos**
+## **RF12 - Adicionar à lista de Desejos**
 
 #### Autor: usuarioautor - Nome autor.
 

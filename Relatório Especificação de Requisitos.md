@@ -20,13 +20,13 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 2 - Grupo 2.
 
-- [x] RF02 - Efetuar Cadastro de Usuário. 2.1
+- [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0 ](https://github.com/pixies0) Revisado por @fernandokozak
 
-- [x] RF05 - Buscar um Produto. 2.2
+- [x] RF05 - Buscar um Produto. 2.2 - [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
-- [x] RF08 - Solicitar Chamado/Suporte. 2.3
+- [x] RF08 - Solicitar Chamado/Suporte. 2.3 - [Izann-Brum](https://github.com/Izann-Brum) Revisado por @JulioNolasco
 
-- [x] RF11 - Visualizar Carrinho. 2.4
+- [x] RF11 - Visualizar Carrinho. 2.4 - [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
 
 ## 3 - Grupo 3.
 

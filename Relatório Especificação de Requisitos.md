@@ -32,7 +32,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF03 - Visualizar Catalógo. 3.1 - [ianasampaio](https://github.com/ianasampaio)
 
-- [ ] RF06 - Efetuar Compra. 3.2
+- [x] RF06 - Efetuar Compra. 3.2 - [weltonSantana](https://github.com/weltonSantana)
 
 - [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
 
@@ -189,7 +189,6 @@ Campo | Obrigatório | Editável | Formato
 ------|-------------|----------|--------
 --    | --          | --       | --      
 
-
 #### Opções de usuário
 
 Opção                                | Descrição                              | Atalho
@@ -239,6 +238,80 @@ Epic	       					 |User Story| Critério de aceitação
 
  ## RF05
 <img src="https://uploaddeimagens.com.br/images/004/032/329/full/Buscar....png?1663873519" alt="drawing" width = "200"/>
+
+# Caso de uso
+**RF06**
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Efetuar Compra.
+Resumo         | Permitir que o Usuário faça um pedido de um produto desejado do catálogo e finalize a compra.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário efetue o login na plataforma.
+Pós-condição   | Não se aplica.
+
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O sistema disponibiliza as opções de pagamento.
+Passo 2 | O cliente escolhe uma das opções.
+Passo 3 | O sistema disponibiliza um formulário de inserção dos dados do cartão de crédito.
+Passo 4 | O cliente preenche o formulário e clica no botão de pagar compra.
+Passo 5 | O sistema direciona o cliente para uma tela com os dados do cliente e detalhes do pedido.
+Passo 6 | O cliente confirma a compra clicando em "finalizar compra".
+Passo 7 | O sistema computa as informações do pagamento e realiza sua validação.
+Passo 8 | O sistema retorna informando sucesso do pagamento.
+  
+
+  
+#### Campos da aba de Efetuar compra
+
+ Campo     | Obrigatorio    | Editável | Formato  
+ --------- | ------------ | ------- | -------
+ Finalizar Compra        | Não           | Não   | Texto  
+
+
+    
+#### Opções de usuário
+
+
+ Campo     | Descrição    | Atalho  
+ --------- | ------------ | -------
+ Formas de pagamento        | Ao clicar no botão de formas de pagamento, o usuário escolhe a forma como será pago o produto           | --   
+
+ 
+     
+ #### Relatório de usuário
+    
+ Campo     | Descrição    | Formato   
+ --------- | ------------ | -------
+ --        | --           | --   
+    
+
+#### Fluxo alternativo
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O sistema disponibiliza as opções de pagamento.
+Passo 2 | O cliente escolhe a opção de pix ou boleto.
+Passo 3 | O cliente clica no botão "pagar conta".
+Passo 4 | O sistema direciona o cliente para uma tela com os dados do cliente e detalhes do pedido.
+Passo 5 | O cliente confirma a compra clicando em "finalizar compra".
+Passo 6 | O sistema retorna com o codigo do pix ou boleto bancário.
+
+# User story
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como "usuário comum" eu quero "efetuar uma compra" para "receber o produto". | Como "usuário comum" eu  quero conseguir finalizar a compra do meu pedido atráves da forma de pagamento que eu deseje para que eu possa receber o produto e usufruir do mesmo | Certifique-se que o usuário consegue **fazer login na própria conta, escolher uma forma de pagamento e finalizar a compra.**
+
+[Link para o protótipo](https://www.figma.com/file/q5oklvxsCOQ1GluAsArLjB/RF06---Efetuar-Compra?node-id=1%3A2)
+
 
 ## RF08
 

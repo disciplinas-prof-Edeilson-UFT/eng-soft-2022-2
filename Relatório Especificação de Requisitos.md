@@ -34,7 +34,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF06 - Efetuar Compra. 3.2 - [weltonSantana](https://github.com/weltonSantana)
 
-- [ ] RF09 - Adicionar Produto ao Carrinho. 3.3
+- [x] RF09 - Adicionar Produto ao Carrinho. 3.3 - [AfonsoDglan](https://github.com/AfonsoDglan)
 
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0)
 
@@ -54,6 +54,16 @@ Pós-condição   | É necessário que para fazer o login o usuário tenha sua p
 
 Passos  | Descrição
 --------|----------
+Passo 1 | Entrar na página principal ver o catalogo de produtos
+Passo 2 | Filtrar os produtos que tem interesse
+Passo 3 | Entar na página de detalhe do produto que escolheu
+Passo 4 | clicar no botão adicionar item ao carinho
+Passo 5 | ser redirecionado para página com o carinho com todo seus produtos
+
+#### Campos 
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
 Passo 1 | Clcar em entrar na conta para fazer login ou cadastrar.
 Passo 2 | Esperar a página do produto carregar.
 
@@ -74,6 +84,7 @@ Acessar o conta                      | Ao clicar nessa aba o usuário vai poder 
 Campo | Descrição | Formato
 ------|-----------|--------
 --    | --        | --
+
 
 #### Fluxo alternativo
 
@@ -365,6 +376,60 @@ Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvid
 
 ![](https://i.imgur.com/dy28taW.png)
 ![](https://i.imgur.com/fgFWSzj.png)
+
+
+## RF09 - Adicionar Produto ao Carrinho
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | RF09 - Adicionar Produto ao Carrinho
+Resumo	       | adicionar um item que o autor tem interesse em comprar ao carrinho de compras.
+Ator principal | Usuário - adicionar item ao carinho de compras;
+Ator secundário| 
+Pré-condição   | O(s) ator(es) deve estar na tela de visualização do produto
+Pós-condição   | 
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Entrar na página principal ver o catalogo de produtos
+Passo 2 | Filtrar os produtos que tem interesse
+Passo 3 | Entar na página de detalhe do produto que escolheu
+Passo 4 | clicar no botão adicionar item ao carinho
+Passo 5 | ser redirecionado para página com o carinho com todo seus produtos
+
+#### Campos 
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+adicionar ao carrinho| adicionar item/produto ao carrinho|
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+--          | --
+
+
+# User story
+
+**Persona um, usuário já na tela de visualização de um produto.**
+
+Epic	       					 |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse ao carinho de compras** para que **eu possa finalizar a compra com os items do carinho.** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse ao carinho de compras** para **que eu possa finalizar a compra com os items do carinho**. | Certifique-se de que o usuário **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir ao carinho e finalizar a compra**.
+
 
 ## requisitos RF11
 

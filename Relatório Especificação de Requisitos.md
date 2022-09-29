@@ -415,7 +415,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 [Link para o protótipo](https://www.figma.com/file/q5oklvxsCOQ1GluAsArLjB/RF06---Efetuar-Compra?node-id=1%3A2)
 
-# **RF07 - Avaliar Produto.**
+## **RF07 - Avaliar Produto.**
 
 #### Autor: @Peraefe - Fernanda Menezes Plessim de Melo.
 
@@ -593,7 +593,7 @@ Como um cliente eu preciso solicitar um suporte para resolver um problema/dúvid
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse ao carinho de compras** para que **eu possa finalizar a compra com os items do carinho.** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse ao carinho de compras** para **que eu possa finalizar a compra com os items do carinho**. | Certifique-se de que o usuário **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir ao carinho e finalizar a compra**. |
 
-# **Caso de uso RF10 - Excluir item do carrinho**
+## **Caso de uso RF10 - Excluir item do carrinho**
 
 #### Autor: @LarissaHirai - Larissa Mitie C. Hirai.
 
@@ -692,7 +692,7 @@ RF11
 
 <img src="https://uploaddeimagens.com.br/images/004/035/650/full/Visualizar_Carrinho.png?1664065784" alt="drawing" width="600"/>
 
-# **RF12 - Adicionar à lista de Desejos**
+## **RF12 - Adicionar à lista de Desejos**
 
 #### Autor: usuarioautor - Nome autor.
 
@@ -748,7 +748,7 @@ RF11
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Como **um usuário já na tela de visualização de um produto** eu quero **poder adicionar um produto que eu tenho interesse à minha lista de desejos** para que **posteriormente eu possa ver somente os itens de meu insteresse em um único local** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **adicionar um produto que eu tenho interesse à minha lista de desejos** para **posteriormente eu possa ver somente os itens de meu interesse em um único local**. | Certifique-se de que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e adicionar o produto que preferir à sua lista de desejos**. |
 
-[Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)# Engenharia de software-2022.2 | Universidade Federal do Tocantins - Palmas, 2022
+[Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 
 ## **RF13 - Remover item da lista de desejo.**
 

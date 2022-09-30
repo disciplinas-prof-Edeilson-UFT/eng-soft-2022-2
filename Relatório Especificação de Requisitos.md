@@ -8,6 +8,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 
 ## 1 - Grupo 1.
 
+
 - [x] RF01 - Efetuar Login. 1.1 [Jo√£o Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
 
 - [x] RF04 - Visuzalizar Produto. 1.2 [Jo√£o Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
@@ -18,7 +19,9 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 
 - [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
 
+
 ## 2 - Grupo 2.
+
 
 - [x] RF02 - Efetuar Cadastro de Usu√°rio. 2.1 - [pixies0 ](https://github.com/pixies0) Revisado por @fernandokozak
 
@@ -28,7 +31,9 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 
 - [x] RF11 - Visualizar Carrinho. 2.4 - [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
 
+
 ## 3 - Grupo 3.
+
 
 - [x] RF03 - Visualizar Catal√≥go. 3.1 - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
 
@@ -37,6 +42,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 - [x] RF09 - Adicionar Produto ao Carrinho. 3.3 - [AfonsoDglan](https://github.com/AfonsoDglan) Revisado por @edjunior0
 
 - [x] RF12 - Adicionar produto √† lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
+
 
 # Casos de uso e User stories
 
@@ -871,3 +877,5 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 
 =======
 [Link para o prot√≥tipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
+=======
+

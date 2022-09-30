@@ -561,9 +561,9 @@ Agora iremos escrever uma história de usuário para uma persona.
 | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | Como um usuário comum, eu preciso solicitar um suporte para resolver um problema e/ou dúvida. | Enquanto "usuário comum" preciso ter minhas informções salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.** |
 
-![image](https://i.imgur.com/dy28taW.png)
-![image](https://i.imgur.com/fgFWSzj.png)
-![image](https://i.imgur.com/pfJ6PfG.png)
+![image](https://i.imgur.com/kGgbnae.png)
+![image](https://i.imgur.com/0gSpvxD.png)
+![image](https://i.imgur.com/HeEFkW2.png)
 
 ## **RF09 - Adicionar Produto ao Carrinho**
 

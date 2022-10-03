@@ -455,7 +455,7 @@ Como "usuário comum" eu quero "efetuar uma compra" para "receber o produto". | 
 |-----------------------|----------|----------------------|
 
 
-![imagem](https://github.com/Peraefe/prototipo_img/blob/main/prototipo_RF07.PNG)
+![imagem]([https://github.com/Peraefe/prototipo_img/blob/main/prototipo_RF07.PNG](https://www.figma.com/file/zT2YAC03Ac1g7uO5ZLbJFj/RF25-Visualizar-hist%C3%B3rico-de-pre%C3%A7os?node-id=1%3A2))
 
 
 ## RF08
@@ -782,3 +782,62 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 
 
+## Caso de uso **RF25** - 1.8 Visualizar histórico de preços
+#### Peraefe - Fernanda Menezes Plessim de Melo
+---
+#### Revisor : 
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Visualizar histórico de preços.
+Resumo           | É esperado que ao ver a página de produto, caso o usuário clique em "Histórico" seja mostrado um gráfico com os preços do produto dentro dos últimos 40 dias.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado à internet.
+Pós-condição   | 
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Clicar em "Histórico".
+Passo 2 | Visualizar o gráfico.
+
+
+#### Campos da aba
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+                   |        |       | 
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Acessar o histórico                    | Ao clicar em "Histórico" ele deve ser mostrado o gráfico.| 
+Deslizar o cursor sob o gráfico            | Ao deslizar o cursor ele deve ser mostrado os preços do produto de acordo com as datas no gráfico.                       |
+
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso o produto tenha apenas 40 dias de histórico ou menos, deve-se mostrar todo seu histórico no gráfico.
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu enquanto "usuário comum" quero "visualizar histórico de preços do produto" para "saber quando comprar". | Enquanto "usuário comum" eu preciso ser capaz de visualizar um histórico em específico para saber mais informações sobre ele | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e visualizar seu histórico.**
+
+![rf25](https://www.figma.com/file/zT2YAC03Ac1g7uO5ZLbJFj/RF25-Visualizar-hist%C3%B3rico-de-pre%C3%A7os?node-id=1%3A2)

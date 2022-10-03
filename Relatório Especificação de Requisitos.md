@@ -455,7 +455,7 @@ Como "usuário comum" eu quero "efetuar uma compra" para "receber o produto". | 
 |-----------------------|----------|----------------------|
 
 
-![imagem]([https://github.com/Peraefe/prototipo_img/blob/main/prototipo_RF07.PNG](https://www.figma.com/file/zT2YAC03Ac1g7uO5ZLbJFj/RF25-Visualizar-hist%C3%B3rico-de-pre%C3%A7os?node-id=1%3A2))
+![imagem](https://www.figma.com/file/zT2YAC03Ac1g7uO5ZLbJFj/RF25-Visualizar-hist%C3%B3rico-de-pre%C3%A7os?node-id=1%3A2)
 
 
 ## RF08

@@ -455,7 +455,8 @@ Como "usuário comum" eu quero "efetuar uma compra" para "receber o produto". | 
 |-----------------------|----------|----------------------|
 
 
-![imagem](https://www.figma.com/file/zT2YAC03Ac1g7uO5ZLbJFj/RF25-Visualizar-hist%C3%B3rico-de-pre%C3%A7os?node-id=1%3A2)
+![image](https://user-images.githubusercontent.com/91492418/193618476-a566b192-92cd-42bd-8252-a14b69e30444.png)
+
 
 
 ## RF08
@@ -840,4 +841,5 @@ Epic                                |User Story| Critério de aceitação
 -----------------------|----------|----------------------
 Eu enquanto "usuário comum" quero "visualizar histórico de preços do produto" para "saber quando comprar". | Enquanto "usuário comum" eu preciso ser capaz de visualizar um histórico em específico para saber mais informações sobre ele | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e visualizar seu histórico.**
 
-![rf25](https://www.figma.com/file/zT2YAC03Ac1g7uO5ZLbJFj/RF25-Visualizar-hist%C3%B3rico-de-pre%C3%A7os?node-id=1%3A2)
+![image](https://user-images.githubusercontent.com/91492418/193618419-5a0dc77f-ce48-484a-a94e-a97c6d80d949.png)
+

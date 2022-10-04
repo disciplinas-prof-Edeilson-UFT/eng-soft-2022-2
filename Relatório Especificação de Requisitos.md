@@ -8,7 +8,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
-- [x] RF01 - Efetuar Login. 1.1
+- [x] RF01 - Efetuar Login. 1.1 [João Pedro Melo Povoa](https://github.com/JPeeMP)
 
 - [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh)
 
@@ -37,6 +37,18 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF09 - Adicionar Produto ao Carrinho. 3.3 - [AfonsoDglan](https://github.com/AfonsoDglan)
 
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0)
+
+## 1 - Grupo 1.
+
+- [x] RF22 - Acessar redes sociais. 1.6 - [João Pedro Melo Povoa](https://github.com/JPeeMP)
+
+- [x] RF23 - Receber newsletter. 1.7 - [Lucka10](https://github.com/Lucka10)
+
+- [x] RF24 - Acompanhar oferta. 1.8 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) 
+
+- [x] RF25 - Visualizar histórico de preços. 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe)
+
+- [x] RF26 - Visualizar home. 1.10 - [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh)
 
 # Caso de uso
 **RF01**
@@ -237,7 +249,7 @@ Epic	       					 |User Story| Critério de aceitação
 Item           | Descrição
 ---------------|----------
 Caso de uso    | Visualizar produto.
-Resumo           | É esperado que ao ver um produto no catálogo caso o usuário clique seja aberta a página do produto em específico, mostrando preço, descrição do produto, botão de compra, de adicionar ao carrinho, de adicionar à lista de desejos, foto do produto, título do produto, avaliação dele, se ainda tem estoque e comentários sobre ele.
+Resumo           | É esperado que ao ver um produto no catálogo caso o usuário clique seja aberta a página do produto em específico, mostrando preço, descrição do produto, botão de compra, de adicionar ao carrinho, de adicionar à lista de desejos, foto do produto, título do produto, avaliação dele, visualizar histórico de preços do produto, se ainda tem estoque e comentários sobre ele.
 Ator principal | Usuário utilizador da plataforma.
 Ator secundário| Não possui.
 Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
@@ -258,12 +270,13 @@ Avaliar produto                      | Não         | Sim      | Texto
 
 #### Opções de usuário
 
-Opção                                | Descrição   | Atalho
--------------------------------------|-------------|-------
-Acessar o produto                    | Ao clicar no produto mostrado no catálogo ele deve ser redirecionado para a página do produto em específico| 
-Comprar o produto                    | Ao clicar no botão de compra ele deve ser redirecionado para a aba de efetuar a compra do produto                        |
-Adicionar ao carrinho                | Ao clicar no botão de adicionar ao carrinho o item deve ser adicionado à ele |
-Adicionar à lista de desejos         | Ao clicar no botão de adicionar à lista de desejos o item deve ser adicionado a essa lista |
+Opção                               	  | Descrição   | Atalho
+------------------------------------------|-------------|-------
+Acessar o produto                   	  | Ao clicar no produto mostrado no catálogo ele deve ser redirecionado para a página do produto em específico| 
+Comprar o produto                    	  | Ao clicar no botão de compra ele deve ser redirecionado para a aba de efetuar a compra do produto                        |
+Adicionar ao carrinho               	  | Ao clicar no botão de adicionar ao carrinho o item deve ser adicionado à ele |
+Adicionar à lista de desejos        	  | Ao clicar no botão de adicionar à lista de desejos o item deve ser adicionado a essa lista |
+Visualizar histórico de preços do produto | Ao clicar no botão de visualizar o histórico de preços do produto o usuário deve ser capaz de ver um gráfico com os preços do produto nos últimos 40 dias. |
 
 #### Relatório de usuário
 
@@ -782,3 +795,64 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 
 
+## Caso de uso **RF26** - 1.10 Visualizar home
+#### JoãoGabrielh - João Gabriel Alves de Souza
+---
+#### Revisor : João Pedro de Melo Pessoa (JPeeMP)
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Visualizar home.
+Resumo           | É esperado que ao pesquisar pela loja e entrar nela, clicar na logo da loja exibida no topo do site ou fazer login, o usuário se depare com a home, que dará a ele a possibilidade de ter uma visão sobre uma parte do catálogo de itens, botões para as redes sociais oficiais da loja, botão para fazer login ou ver a própria conta, botão para visualizar o carrinho, botão de sac, barra de busca de produtos, busca por categoria, ofertas do dia e permitirá que os produtos do catálogo mostrado inicialmente também sejam acessados.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário tenha um browser, busque a loja ou esteja dentro do site dela e esteja conectado-á internet.
+Pós-condição   | Ter acesso o site da loja.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Buscar a loja em seu browser.
+Passo 2 | Clicar em cima do nome da loja após a busca.
+
+#### Campos da home
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+
+#### Opções de usuário
+
+Opção                                  | Descrição   | Atalho
+---------------------------------------|-------------|-------
+Acessar redes sociais                  | Ao clicar no botão com a logo das redes sociais, o usuároi deve ser redirecionado para o perfil da loja na respectiva rede social.		  				 | 
+Visualizar catálogo                    | Estando na home o usuário deve ser capaz de visualizar o catálogo que deve aparecer na home. |
+Fazer login ou acessar a própria conta | Ao clicar no botão com símbolo de usuário, o usuário deve ser redirecionado para a página de login caso não esteja dentro de alguma conta, ou para a página da sua própria conta. |
+Visualizar carrinho		       | Ao clicar no botão de visualizar carrinho o usuário deve ir para a página de visualização do carrinho. |
+Botão de sac			       | Ao clicar no botão de sac o usuário deve ser redirecionado para o suporte, para efetuar alguma reclamação. |
+Barra de busca de produtos	       | Ao clicar na barra de busca de produtos o usuário deve ser capaz de buscar uma série de produtos que correspondam à sua busca. |
+Visualizar produto		       | Ao clicar em cima de um produto o usuário deve conseguir visualizar aquele produto em específico. |
+Botão de busca por categoria	       | Ao clicar no botão de busca por categoria o usuário deve realizar uma busca de produto personalizada com a categoria na qual o usuário clicou. |
+Carrossel de ofertas do dia	       | Ao clicar nos pequenos pontos ou nas setas do carrossel de ofertas do dia, o usuário deve ser capaz de ver os produtos ou a categoria que está de promoção no dia do acesso à página, e deve conseguir visualizar a categoria em promoção ou o produto em específico. |
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1.1 | Caso o usuário já esteja dentro so dite da loja, para voltar para a home ele deve clicar em cima da logo da loja exibida no topo do site.
+Passo 2.1.2 | Caso o usuário tenha efetuado seu login, ele deve ser redirecionado para a home.
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu enquanto "usuário comum" quero "acessar a home" para "ter uma visão inicial sobre o site". | Enquanto "usuário comum" eu preciso ser capaz de visualizar a home para ter uma visão geral sobre a loja e ter um local que me permita acessar parte das demais funcionalidades do site| Certifique-se que o usuário é capaz de **buscar a loja ou ser redirecionado para a home.**

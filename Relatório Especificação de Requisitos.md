@@ -301,7 +301,7 @@ Epic                                |User Story| Critério de aceitação
 -----------------------|----------|----------------------
 Eu enquanto "usuário comum" quero "visualizar produtos específicos" para "saber mais coisas sobre ele". | Enquanto "usuário comum" eu preciso ser capaz de visualizar um produto em específico para saber mais informações sobre ele | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e visualizar um produto em específico.**
 
-![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20produto.png)
+![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20produtos.png)
 
 ## RF05: Buscar um produto
  
@@ -856,3 +856,5 @@ Agora iremos escrever uma história de usuário para uma persona.
 Epic                                |User Story| Critério de aceitação
 -----------------------|----------|----------------------
 Eu enquanto "usuário comum" quero "acessar a home" para "ter uma visão inicial sobre o site". | Enquanto "usuário comum" eu preciso ser capaz de visualizar a home para ter uma visão geral sobre a loja e ter um local que me permita acessar parte das demais funcionalidades do site| Certifique-se que o usuário é capaz de **buscar a loja ou ser redirecionado para a home.**
+
+![rf26](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20home.png)

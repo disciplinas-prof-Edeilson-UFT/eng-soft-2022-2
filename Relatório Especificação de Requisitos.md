@@ -44,6 +44,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
 
 
+
 ## 1 - Grupo 1.
 
 - [x] RF22 - Acessar redes sociais. 1.6 - [João Pedro Melo Povoa](https://github.com/JPeeMP)
@@ -55,6 +56,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF25 - Visualizar histórico de preços. 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe)
 
 - [x] RF26 - Visualizar home. 1.10 - [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh)
+
 
 
 # Casos de uso e User stories
@@ -947,7 +949,6 @@ Eu como ator quero acessar a página de ofertas para acompanhar as ofertas dispo
 
 
 ![image](https://user-images.githubusercontent.com/91437673/194127492-6f37ab9c-2f92-47bb-a426-19ac3d9b5090.png)
-
 
 
 

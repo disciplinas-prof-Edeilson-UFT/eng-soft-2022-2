@@ -879,4 +879,61 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
+## **RF19 - Recomendar produto relacionado**
 
+#### Autor: @edjunior - Edson Almeida Silva Júnior.
+
+---
+
+### Revisor: @AfonsoDglan - Afonso Dglan
+
+| Item            | Descrição                                                                                          |
+| --------------- | --------------------------------------------------------------------------------------------       |
+| Caso de uso     | RF19 - Recomendar produto relacionado                                                              |
+| Resumo          | Recomenda ao usuário produtos relacionados ao que está vendo no momento                            |
+| Ator principal  | Algum usuário - Visualiza produtos relacionados com o visto atual                                  |
+| Ator secundário | -                                                                                                  |
+| Pré-condição    | O(s) ator(es) já deve ter uma conta, estar logado e estar na tela de visualização de algum produto |
+| Pós-condição    | O item deve ser salvo na lista de desejos do usuário                                               |
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                                                                                           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------          |
+| Passo 1 | O ator, já na tela de vizualização do produto, visualiza abaixo uma lista com produtos relacionados com o que está vendo atualmente |
+| Passo 2 | Ao pressionar em algum produto, ele será direcionado para tela de visualização do produto em questão                                |
+
+#### Campos da aba de visualizar produtos
+
+| Campo | Obrigatório | Editável | Formato |
+| ----- | ----------- | -------- | ------- |
+| --    | --          | --       | --      |
+
+#### Opções de usuário
+
+| Opção                                     | Descrição                                                  | Atalho |
+| ----------------------------------------- | -------------------------------------------                | ------ |
+| Clicar no produto                         | Redireciona o usuário para tela de visualização do produto | --     |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
+
+#### Fluxo alternativo
+
+| Passos | Descrição |
+| ------ | --------- |
+| --     | --        |
+
+# User story
+
+**Persona um, usuário já na tela de visualização de um produto.**
+
+| Epic                                                                                                                                                                                                                                               | User Story                                                                                                                                                                                                                                               | Critério de aceitação                                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Como **um usuário já na tela de visualização de um produto** eu quero **poder visualizar novos produtos relacionado com o que estou vendo atualmente** para que **eu possa ser direcionado para o novo produto e possivelmente comprá-lo** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **visualizar novos produtos relacionado com o que estou vendo atualmente** para **eu possa ser direcionado para o novo produto e possivelmente comprá-lo**. | Certifique-se de que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e visualizar produtos semelhantes**. |
+
+
+![imagem](https://uploaddeimagens.com.br/images/004/049/583/full/RF19_-_Recomendar_produto_relacionado.png?1664933122)

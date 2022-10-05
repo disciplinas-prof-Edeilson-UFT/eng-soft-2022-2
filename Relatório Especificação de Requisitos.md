@@ -882,11 +882,8 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 
 ## **RF24 - Acompanhar oferta**
 #### Autor: @LarissaHirai - Larissa Mitie C. Hirai
-
-—
-
+---
 #### Revisor:
-__
 
 
 

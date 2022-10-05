@@ -920,8 +920,8 @@ Passo 2 | O ator vai ser redirecionado para página de ofertas onde poderá acom
 
 #### Opções de usuário
 
-Opção                                | Descrição   | Atalho
--------------------------------------|-------------|-------
+Opção                                | Descrição   
+-------------------------------------|-------------
 Visualizar catálogo de oferta | Estando na página para acompanhar oferta o ator terá acesso a todas ofertas disponibilizadas e o tempo restante.
 Visualizar produtos em oferta | Ao selecionar o produto expecífico o ator será direcionado para página expecífica do produto.
 Buscar por categoria | Ao selecionar essa opção o ator fará uma busca de produtos de acodo com a categoria desejada e selecionada.

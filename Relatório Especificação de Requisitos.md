@@ -880,3 +880,57 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 =======
 
 
+## **RF24 - Acompanhar oferta**
+#### Autor: @LarissaHirai - Larissa Mitie C. Hirai
+
+—
+
+### Revisor:
+
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Acompanhar oferta
+Resumo	       | Acompanhar as ofertas disponibilizadas pelo sistema
+Ator principal | Usuário utilizador do sistema
+Pré-condição   | Ter acesso a internet e estar na página de ofertas do sistema
+Pós-condição   | Ter acesso a todas as ofertas oferecidas
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator deve ir na página inicial do sistema onde será exibido um botão “Ofertas” na barra de navegação e clicar no mesmo
+Passo 2 | O ator vai ser redirecionado para página de ofertas onde poderá acompanhar todas as ofertas e o tempo restante de cada
+
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Visualizar catálogo de oferta | Estando na página para acompanhar oferta o ator terá acesso a todas ofertas disponibilizadas e o tempo restante.
+Visualizar produtos em oferta | Ao selecionar o produto expecífico o ator será direcionado para página expecífica do produto.
+Buscar por categoria | Ao selecionar essa opção o ator fará uma busca de produtos de acodo com a categoria desejada e selecionada.
+
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso não haja ofertas disponibilizadas naquele dia o sistema irá exibir um aviso mostrando que não existem ofertas naquele momento.
+Passo 2.1   | Caso o ator esteja em uma página que não tenha o botão “Ofertas” o ator deve voltar à página inicial do sistema e selecionar o botão “Ofertas” por lá.
+
+# User story
+
+
+**Persona um, usuário comum.**
+
+Epic  |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu como ator quero acessar a página de ofertas para acompanhar as ofertas disponibilizadas naquele período de tempo. | Enquanto ator eu preciso ser capaz de visualizar as ofertas gerais do sistema para selecionar o produto que desejo adquirir | Certifique-se que o ator possa acompanhar as ofertas e o tempo restante de cada
+
+
+![image](https://user-images.githubusercontent.com/91437673/194119104-a0ed90a5-574d-4ba9-8078-14bc595f0891.png)
+
+
+

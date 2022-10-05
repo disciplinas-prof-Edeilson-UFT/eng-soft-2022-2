@@ -920,14 +920,14 @@ Passos      | Descrição
 Passo 1.1   | Caso não haja ofertas disponibilizadas naquele dia o sistema irá exibir um aviso mostrando que não existem ofertas naquele momento.
 Passo 2.1   | Caso o ator esteja em uma página que não tenha o botão “Ofertas” o ator deve voltar à página inicial do sistema e selecionar o botão “Ofertas” por lá.
 
-# User story
+### User story
 
-
-**Persona um, usuário comum.**
 
 Epic  |User Story| Critério de aceitação
 -----------------------|----------|----------------------
 Eu como ator quero acessar a página de ofertas para acompanhar as ofertas disponibilizadas naquele período de tempo. | Enquanto ator eu preciso ser capaz de visualizar as ofertas gerais do sistema para selecionar o produto que desejo adquirir | Certifique-se que o ator possa acompanhar as ofertas e o tempo restante de cada
+
+### Protótipo
 
 
 ![image](https://user-images.githubusercontent.com/91437673/194119104-a0ed90a5-574d-4ba9-8078-14bc595f0891.png)

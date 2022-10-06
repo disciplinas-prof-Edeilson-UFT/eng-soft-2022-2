@@ -879,4 +879,62 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
+## **RF14 - Buscar de produto personalizada**
 
+#### Autor: @JulioNolasco - Julio Cezar Nolasco.
+
+---
+
+### Revisor: @Izann-Brum - Izann Rogério de Brum.
+
+| Item            | Descrição                                               |
+| --------------- | ------------------------------------------------------- |
+| Caso de uso     | RF14 - Buscar personalizada                             |
+| Resumo          | Fazer uma busca personalizada de um determinado produto |
+| Ator principal  | Cliente                                                 |
+| Ator secundário | Sistema                                                 |
+| Pré-condição    | Ser um produto que a loja oferece.                      |
+| Pós-condição    |
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                                                               |
+| ------- | ------------------------------------------------------------------------------------------------------- |
+| Passo 1 | O ator após escolher um produto para ser buscado, aplicar filtros para ter um resultado mais específico |
+| Passo 2 | O sistema apresenta uma tela com os respectivos produtos com as restrições aplicadas.                   |
+
+#### Campos da aba de buscar produtos
+
+| Campo          | Obrigatório | Editável | Formato  |
+| -------------- | ----------- | -------- | -------- |
+| Filtro         | Não         | Sim      | CheckBox |
+
+#### Opções de usuário
+
+| Opção             | Descrição                                                                                            | Atalho |
+| ----------------- | ---------------------------------------------------------------------------------------------------- | ------ |
+| Filtrar um produto| Ao escolher o tipo de filtro, o sistema apresenta uma tela com algumas opções do produto buscado     | ------ |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+
+#### Fluxo alternativo
+
+| Passos    | Descrição                                                                                     |
+| --------- | ----------------------------------------------------------------------------------------      |
+| Passo 1.1 | O ator escolhe um filtro invalido.                                                            |
+| Passo 1.2 | O sistema apresenta uma tela com o aviso de que não pode aplicar tal filtro à aquele produto. |
+
+# User story
+
+**Persona um, usuário comum.**
+
+| Epic                                                                                                        | User Story                                                                                      | Critério de aceitação                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Eu enquanto "usuário comum" quero "efetuar um filtro sobre um produto específico" para "uma possível compra". | Enquanto "usuário comum" eu preciso ser capaz de "filtrar por um produto estando logado ou não". | Certifique-se que o usuário é capaz de acessar o site |
+
+## Protótipo de tela:
+
+<img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>

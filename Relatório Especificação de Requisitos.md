@@ -1289,6 +1289,73 @@ Como "usuário comum" eu quero "ser notificado" para "ter noticias do produto". 
 
 <img src="https://uploaddeimagens.com.br/images/004/051/440/full/Lembrete_.png?1665060643" alt="Drawing"><img/>
 
+---
+
+# Caso de uso **RF21**
+
+#### Autor: @ianasampaio - Antonia Iana Sampaio da Silva
+
+---
+
+#### Revisor: @weltonSantana - Welton Santana de Andrade Júnior
+
+Item           | Descrição
+---------------|----------
+Caso de uso    |RF21 - Compartilhar produto
+Resumo           |É esperado que, quando na página de visualização de produto, o usuário tenha um método para compartilhar o acesso a ele em alguma plataforma/rede.
+Ator principal |Usuário utilizador da plataforma e novos usuários.
+Ator secundário|Não possui.
+Pré-condição   |O(s) ator(es) deve ter acessado o sistema de vendas (site) e entrado na página de visualização de algum produto.
+Pós-condição   |Não se aplica.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator acessa o sistema de vendas e visualiza determinado produto
+Passo 2 | O sistema exibe um ícone/botão que permite o compartilhamento do acesso ao produto em alguma plataforma
+Passo 3 | Ao clicar no botão de compartilhamento o sistema exibe as opções de plataformas por meio das quais o usuário pode compartilhar o acesso ao produto
+Passo 4 | O usuário escolhe por qual plataforma deseja enviar o acesso ao produto
+
+#### Campos da aba de compartilhar produto
+
+
+Campo | Obrigatório | Editável | Formato
+------|-------------|----------|--------
+Compartilhar acesso ao produto   | Não          | Não       |Botão    
+
+#### Opções de usuário
+
+Opção                                | Descrição                              | Atalho
+-------------------------------------|-------------                           |-------
+Compartilhar acesso ao produto        | Ao clicar no botão de compartilhamento o sistema exibe as opções de plataformas por meio das quais o usuário pode compartilhar o produto| --
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+--    | --        | --
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+--          | --
+
+# User story
+
+**Persona um, usuário já na tela de visualização dos produtos.**
+
+Epic	       					 |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+“Como **um cliente online** eu quero **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.**” | Enquanto **um cliente online** eu preciso ser capaz de **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.** | Certifique-se de que o usuário é capaz de **acessar o site e clicar no botão de compartilhamento**.
+
+![imagem](https://imageup.me/images/937de534-41a3-4661-8090-18892896ac70.png)
+
+![imagem](https://imageup.me/images/4830702d-e459-4646-8b3a-b1fb77ea1005.png)
+
+---
+
 ## Caso de uso **RF23** - 1.7 Receber newsletter
 
 #### Autor: @Lucka10 - Lucas Evangelista Freire.

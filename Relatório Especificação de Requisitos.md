@@ -8,6 +8,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
+
 - [x] RF01 - Efetuar Login. 1.1 [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
 
 - [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
@@ -18,12 +19,11 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
 
+
 ## 2 - Grupo 2.
 
 
 - [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0 ](https://github.com/pixies0) Revisado por @fernandokozak
-
-- [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
 - [x] RF05 - Buscar um Produto. 2.2 - [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
@@ -31,13 +31,9 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF11 - Visualizar Carrinho. 2.4 - [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
 
-- [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
-
-- [x] RF16 - Adicionar Cartão de Crédito. 2.6 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
-
-- [x] RF17 - Acompanhar pedido. 2.7 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 ## 3 - Grupo 3.
+
 
 - [x] RF03 - Visualizar Catalógo. 3.1 - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
 
@@ -47,17 +43,6 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
 
-## 1 - Grupo 1.
-
-- [x] RF22 - Acessar redes sociais. 1.6 - [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
-
-- [x] RF23 - Receber newsletter. 1.7 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
-
-- [x] RF24 - Acompanhar oferta. 1.8 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
-
-- [x] RF25 - Visualizar histórico de preços . 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe) Revisado por @JoaoGabrielh 
-
-- [x] RF26 - Visualizar home. 1.10 - [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP 
 
 # Casos de uso e User stories
 
@@ -894,252 +879,3 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
-                                                                                                  |
-## **RF14 - Busca de produto personalizada**
-
-#### Autor: @JulioNolasco - Julio Cezar Nolasco.
-
----
-
-### Revisor: @Izann-Brum - Izann Rogério de Brum.
-
-| Item            | Descrição                                               |
-| --------------- | ------------------------------------------------------- |
-| Caso de uso     | RF14 - Buscar personalizada                             |
-| Resumo          | Fazer uma busca personalizada de um determinado produto |
-| Ator principal  | Cliente                                                 |
-| Ator secundário | Sistema                                                 |
-| Pré-condição    | Ser um produto que a loja oferece.                      |
-| Pós-condição    |
-
-#### Fluxo principal
-
-| Passos  | Descrição                                                                                               |
-| ------- | ------------------------------------------------------------------------------------------------------- |
-| Passo 1 | O ator após escolher um produto para ser buscado, aplicar filtros para ter um resultado mais específico |
-| Passo 2 | O sistema apresenta uma tela com os respectivos produtos com as restrições aplicadas.                   |
-
-#### Campos da aba de buscar produtos
-
-| Campo          | Obrigatório | Editável | Formato  |
-| -------------- | ----------- | -------- | -------- |
-| Filtro         | Não         | Sim      | CheckBox |
-
-#### Opções de usuário
-
-| Opção             | Descrição                                                                                            | Atalho |
-| ----------------- | ---------------------------------------------------------------------------------------------------- | ------ |
-| Filtrar um produto| Ao escolher o tipo de filtro, o sistema apresenta uma tela com algumas opções do produto buscado     | ------ |
-
-#### Relatório de usuário
-
-| Campo | Descrição | Formato |
-| ----- | --------- | ------- |
-
-#### Fluxo alternativo
-
-| Passos    | Descrição                                                                                     |
-| --------- | ----------------------------------------------------------------------------------------      |
-| Passo 1.1 | O ator escolhe um filtro invalido.                                                            |
-| Passo 1.2 | O sistema apresenta uma tela com o aviso de que não pode aplicar tal filtro à aquele produto. |
-
-# User Story
-
-| Epic                                                                                                        | User Story                                                                                      | Critério de aceitação                                 |
-| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| Eu enquanto "usuário comum" quero "efetuar um filtro sobre um produto específico" para "uma possível compra". | Enquanto "usuário comum" eu preciso ser capaz de "filtrar por um produto estando logado ou não". | Certifique-se que o usuário é capaz de acessar o site |
-
-## Protótipo de tela:
-
-<img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>
-
-## **RF16 - Cadastrar Cartão de Crédito**
-
-#### Autor: @pixies0 - João Pedro Silva Cunha.
-
----
-
-### Revisor: @fernandokozak - Luiz Fernando Kozak.
-
-## Caso de Uso Expandido
-
-| Item            | Descrição                                                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Caso de uso     | Cadastro de Cartão de Crédito                                                                                                                 |
-| Resumo          | Este caso de uso visa permitir que o usuário cadastre um cartão de crédito previamente como forma de pagamento antes de iniciar suas compras. |
-| Ator principal  | Usuário que no caso, trata-se de um cliente.                                                                                                  |
-| Ator secundário | Banco responsável pelo cartão do cliente.                                                                                                     |
-| Pré-condição    | O usuário precisa ter um cartão de crédito. 
-
-### Fluxo Principal 
-
-| Passos  | Descrição                                                                     |
-| ------- | ----------------------------------------------------------------------------- |
-| Passo 1 | Usuário se redireciona à sua página de perfil, em que se encontra seus dados. |
-| Passo 2 | Cliente seleciona adicionar cartão de crédito em sua carteira da plataforma.  |
-| Passo 3 | Sistema exibe formulário para preenchimento dos dados do cartão de crédito.   |
-
-#### Campos do formulário.
-
-| Campo               | Obrigatório? | Formato       |
-| ------------------- | ------------ | ------------- |
-| Titular             | Sim          | Texto         |
-| Numero do Cartão    | Sim          | Numérico      |
-| Mês Vencimento      | Sim          | Numérico      |
-| Ano Vencimento      | Sim          | Numérico      |
-| Código de Segurança | Sim          | Numérico      |
-| CPF do titular      | Sim          | Alfa numérico |
-
-#### Opções de usuário
-
-| Opção                        | Descrição                                                                                                        | Atalho |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------ |
-| Adicionar Cartão de Crédito. | Ao clicar nessa aba o usuário terá acesso ao formulário para cadastro dos dados do cartão de crédito do cliente. |
-
-#### Fluxo alternativo
-
-| Passos    | Descrição                                                   |
-| --------- | ----------------------------------------------------------- |
-| Passo 1.1 | O ator tenta adicionar um cartão de crédito já cadastrado.  |
-| Passo 1.2 | Sistema acusa a existência do cartão de crédito em questão. |
-| Passo 2.1 | O ator tenta adicionar um cartão de débito                  |
-| Passo 2.2 | Sistema exibe que não foi possivel concluir a operação      |
-
-
-# User story
-
-**Persona um, usuário comum.**
-
-
-| Epic                                                                                                   | User Story                                                                                                  | Critério de aceitação                                                |
-| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Como um usuário comum, eu quero gravar meus dados bancários previamente para garantir minha segurança. | Enquanto cliente eu preciso ter cartões de crédito cadastrados para realizar o ato de compra na plataforma; | Certifique-se que o usuário preencheu todos os campos do formulário. |
-
-# Protótipo
-
-<img src="https://uploaddeimagens.com.br/images/004/050/935/full/Desktop_-_1.png?1665004279" alt="Drawing"><img/>
-
-<img src="https://uploaddeimagens.com.br/images/004/050/936/full/Desktop_-_2.png?1665004288" alt="Drawing"><img/>
-
-
-## **RF17 – Acompanhar pedido**
-
-#### Autor: @Izann-Brum - Izann Rogério Geraldes de Brum
-
----
-
-### Revisor: @JulioNolasco - Julio Cezar Nolasco
-
-
-Item           | Descrição
----------------|----------
-Caso de uso    | Acompanhar pedido.
-Resumo | Este caso de uso tem a finalidade de auxiliar usuários que realizaram a compra de produto(s) na plataforma.
-Ator principal | Usuário utilizador da plataforma.
-Ator secundário | Transportadora responsável pela entrega.
-Pré-condição | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
-Pós-condição | É necessário que, para retornar ao acompanhamento, o usuário tenha seu número de pedido ou código de rastreio do produto.
-
-#### Fluxo principal
-
-Passos  | Descrição
---------|----------
-Passo 1 | Usuário entra na tela de acompanhamento de pedidos.
-Passo 2 | Cliente seleciona o pedido a ser rastreado.
-Passo 3 | O sistema retorna as atualizações sobre o transporte do pedido.
-
-#### Fluxo alternativo
-
-Passos      | Descrição
-------------|----------
-Passo 1    | Cliente não realizou o pagamento.
-Passo 1.1  | Sistema avisa sobre a pendencia de pagamento.
-Passo 2    | Cliente não cadastrou endereço de entrega.
-Passo 2.1  | Sistema avisa sobre a pendencia de endereço de entrega.
-
-#### Opções de usuário
-
-Opção                                | Descrição   | Atalho
--------------------------------------|-------------|-------
-Rastrear pedido.                      | Ao clicar nessa aba o usuário poderá acompanhar as atualizações do trajeto do seu pedido. |
-
-# User story
-
-Agora iremos escrever uma história de usuário para uma persona.
-
-**Persona um, usuário comum.**
-
-Epic                                |User Story| Critério de aceitação
------------------------|----------|----------------------
-Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do meu pedido. | Enquanto "usuário comum" preciso ter minhas informações salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.**
-
-# Protótipos
-
-![image](https://i.imgur.com/nw4H88N.png)
-![image](https://i.imgur.com/l2oqogY.png)
-
-## Caso de uso **RF26** - 1.10 Visualizar home
-
-#### JoãoGabrielh - João Gabriel Alves de Souza
----
-#### Revisor : João Pedro de Melo Pessoa (JPeeMP)
-
-Item           | Descrição
----------------|----------
-Caso de uso    | Visualizar home.
-Resumo           | É esperado que ao pesquisar pela loja e entrar nela, clicar na logo da loja exibida no topo do site ou fazer login, o usuário se depare com a home, que dará a ele a possibilidade de ter uma visão sobre uma parte do catálogo de itens, botões para as redes sociais oficiais da loja, botão para fazer login ou ver a própria conta, botão para visualizar o carrinho, botão de sac, barra de busca de produtos, busca por categoria, ofertas do dia e permitirá que os produtos do catálogo mostrado inicialmente também sejam acessados.
-Ator principal | Usuário utilizador da plataforma.
-Ator secundário| Não possui.
-Pré-condição   | É necessário que o usuário tenha um browser, busque a loja ou esteja dentro do site dela e tenha acesso à internet.
-Pós-condição   | Ter acesso o site da loja.
-
-#### Fluxo principal
-
-Passos  | Descrição
---------|----------
-Passo 1 | Buscar a loja em seu browser.
-Passo 2 | Clicar em cima do nome da loja após a busca.
-
-#### Campos da home
-
-Campo                                | Obrigatório | Editável | Formato
--------------------------------------|-------------|----------|--------
-
-#### Opções de usuário
-
-Opção                                  | Descrição   | Atalho
----------------------------------------|-------------|-------
-Acessar redes sociais                  | Ao clicar no botão com a logo das redes sociais, o usuário deve ser redirecionado para o perfil da loja na respectiva rede social.		  				 | 
-Visualizar catálogo                    | Estando na home o usuário deve ser capaz de visualizar o catálogo que deve aparecer na home. |
-Fazer login ou acessar a própria conta | Ao clicar no botão com símbolo de usuário, o usuário deve ser redirecionado para a página de login caso não esteja dentro de alguma conta, ou para a página da sua própria conta. |
-Visualizar carrinho		       | Ao clicar no botão de visualizar carrinho o usuário deve ir para a página de visualização do carrinho. |
-Botão de sac			       | Ao clicar no botão de sac o usuário deve ser redirecionado para o suporte, para efetuar alguma reclamação. |
-Barra de busca de produtos	       | Ao clicar na barra de busca de produtos o usuário deve ser capaz de buscar uma série de produtos que correspondam à sua busca. |
-Visualizar produto		       | Ao clicar em cima de um produto o usuário deve conseguir visualizar aquele produto em específico. |
-Botão de busca por categoria	       | Ao clicar no botão de busca por categoria o usuário deve realizar uma busca de produto personalizada com a categoria na qual o usuário clicou. |
-Carrossel de ofertas do dia	       | Ao clicar nos pequenos pontos ou nas setas do carrossel de ofertas do dia, o usuário deve ser capaz de ver os produtos ou a categoria que está de promoção no dia do acesso à página, e deve conseguir visualizar a categoria em promoção ou o produto em específico. |
-
-#### Relatório de usuário
-
-Campo | Descrição | Formato
-------|-----------|--------
-
-#### Fluxo alternativo
-
-Passos      | Descrição
-------------|----------
-Passo 1.1.1 | Caso o usuário já esteja dentro so dite da loja, para voltar para a home ele deve clicar em cima da logo da loja exibida no topo do site.
-Passo 2.1.2 | Caso o usuário tenha efetuado seu login, ele deve ser redirecionado para a home.
-Passo 1.1.3 | Caso o usuário faça o logout, ele deve ser redirecionado para a home.
-
-# User story
-
-Agora iremos escrever uma história de usuário para uma persona.
-
-**Persona um, usuário comum.**
-
-Epic                                |User Story| Critério de aceitação
------------------------|----------|----------------------
-Eu enquanto "usuário comum" quero "acessar a home" para "ter uma visão inicial sobre o site". | Enquanto "usuário comum" eu preciso ser capaz de visualizar a home para ter uma visão geral sobre a loja e ter um local que me permita acessar parte das demais funcionalidades do site| Certifique-se que o usuário é capaz de **buscar a loja ou ser redirecionado para a home.**
-
-![rf26](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20home.png)

@@ -28,6 +28,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF26 - Visualizar home. 1.10 -  [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
 
+
 ## 2 - Grupo 2.
 
 
@@ -44,6 +45,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF16 - Adicionar Cartão de Crédito. 2.6 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
 - [x] RF17 - Acompanhar pedido. 2.7 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
+
 
 ## 3 - Grupo 3.
 
@@ -62,6 +64,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF20 - Gerenciar produtos desejados - [weltonSantana](https://github.com/weltonSantana) Revisado por @ianasampaio
 
 - [x] RF21 - Compartilhar produto - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
+
 
 # Casos de uso e User stories
 
@@ -957,6 +960,7 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 
 <img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>
 
+
 ## **RF16 - Cadastrar Cartão de Crédito**
 
 #### Autor: @pixies0 - João Pedro Silva Cunha.
@@ -1425,6 +1429,64 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 ![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
 ![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
 
+
+## **RF24 - Acompanhar oferta**
+#### Autor: @LarissaHirai - Larissa Mitie C. Hirai
+---
+
+### Revisor: @Peraefe - Fernanda Menezes Plessim de Melo
+
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Acompanhar oferta
+Resumo	       | Acompanhar as ofertas disponibilizadas pelo sistema
+Ator principal | Usuário utilizador do sistema
+Pré-condição   | Ter acesso a internet e estar na página de ofertas do sistema
+Pós-condição   | Ter acesso a todas as ofertas oferecidas
+
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator deve ir na página inicial do sistema onde será exibido um botão “Ofertas” na barra de navegação e clicar no mesmo
+Passo 2 | O ator vai ser redirecionado para página de ofertas onde poderá acompanhar todas as ofertas e o tempo restante de cada
+
+
+#### Opções de usuário
+
+Opção                                | Descrição   
+-------------------------------------|-------------
+Visualizar catálogo de oferta | Estando na página para acompanhar oferta o ator terá acesso a todas ofertas disponibilizadas e o tempo restante.
+Visualizar produtos em oferta | Ao selecionar o produto expecífico o ator será direcionado para página expecífica do produto.
+Buscar por categoria | Ao selecionar essa opção o ator fará uma busca de produtos de acodo com a categoria desejada e selecionada.
+
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso não haja ofertas disponibilizadas naquele dia o sistema irá exibir um aviso mostrando que não existem ofertas naquele momento.
+Passo 2.1   | Caso o ator esteja em uma página que não tenha o botão “Ofertas” o ator deve voltar à página inicial do sistema e selecionar o botão “Ofertas” por lá.
+
+
+# User story
+
+
+**Persona um, usuário comum.**
+
+Epic  |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu como ator quero acessar a página de ofertas para acompanhar as ofertas disponibilizadas naquele período de tempo. | Enquanto ator eu preciso ser capaz de visualizar as ofertas gerais do sistema para selecionar o produto que desejo adquirir | Certifique-se que o ator possa acompanhar as ofertas e o tempo restante de cada
+
+
+# Protótipo
+
+
+![image](https://user-images.githubusercontent.com/91437673/194127492-6f37ab9c-2f92-47bb-a426-19ac3d9b5090.png)
+
+
 ## Caso de uso **RF26** - 1.10 Visualizar home
 
 #### JoãoGabrielh - João Gabriel Alves de Souza
@@ -1489,4 +1551,6 @@ Epic                                |User Story| Critério de aceitação
 -----------------------|----------|----------------------
 Eu enquanto "usuário comum" quero "acessar a home" para "ter uma visão inicial sobre o site". | Enquanto "usuário comum" eu preciso ser capaz de visualizar a home para ter uma visão geral sobre a loja e ter um local que me permita acessar parte das demais funcionalidades do site| Certifique-se que o usuário é capaz de **buscar a loja ou ser redirecionado para a home.**
 
+
 ![rf26](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20home.png)
+

@@ -885,17 +885,17 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 
 ---
 
-### Revisor:
+### Revisor:@LarissaHirai - Larissa Mitie C. Hirai
 
 ## Caso de Uso Expandido
 
 | Item           | Descrição                                                                                   |
 | -------------- | ------------------------------------------------------------------------------------------- |
-| Caso de uso    | Receber Newsletter                                                                          |
-| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja.                                                             |
-| Ator principal | Usuário utilizador da plataforma.                                                           |
+| Caso de uso    | Receber Newsletter |
+| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja. |
+| Ator principal | Usuário utilizador da plataforma.  |
 | Pré-condição   | Acesso a internet, uma conta de email, ator logado em sua conta e inscrito na newsletter.   |
-| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja         |
+| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja.   |
 
 **Fluxo principal**:<br>
 
@@ -903,8 +903,15 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Passo 1 | Ator clica em cadastrar uma conta nova. |
 | Passo 2 | Na pagina de cadastramento, o Ator poderá marca a checkbox de "Desejo receber Newsletter"  |
-| Passo 3 | rAo confirmar o cadastamento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
+| Passo 3 | Ao confirmar o cadastramento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
 | Passo 4.| O processo de cadastro é completo e o ator é direcionado a pagina Home.
+
+**Opções do Usuário:**
+
+| Opção           | Descrição                            |
+| --------------- | ------------------------------------ |
+| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
+| Deseja cancelar inscrição da newsletter | Remove o email do ator na lista da newsletter |
 
 **Fluxo Alternativo**:<br>
 
@@ -929,15 +936,6 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 | Passo 4 | Com a checkbox marcada, clicar em confirmar |
 | Passo 5 | O email do ator será removido a lista de emails. |
 | Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
-
-
-**Opções do Usuário:**
-
-| Opção           | Descrição                            |
-| --------------- | ------------------------------------ |
-| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
-| Deseja cancelar inscrição da newsletter | remove o email do ator na lista da newsletter |
-
 
 ## User Stories
 

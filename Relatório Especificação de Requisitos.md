@@ -884,43 +884,30 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 ## Caso de uso **RF25** - 1.9 Visualizar histórico de preços
 #### Peraefe - Fernanda Menezes Plessim de Melo
 ---
-#### Revisor : 
+#### Revisor : @JoaoGabrielh - João Gabriel Alves de Souza.
 
 Item           | Descrição
 ---------------|----------
-Caso de uso    | Visualizar histórico de preços.
-Resumo           | É esperado que ao ver a página de produto, caso o usuário clique em "Histórico" seja mostrado um gráfico com os preços do produto dentro dos últimos 40 dias.
+Caso de uso    | Visualizar histórico de preços do produto.
+Resumo           | É esperado que ao ver a página de produto, caso o usuário clique em "Histórico de preços do produto" seja mostrado um gráfico com os preços do produto dentro dos últimos 40 dias.
 Ator principal | Usuário utilizador da plataforma.
 Ator secundário| Não possui.
 Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado à internet.
-Pós-condição   | 
+Pós-condição   | Não possui.
 
 #### Fluxo principal
 
 Passos  | Descrição
 --------|----------
-Passo 1 | Clicar em "Histórico".
+Passo 1 | Clicar em "Histórico de preços do produto".
 Passo 2 | Visualizar o gráfico.
-
-
-#### Campos da aba
-
-Campo                                | Obrigatório | Editável | Formato
--------------------------------------|-------------|----------|--------
-                   |        |       | 
 
 #### Opções de usuário
 
 Opção                                | Descrição   | Atalho
 -------------------------------------|-------------|-------
-Acessar o histórico                    | Ao clicar em "Histórico" ele deve ser mostrado o gráfico.| 
+Acessar o histórico de preços do produto                   | Ao clicar em "Histórico de preços do produto" ele deve ser mostrado o gráfico.| 
 Deslizar o cursor sob o gráfico            | Ao deslizar o cursor ele deve ser mostrado os preços do produto de acordo com as datas no gráfico.                       |
-
-
-#### Relatório de usuário
-
-Campo | Descrição | Formato
-------|-----------|--------
 
 #### Fluxo alternativo
 
@@ -937,6 +924,6 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 Epic                                |User Story| Critério de aceitação
 -----------------------|----------|----------------------
-Eu enquanto "usuário comum" quero "visualizar histórico de preços do produto" para "saber quando comprar". | Enquanto "usuário comum" eu preciso ser capaz de visualizar o histórico de preços de um produto em específico para saber quando é melhor comprá-lo. | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e o histórico de preços desse produto.**
+Eu enquanto "usuário comum" quero "visualizar histórico de preços do produto" para "saber quando comprar". | Enquanto "usuário comum" eu preciso ser capaz de visualizar o histórico de preços de um produto em específico, com as datas e os preços em cada data. | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e o histórico de preços desse produto.**
 
 ![image](https://user-images.githubusercontent.com/91492418/193618419-5a0dc77f-ce48-484a-a94e-a97c6d80d949.png)

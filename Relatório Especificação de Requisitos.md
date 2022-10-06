@@ -22,7 +22,7 @@
 | Passo 1 | Entrar na página principal.                                        |
 | Passo 2 | Explorar a página principal                              |
 | Passo 3 | Identificar a logo das redes socias           |
-| Passo 4 | clicar no ícone da rede social determinada                        |
+| Passo 4 | Clicar no ícone da rede social determinada                        |
 | Passo 5 | Ser redirecionado para a página da rede social |
 
 #### Ícones clicáveis
@@ -44,7 +44,7 @@
 
 | Passos      | Descrição                                                                                           |
 | ----------- | --------------------------------------------------------------------------------------------------- |
-| Passo 1.1   | Caso o usuário não clique no ícone, deve-se ter como visualizar o nome da pógina nas redes socias e contnuar navegando na loja mesmo assim. |
+| Passo 1.1   | Caso o usuário não clique no ícone, deve-se ter como visualizar o nome da página nas redes socias e continuar navegando na loja mesmo assim. |
 | Passo 2.1.1 | O usuário terá visivel as logos de todas as redes socias                               |
 | Passo 2.1.2 | O usuário tem a opção de clicar ou não                                         |
 
@@ -58,3 +58,8 @@ Agora iremos escrever uma história de usuário para uma persona.
 | Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | Eu enquanto "usuário comum" quero "poder estabelecer contato com as redes sociais da loja" para "ter mais informação a respeito dos produto, e praticidade dentro  de uma experiências mais completa com a loja". | Enquanto "usuário comum" preciso ter mais informações a respeito dos produtos e da loja em geral de forma externa ao site | Certifique-se que o usuário é capaz de **identificar as redes sociais através dos logos e legendas** |
+
+
+# Prototipo
+
+![image](https://user-images.githubusercontent.com/45723261/194389216-192a2d77-29d2-4091-a3c1-9fee4ca92452.png)

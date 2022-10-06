@@ -23,7 +23,7 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 ## 2 - Grupo 2.
 
 
-- [x] RF02 - Efetuar Cadastro de Usu√°rio. 2.1 - [pixies0 ](https://github.com/pixies0) Revisado por @fernandokozak
+- [x] RF02 - Efetuar Cadastro de Usu√°rio. 2.1 - [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
 - [x] RF05 - Buscar um Produto. 2.2 - [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
@@ -31,6 +31,9 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 √
 
 - [x] RF11 - Visualizar Carrinho. 2.4 - [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
 
+- [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
+
+- [x] RF17 - Acompanhar pedido. 2.6 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 ## 3 - Grupo 3.
 
@@ -879,7 +882,7 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o prot√≥tipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
-## **RF14 - Buscar de produto personalizada**
+## **RF14 - Busca de produto personalizada**
 
 #### Autor: @JulioNolasco - Julio Cezar Nolasco.
 

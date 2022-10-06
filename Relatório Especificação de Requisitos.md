@@ -934,6 +934,8 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | Como um usuário comum, eu quero gravar meus dados bancários previamente para garantir minha segurança. | Enquanto cliente eu preciso ter cartões de crédito cadastrados para realizar o ato de compra na plataforma; | Certifique-se que o usuário preencheu todos os campos do formulário. |
 
+# Protótipo
+
 <img src="https://uploaddeimagens.com.br/images/004/050/935/full/Desktop_-_1.png?1665004279" alt="Drawing"><img/>
 
 <img src="https://uploaddeimagens.com.br/images/004/050/936/full/Desktop_-_2.png?1665004288" alt="Drawing"><img/>

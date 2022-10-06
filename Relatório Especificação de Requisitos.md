@@ -47,6 +47,14 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
 
+- [x] RF18 - Recuperar senha - [AfonsoDglan](https://github.com/AfonsoDglan) Revisado por @edjunior0
+
+- [x] RF19 - Recomendar produto relacionado - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
+
+- [x] RF20 - Gerenciar produtos desejados - [weltonSantana](https://github.com/weltonSantana) Revisado por @ianasampaio
+
+- [x] RF21 - Compartilhar produto - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
+
 # Casos de uso e User stories
 
 ## **RF01 - Efetuar Login**
@@ -1066,74 +1074,75 @@ Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do me
 ![image](https://i.imgur.com/nw4H88N.png)
 ![image](https://i.imgur.com/l2oqogY.png)
 
-## **RF23 - Receber Newsletter.**
+## **RF18 - Recuperar Senha**
 
-#### Autor: @Lucka10 - Lucas Evangelista Freire.
+#### Autor: @AfonsoDglan - Afonso Dglan.
 
 ---
 
-### Revisor:@LarissaHirai - Larissa Mitie C. Hirai
+### Revisor: @edjunior0 - Edson Almeida Silva Júnior
 
-## Caso de Uso Expandido
+| Item            | Descrição                                                                                                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Caso de uso     | Recuperar Senha.                                                                                                                                                                                                  |
+| Resumo          | É esperado que quando o cliente tiver o contato com a tela de login ele possa ter um link de recuperação de senha,ao clicar no link de recuperar senha abrira um modal com o campo de cpf para que o sistena identifique o usuário depois pede para escolher a forma de recuperação de senha por email ou sms. |
+| Ator principal  | Usuário utilizador da plataforma.                                                                                                                                                      |
+| Ator secundário | Não possui.                                                                                                                                                                        |
+| Pré-condição    | É necessário que o usuário tenha uma conta, conectado-á internet.                                                                                                                        |
+| Pós-condição    | É necessário que o usuário tenha sua própria conta.                                                                                                                                  |
 
-| Item           | Descrição                                                                                   |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| Caso de uso    | Receber Newsletter |
-| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja. |
-| Ator principal | Usuário utilizador da plataforma.  |
-| Pré-condição   | Acesso a internet, uma conta de email, ator logado em sua conta e inscrito na newsletter.   |
-| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja.   |
+#### Fluxo principal
 
-**Fluxo principal**:<br>
+| Passos  | Descrição                                                          |
+| ------- | ------------------------------------------------------------------ |
+| Passo 1 | Entrar na página principal ver o catalogo de produtos              |
+| Passo 2 | Entrar na página de login                                          |
+| Passo 3 | Clicar no botão esqueceu a senha?                                  |
+| Passo 4 | Preencher o formúlario com o cpf ou cnpj                           |
+| Passo 5 | Preencher o recaptcha e escolher se vai querer recuperar a senha via email ou sms  |
+| Passo 6 | Ir no email ou sms recebido e entrar no link e será redirecionado para a página de recuperação de senha|
+| Passo 7 | Já na Página de recuperação de senha, preencher o formúlario com a nova senha|
 
-| Passo     | Descrição                                                                                                                                                 |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Passo 1 | Ator clica em cadastrar uma conta nova. |
-| Passo 2 | Na pagina de cadastramento, o Ator poderá marca a checkbox de "Desejo receber Newsletter"  |
-| Passo 3 | Ao confirmar o cadastramento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
-| Passo 4.| O processo de cadastro é completo e o ator é direcionado a pagina Home.
+#### Campos
 
-**Opções do Usuário:**
+| Campo   | Obrigatório                                              | Editável | Formato |
+| ------- | -------------------------------------------------------- | -------- | ------- |
+| Passo 1 | Clicar em entrar esqueceu a senha?                       |
 
-| Opção           | Descrição                            |
-| --------------- | ------------------------------------ |
-| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
-| Deseja cancelar inscrição da newsletter | Remove o email do ator na lista da newsletter |
+#### Campos do modal de recuperação de senha
 
-**Fluxo Alternativo**:<br>
+| Campo                  | Obrigatório | Editável | Formato |
+| ---------------------- | ----------- | -------- | ------- |
+| CPF ou CNPJ            | Sim         | sim      | Texto   |
 
-FA01 - O ator deseja se inscrever na newsletter, mas não optou durante o cadastro.
+#### Relatório de usuário
 
-| Passo   | Descrição                                 |
-| -----   | ----------------------------------------- |
-| Passo 1 | O ator não optou durante o cadastro.      |
-| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
-| Passo 3 | Ator ira clicar na checkbox de "desejo receber Newsletter" |
-| Passo 4 | Com a checkbox marcada, clicar em confirmar |
-| Passo 5 | O email do ator será adicionado a lista de emails. |
-| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da kabum". |
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
 
 
-FA02  -  Ator deseja cancelar sua inscrição da newsletter.
-| Passo   | Descrição                                 |
-| -----   | ----------------------------------------- |
-| Passo 1 | O ator deseja cancelar sua inscrição da newsletter  |
-| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
-| Passo 3 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
-| Passo 4 | Com a checkbox marcada, clicar em confirmar |
-| Passo 5 | O email do ator será removido a lista de emails. |
-| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
+#### Fluxo alternativo
+| Passos | Descrição |
+| ------ | --------- |
+| --     | --        |
 
-## User Stories
 
-| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Eu como ator, gostario de poder me inscrever na newsletter, para receber noticias e destaques de produtos na loja. | Enquanto ator interessado na loja e seus produtos, preciso ser capaz de me fazer apto a receber email com informações, para me manter informado acerca daquilo que ocorre na loja. | Certificar que o ator esteja inscrito na newsletter e que possa ser desligado quando quiser. |
+# User story
 
-### Protótipo
+Agora iremos escrever uma história de usuário para uma persona.
 
-![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
-![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
+**Persona um, usuário comum.**
+
+| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Eu enquanto "usuário comum" quero "poder recuperar minha conta após esquecer minha senha de forma segura". |  Eu enquanto "usuário comum" quero "poder recuperar minha conta após esquecer minha senha de forma segura".| Certifique-se que o usuário é capaz de **recuperar sua conta de forma segura e cadastrar uma nova senha.** |
+
+![image](https://raw.githubusercontent.com/AfonsoDglan/imagens/299de88d8c4c78b38721e66f5d10f3bd363f724a/form_nova_senha.png)
+![image](https://raw.githubusercontent.com/AfonsoDglan/imagens/299de88d8c4c78b38721e66f5d10f3bd363f724a/form_identificar_user.png)
+
+---
+
 ## **RF19 - Recomendar produto relacionado**
 
 #### Autor: @edjunior - Edson Almeida Silva Júnior.
@@ -1176,6 +1185,7 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 | ----- | --------- | ------- |
 | --    | --        | --      |
 
+
 #### Fluxo alternativo
 
 | Passos | Descrição |
@@ -1192,7 +1202,6 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 
 
 ![imagem](https://uploaddeimagens.com.br/images/004/049/583/full/RF19_-_Recomendar_produto_relacionado.png?1664933122)
-
 
 
 ## **RF 20 - Gerenciar produtos desejados**
@@ -1271,3 +1280,73 @@ Como "usuário comum" eu quero "ser notificado" para "ter noticias do produto". 
 # Protótipo
 
 <img src="https://uploaddeimagens.com.br/images/004/051/440/full/Lembrete_.png?1665060643" alt="Drawing"><img/>
+
+## **RF23 - Receber Newsletter.**
+
+#### Autor: @Lucka10 - Lucas Evangelista Freire.
+
+---
+
+### Revisor:@LarissaHirai - Larissa Mitie C. Hirai
+
+## Caso de Uso Expandido
+
+| Item           | Descrição                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| Caso de uso    | Receber Newsletter |
+| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja. |
+| Ator principal | Usuário utilizador da plataforma.  |
+| Pré-condição   | Acesso a internet, uma conta de email, ator logado em sua conta e inscrito na newsletter.   |
+| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja.   |
+
+**Fluxo principal**:<br>
+
+| Passo     | Descrição                                                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passo 1 | Ator clica em cadastrar uma conta nova. |
+| Passo 2 | Na pagina de cadastramento, o Ator poderá marca a checkbox de "Desejo receber Newsletter"  |
+| Passo 3 | Ao confirmar o cadastramento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
+| Passo 4.| O processo de cadastro é completo e o ator é direcionado a pagina Home.
+
+**Opções do Usuário:**
+
+| Opção           | Descrição                            |
+| --------------- | ------------------------------------ |
+| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
+| Deseja cancelar inscrição da newsletter | Remove o email do ator na lista da newsletter |
+
+**Fluxo Alternativo**:<br>
+
+FA01 - O ator deseja se inscrever na newsletter, mas não optou durante o cadastro.
+
+| Passo   | Descrição                                 |
+| -----   | ----------------------------------------- |
+| Passo 1 | O ator não optou durante o cadastro.      |
+| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
+| Passo 3 | Ator ira clicar na checkbox de "desejo receber Newsletter" |
+| Passo 4 | Com a checkbox marcada, clicar em confirmar |
+| Passo 5 | O email do ator será adicionado a lista de emails. |
+| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da kabum". |
+
+
+FA02  -  Ator deseja cancelar sua inscrição da newsletter.
+| Passo   | Descrição                                 |
+| -----   | ----------------------------------------- |
+| Passo 1 | O ator deseja cancelar sua inscrição da newsletter  |
+| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
+| Passo 3 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
+| Passo 4 | Com a checkbox marcada, clicar em confirmar |
+| Passo 5 | O email do ator será removido a lista de emails. |
+| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
+
+## User Stories
+
+| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Eu como ator, gostario de poder me inscrever na newsletter, para receber noticias e destaques de produtos na loja. | Enquanto ator interessado na loja e seus produtos, preciso ser capaz de me fazer apto a receber email com informações, para me manter informado acerca daquilo que ocorre na loja. | Certificar que o ator esteja inscrito na newsletter e que possa ser desligado quando quiser. |
+
+### Protótipo
+
+![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
+![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
+

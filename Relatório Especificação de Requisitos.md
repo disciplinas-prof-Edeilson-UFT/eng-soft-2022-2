@@ -873,9 +873,9 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
-## **RF16 - Cadastra Cartão de Crédito**
+## **RF16 - Cadastrar Cartão de Crédito**
 
-#### Autor: @pixies0 - João Pedro Silva unha.
+#### Autor: @pixies0 - João Pedro Silva Cunha.
 
 ---
 

@@ -18,6 +18,16 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
 
+- [x] RF22 - Acessar redes sociais. 1.6 - [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
+
+- [x] RF23 - Receber newsletter. 1.7 -[Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
+
+- [x] RF24 - Acompanhar oferta. 1.8 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
+
+- [x] RF25 - Visualizar histórico de preços. 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe) Revisado por @JoaoGabrielh 
+
+- [x] RF26 - Visualizar home. 1.10 -  [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
+
 ## 2 - Grupo 2.
 
 
@@ -54,18 +64,6 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF20 - Gerenciar produtos desejados - [weltonSantana](https://github.com/weltonSantana) Revisado por @ianasampaio
 
 - [x] RF21 - Compartilhar produto - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
-
-## 1 - Grupo 1.
-
-- [x] RF22 - Acessar redes sociais. 1.6 - [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
-
-- [x] RF23 - Receber newsletter. 1.7 -[Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
-
-- [x] RF24 - Acompanhar oferta. 1.8 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
-
-- [x] RF25 - Visualizar histórico de preços. 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe) Revisado por @JoaoGabrielh 
-
-- [x] RF26 - Visualizar home. 1.10 -  [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
 
 # Casos de uso e User stories
 

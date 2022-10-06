@@ -1192,3 +1192,82 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 
 
 ![imagem](https://uploaddeimagens.com.br/images/004/049/583/full/RF19_-_Recomendar_produto_relacionado.png?1664933122)
+
+
+
+## **RF 20 - Gerenciar produtos desejados**
+
+### Autor: @weltonSantana - Welton Santana de Andrade Junior
+
+---
+
+### Revisor: @ianasampaio - Antonia Iana Sampaio da Silva
+
+## Caso de Uso Expandido
+
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Gerenciar produtos desejado.
+Resumo         | Permitir que ao Usuário receba noticias e ofertas especificas sobre o produto.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário efetue o login na plataforma.
+Pós-condição   | Não se aplica.
+
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Com o produto já adicionado à lista de desejos por um determinado periodo.
+Passo 2 | O sistema enviará um e-mail para o usuário informando que o produto ainda está na lista de desejos.
+  
+
+  
+#### Campos da aba de gerenciar produtos desejados 
+
+ Campo     | Obrigatorio    | Editável | Formato  
+ --------- | ------------ | ------- | -------
+ --        | --          | --   | --  
+
+
+    
+#### Opções de usuário
+
+
+ Campo     | Descrição    | Atalho  
+ --------- | ------------ | -------
+ --        | --          | --   
+
+ 
+     
+ #### Relatório de usuário
+    
+ Campo     | Descrição    | Formato   
+ --------- | ------------ | -------
+ --        | --           | --   
+    
+
+#### Fluxo alternativo
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O usuário pode definir um lembrete na lista de desejos para que seja notificado caso o produto entre em promoção.
+Passo 2 | O sistema enviará um e-mail para o usuário caso o produto entre em promoção.
+
+
+ 
+
+
+# User story
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como "usuário comum" eu quero "ser notificado" para "ter noticias do produto". | Como usuário eu  quero receber notificações sobre o produto que está na minha lista de desejos para que eu possa estar informado sobre futuras atualizações e promoções e assim poder adiquiri-lo de uma forma inteligente.  | Certifique-se que o usuário consegue **fazer login na própria conta, adicionar o produto que preferir à sua lista de desejos e selecionar a opção de ser notificado.**
+
+# Protótipo
+
+<img src="https://uploaddeimagens.com.br/images/004/051/440/full/Lembrete_.png?1665060643" alt="Drawing"><img/>

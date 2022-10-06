@@ -42,9 +42,11 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
-- [x] RF16 - Adicionar Cartão de Crédito. 2.6 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+- [x] RF15 - Visualizar Histórico de Compras. 2.6 -  [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
 
-- [x] RF17 - Acompanhar pedido. 2.7 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
+- [x] RF16 - Adicionar Cartão de Crédito. 2.7 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+
+- [x] RF17 - Acompanhar pedido. 2.8 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 
 ## 3 - Grupo 3.
@@ -960,6 +962,66 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 
 <img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>
 
+##  **RF 15 - Visualizar Histórico de compra** 
+
+
+#### Autor: @fernandokozak - Luiz Fernando Kozak.
+
+---
+
+### Revisor: @pixies0 - João Pedro Silva Cunha
+
+## Caso de Uso Expandido
+
+Item           | Descrição
+---------------|----------
+Caso de uso    |RF15 - Visualizar Histórico de compra.
+Resumo	       |Ver as compras que já realizou.
+Ator principal |Usuário vai em olhar hisórico 
+Ator secundário| 
+Pré-condição   |O ator deve ter realizado uma compra.
+Pós-condição   | 
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 |O ator teve ta com a conta acessada.
+Passo 2 |O ator entra em seu perfil.
+Passo 3 |Em seu perfil, vai ter atalhos como Meus pedido/ Atendimento ao cliente/ Favoritos.
+
+#### Campos da aba de visualizar produtos
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Opção de filtrar por pedido.|Novo, processamento, cancelado e enviado.
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos   | Descrição
+---------|----------
+Passo 1  |Caso o ator não tenha feito nenhuma compra no site, a tela de histórico vai estar vazia.
+Passo 2  |O usuário vai voltar a realizar compra.
+
+### User stories
+
+
+| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Eu como ator, gostaria de visualizar um item que eu ja realazei a compra, para assim ter acesso ao meu controle de produtos que já foi comprado. | Enquanto ator na página de visualizar carrinho, posso ver qual produtor já comprei. | Certificar que o ator efetue a compra que o histórico de carrinho não esteja vazia. |
+
+
+[Link para o protótipo](https://www.figma.com/file/0HbkjCyeVLZf1MNPvUAslg/Untitled?node-id=0%3A1)# Engenharia de software-2022.2 | Universidade Federal do Tocantins - Palmas, 2022
 
 ## **RF16 - Cadastrar Cartão de Crédito**
 

@@ -1487,6 +1487,53 @@ Eu como ator quero acessar a página de ofertas para acompanhar as ofertas dispo
 ![image](https://user-images.githubusercontent.com/91437673/194127492-6f37ab9c-2f92-47bb-a426-19ac3d9b5090.png)
 
 
+## Caso de uso **RF25** - 1.9 Visualizar histórico de preços
+#### Peraefe - Fernanda Menezes Plessim de Melo
+---
+#### Revisor : @JoaoGabrielh - João Gabriel Alves de Souza.
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Visualizar histórico de preços do produto.
+Resumo           | É esperado que ao ver a página de produto, caso o usuário clique em "Histórico de preços do produto" seja mostrado um gráfico com os preços do produto dentro dos últimos 40 dias.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado à internet.
+Pós-condição   | Não possui.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Clicar em "Histórico de preços do produto".
+Passo 2 | Visualizar o gráfico.
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Acessar o histórico de preços do produto                   | Ao clicar em "Histórico de preços do produto" ele deve ser mostrado o gráfico.| 
+Deslizar o cursor sob o gráfico            | Ao deslizar o cursor ele deve ser mostrado os preços do produto de acordo com as datas no gráfico.                       |
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso o produto tenha apenas 40 dias de histórico ou menos, deve-se mostrar todo seu histórico no gráfico.
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu enquanto "usuário comum" quero "visualizar histórico de preços do produto" para "saber quando comprar". | Enquanto "usuário comum" eu preciso ser capaz de visualizar o histórico de preços de um produto em específico, com as datas e os preços em cada data. | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e o histórico de preços desse produto.**
+
+![image](https://user-images.githubusercontent.com/91492418/193618419-5a0dc77f-ce48-484a-a94e-a97c6d80d949.png)
+
 ## Caso de uso **RF26** - 1.10 Visualizar home
 
 #### JoãoGabrielh - João Gabriel Alves de Souza

@@ -806,7 +806,7 @@ Caso de uso    | Visualizar home.
 Resumo           | É esperado que ao pesquisar pela loja e entrar nela, clicar na logo da loja exibida no topo do site ou fazer login, o usuário se depare com a home, que dará a ele a possibilidade de ter uma visão sobre uma parte do catálogo de itens, botões para as redes sociais oficiais da loja, botão para fazer login ou ver a própria conta, botão para visualizar o carrinho, botão de sac, barra de busca de produtos, busca por categoria, ofertas do dia e permitirá que os produtos do catálogo mostrado inicialmente também sejam acessados.
 Ator principal | Usuário utilizador da plataforma.
 Ator secundário| Não possui.
-Pré-condição   | É necessário que o usuário tenha um browser, busque a loja ou esteja dentro do site dela e esteja conectado-á internet.
+Pré-condição   | É necessário que o usuário tenha um browser, busque a loja ou esteja dentro do site dela e tenha acesso à internet.
 Pós-condição   | Ter acesso o site da loja.
 
 #### Fluxo principal
@@ -825,7 +825,7 @@ Campo                                | Obrigatório | Editável | Formato
 
 Opção                                  | Descrição   | Atalho
 ---------------------------------------|-------------|-------
-Acessar redes sociais                  | Ao clicar no botão com a logo das redes sociais, o usuároi deve ser redirecionado para o perfil da loja na respectiva rede social.		  				 | 
+Acessar redes sociais                  | Ao clicar no botão com a logo das redes sociais, o usuário deve ser redirecionado para o perfil da loja na respectiva rede social.		  				 | 
 Visualizar catálogo                    | Estando na home o usuário deve ser capaz de visualizar o catálogo que deve aparecer na home. |
 Fazer login ou acessar a própria conta | Ao clicar no botão com símbolo de usuário, o usuário deve ser redirecionado para a página de login caso não esteja dentro de alguma conta, ou para a página da sua própria conta. |
 Visualizar carrinho		       | Ao clicar no botão de visualizar carrinho o usuário deve ir para a página de visualização do carrinho. |
@@ -846,6 +846,7 @@ Passos      | Descrição
 ------------|----------
 Passo 1.1.1 | Caso o usuário já esteja dentro so dite da loja, para voltar para a home ele deve clicar em cima da logo da loja exibida no topo do site.
 Passo 2.1.2 | Caso o usuário tenha efetuado seu login, ele deve ser redirecionado para a home.
+Passo 1.1.3 | Caso o usuário faça o logout, ele deve ser redirecionado para a home.
 
 # User story
 

@@ -8,7 +8,6 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
-
 - [x] RF01 - Efetuar Login. 1.1 [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
 
 - [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
@@ -19,9 +18,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
 
-
 ## 2 - Grupo 2.
 
+
+- [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0 ](https://github.com/pixies0) Revisado por @fernandokozak
 
 - [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
@@ -33,10 +33,11 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
-- [x] RF17 - Acompanhar pedido. 2.6 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
+- [x] RF16 - Adicionar Cartão de Crédito. 2.6 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+
+- [x] RF17 - Acompanhar pedido. 2.7 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 ## 3 - Grupo 3.
-
 
 - [x] RF03 - Visualizar Catalógo. 3.1 - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
 
@@ -45,7 +46,6 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF09 - Adicionar Produto ao Carrinho. 3.3 - [AfonsoDglan](https://github.com/AfonsoDglan) Revisado por @edjunior0
 
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
-
 
 # Casos de uso e User stories
 
@@ -882,6 +882,7 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
+                                                                                                  |
 ## **RF14 - Busca de produto personalizada**
 
 #### Autor: @JulioNolasco - Julio Cezar Nolasco.
@@ -930,9 +931,7 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 | Passo 1.1 | O ator escolhe um filtro invalido.                                                            |
 | Passo 1.2 | O sistema apresenta uma tela com o aviso de que não pode aplicar tal filtro à aquele produto. |
 
-# User story
-
-**Persona um, usuário comum.**
+# User Story
 
 | Epic                                                                                                        | User Story                                                                                      | Critério de aceitação                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -942,9 +941,76 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 
 <img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>
 
-# Caso de uso
+## **RF16 - Cadastrar Cartão de Crédito**
 
-**RF17 – Acompanhar pedido**
+#### Autor: @pixies0 - João Pedro Silva Cunha.
+
+---
+
+### Revisor: @fernandokozak - Luiz Fernando Kozak.
+
+## Caso de Uso Expandido
+
+| Item            | Descrição                                                                                                                                     |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Caso de uso     | Cadastro de Cartão de Crédito                                                                                                                 |
+| Resumo          | Este caso de uso visa permitir que o usuário cadastre um cartão de crédito previamente como forma de pagamento antes de iniciar suas compras. |
+| Ator principal  | Usuário que no caso, trata-se de um cliente.                                                                                                  |
+| Ator secundário | Banco responsável pelo cartão do cliente.                                                                                                     |
+| Pré-condição    | O usuário precisa ter um cartão de crédito. 
+
+### Fluxo Principal 
+
+| Passos  | Descrição                                                                     |
+| ------- | ----------------------------------------------------------------------------- |
+| Passo 1 | Usuário se redireciona à sua página de perfil, em que se encontra seus dados. |
+| Passo 2 | Cliente seleciona adicionar cartão de crédito em sua carteira da plataforma.  |
+| Passo 3 | Sistema exibe formulário para preenchimento dos dados do cartão de crédito.   |
+
+#### Campos do formulário.
+
+| Campo               | Obrigatório? | Formato       |
+| ------------------- | ------------ | ------------- |
+| Titular             | Sim          | Texto         |
+| Numero do Cartão    | Sim          | Numérico      |
+| Mês Vencimento      | Sim          | Numérico      |
+| Ano Vencimento      | Sim          | Numérico      |
+| Código de Segurança | Sim          | Numérico      |
+| CPF do titular      | Sim          | Alfa numérico |
+
+#### Opções de usuário
+
+| Opção                        | Descrição                                                                                                        | Atalho |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------ |
+| Adicionar Cartão de Crédito. | Ao clicar nessa aba o usuário terá acesso ao formulário para cadastro dos dados do cartão de crédito do cliente. |
+
+#### Fluxo alternativo
+
+| Passos    | Descrição                                                   |
+| --------- | ----------------------------------------------------------- |
+| Passo 1.1 | O ator tenta adicionar um cartão de crédito já cadastrado.  |
+| Passo 1.2 | Sistema acusa a existência do cartão de crédito em questão. |
+| Passo 2.1 | O ator tenta adicionar um cartão de débito                  |
+| Passo 2.2 | Sistema exibe que não foi possivel concluir a operação      |
+
+
+# User story
+
+**Persona um, usuário comum.**
+
+
+| Epic                                                                                                   | User Story                                                                                                  | Critério de aceitação                                                |
+| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Como um usuário comum, eu quero gravar meus dados bancários previamente para garantir minha segurança. | Enquanto cliente eu preciso ter cartões de crédito cadastrados para realizar o ato de compra na plataforma; | Certifique-se que o usuário preencheu todos os campos do formulário. |
+
+# Protótipo
+
+<img src="https://uploaddeimagens.com.br/images/004/050/935/full/Desktop_-_1.png?1665004279" alt="Drawing"><img/>
+
+<img src="https://uploaddeimagens.com.br/images/004/050/936/full/Desktop_-_2.png?1665004288" alt="Drawing"><img/>
+
+
+## **RF17 – Acompanhar pedido**
 
 #### Autor: @Izann-Brum - Izann Rogério Geraldes de Brum
 
@@ -999,7 +1065,6 @@ Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do me
 
 ![image](https://i.imgur.com/nw4H88N.png)
 ![image](https://i.imgur.com/l2oqogY.png)
-
 
 ## **RF23 - Receber Newsletter.**
 
@@ -1069,5 +1134,4 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 
 ![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
 ![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
-
 

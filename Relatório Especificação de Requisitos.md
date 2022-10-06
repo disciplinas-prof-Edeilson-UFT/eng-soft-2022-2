@@ -938,3 +938,61 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 ## Protótipo de tela:
 
 <img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>
+
+# Caso de uso
+
+**RF17 – Acompanhar pedido**
+
+#### Autor: @Izann-Brum - Izann Rogério Geraldes de Brum
+
+---
+
+### Revisor: @JulioNolasco - Julio Cezar Nolasco
+
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Acompanhar pedido.
+Resumo | Este caso de uso tem a finalidade de auxiliar usuários que realizaram a compra de produto(s) na plataforma.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário | Transportadora responsável pela entrega.
+Pré-condição | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
+Pós-condição | É necessário que, para retornar ao acompanhamento, o usuário tenha seu número de pedido ou código de rastreio do produto.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Usuário entra na tela de acompanhamento de pedidos.
+Passo 2 | Cliente seleciona o pedido a ser rastreado.
+Passo 3 | O sistema retorna as atualizações sobre o transporte do pedido.
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1    | Cliente não realizou o pagamento.
+Passo 1.1  | Sistema avisa sobre a pendencia de pagamento.
+Passo 2    | Cliente não cadastrou endereço de entrega.
+Passo 2.1  | Sistema avisa sobre a pendencia de endereço de entrega.
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Rastrear pedido.                      | Ao clicar nessa aba o usuário poderá acompanhar as atualizações do trajeto do seu pedido. |
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do meu pedido. | Enquanto "usuário comum" preciso ter minhas informações salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.**
+
+# Protótipos
+
+![image](https://i.imgur.com/nw4H88N.png)
+![image](https://i.imgur.com/l2oqogY.png)

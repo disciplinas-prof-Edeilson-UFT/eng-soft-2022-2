@@ -1,6 +1,6 @@
 ## **RF01 - Acessar Redes Sociais**
 
-#### Autor: @JPeeMP - João Pedro Melo Povoa.
+#### Autor: @JPeeMP - João Pedro Melo Póvoa.
 
 ---
 

@@ -892,4 +892,12 @@ Passos   | Descrição
 Passo 1  |Caso o ator não tenha feito nenhuma compra no site, a tela de histórico vai estar vazia.
 Passo 2  |O usuário vai voltar a realizar compra.
 
+### User stories
+Epic 
+
+| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Eu como ator, gostaria de visualizar um item que eu ja realazei a compra, para assim ter acesso ao meu controle de produtos que já foi comprado. | Enquanto ator na página de visualizar carrinho, posso ver qual produtor já comprei. | Certificar que o ator efetue a compra que o histórico de carrinho não esteja vazia. |
+
+
 [Link para o protótipo](https://www.figma.com/file/0HbkjCyeVLZf1MNPvUAslg/Untitled?node-id=0%3A1)# Engenharia de software-2022.2 | Universidade Federal do Tocantins - Palmas, 2022

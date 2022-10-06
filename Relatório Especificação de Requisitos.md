@@ -46,6 +46,8 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF16 - Adicionar Cartão de Crédito. 2.7 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
+- [x] RF16 - Adicionar Cartão de Crédito. 2.7 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+
 - [x] RF17 - Acompanhar pedido. 2.8 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 
@@ -1491,6 +1493,7 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 ![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
 ![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
 
+
 ## **RF22 - Acessar Redes Sociais**
 
 #### Autor: @JPeeMP - João Pedro Melo Póvoa.
@@ -1727,7 +1730,5 @@ Eu enquanto "usuário comum" quero "acessar a home" para "ter uma visão inicial
 
 
 ![rf26](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20home.png)
-
-
 
 

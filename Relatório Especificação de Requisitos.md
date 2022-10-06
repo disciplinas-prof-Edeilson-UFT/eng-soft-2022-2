@@ -55,6 +55,18 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF21 - Compartilhar produto - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
 
+## 1 - Grupo 1.
+
+- [x] RF22 - Acessar redes sociais. 1.6 - [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
+
+- [x] RF23 - Receber newsletter. 1.7 -[Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
+
+- [x] RF24 - Acompanhar oferta. 1.8 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
+
+- [x] RF25 - Visualizar histórico de preços. 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe) Revisado por @JoaoGabrielh 
+
+- [x] RF26 - Visualizar home. 1.10 -  [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
+
 # Casos de uso e User stories
 
 ## **RF01 - Efetuar Login**
@@ -1281,7 +1293,7 @@ Como "usuário comum" eu quero "ser notificado" para "ter noticias do produto". 
 
 <img src="https://uploaddeimagens.com.br/images/004/051/440/full/Lembrete_.png?1665060643" alt="Drawing"><img/>
 
-## **RF23 - Receber Newsletter.**
+## Caso de uso **RF23** - 1.7 Receber newsletter
 
 #### Autor: @Lucka10 - Lucas Evangelista Freire.
 
@@ -1350,3 +1362,68 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 ![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
 ![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
 
+## Caso de uso **RF26** - 1.10 Visualizar home
+
+#### JoãoGabrielh - João Gabriel Alves de Souza
+---
+#### Revisor : João Pedro de Melo Pessoa (JPeeMP)
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Visualizar home.
+Resumo           | É esperado que ao pesquisar pela loja e entrar nela, clicar na logo da loja exibida no topo do site ou fazer login, o usuário se depare com a home, que dará a ele a possibilidade de ter uma visão sobre uma parte do catálogo de itens, botões para as redes sociais oficiais da loja, botão para fazer login ou ver a própria conta, botão para visualizar o carrinho, botão de sac, barra de busca de produtos, busca por categoria, ofertas do dia e permitirá que os produtos do catálogo mostrado inicialmente também sejam acessados.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário tenha um browser, busque a loja ou esteja dentro do site dela e tenha acesso à internet.
+Pós-condição   | Ter acesso o site da loja.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Buscar a loja em seu browser.
+Passo 2 | Clicar em cima do nome da loja após a busca.
+
+#### Campos da home
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+
+#### Opções de usuário
+
+Opção                                  | Descrição   | Atalho
+---------------------------------------|-------------|-------
+Acessar redes sociais                  | Ao clicar no botão com a logo das redes sociais, o usuário deve ser redirecionado para o perfil da loja na respectiva rede social.		  				 | 
+Visualizar catálogo                    | Estando na home o usuário deve ser capaz de visualizar o catálogo que deve aparecer na home. |
+Fazer login ou acessar a própria conta | Ao clicar no botão com símbolo de usuário, o usuário deve ser redirecionado para a página de login caso não esteja dentro de alguma conta, ou para a página da sua própria conta. |
+Visualizar carrinho		       | Ao clicar no botão de visualizar carrinho o usuário deve ir para a página de visualização do carrinho. |
+Botão de sac			       | Ao clicar no botão de sac o usuário deve ser redirecionado para o suporte, para efetuar alguma reclamação. |
+Barra de busca de produtos	       | Ao clicar na barra de busca de produtos o usuário deve ser capaz de buscar uma série de produtos que correspondam à sua busca. |
+Visualizar produto		       | Ao clicar em cima de um produto o usuário deve conseguir visualizar aquele produto em específico. |
+Botão de busca por categoria	       | Ao clicar no botão de busca por categoria o usuário deve realizar uma busca de produto personalizada com a categoria na qual o usuário clicou. |
+Carrossel de ofertas do dia	       | Ao clicar nos pequenos pontos ou nas setas do carrossel de ofertas do dia, o usuário deve ser capaz de ver os produtos ou a categoria que está de promoção no dia do acesso à página, e deve conseguir visualizar a categoria em promoção ou o produto em específico. |
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1.1 | Caso o usuário já esteja dentro so dite da loja, para voltar para a home ele deve clicar em cima da logo da loja exibida no topo do site.
+Passo 2.1.2 | Caso o usuário tenha efetuado seu login, ele deve ser redirecionado para a home.
+Passo 1.1.3 | Caso o usuário faça o logout, ele deve ser redirecionado para a home.
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu enquanto "usuário comum" quero "acessar a home" para "ter uma visão inicial sobre o site". | Enquanto "usuário comum" eu preciso ser capaz de visualizar a home para ter uma visão geral sobre a loja e ter um local que me permita acessar parte das demais funcionalidades do site| Certifique-se que o usuário é capaz de **buscar a loja ou ser redirecionado para a home.**
+
+![rf26](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20home.png)

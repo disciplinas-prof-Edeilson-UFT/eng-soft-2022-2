@@ -53,11 +53,11 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF23 - Receber newsletter. 1.7 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
 
-- [x] RF024 - Acompanhar oferta. 1.8 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
+- [x] RF24 - Acompanhar oferta. 1.8 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
 
-- [x] RF10 - Visualizar histórico de preços . 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe) Revisado por @JoaoGabrielh 
+- [x] RF25 - Visualizar histórico de preços . 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe) Revisado por @JoaoGabrielh 
 
-- [x] RF13 - Visualizar home. 1.10 - [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP 
+- [x] RF26 - Visualizar home. 1.10 - [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP 
 
 # Casos de uso e User stories
 

@@ -840,3 +840,56 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 
 =======
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
+
+##  **RF 15 - Visualizar Histórico de compra** 
+
+
+#### Autor: @fernandokozak - Luiz Fernando Kozak.
+
+---
+
+### Revisor: @pixies0 - João Pedro Silva Cunha
+
+## Caso de Uso Expandido
+
+Item           | Descrição
+---------------|----------
+Caso de uso    |RF15 - Visualizar Histórico de compra.
+Resumo	       |Ver as compras que já realizou.
+Ator principal |Usuário vai em olhar hisórico 
+Ator secundário| 
+Pré-condição   |O ator deve ter realizado uma compra.
+Pós-condição   | 
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 |O ator teve ta com a conta acessada.
+Passo 2 |O ator entra em seu perfil.
+Passo 3 |Em seu perfil, vai ter atalhos como Meus pedido/ Atendimento ao cliente/ Favoritos.
+
+#### Campos da aba de visualizar produtos
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Opção de filtrar por pedido.|Novo, processamento, cancelado e enviado.
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos   | Descrição
+---------|----------
+Passo 1  |Caso o ator não tenha feito nenhuma compra no site, a tela de histórico vai estar vazia.
+Passo 2  |O usuário vai voltar a realizar compra.
+
+[Link para o protótipo](https://www.figma.com/file/0HbkjCyeVLZf1MNPvUAslg/Untitled?node-id=0%3A1)# Engenharia de software-2022.2 | Universidade Federal do Tocantins - Palmas, 2022

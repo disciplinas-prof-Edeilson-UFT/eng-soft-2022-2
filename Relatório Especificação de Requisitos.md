@@ -20,13 +20,22 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 2 - Grupo 2.
 
+
 - [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0 ](https://github.com/pixies0) Revisado por @fernandokozak
+
+- [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
 - [x] RF05 - Buscar um Produto. 2.2 - [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
 - [x] RF08 - Solicitar Chamado/Suporte. 2.3 - [Izann-Brum](https://github.com/Izann-Brum) Revisado por @JulioNolasco
 
 - [x] RF11 - Visualizar Carrinho. 2.4 - [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
+
+- [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
+
+- [x] RF16 - Adicionar Cartão de Crédito. 2.6 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+
+- [x] RF17 - Acompanhar pedido. 2.7 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 ## 3 - Grupo 3.
 
@@ -873,13 +882,72 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
+                                                                                                  |
+## **RF14 - Busca de produto personalizada**
+
+#### Autor: @JulioNolasco - Julio Cezar Nolasco.
+
+---
+
+### Revisor: @Izann-Brum - Izann Rogério de Brum.
+
+| Item            | Descrição                                               |
+| --------------- | ------------------------------------------------------- |
+| Caso de uso     | RF14 - Buscar personalizada                             |
+| Resumo          | Fazer uma busca personalizada de um determinado produto |
+| Ator principal  | Cliente                                                 |
+| Ator secundário | Sistema                                                 |
+| Pré-condição    | Ser um produto que a loja oferece.                      |
+| Pós-condição    |
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                                                               |
+| ------- | ------------------------------------------------------------------------------------------------------- |
+| Passo 1 | O ator após escolher um produto para ser buscado, aplicar filtros para ter um resultado mais específico |
+| Passo 2 | O sistema apresenta uma tela com os respectivos produtos com as restrições aplicadas.                   |
+
+#### Campos da aba de buscar produtos
+
+| Campo          | Obrigatório | Editável | Formato  |
+| -------------- | ----------- | -------- | -------- |
+| Filtro         | Não         | Sim      | CheckBox |
+
+#### Opções de usuário
+
+| Opção             | Descrição                                                                                            | Atalho |
+| ----------------- | ---------------------------------------------------------------------------------------------------- | ------ |
+| Filtrar um produto| Ao escolher o tipo de filtro, o sistema apresenta uma tela com algumas opções do produto buscado     | ------ |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+
+#### Fluxo alternativo
+
+| Passos    | Descrição                                                                                     |
+| --------- | ----------------------------------------------------------------------------------------      |
+| Passo 1.1 | O ator escolhe um filtro invalido.                                                            |
+| Passo 1.2 | O sistema apresenta uma tela com o aviso de que não pode aplicar tal filtro à aquele produto. |
+
+# User Story
+
+| Epic                                                                                                        | User Story                                                                                      | Critério de aceitação                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Eu enquanto "usuário comum" quero "efetuar um filtro sobre um produto específico" para "uma possível compra". | Enquanto "usuário comum" eu preciso ser capaz de "filtrar por um produto estando logado ou não". | Certifique-se que o usuário é capaz de acessar o site |
+
+## Protótipo de tela:
+
+<img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>
+
 ## **RF16 - Cadastrar Cartão de Crédito**
 
 #### Autor: @pixies0 - João Pedro Silva Cunha.
 
 ---
 
-### Revisor: @usuariorevisor - Nome revisor
+### Revisor: @fernandokozak - Luiz Fernando Kozak.
 
 ## Caso de Uso Expandido
 
@@ -889,10 +957,9 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 | Resumo          | Este caso de uso visa permitir que o usuário cadastre um cartão de crédito previamente como forma de pagamento antes de iniciar suas compras. |
 | Ator principal  | Usuário que no caso, trata-se de um cliente.                                                                                                  |
 | Ator secundário | Banco responsável pelo cartão do cliente.                                                                                                     |
-| Pré-condição    | O usuário precisa ter um cartão de crédito.                                                                                                   |
-| Pós-condição    |
+| Pré-condição    | O usuário precisa ter um cartão de crédito. 
 
-#### Fluxo principal
+### Fluxo Principal 
 
 | Passos  | Descrição                                                                     |
 | ------- | ----------------------------------------------------------------------------- |
@@ -926,9 +993,11 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 | Passo 2.1 | O ator tenta adicionar um cartão de débito                  |
 | Passo 2.2 | Sistema exibe que não foi possivel concluir a operação      |
 
+
 # User story
 
 **Persona um, usuário comum.**
+
 
 | Epic                                                                                                   | User Story                                                                                                  | Critério de aceitação                                                |
 | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -939,3 +1008,61 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 <img src="https://uploaddeimagens.com.br/images/004/050/935/full/Desktop_-_1.png?1665004279" alt="Drawing"><img/>
 
 <img src="https://uploaddeimagens.com.br/images/004/050/936/full/Desktop_-_2.png?1665004288" alt="Drawing"><img/>
+
+
+## **RF17 – Acompanhar pedido**
+
+#### Autor: @Izann-Brum - Izann Rogério Geraldes de Brum
+
+---
+
+### Revisor: @JulioNolasco - Julio Cezar Nolasco
+
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Acompanhar pedido.
+Resumo | Este caso de uso tem a finalidade de auxiliar usuários que realizaram a compra de produto(s) na plataforma.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário | Transportadora responsável pela entrega.
+Pré-condição | É necessário que o usuário esteja utilizando a plataforma, conectado-á internet.
+Pós-condição | É necessário que, para retornar ao acompanhamento, o usuário tenha seu número de pedido ou código de rastreio do produto.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Usuário entra na tela de acompanhamento de pedidos.
+Passo 2 | Cliente seleciona o pedido a ser rastreado.
+Passo 3 | O sistema retorna as atualizações sobre o transporte do pedido.
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1    | Cliente não realizou o pagamento.
+Passo 1.1  | Sistema avisa sobre a pendencia de pagamento.
+Passo 2    | Cliente não cadastrou endereço de entrega.
+Passo 2.1  | Sistema avisa sobre a pendencia de endereço de entrega.
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Rastrear pedido.                      | Ao clicar nessa aba o usuário poderá acompanhar as atualizações do trajeto do seu pedido. |
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do meu pedido. | Enquanto "usuário comum" preciso ter minhas informações salvas na plataforma através de uma conta de usuário a fim de ter maior praticidade | Certifique-se que o usuário é capaz de **fazer login na própria conta.**
+
+# Protótipos
+
+![image](https://i.imgur.com/nw4H88N.png)
+![image](https://i.imgur.com/l2oqogY.png)
+

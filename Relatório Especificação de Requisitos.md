@@ -1600,3 +1600,4 @@ Eu enquanto "usuário comum" quero "acessar a home" para "ter uma visão inicial
 
 
 ![rf26](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20home.png)
+

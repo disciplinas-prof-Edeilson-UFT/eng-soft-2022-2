@@ -881,7 +881,7 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
-## Caso de uso **RF25** - 1.8 Visualizar histórico de preços
+## Caso de uso **RF25** - 1.9 Visualizar histórico de preços
 #### Peraefe - Fernanda Menezes Plessim de Melo
 ---
 #### Revisor : 
@@ -937,6 +937,6 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 Epic                                |User Story| Critério de aceitação
 -----------------------|----------|----------------------
-Eu enquanto "usuário comum" quero "visualizar histórico de preços do produto" para "saber quando comprar". | Enquanto "usuário comum" eu preciso ser capaz de visualizar um histórico em específico para saber mais informações sobre ele | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e visualizar seu histórico.**
+Eu enquanto "usuário comum" quero "visualizar histórico de preços do produto" para "saber quando comprar". | Enquanto "usuário comum" eu preciso ser capaz de visualizar o histórico de preços de um produto em específico para saber quando é melhor comprá-lo. | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e o histórico de preços desse produto.**
 
 ![image](https://user-images.githubusercontent.com/91492418/193618419-5a0dc77f-ce48-484a-a94e-a97c6d80d949.png)

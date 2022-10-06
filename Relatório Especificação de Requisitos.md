@@ -882,80 +882,8 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
-<<<<<<< HEAD
-## **RF23 - Receber Newsletter.**
 
-#### Autor: @Lucka10 - Lucas Evangelista Freire.
-
----
-
-### Revisor:@LarissaHirai - Larissa Mitie C. Hirai
-
-## Caso de Uso Expandido
-
-| Item           | Descrição                                                                                   |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| Caso de uso    | Receber Newsletter |
-| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja. |
-| Ator principal | Usuário utilizador da plataforma.  |
-| Pré-condição   | Acesso a internet, uma conta de email, ator logado em sua conta e inscrito na newsletter.   |
-| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja.   |
-
-**Fluxo principal**:<br>
-
-| Passo     | Descrição                                                                                                                                                 |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Passo 1 | Ator clica em cadastrar uma conta nova. |
-| Passo 2 | Na pagina de cadastramento, o Ator poderá marca a checkbox de "Desejo receber Newsletter"  |
-| Passo 3 | Ao confirmar o cadastramento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
-| Passo 4.| O processo de cadastro é completo e o ator é direcionado a pagina Home.
-
-**Opções do Usuário:**
-
-| Opção           | Descrição                            |
-| --------------- | ------------------------------------ |
-| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
-| Deseja cancelar inscrição da newsletter | Remove o email do ator na lista da newsletter |
-
-**Fluxo Alternativo**:<br>
-
-FA01 - O ator deseja se inscrever na newsletter, mas não optou durante o cadastro.
-
-| Passo   | Descrição                                 |
-| -----   | ----------------------------------------- |
-| Passo 1 | O ator não optou durante o cadastro.      |
-| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
-| Passo 3 | Ator ira clicar na checkbox de "desejo receber Newsletter" |
-| Passo 4 | Com a checkbox marcada, clicar em confirmar |
-| Passo 5 | O email do ator será adicionado a lista de emails. |
-| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da kabum". |
-
-
-FA02  -  Ator deseja cancelar sua inscrição da newsletter.
-| Passo   | Descrição                                 |
-| -----   | ----------------------------------------- |
-| Passo 1 | O ator deseja cancelar sua inscrição da newsletter  |
-| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
-| Passo 3 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
-| Passo 4 | Com a checkbox marcada, clicar em confirmar |
-| Passo 5 | O email do ator será removido a lista de emails. |
-| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
-
-## User Stories
-
-| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Eu como ator, gostario de poder me inscrever na newsletter, para receber noticias e destaques de produtos na loja. | Enquanto ator interessado na loja e seus produtos, preciso ser capaz de me fazer apto a receber email com informações, para me manter informado acerca daquilo que ocorre na loja. | Certificar que o ator esteja inscrito na newsletter e que possa ser desligado quando quiser. |
-
-### Protótipo
-
-![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
-![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
-
-
-=======
 ## **RF14 - Busca de produto personalizada**
->>>>>>> b8764bc6db4a11bfa015d9b52d88c62754716662
 
 #### Autor: @JulioNolasco - Julio Cezar Nolasco.
 
@@ -1072,3 +1000,75 @@ Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do me
 
 ![image](https://i.imgur.com/nw4H88N.png)
 ![image](https://i.imgur.com/l2oqogY.png)
+
+
+## **RF23 - Receber Newsletter.**
+
+#### Autor: @Lucka10 - Lucas Evangelista Freire.
+
+---
+
+### Revisor:@LarissaHirai - Larissa Mitie C. Hirai
+
+## Caso de Uso Expandido
+
+| Item           | Descrição                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| Caso de uso    | Receber Newsletter |
+| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja. |
+| Ator principal | Usuário utilizador da plataforma.  |
+| Pré-condição   | Acesso a internet, uma conta de email, ator logado em sua conta e inscrito na newsletter.   |
+| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja.   |
+
+**Fluxo principal**:<br>
+
+| Passo     | Descrição                                                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passo 1 | Ator clica em cadastrar uma conta nova. |
+| Passo 2 | Na pagina de cadastramento, o Ator poderá marca a checkbox de "Desejo receber Newsletter"  |
+| Passo 3 | Ao confirmar o cadastramento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
+| Passo 4.| O processo de cadastro é completo e o ator é direcionado a pagina Home.
+
+**Opções do Usuário:**
+
+| Opção           | Descrição                            |
+| --------------- | ------------------------------------ |
+| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
+| Deseja cancelar inscrição da newsletter | Remove o email do ator na lista da newsletter |
+
+**Fluxo Alternativo**:<br>
+
+FA01 - O ator deseja se inscrever na newsletter, mas não optou durante o cadastro.
+
+| Passo   | Descrição                                 |
+| -----   | ----------------------------------------- |
+| Passo 1 | O ator não optou durante o cadastro.      |
+| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
+| Passo 3 | Ator ira clicar na checkbox de "desejo receber Newsletter" |
+| Passo 4 | Com a checkbox marcada, clicar em confirmar |
+| Passo 5 | O email do ator será adicionado a lista de emails. |
+| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da kabum". |
+
+
+FA02  -  Ator deseja cancelar sua inscrição da newsletter.
+| Passo   | Descrição                                 |
+| -----   | ----------------------------------------- |
+| Passo 1 | O ator deseja cancelar sua inscrição da newsletter  |
+| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
+| Passo 3 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
+| Passo 4 | Com a checkbox marcada, clicar em confirmar |
+| Passo 5 | O email do ator será removido a lista de emails. |
+| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
+
+## User Stories
+
+| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Eu como ator, gostario de poder me inscrever na newsletter, para receber noticias e destaques de produtos na loja. | Enquanto ator interessado na loja e seus produtos, preciso ser capaz de me fazer apto a receber email com informações, para me manter informado acerca daquilo que ocorre na loja. | Certificar que o ator esteja inscrito na newsletter e que possa ser desligado quando quiser. |
+
+### Protótipo
+
+![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
+![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
+
+

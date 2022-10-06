@@ -999,3 +999,71 @@ Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do me
 
 ![image](https://i.imgur.com/nw4H88N.png)
 ![image](https://i.imgur.com/l2oqogY.png)
+
+## **RF18 - Recuperar Senha**
+
+#### Autor: @AfonsoDglan - Afonso Dglan.
+
+---
+
+### Revisor: @edjunior0 - Edson Almeida Silva Júnior
+
+| Item            | Descrição                                                                                                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Caso de uso     | Recuperar Senha.                                                                                                                                                                                                  |
+| Resumo          | É esperado que quando o cliente tiver o contato com a tela de login ele possa ter um link de recuperação de senha,ao clicar no link de recuperar senha abrira um modal com o campo de cpf para que o sistena identifique o usuário depois pede para escolher a forma de recuperação de senha por email ou sms. |
+| Ator principal  | Usuário utilizador da plataforma.                                                                                                                                                      |
+| Ator secundário | Não possui.                                                                                                                                                                        |
+| Pré-condição    | É necessário que o usuário tenha uma conta, conectado-á internet.                                                                                                                        |
+| Pós-condição    | É necessário que o usuário tenha sua própria conta.                                                                                                                                  |
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                          |
+| ------- | ------------------------------------------------------------------ |
+| Passo 1 | Entrar na página principal ver o catalogo de produtos              |
+| Passo 2 | Entrar na página de login                                          |
+| Passo 3 | Clicar no botão esqueceu a senha?                                  |
+| Passo 4 | Preencher o formúlario com o cpf ou cnpj                           |
+| Passo 5 | Preencher o recaptcha e escolher se vai querer recuperar a senha via email ou sms  |
+| Passo 6 | Ir no email ou sms recebido e entrar no link e será redirecionado para a página de recuperação de senha|
+| Passo 7 | Já na Página de recuperação de senha, preencher o formúlario com a nova senha|
+
+#### Campos
+
+| Campo   | Obrigatório                                              | Editável | Formato |
+| ------- | -------------------------------------------------------- | -------- | ------- |
+| Passo 1 | Clicar em entrar esqueceu a senha?                       |
+
+#### Campos do modal de recuperação de senha
+
+| Campo                  | Obrigatório | Editável | Formato |
+| ---------------------- | ----------- | -------- | ------- |
+| CPF ou CNPJ            | Sim         | sim      | Texto   |
+
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
+
+#### Fluxo alternativo
+
+| Passos      | Descrição                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+|             |                                                                                                     |
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Eu enquanto "usuário comum" quero "poder recuperar minha conta após esquecer minha senha de forma segura". |  Eu enquanto "usuário comum" quero "poder recuperar minha conta após esquecer minha senha de forma segura".| Certifique-se que o usuário é capaz de **recuperar sua conta de forma segura e cadastrar uma nova senha.** |
+
+![image](https://raw.githubusercontent.com/AfonsoDglan/imagens/299de88d8c4c78b38721e66f5d10f3bd363f724a/form_nova_senha.png)
+![image](https://raw.githubusercontent.com/AfonsoDglan/imagens/299de88d8c4c78b38721e66f5d10f3bd363f724a/form_identificar_user.png)

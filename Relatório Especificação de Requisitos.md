@@ -42,9 +42,11 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
-- [x] RF16 - Adicionar Cartão de Crédito. 2.6 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+- [x] RF15 - Visualizar Histórico de Compras. 2.6 -  [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
 
-- [x] RF17 - Acompanhar pedido. 2.7 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
+- [x] RF16 - Adicionar Cartão de Crédito. 2.7 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+
+- [x] RF17 - Acompanhar pedido. 2.8 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 
 ## 3 - Grupo 3.

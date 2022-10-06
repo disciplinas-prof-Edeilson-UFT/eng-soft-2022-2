@@ -62,4 +62,4 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 # Prototipo
 
-![image](https://user-images.githubusercontent.com/45723261/194389216-192a2d77-29d2-4091-a3c1-9fee4ca92452.png)
+![image](https://user-images.githubusercontent.com/45723261/194389560-44549b09-b719-429d-b9ed-ee9982b2373d.png)

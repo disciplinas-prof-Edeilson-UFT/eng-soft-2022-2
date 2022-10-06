@@ -8,7 +8,6 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
-
 - [x] RF01 - Efetuar Login. 1.1 [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
 
 - [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
@@ -19,9 +18,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
 
-
 ## 2 - Grupo 2.
 
+
+- [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0 ](https://github.com/pixies0) Revisado por @fernandokozak
 
 - [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
@@ -33,10 +33,11 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
-- [x] RF17 - Acompanhar pedido. 2.6 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
+- [x] RF16 - Adicionar Cartão de Crédito. 2.6 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+
+- [x] RF17 - Acompanhar pedido. 2.7 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 ## 3 - Grupo 3.
-
 
 - [x] RF03 - Visualizar Catalógo. 3.1 - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
 
@@ -46,6 +47,13 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
 
+- [x] RF18 - Recuperar senha - [AfonsoDglan](https://github.com/AfonsoDglan) Revisado por @edjunior0
+
+- [x] RF19 - Recomendar produto relacionado - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
+
+- [x] RF20 - Gerenciar produtos desejados - [weltonSantana](https://github.com/weltonSantana) Revisado por @ianasampaio
+
+- [x] RF21 - Compartilhar produto - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
 
 # Casos de uso e User stories
 
@@ -874,7 +882,7 @@ FA02 - Lista de desejos vazia
 
 ### Protótipo
 
-![proto](https://github.com/Lucka10/hello-world/blob/master/excluirdesej.png)
+![proto](https://raw.githubusercontent.com/Lucka10/hello-world/master/excluirdesej.png)
 
 https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
 
@@ -882,6 +890,7 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
 
+                                                                                                  |
 ## **RF14 - Busca de produto personalizada**
 
 #### Autor: @JulioNolasco - Julio Cezar Nolasco.
@@ -930,9 +939,7 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 | Passo 1.1 | O ator escolhe um filtro invalido.                                                            |
 | Passo 1.2 | O sistema apresenta uma tela com o aviso de que não pode aplicar tal filtro à aquele produto. |
 
-# User story
-
-**Persona um, usuário comum.**
+# User Story
 
 | Epic                                                                                                        | User Story                                                                                      | Critério de aceitação                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -942,9 +949,76 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 
 <img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>
 
-# Caso de uso
+## **RF16 - Cadastrar Cartão de Crédito**
 
-**RF17 – Acompanhar pedido**
+#### Autor: @pixies0 - João Pedro Silva Cunha.
+
+---
+
+### Revisor: @fernandokozak - Luiz Fernando Kozak.
+
+## Caso de Uso Expandido
+
+| Item            | Descrição                                                                                                                                     |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Caso de uso     | Cadastro de Cartão de Crédito                                                                                                                 |
+| Resumo          | Este caso de uso visa permitir que o usuário cadastre um cartão de crédito previamente como forma de pagamento antes de iniciar suas compras. |
+| Ator principal  | Usuário que no caso, trata-se de um cliente.                                                                                                  |
+| Ator secundário | Banco responsável pelo cartão do cliente.                                                                                                     |
+| Pré-condição    | O usuário precisa ter um cartão de crédito. 
+
+### Fluxo Principal 
+
+| Passos  | Descrição                                                                     |
+| ------- | ----------------------------------------------------------------------------- |
+| Passo 1 | Usuário se redireciona à sua página de perfil, em que se encontra seus dados. |
+| Passo 2 | Cliente seleciona adicionar cartão de crédito em sua carteira da plataforma.  |
+| Passo 3 | Sistema exibe formulário para preenchimento dos dados do cartão de crédito.   |
+
+#### Campos do formulário.
+
+| Campo               | Obrigatório? | Formato       |
+| ------------------- | ------------ | ------------- |
+| Titular             | Sim          | Texto         |
+| Numero do Cartão    | Sim          | Numérico      |
+| Mês Vencimento      | Sim          | Numérico      |
+| Ano Vencimento      | Sim          | Numérico      |
+| Código de Segurança | Sim          | Numérico      |
+| CPF do titular      | Sim          | Alfa numérico |
+
+#### Opções de usuário
+
+| Opção                        | Descrição                                                                                                        | Atalho |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------ |
+| Adicionar Cartão de Crédito. | Ao clicar nessa aba o usuário terá acesso ao formulário para cadastro dos dados do cartão de crédito do cliente. |
+
+#### Fluxo alternativo
+
+| Passos    | Descrição                                                   |
+| --------- | ----------------------------------------------------------- |
+| Passo 1.1 | O ator tenta adicionar um cartão de crédito já cadastrado.  |
+| Passo 1.2 | Sistema acusa a existência do cartão de crédito em questão. |
+| Passo 2.1 | O ator tenta adicionar um cartão de débito                  |
+| Passo 2.2 | Sistema exibe que não foi possivel concluir a operação      |
+
+
+# User story
+
+**Persona um, usuário comum.**
+
+
+| Epic                                                                                                   | User Story                                                                                                  | Critério de aceitação                                                |
+| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Como um usuário comum, eu quero gravar meus dados bancários previamente para garantir minha segurança. | Enquanto cliente eu preciso ter cartões de crédito cadastrados para realizar o ato de compra na plataforma; | Certifique-se que o usuário preencheu todos os campos do formulário. |
+
+# Protótipo
+
+<img src="https://uploaddeimagens.com.br/images/004/050/935/full/Desktop_-_1.png?1665004279" alt="Drawing"><img/>
+
+<img src="https://uploaddeimagens.com.br/images/004/050/936/full/Desktop_-_2.png?1665004288" alt="Drawing"><img/>
+
+
+## **RF17 – Acompanhar pedido**
 
 #### Autor: @Izann-Brum - Izann Rogério Geraldes de Brum
 
@@ -1041,18 +1115,17 @@ Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do me
 | ---------------------- | ----------- | -------- | ------- |
 | CPF ou CNPJ            | Sim         | sim      | Texto   |
 
-
 #### Relatório de usuário
 
 | Campo | Descrição | Formato |
 | ----- | --------- | ------- |
 | --    | --        | --      |
 
-#### Fluxo alternativo
 
-| Passos      | Descrição                                                                                           |
-| ----------- | --------------------------------------------------------------------------------------------------- |
-|             |                                                                                                     |
+#### Fluxo alternativo
+| Passos | Descrição |
+| ------ | --------- |
+| --     | --        |
 
 
 # User story
@@ -1067,3 +1140,213 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ![image](https://raw.githubusercontent.com/AfonsoDglan/imagens/299de88d8c4c78b38721e66f5d10f3bd363f724a/form_nova_senha.png)
 ![image](https://raw.githubusercontent.com/AfonsoDglan/imagens/299de88d8c4c78b38721e66f5d10f3bd363f724a/form_identificar_user.png)
+
+---
+
+## **RF19 - Recomendar produto relacionado**
+
+#### Autor: @edjunior - Edson Almeida Silva Júnior.
+
+---
+
+### Revisor: @AfonsoDglan - Afonso Dglan
+
+| Item            | Descrição                                                                                          |
+| --------------- | --------------------------------------------------------------------------------------------       |
+| Caso de uso     | RF19 - Recomendar produto relacionado                                                              |
+| Resumo          | Recomenda ao usuário produtos relacionados ao que está vendo no momento                            |
+| Ator principal  | Algum usuário - Visualiza produtos relacionados com o visto atual                                  |
+| Ator secundário | -                                                                                                  |
+| Pré-condição    | O(s) ator(es) já deve ter uma conta, estar logado e estar na tela de visualização de algum produto |
+| Pós-condição    | O item deve ser salvo na lista de desejos do usuário                                               |
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                                                                                           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------          |
+| Passo 1 | O ator, já na tela de vizualização do produto, visualiza abaixo uma lista com produtos relacionados com o que está vendo atualmente |
+| Passo 2 | Ao pressionar em algum produto, ele será direcionado para tela de visualização do produto em questão                                |
+
+#### Campos da aba de visualizar produtos
+
+| Campo | Obrigatório | Editável | Formato |
+| ----- | ----------- | -------- | ------- |
+| --    | --          | --       | --      |
+
+#### Opções de usuário
+
+| Opção                                     | Descrição                                                  | Atalho |
+| ----------------------------------------- | -------------------------------------------                | ------ |
+| Clicar no produto                         | Redireciona o usuário para tela de visualização do produto | --     |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
+
+
+#### Fluxo alternativo
+
+| Passos | Descrição |
+| ------ | --------- |
+| --     | --        |
+
+# User story
+
+**Persona um, usuário já na tela de visualização de um produto.**
+
+| Epic                                                                                                                                                                                                                                               | User Story                                                                                                                                                                                                                                               | Critério de aceitação                                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Como **um usuário já na tela de visualização de um produto** eu quero **poder visualizar novos produtos relacionado com o que estou vendo atualmente** para que **eu possa ser direcionado para o novo produto e possivelmente comprá-lo** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **visualizar novos produtos relacionado com o que estou vendo atualmente** para **eu possa ser direcionado para o novo produto e possivelmente comprá-lo**. | Certifique-se de que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e visualizar produtos semelhantes**. |
+
+
+![imagem](https://uploaddeimagens.com.br/images/004/049/583/full/RF19_-_Recomendar_produto_relacionado.png?1664933122)
+
+
+## **RF 20 - Gerenciar produtos desejados**
+
+### Autor: @weltonSantana - Welton Santana de Andrade Junior
+
+---
+
+### Revisor: @ianasampaio - Antonia Iana Sampaio da Silva
+
+## Caso de Uso Expandido
+
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Gerenciar produtos desejado.
+Resumo         | Permitir que ao Usuário receba noticias e ofertas especificas sobre o produto.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário efetue o login na plataforma.
+Pós-condição   | Não se aplica.
+
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Com o produto já adicionado à lista de desejos por um determinado periodo.
+Passo 2 | O sistema enviará um e-mail para o usuário informando que o produto ainda está na lista de desejos.
+  
+
+  
+#### Campos da aba de gerenciar produtos desejados 
+
+ Campo     | Obrigatorio    | Editável | Formato  
+ --------- | ------------ | ------- | -------
+ --        | --          | --   | --  
+
+
+    
+#### Opções de usuário
+
+
+ Campo     | Descrição    | Atalho  
+ --------- | ------------ | -------
+ --        | --          | --   
+
+ 
+     
+ #### Relatório de usuário
+    
+ Campo     | Descrição    | Formato   
+ --------- | ------------ | -------
+ --        | --           | --   
+    
+
+#### Fluxo alternativo
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O usuário pode definir um lembrete na lista de desejos para que seja notificado caso o produto entre em promoção.
+Passo 2 | O sistema enviará um e-mail para o usuário caso o produto entre em promoção.
+
+
+ 
+
+
+# User story
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como "usuário comum" eu quero "ser notificado" para "ter noticias do produto". | Como usuário eu  quero receber notificações sobre o produto que está na minha lista de desejos para que eu possa estar informado sobre futuras atualizações e promoções e assim poder adiquiri-lo de uma forma inteligente.  | Certifique-se que o usuário consegue **fazer login na própria conta, adicionar o produto que preferir à sua lista de desejos e selecionar a opção de ser notificado.**
+
+# Protótipo
+
+<img src="https://uploaddeimagens.com.br/images/004/051/440/full/Lembrete_.png?1665060643" alt="Drawing"><img/>
+
+## **RF23 - Receber Newsletter.**
+
+#### Autor: @Lucka10 - Lucas Evangelista Freire.
+
+---
+
+### Revisor:@LarissaHirai - Larissa Mitie C. Hirai
+
+## Caso de Uso Expandido
+
+| Item           | Descrição                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| Caso de uso    | Receber Newsletter |
+| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja. |
+| Ator principal | Usuário utilizador da plataforma.  |
+| Pré-condição   | Acesso a internet, uma conta de email, ator logado em sua conta e inscrito na newsletter.   |
+| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja.   |
+
+**Fluxo principal**:<br>
+
+| Passo     | Descrição                                                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passo 1 | Ator clica em cadastrar uma conta nova. |
+| Passo 2 | Na pagina de cadastramento, o Ator poderá marca a checkbox de "Desejo receber Newsletter"  |
+| Passo 3 | Ao confirmar o cadastramento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
+| Passo 4.| O processo de cadastro é completo e o ator é direcionado a pagina Home.
+
+**Opções do Usuário:**
+
+| Opção           | Descrição                            |
+| --------------- | ------------------------------------ |
+| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
+| Deseja cancelar inscrição da newsletter | Remove o email do ator na lista da newsletter |
+
+**Fluxo Alternativo**:<br>
+
+FA01 - O ator deseja se inscrever na newsletter, mas não optou durante o cadastro.
+
+| Passo   | Descrição                                 |
+| -----   | ----------------------------------------- |
+| Passo 1 | O ator não optou durante o cadastro.      |
+| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
+| Passo 3 | Ator ira clicar na checkbox de "desejo receber Newsletter" |
+| Passo 4 | Com a checkbox marcada, clicar em confirmar |
+| Passo 5 | O email do ator será adicionado a lista de emails. |
+| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da kabum". |
+
+
+FA02  -  Ator deseja cancelar sua inscrição da newsletter.
+| Passo   | Descrição                                 |
+| -----   | ----------------------------------------- |
+| Passo 1 | O ator deseja cancelar sua inscrição da newsletter  |
+| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
+| Passo 3 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
+| Passo 4 | Com a checkbox marcada, clicar em confirmar |
+| Passo 5 | O email do ator será removido a lista de emails. |
+| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
+
+## User Stories
+
+| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Eu como ator, gostario de poder me inscrever na newsletter, para receber noticias e destaques de produtos na loja. | Enquanto ator interessado na loja e seus produtos, preciso ser capaz de me fazer apto a receber email com informações, para me manter informado acerca daquilo que ocorre na loja. | Certificar que o ator esteja inscrito na newsletter e que possa ser desligado quando quiser. |
+
+### Protótipo
+
+![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
+![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
+

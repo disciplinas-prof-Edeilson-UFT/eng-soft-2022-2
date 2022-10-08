@@ -1614,7 +1614,7 @@ Eu como ator quero acessar a página de ofertas para acompanhar as ofertas dispo
 # Protótipo
 
 
-![image](https://user-images.githubusercontent.com/91437673/194127492-6f37ab9c-2f92-47bb-a426-19ac3d9b5090.png)
+![image](https://user-images.githubusercontent.com/91437673/194712935-be901c3b-ad1f-4b06-99af-9d49853a2193.png)
 
 
 ## Caso de uso **RF25** - 1.9 Visualizar histórico de preços

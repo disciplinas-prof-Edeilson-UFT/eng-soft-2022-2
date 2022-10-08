@@ -1484,7 +1484,7 @@ Eu como ator quero acessar a página de ofertas para acompanhar as ofertas dispo
 # Protótipo
 
 
-![image](https://user-images.githubusercontent.com/91437673/194127492-6f37ab9c-2f92-47bb-a426-19ac3d9b5090.png)
+![image](https://user-images.githubusercontent.com/91437673/194713030-4e68b406-1ce1-41cf-8198-7881d34af501.png)
 
 
 ## Caso de uso **RF26** - 1.10 Visualizar home

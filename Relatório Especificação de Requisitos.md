@@ -8,6 +8,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
+---
+
+#### Iteração 1
+
 - [x] RF01 - Efetuar Login. 1.1 [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
 
 - [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
@@ -17,6 +21,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF10 - Remover um item do Carrinho. 1.4 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
 
 - [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
+
+---
+
+#### Iteração 2
 
 - [x] RF22 - Acessar redes sociais. 1.6 - [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
 
@@ -31,6 +39,9 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 2 - Grupo 2.
 
+---
+
+#### Iteração 1
 
 - [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
@@ -39,6 +50,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF08 - Solicitar Chamado/Suporte. 2.3 - [Izann-Brum](https://github.com/Izann-Brum) Revisado por @JulioNolasco
 
 - [x] RF11 - Visualizar Carrinho. 2.4 - [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
+
+---
+
+#### Iteração 2
 
 - [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
@@ -51,6 +66,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 3 - Grupo 3.
 
+---
+
+#### Iteração 1
+
 - [x] RF03 - Visualizar Catalógo. 3.1 - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
 
 - [x] RF06 - Efetuar Compra. 3.2 - [weltonSantana](https://github.com/weltonSantana) Revisado por @ianasampaio
@@ -58,6 +77,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF09 - Adicionar Produto ao Carrinho. 3.3 - [AfonsoDglan](https://github.com/AfonsoDglan) Revisado por @edjunior0
 
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
+
+---
+
+#### Iteração 2
 
 - [x] RF18 - Recuperar senha - [AfonsoDglan](https://github.com/AfonsoDglan) Revisado por @edjunior0
 
@@ -336,7 +359,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Eu enquanto "usuário comum" quero "visualizar produtos específicos" para "saber mais coisas sobre ele". | Enquanto "usuário comum" eu preciso ser capaz de visualizar um produto em específico para saber mais informações sobre ele | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e visualizar um produto em específico.** |
 
-![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/prototipos%20visualizar%20produto.png)
+![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20produtos.png)
 
 ## **RF05 - Buscar um produto**
 
@@ -515,14 +538,14 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 #### Fluxo alternativo
 
-| Fluxo                                         | Passos    | Descrição                                                                                                                                                                                                                  |
-| --------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| FA01 - Se o ator não tiver comprado o produto | Passo 1.1 | O sistema exibirá uma mensagem avisando que não é possível avaliar um produto não comprado;                                                                                                                                |
-| FA02 - O ator não está logado                 | Passo 2.1 | O sistema exibirá a tela do produto, porém sem opção de avaliar produto. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema; |
+| Passos  | Descrição                                                                                                                                                                                                                  |
+--------- | -------------------------------------------------------------
+Passo 4.1 | Se o ator não tiver comprado o produto  o sistema exibirá uma mensagem avisando que não é possível avaliar um produto não comprado. |
+Passo 2.1 | Se o ator não está logado o sistema exibirá a tela do produto, porém sem opção de avaliar produto. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema. |
 
 # User story
 
-** Eu como ator, gostaria de avaliar o produto que comprei, para assim poder deixar minha opinião sobre o produto para outros usuários; **
+**Eu como ator, gostaria de avaliar o produto que comprei, para assim poder deixar minha opinião sobre o produto para outros usuários**
 
 | Epic | User Story | Critério de aceitação |
 | ---- | ---------- | --------------------- |
@@ -688,18 +711,11 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 #### Fluxo alternativo
 
-##### FA01 - Carrinho vazio
-
-| Passos    | Descrição                                                         |
-| --------- | ----------------------------------------------------------------- |
-| Passo 1.1 | O sistema exibirá uma mensagem avisando que o carrinho está vazio |
-
-##### FA02 - O ator não está logado
-
-| Passos    | Descrição                                                                                                                                       |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Passo 2.1 | O sistema exibirá a tela do carrinho, porém sem itens                                                                                           |
-| Passo 2.2 | No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o ator será redirecionado para página de login do sistema |
+| Passos    | Descrição                                                        
+| --------- | -----------------------------------------------------------------
+| Passo 1.1 | Se o carrinho estiver vazio o sistema exibirá uma mensagem avisando que o carrinho está vazio.                                                           
+| Passo 2.1 | Se o ator não estiver logado o sistema exibirá a tela do carrinho, porém sem itens.
+| Passo 2.2 | No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o ator será redirecionado para página de login do sistema.
 
 # User story
 
@@ -867,19 +883,10 @@ Os requisitos funcionais.
 
 **Fluxo Alternativo**:<br>
 
-FA01 - Produto removido do catalogo
-
-| Passo | Descrição                                 |
-| ----- | ----------------------------------------- |
-| 1     | item foi removido do catalogo.            |
-| 2     | O item será removido da lista de desejos. |
-
-FA02 - Lista de desejos vazia
-
-| Passo | Descrição                      |
-| ----- | ------------------------------ |
-| 1     | Lista de desejos está vazia.   |
-| 2     | Não há items para se removido. |
+| Passos      | Descrição                                 |
+| ------------| ----------------------------------------- |
+| Passo 1.1   | Se o item foi removido do catalogo o item será removido da lista de desejos. |
+| Passo 3.2.1 | Se a lista de desejos está vazia, logo não há itens para serem removidos.|
 
 **Opções do Usuário:**
 
@@ -896,13 +903,6 @@ FA02 - Lista de desejos vazia
 ### Protótipo
 
 ![proto](https://raw.githubusercontent.com/Lucka10/hello-world/master/excluirdesej.png)
-
-https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
-
-=======
-[Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
-=======
-
                                                                                                   |
 ## **RF14 - Busca de produto personalizada**
 
@@ -1417,80 +1417,7 @@ Epic	       					 |User Story| Critério de aceitação
 “Como **um cliente online** eu quero **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.**” | Enquanto **um cliente online** eu preciso ser capaz de **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.** | Certifique-se de que o usuário é capaz de **acessar o site e clicar no botão de compartilhamento**.
 
 ![imagem](https://imageup.me/images/937de534-41a3-4661-8090-18892896ac70.png)
-
 ![imagem](https://imageup.me/images/4830702d-e459-4646-8b3a-b1fb77ea1005.png)
-
----
-
-## Caso de uso **RF23** - 1.7 Receber newsletter
-
-#### Autor: @Lucka10 - Lucas Evangelista Freire.
-
----
-
-### Revisor:@LarissaHirai - Larissa Mitie C. Hirai
-
-## Caso de Uso Expandido
-
-| Item           | Descrição                                                                                   |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| Caso de uso    | Receber Newsletter |
-| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja. |
-| Ator principal | Usuário utilizador da plataforma.  |
-| Pré-condição   | Acesso a internet, uma conta de email, ator logado em sua conta e inscrito na newsletter.   |
-| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja.   |
-
-**Fluxo principal**:<br>
-
-| Passo     | Descrição                                                                                                                                                 |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Passo 1 | Ator clica em cadastrar uma conta nova. |
-| Passo 2 | Na pagina de cadastramento, o Ator poderá marca a checkbox de "Desejo receber Newsletter"  |
-| Passo 3 | Ao confirmar o cadastramento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
-| Passo 4.| O processo de cadastro é completo e o ator é direcionado a pagina Home.
-
-**Opções do Usuário:**
-
-| Opção           | Descrição                            |
-| --------------- | ------------------------------------ |
-| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
-| Deseja cancelar inscrição da newsletter | Remove o email do ator na lista da newsletter |
-
-**Fluxo Alternativo**:<br>
-
-FA01 - O ator deseja se inscrever na newsletter, mas não optou durante o cadastro.
-
-| Passo   | Descrição                                 |
-| -----   | ----------------------------------------- |
-| Passo 1 | O ator não optou durante o cadastro.      |
-| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
-| Passo 3 | Ator ira clicar na checkbox de "desejo receber Newsletter" |
-| Passo 4 | Com a checkbox marcada, clicar em confirmar |
-| Passo 5 | O email do ator será adicionado a lista de emails. |
-| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da kabum". |
-
-
-FA02  -  Ator deseja cancelar sua inscrição da newsletter.
-| Passo   | Descrição                                 |
-| -----   | ----------------------------------------- |
-| Passo 1 | O ator deseja cancelar sua inscrição da newsletter  |
-| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
-| Passo 3 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
-| Passo 4 | Com a checkbox marcada, clicar em confirmar |
-| Passo 5 | O email do ator será removido a lista de emails. |
-| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
-
-## User Stories
-
-| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Eu como ator, gostario de poder me inscrever na newsletter, para receber noticias e destaques de produtos na loja. | Enquanto ator interessado na loja e seus produtos, preciso ser capaz de me fazer apto a receber email com informações, para me manter informado acerca daquilo que ocorre na loja. | Certificar que o ator esteja inscrito na newsletter e que possa ser desligado quando quiser. |
-
-### Protótipo
-
-![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
-![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
-
 
 ## **RF22 - Acessar Redes Sociais**
 
@@ -1558,7 +1485,68 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ![image](https://user-images.githubusercontent.com/45723261/194389560-44549b09-b719-429d-b9ed-ee9982b2373d.png)
 
+## Caso de uso **RF23** - 1.7 Receber newsletter
+
+#### Autor: @Lucka10 - Lucas Evangelista Freire.
+
+---
+
+### Revisor:@LarissaHirai - Larissa Mitie C. Hirai
+
+## Caso de Uso Expandido
+
+| Item           | Descrição                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| Caso de uso    | Receber Newsletter |
+| Resumo         | Opção de se inscrever em uma newsletter, podendo receber no email cadastrado, noticias sobre os produtos e eventos que estão accontecendo na loja. |
+| Ator principal | Usuário utilizador da plataforma.  |
+| Pré-condição   | Acesso a internet, uma conta de email, ator logado em sua conta e inscrito na newsletter.   |
+| Pós-condição   | O recebimento periodico de um email com informações pertinentes a operações da loja.   |
+
+**Fluxo principal**:<br>
+
+| Passo     | Descrição                                                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passo 1 | Ator clica em cadastrar uma conta nova. |
+| Passo 2 | Na pagina de cadastramento, o Ator poderá marca a checkbox de "Desejo receber Newsletter"  |
+| Passo 3 | Ao confirmar o cadastramento, com a checkbox marcada, o autor estará apto a receber noticias no email fornecido no cadastro. |
+| Passo 4.| O processo de cadastro é completo e o ator é direcionado a pagina Home.
+
+**Opções do Usuário:**
+
+| Opção           | Descrição                            |
+| --------------- | ------------------------------------ |
+| Deseja receber newsletter | Adiciona o email do ator na lista da newsletter |
+| Deseja cancelar inscrição da newsletter | Remove o email do ator na lista da newsletter |
+
+**Fluxo Alternativo**:<br>
+
+| Passo       | Descrição                                 |
+| ------------| ----------------------------------------- |
+| Passo 3.1.1 | Caso o ator deseje se inscrever na newsletter, mas não optou durante o cadastro O ator não optou durante o cadastro, ele deverá ir na pagina de inscrição da newsletter. |
+| Passo 3.1.2 | Ator ira clicar na checkbox de "desejo receber Newsletter". |
+| Passo 3.1.4 | Com a checkbox marcada, clicar em confirmar. |
+| Passo 3.1.5 | O email do ator será adicionado a lista de emails. |
+| Passo 3.1.6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da loja". |
+| Passo 3.2.1 | Caso o ator deseja cancelar sua inscrição da newsletter o ator deverá ir na pagina de inscrição da newsletter |
+| Passo 3.2.2 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
+| Passo 3.2.3 | Com a checkbox marcada, clicar em confirmar |
+| Passo 3.2.4 | O email do ator será removido a lista de emails. |
+| Passo 3.2.5 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
+
+## User Stories
+
+| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Eu como ator, gostario de poder me inscrever na newsletter, para receber noticias e destaques de produtos na loja. | Enquanto ator interessado na loja e seus produtos, preciso ser capaz de me fazer apto a receber email com informações, para me manter informado acerca daquilo que ocorre na loja. | Certificar que o ator esteja inscrito na newsletter e que possa ser desligado quando quiser. |
+
+### Protótipo
+
+![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
+![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
+
 ## **RF24 - Acompanhar oferta**
+
 #### Autor: @LarissaHirai - Larissa Mitie C. Hirai
 ---
 

@@ -46,8 +46,6 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF16 - Adicionar Cartão de Crédito. 2.7 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
-- [x] RF16 - Adicionar Cartão de Crédito. 2.7 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
-
 - [x] RF17 - Acompanhar pedido. 2.8 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
 
 

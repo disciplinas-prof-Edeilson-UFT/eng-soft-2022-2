@@ -295,6 +295,8 @@ Agora iremos escrever uma história de usuário para uma persona.
 | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | “Como **um cliente online** eu quero **visualizar o catálogo de produtos** para que **eu possa ser encorajado a comprar algum deles.**” | Enquanto **um cliente online** eu preciso ser capaz de **visualizar o catálogo de produtos** para que **posteriormente eu possa ser encorajado a comprar algum deles.** | Certifique-se de que o usuário é capaz de **acessar o site**. |
 
+## Protótipo
+
 ![imagem](https://uploaddeimagens.com.br/images/004/042/554/full/prop.png?1664476837)
 
 ## **RF04 - Visualizar produto**
@@ -1415,6 +1417,8 @@ Passos      | Descrição
 Epic	       					 |User Story| Critério de aceitação
 -----------------------|----------|----------------------
 “Como **um cliente online** eu quero **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.**” | Enquanto **um cliente online** eu preciso ser capaz de **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.** | Certifique-se de que o usuário é capaz de **acessar o site e clicar no botão de compartilhamento**.
+
+## Protótipo
 
 ![imagem](https://i.ibb.co/zX3p7bL/Compartilhar-produto.png)
 ![imagem](https://i.ibb.co/Tc5jk5p/Compartilhar-produto-2.png)

@@ -1416,8 +1416,8 @@ Epic	       					 |User Story| Critério de aceitação
 -----------------------|----------|----------------------
 “Como **um cliente online** eu quero **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.**” | Enquanto **um cliente online** eu preciso ser capaz de **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.** | Certifique-se de que o usuário é capaz de **acessar o site e clicar no botão de compartilhamento**.
 
-![imagem](https://imageup.me/images/937de534-41a3-4661-8090-18892896ac70.png)
-![imagem](https://imageup.me/images/4830702d-e459-4646-8b3a-b1fb77ea1005.png)
+![imagem](https://i.ibb.co/zX3p7bL/Compartilhar-produto.png)
+![imagem](https://i.ibb.co/Tc5jk5p/Compartilhar-produto-2.png)
 
 ## **RF22 - Acessar Redes Sociais**
 

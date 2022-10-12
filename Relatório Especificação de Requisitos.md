@@ -1023,8 +1023,9 @@ Passo 2  |O usuário vai voltar a realizar compra.
 | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | Eu como ator, gostaria de visualizar um item que eu ja realazei a compra, para assim ter acesso ao meu controle de produtos que já foi comprado. | Enquanto ator na página de visualizar carrinho, posso ver qual produtor já comprei. | Certificar que o ator efetue a compra que o histórico de carrinho não esteja vazia. |
 
+## Protótipo de tela:
 
-[Link para o protótipo](https://www.figma.com/file/0HbkjCyeVLZf1MNPvUAslg/Untitled?node-id=0%3A1)# Engenharia de software-2022.2 | Universidade Federal do Tocantins - Palmas, 2022
+<img src="https://uploaddeimagens.com.br/images/004/058/642/full/Screenshot_2022-10-12_at_16-47-58_Figma.png?1665604120" alt="drawing" width="600"/>
 
 ## **RF16 - Cadastrar Cartão de Crédito**
 

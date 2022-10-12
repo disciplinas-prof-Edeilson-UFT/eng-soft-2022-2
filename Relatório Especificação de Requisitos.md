@@ -205,6 +205,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | Endereço | Não          | Sim       | Texto        |
 | Contato  | Sim          | Sim       | Numérico     |
 | Gênero   | Sim          | Sim       | Checkbox     |
+| Receber Novidades   | Não          | Sim       | Checkbox     |
 
 #### Opções de usuário
 
@@ -421,7 +422,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ## Protótipo de tela:
 
-<img src="https://imageup.me/images/c558b1bd-2c36-4841-a8aa-8ad6a6f2c2d0.jpeg" alt="drawing" width="600"/>
+<img src="https://uploaddeimagens.com.br/images/004/058/633/full/c558b1bd-2c36-4841-a8aa-8ad6a6f2c2d0.jpeg?1665603825" alt="drawing" width="600"/>
 
 ## **RF06 - Efetuar Compra**
 

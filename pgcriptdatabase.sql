@@ -1,4 +1,4 @@
-CREATE TABLE "public.usuario" (
+CREATE TABLE "usuario" (
 	"nome_usuario" varchar(255) NOT NULL,
 	"cpf_usuario" varchar(11) NOT NULL UNIQUE,
 	"id_usuario" serial NOT NULL UNIQUE,
@@ -8,7 +8,7 @@ CREATE TABLE "public.usuario" (
 );
 
 
-CREATE TABLE "public.produto" (
+CREATE TABLE "produto" (
 	"nome_produto" varchar(255) NOT NULL,
 	"preco_produto" FLOAT NOT NULL,
 	"quantidade_produto" integer NOT NULL,
@@ -20,14 +20,13 @@ CREATE TABLE "public.produto" (
 );
 
 
-CREATE TABLE "public.carrinho" (
+CREATE TABLE "carrinho" (
 	"quantidade_item_carrinho" integer NOT NULL,
 	"id_usuario" integer NOT NULL,
 	"id_produto" integer NOT NULL
 ) WITH (
   OIDS=FALSE
 );
-
 
 
 ALTER TABLE "carrinho" ADD CONSTRAINT "carrinho_fk0" FOREIGN KEY ("id_usuario") REFERENCES "usuario"("id_usuario");

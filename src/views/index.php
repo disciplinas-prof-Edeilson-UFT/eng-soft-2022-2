@@ -2,4 +2,4 @@
 include('./templates/cabecalho.php');
 ?>
 
-<div>teste</div>
+<div>Teste</div>

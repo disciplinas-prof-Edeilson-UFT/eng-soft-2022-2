@@ -24,3 +24,5 @@ class Connection
     return self::$instance;
   }
 }
+
+$connection = Connection::getConn();

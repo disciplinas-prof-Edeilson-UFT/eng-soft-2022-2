@@ -16,8 +16,9 @@
       font-family: 'Inter', sans-serif;
     }
 
+    /* #8d99ae Cor válida para o prototipo */
     #cabeçalho {
-      background-color: #D9D9D9;
+      background: linear-gradient(#D9D9D9, #4C586B);
       width: 100%;
       height: 150px;
       display: flex;
@@ -27,7 +28,7 @@
 
     #logo {
       font-size: 50px;
-      padding: 200px;
+      padding: 125px;
       font-weight: bold;
       text-decoration: none;
     }

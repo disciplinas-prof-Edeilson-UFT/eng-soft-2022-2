@@ -4,6 +4,10 @@ namespace src\config;
 
 // require_once 'vendor/autoload.php';
 
+/*Classe de Conexão com o banco de dados postgres com as credencias de acesso ao Banco de dados.
+Está classe retorna uma instancia e é sempre ela que sera utilizada quando se tratar de requisições
+no caso PDO */
+
 use PDO;
 
 class Connection

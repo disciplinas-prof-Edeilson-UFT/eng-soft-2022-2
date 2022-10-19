@@ -4,8 +4,9 @@ namespace src\models;
 
 use src\database\ProdutoData;
 
-
 include("../src/config/Connection.php");
+
+/* Classe de Modelo da entidade, que vai fazer uso das funções predefinidas na camada database na qual fazem requisições ao banco de dados e em seguida manipular os objetos a fim de serem chamada por fim na camada Controller*/
 
 class ProdutoModel
 {
@@ -17,6 +18,7 @@ class ProdutoModel
 
   public $rows;
 
+  /* Função que seta uma nova instancia do objeto da camada de database e recupera todas as linhas retornadas pela mesma em um vetor através da função da camada database "select()", feito isso essa função será chamada na camada de controllers */
   public function getAllRows()
   {
     include 'database/ProdutoData.php';
@@ -25,9 +27,23 @@ class ProdutoModel
     $this->rows = $data->select();
   }
 
-  public function setNomeProduto(string $nomeProduto)
+  //NÃO ESTÁ FUNCIONADO. *************************************************************************
+  public function getProduct()
   {
-    $this->nomeProduto = $nomeProduto;
+    include 'database/ProdutoData.php';
+    $data = new ProdutoData();
+
+    $this->rows = $data->selectProdutoById($this->idProduto);
+  }
+
+  //PROCURAR UM JEITO DE SETAR AS VARIÁVEIS LOCAIS COM OS DADOS PRESENTE NO BANCO **********************
+  public function setNomeProduto()
+  {
+    include 'database/ProdutoData.php';
+    $data = new ProdutoData();
+
+    $this->rows = $data->all();
+    $this->nomeProduto = $data->$_GET['nome'];
   }
 
   public function setPrecoProduto(float $precoProduto)

@@ -3,6 +3,7 @@
 namespace src\controllers;
 
 use src\models\ProdutoModel;
+use src\database\ProdutoData;
 
 /* Camada de Controle que estão presente as regras de negocio referente às entidades, de forma geral, contem funções que manipulam os determinados eventos que devem acontecer na camada de visualização*/
 
@@ -19,6 +20,8 @@ class ProdutoController
 
     $model = new ProdutoModel();
     $model->getAllRows();
+    var_dump($model);
+
 
     include 'views/pages/ListaProdutos.php';
   }

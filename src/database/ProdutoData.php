@@ -21,13 +21,16 @@ class ProdutoData
     return $stmt->fetchAll(PDO::FETCH_CLASS);
   }
 
+  //RECUPERAR PRODUTO POR ID. PORTANTO SO ESTÁ FUNCIONANDO QUANDO VC DETERMINA O ID NA CONSULTA, DEVE-SE USAR VARIÁVEL E PASSAR POR PARAMETRO
   public function selectProdutoById()
   {
-    $sql = 'SELECT nome_produto, preco_produto, descricao_produto, id_produto FROM "produto" WHERE id_produto =?';
+    $sql = 'SELECT nome_produto, preco_produto, descricao_produto, id_produto FROM "produto" WHERE id_produto = 2';
     $con = Connection::getConn();
+    $stmt = $con->prepare($sql);
+    $stmt->execute();
+
+    return $stmt->fetchAll(PDO::FETCH_CLASS);
   }
-
-
   //NÃO ESTÁ FUNCIONANDO COMO DEVERIA ********************************************************
   public function all()
   {
@@ -36,11 +39,11 @@ class ProdutoData
     $stocks = [];
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       $stocks[] = [
-        'nome' => $row['nome_produto'],
-        'preco' => $row['preco_produto'],
-        'quantidade' => $row['quantidade_produto'],
-        'descricao' => $row['descricao_produto'],
-        'id' => $row['id_produto'],
+        'nomeProduto' => $row['nome_produto'],
+        'precoProduto' => $row['preco_produto'],
+        'quantidadeProduto' => $row['quantidade_produto'],
+        'descricaoProduto' => $row['descricao_produto'],
+        'idProduto' => $row['id_produto']
       ];
     }
     return $stocks;

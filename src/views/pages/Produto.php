@@ -11,14 +11,12 @@ include './views/templates/cabecalho.php';
       <th>Descrição</th>
     </tr>
 
-    <?php foreach ($model->rows as $item) : ?>
-      <tr>
-        <td> <?= $item->nome_produto ?></td>
-        <td> <?= $item->preco_produto ?></td>
-        <td><?= $item->descricao_produto ?></td>
-        <td><a><button>Comprar</button></a></td>
-      </tr>
-    <?php endforeach; ?>
+    <tr>
+      <td> <?= $model[0]->nome_produto ?></td>
+      <td> <?= $model[0]->preco_produto ?></td>
+      <td><?= $model[0]->descricao_produto ?></td>
+      <td><a href="#"><button>Comprar</button></a></td>
+    </tr>
   </table>
 
 </body>

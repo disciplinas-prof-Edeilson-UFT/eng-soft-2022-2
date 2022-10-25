@@ -20,18 +20,33 @@ class ProdutoController
 
     $model = new ProdutoModel();
     $model->getAllRows();
-    var_dump($model);
 
     include 'views/pages/ListaProdutos.php';
+    var_dump($model);
   }
 
   public static function unique()
   {
     include 'models/ProdutoModel.php';
     $model = new ProdutoModel();
-    $model->getProduct();
-    var_dump($model);
+    $var;
+
+    if (isset($_GET['id_produto']))
+      $model = $model->getById((int) $_GET['id_produto']);
 
     include 'views/pages/Produto.php';
+    var_dump($model);
   }
+
+
+  // public static function unique()
+  // {
+  //   include 'models/ProdutoModel.php';
+  //   $model = new ProdutoModel();
+  //   $model->getProduct();
+
+
+  //   include 'views/pages/Produto.php';
+  //   var_dump($model);
+  // }
 }

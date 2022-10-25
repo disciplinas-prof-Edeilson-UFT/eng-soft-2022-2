@@ -17,6 +17,7 @@ class ProdutoModel
   // public int $idProduto;
 
   public $rows;
+  public $show;
 
   /* Função que seta uma nova instancia do objeto da camada de database e recupera todas as linhas retornadas pela mesma em um vetor através da função da camada database "select()", feito isso essa função será chamada na camada de controllers */
   public function getAllRows()
@@ -36,6 +37,17 @@ class ProdutoModel
     $this->rows = $data->selectProdutoById();
   }
 
+  public  function getById(int $id_produto)
+  {
+    include 'database/ProdutoData.php';
+    $data = new ProdutoData();
+    // $linhas = new ProdutoData();
+
+    $this->rows = $data->selectById($id_produto);
+    $this->show = $data->select();
+
+    return $this->rows;
+  }
   //PROCURAR UM JEITO DE SETAR AS VARIÁVEIS LOCAIS COM OS DADOS PRESENTE NO BANCO **********************
   // public function setNomeProduto($nomeProduto)
   // {

@@ -48,4 +48,18 @@ class ProdutoData
     }
     return $stocks;
   }
+
+  public function selectById(int $id_produto)
+  {
+    include_once 'models/ProdutoModel.php';
+
+    $sql = "SELECT * FROM produto WHERE id_produto = ?";
+
+    $con = Connection::getConn();
+    $stmt = $con->prepare($sql);
+    $stmt->bindValue(1, $id_produto);
+    $stmt->execute();
+
+    return $stmt->fetchAll(PDO::FETCH_CLASS);
+  }
 }

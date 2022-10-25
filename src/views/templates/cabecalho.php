@@ -44,7 +44,7 @@
 </head>
 <header>
   <div id="cabeçalho">
-    <a id="logo">LOGO</a>
+    <a id="logo" href="/produto">LOGO</a>
     <a href="#" id="profile">
       <img src="https://uploaddeimagens.com.br/images/004/064/618/thumb/user.png?1666047148">
     </a>

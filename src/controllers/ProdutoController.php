@@ -22,7 +22,16 @@ class ProdutoController
     $model->getAllRows();
     var_dump($model);
 
-
     include 'views/pages/ListaProdutos.php';
+  }
+
+  public static function unique()
+  {
+    include 'models/ProdutoModel.php';
+    $model = new ProdutoModel();
+    $model->getProduct();
+    var_dump($model);
+
+    include 'views/pages/Produto.php';
   }
 }

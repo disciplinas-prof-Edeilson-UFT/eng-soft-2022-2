@@ -18,4 +18,7 @@ switch ($url) {
   case '/produto':
     ProdutoController::index();
     break;
+  case '/unique':
+    ProdutoController::unique();
+    break;
 }

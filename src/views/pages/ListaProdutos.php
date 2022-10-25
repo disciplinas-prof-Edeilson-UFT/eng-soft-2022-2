@@ -18,7 +18,7 @@ include './views/templates/cabecalho.php';
         <td> R$<?= $item->preco_produto ?></td>
         <td><?= $item->descricao_produto ?></td>
         <td><?= $item->id_produto ?> </td>
-        <td><a href="#"><button>Ver mais</button></a></td>
+        <td><a href="/unique"><button>Comprar</button></a></td>
       </tr>
     <?php endforeach; ?>
 

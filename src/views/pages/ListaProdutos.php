@@ -1,9 +1,21 @@
 <?php
+// use src\models\ProdutoModel;
+// $model = new ProdutoModel();
 include './views/templates/cabecalho.php';
+// if(!empty($_GET['search'])){
+//   $data = $_GET['search'];
+//   $model = $model->getById($data);
+// }else{
+//   $model->rows = $model->rows;
+// }
 
 ?>
 
 <body>
+  <div class="box-search">
+    <input type="search" placeholder="Busque aqui" id="pesquisar">
+    <button onclick="searchData()">Buscar</button>
+  </div>
   <table>
     <tr>
       <th>Nome</th>
@@ -25,5 +37,11 @@ include './views/templates/cabecalho.php';
   </table>
 
 </body>
+<script>
+  var search = document.getElementById('pesquisar');
+  function searchData(){
+    window.location = 'produto?search='+search.value;
+  }
+</script>
 
 </html>

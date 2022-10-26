@@ -9,7 +9,7 @@ namespace src\models;
 use src\database\CarrinhoData;
 use src\config\Connection;
 
-// Por um motivo que desconheço foi necessário incluir o CarrinhoData.php por este método também.
+// Por um motivo que eu desconheço foi necessário incluir o CarrinhoData.php por este método também.
 
 include ("database/CarrinhoData.php");
 

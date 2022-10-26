@@ -22,7 +22,7 @@ class ProdutoController
     $model->getAllRows();
 
     include 'views/pages/ListaProdutos.php';
-    var_dump($model);
+    // var_dump($model);
   }
 
   public static function unique()
@@ -35,7 +35,7 @@ class ProdutoController
       $model = $model->getById((int) $_GET['id_produto']);
 
     include 'views/pages/Produto.php';
-    var_dump($model);
+    // var_dump($model);
   }
 
 

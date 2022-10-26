@@ -57,7 +57,6 @@ class ProdutoData
 
     $con = Connection::getConn();
     $stmt = $con->prepare($sql);
-    $stmt->bindValue(1, $id_produto);
     $stmt->execute();
 
     return $stmt->fetchAll(PDO::FETCH_CLASS);

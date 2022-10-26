@@ -1,0 +1,26 @@
+.table,
+tr,
+td,
+th {
+    border: rgb(9, 48, 68) solid 1px;
+    width: 30%;
+    padding: 7px;
+    font-size: 20px;
+
+    text-align: center;
+}
+
+td {
+    width: 150px;
+    height: 30px;
+}
+
+th {
+    background-color: rgb(6, 109, 135);
+    color: #FFF;
+}
+
+div {
+    text-align: center;
+    width: 100%;
+}

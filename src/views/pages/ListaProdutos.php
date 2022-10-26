@@ -1,7 +1,10 @@
 <?php
 include './views/templates/cabecalho.php';
-
 ?>
+
+<head>
+  <link rel="stylesheet" href="./views/css/ListaProdutos.css">
+</head>
 
 <body>
   <div class="box-search">

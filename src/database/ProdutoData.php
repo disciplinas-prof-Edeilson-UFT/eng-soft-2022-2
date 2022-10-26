@@ -53,7 +53,7 @@ class ProdutoData
   {
     include_once 'models/ProdutoModel.php';
 
-    $sql = "SELECT * FROM produto WHERE id_produto = ?";
+    $sql = "SELECT * FROM produto WHERE id_produto = $id_produto";
 
     $con = Connection::getConn();
     $stmt = $con->prepare($sql);

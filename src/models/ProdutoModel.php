@@ -48,6 +48,18 @@ class ProdutoModel
 
     return $this->rows;
   }
+
+  public  function getByAny($dado)
+  {
+    include 'database/ProdutoData.php';
+    $data = new ProdutoData();
+    // $linhas = new ProdutoData();
+
+    $this->rows = $data->selectByAny($dado);
+    $this->show = $data->select();
+
+    return $this->rows;
+  }
   //PROCURAR UM JEITO DE SETAR AS VARIÁVEIS LOCAIS COM OS DADOS PRESENTE NO BANCO **********************
   // public function setNomeProduto($nomeProduto)
   // {

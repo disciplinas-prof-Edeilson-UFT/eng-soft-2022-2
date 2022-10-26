@@ -20,7 +20,7 @@ class ProdutoController
     $model = new ProdutoModel();
     if(!empty($_GET['search'])){
       $data = $_GET['search'];
-      $model->getById($data);
+      $model->getByAny($data);
     }else{
       $model->getAllRows();  
     }

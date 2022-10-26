@@ -3,6 +3,25 @@ include './views/templates/cabecalho.php';
 
 ?>
 
+  <style rel="stylesheet">
+	table, tr, td, th{
+		border:#000 solid 1px;
+		width:100%;
+		padding:7px;
+		font-size:20px;
+		border-collapse:collapse;
+    text-align: center;
+	}
+	td{
+		width:150px;
+		height:30px;
+	}
+	th{
+		background-color:#060;
+		color:#FFF;
+	}
+  </style>
+
 <body>
   <table>
     <tr>

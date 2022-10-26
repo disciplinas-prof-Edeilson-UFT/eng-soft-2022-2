@@ -8,6 +8,10 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 ## 1 - Grupo 1.
 
+---
+
+#### Iteração 1
+
 - [x] RF01 - Efetuar Login. 1.1 [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
 
 - [x] RF04 - Visuzalizar Produto. 1.2 [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
@@ -18,10 +22,26 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF13 - Remover um item da lista de Desejos. 1.5 - [Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
 
+---
+
+#### Iteração 2
+
+- [x] RF22 - Acessar redes sociais. 1.6 - [João Pedro Melo Povoa](https://github.com/JPeeMP) Revisador por @Lucka10
+
+- [x] RF23 - Receber newsletter. 1.7 -[Lucka10](https://github.com/Lucka10) Revisado por @LarissaHirai
+
+- [x] RF24 - Acompanhar oferta. 1.8 - [Larissa Mitie Curi Hirai](https://github.com/LarissaHirai) Revisado por @Peraefe
+
+- [x] RF25 - Visualizar histórico de preços. 1.9 - [Fernanda Menezes Plessim de Melo](https://github.com/Peraefe) Revisado por @JoaoGabrielh 
+
+- [x] RF26 - Visualizar home. 1.10 -  [João Gabriel Alves de Souza](https://github.com/JoaoGabrielh) Revisado por @JPeeMP
+
+
 ## 2 - Grupo 2.
 
+---
 
-- [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0 ](https://github.com/pixies0) Revisado por @fernandokozak
+#### Iteração 1
 
 - [x] RF02 - Efetuar Cadastro de Usuário. 2.1 - [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
 
@@ -31,13 +51,24 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 
 - [x] RF11 - Visualizar Carrinho. 2.4 - [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
 
+---
+
+#### Iteração 2
+
 - [x] RF14 - Busca de produto personalizada. 2.5 -  [JulioNolasco](https://github.com/JulioNolasco) Revisado por @Izann-Brum
 
-- [x] RF16 - Adicionar Cartão de Crédito. 2.6 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+- [x] RF15 - Visualizar Histórico de Compras. 2.6 -  [fernandokozak](https://github.com/fernandokozak) Revisado por @pixies0
 
-- [x] RF17 - Acompanhar pedido. 2.7 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
+- [x] RF16 - Adicionar Cartão de Crédito. 2.7 -  [pixies0](https://github.com/pixies0) Revisado por @fernandokozak
+
+- [x] RF17 - Acompanhar pedido. 2.8 -  [Izann-Brum](https://github.com/Izann-Brum) Revisador por @JulioNolasco
+
 
 ## 3 - Grupo 3.
+
+---
+
+#### Iteração 1
 
 - [x] RF03 - Visualizar Catalógo. 3.1 - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
 
@@ -46,6 +77,19 @@ O projeto desenvolvido na disciplina Engenharia de Software do semestre 2022.2 �
 - [x] RF09 - Adicionar Produto ao Carrinho. 3.3 - [AfonsoDglan](https://github.com/AfonsoDglan) Revisado por @edjunior0
 
 - [x] RF12 - Adicionar produto à lista de Desejos. 3.4 - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
+
+---
+
+#### Iteração 2
+
+- [x] RF18 - Recuperar senha - [AfonsoDglan](https://github.com/AfonsoDglan) Revisado por @edjunior0
+
+- [x] RF19 - Recomendar produto relacionado - [edjunior0](https://github.com/edjunior0) Revisado por @AfonsoDglan
+
+- [x] RF20 - Gerenciar produtos desejados - [weltonSantana](https://github.com/weltonSantana) Revisado por @ianasampaio
+
+- [x] RF21 - Compartilhar produto - [ianasampaio](https://github.com/ianasampaio) Revisado por @weltonSantana
+
 
 # Casos de uso e User stories
 
@@ -161,6 +205,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | Endereço | Não          | Sim       | Texto        |
 | Contato  | Sim          | Sim       | Numérico     |
 | Gênero   | Sim          | Sim       | Checkbox     |
+| Receber Novidades   | Não          | Sim       | Checkbox     |
 
 #### Opções de usuário
 
@@ -251,6 +296,8 @@ Agora iremos escrever uma história de usuário para uma persona.
 | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | “Como **um cliente online** eu quero **visualizar o catálogo de produtos** para que **eu possa ser encorajado a comprar algum deles.**” | Enquanto **um cliente online** eu preciso ser capaz de **visualizar o catálogo de produtos** para que **posteriormente eu possa ser encorajado a comprar algum deles.** | Certifique-se de que o usuário é capaz de **acessar o site**. |
 
+## Protótipo
+
 ![imagem](https://uploaddeimagens.com.br/images/004/042/554/full/prop.png?1664476837)
 
 ## **RF04 - Visualizar produto**
@@ -315,7 +362,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Eu enquanto "usuário comum" quero "visualizar produtos específicos" para "saber mais coisas sobre ele". | Enquanto "usuário comum" eu preciso ser capaz de visualizar um produto em específico para saber mais informações sobre ele | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos e visualizar um produto em específico.** |
 
-![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/prototipos%20visualizar%20produto.png)
+![rf04](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20produtos.png)
 
 ## **RF05 - Buscar um produto**
 
@@ -375,7 +422,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 ## Protótipo de tela:
 
-<img src="https://imageup.me/images/c558b1bd-2c36-4841-a8aa-8ad6a6f2c2d0.jpeg" alt="drawing" width="600"/>
+<img src="https://uploaddeimagens.com.br/images/004/058/633/full/c558b1bd-2c36-4841-a8aa-8ad6a6f2c2d0.jpeg?1665603825" alt="drawing" width="600"/>
 
 ## **RF06 - Efetuar Compra**
 
@@ -494,14 +541,14 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 #### Fluxo alternativo
 
-| Fluxo                                         | Passos    | Descrição                                                                                                                                                                                                                  |
-| --------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| FA01 - Se o ator não tiver comprado o produto | Passo 1.1 | O sistema exibirá uma mensagem avisando que não é possível avaliar um produto não comprado;                                                                                                                                |
-| FA02 - O ator não está logado                 | Passo 2.1 | O sistema exibirá a tela do produto, porém sem opção de avaliar produto. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema; |
+| Passos  | Descrição                                                                                                                                                                                                                  |
+--------- | -------------------------------------------------------------
+Passo 4.1 | Se o ator não tiver comprado o produto  o sistema exibirá uma mensagem avisando que não é possível avaliar um produto não comprado. |
+Passo 2.1 | Se o ator não está logado o sistema exibirá a tela do produto, porém sem opção de avaliar produto. No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o autor será redirecionado para página de login do sistema. |
 
 # User story
 
-** Eu como ator, gostaria de avaliar o produto que comprei, para assim poder deixar minha opinião sobre o produto para outros usuários; **
+**Eu como ator, gostaria de avaliar o produto que comprei, para assim poder deixar minha opinião sobre o produto para outros usuários**
 
 | Epic | User Story | Critério de aceitação |
 | ---- | ---------- | --------------------- |
@@ -667,18 +714,11 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 #### Fluxo alternativo
 
-##### FA01 - Carrinho vazio
-
-| Passos    | Descrição                                                         |
-| --------- | ----------------------------------------------------------------- |
-| Passo 1.1 | O sistema exibirá uma mensagem avisando que o carrinho está vazio |
-
-##### FA02 - O ator não está logado
-
-| Passos    | Descrição                                                                                                                                       |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Passo 2.1 | O sistema exibirá a tela do carrinho, porém sem itens                                                                                           |
-| Passo 2.2 | No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o ator será redirecionado para página de login do sistema |
+| Passos    | Descrição                                                        
+| --------- | -----------------------------------------------------------------
+| Passo 1.1 | Se o carrinho estiver vazio o sistema exibirá uma mensagem avisando que o carrinho está vazio.                                                           
+| Passo 2.1 | Se o ator não estiver logado o sistema exibirá a tela do carrinho, porém sem itens.
+| Passo 2.2 | No canto superior esquerdo o sistema exibirá um botão de “Login” onde ao selecioná-lo o ator será redirecionado para página de login do sistema.
 
 # User story
 
@@ -846,19 +886,10 @@ Os requisitos funcionais.
 
 **Fluxo Alternativo**:<br>
 
-FA01 - Produto removido do catalogo
-
-| Passo | Descrição                                 |
-| ----- | ----------------------------------------- |
-| 1     | item foi removido do catalogo.            |
-| 2     | O item será removido da lista de desejos. |
-
-FA02 - Lista de desejos vazia
-
-| Passo | Descrição                      |
-| ----- | ------------------------------ |
-| 1     | Lista de desejos está vazia.   |
-| 2     | Não há items para se removido. |
+| Passos      | Descrição                                 |
+| ------------| ----------------------------------------- |
+| Passo 1.1   | Se o item foi removido do catalogo o item será removido da lista de desejos. |
+| Passo 3.2.1 | Se a lista de desejos está vazia, logo não há itens para serem removidos.|
 
 **Opções do Usuário:**
 
@@ -874,14 +905,9 @@ FA02 - Lista de desejos vazia
 
 ### Protótipo
 
-![proto](https://raw.githubusercontent.com/Lucka10/hello-world/master/excluirdesej.png)
-
-https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1
-
-=======
 [Link para o protótipo](https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Edson?node-id=0%3A1)
 =======
-
+![proto](https://uploaddeimagens.com.br/images/004/058/374/original/listadedes.png?1665580691)
                                                                                                   |
 ## **RF14 - Busca de produto personalizada**
 
@@ -940,6 +966,68 @@ https://www.figma.com/file/hZS3FT2XP2Q4Pib4LaDEHL/Atividade-5%3A-Requisitos---Ed
 ## Protótipo de tela:
 
 <img src="https://uploaddeimagens.com.br/images/004/051/078/original/filtro.jpeg?1665013993" alt="drawing" width="600"/>
+
+##  **RF 15 - Visualizar Histórico de compra** 
+
+
+#### Autor: @fernandokozak - Luiz Fernando Kozak.
+
+---
+
+### Revisor: @pixies0 - João Pedro Silva Cunha
+
+## Caso de Uso Expandido
+
+Item           | Descrição
+---------------|----------
+Caso de uso    |RF15 - Visualizar Histórico de compra.
+Resumo	       |Ver as compras que já realizou.
+Ator principal |Usuário vai em olhar hisórico 
+Ator secundário| 
+Pré-condição   |O ator deve ter realizado uma compra.
+Pós-condição   | 
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 |O ator teve ta com a conta acessada.
+Passo 2 |O ator entra em seu perfil.
+Passo 3 |Em seu perfil, vai ter atalhos como Meus pedido/ Atendimento ao cliente/ Favoritos.
+
+#### Campos da aba de visualizar produtos
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Opção de filtrar por pedido.|Novo, processamento, cancelado e enviado.
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos   | Descrição
+---------|----------
+Passo 1  |Caso o ator não tenha feito nenhuma compra no site, a tela de histórico vai estar vazia.
+Passo 2  |O usuário vai voltar a realizar compra.
+
+### User stories
+
+
+| Epic                                                                                                                                               | User Story                                                                                                                                                                                    | Critério de aceitação                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Eu como ator, gostaria de visualizar um item que eu ja realazei a compra, para assim ter acesso ao meu controle de produtos que já foi comprado. | Enquanto ator na página de visualizar carrinho, posso ver qual produtor já comprei. | Certificar que o ator efetue a compra que o histórico de carrinho não esteja vazia. |
+
+## Protótipo de tela:
+
+<img src="https://uploaddeimagens.com.br/images/004/058/642/full/Screenshot_2022-10-12_at_16-47-58_Figma.png?1665604120" alt="drawing" width="600"/>
 
 ## **RF16 - Cadastrar Cartão de Crédito**
 
@@ -1066,7 +1154,346 @@ Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do me
 ![image](https://i.imgur.com/nw4H88N.png)
 ![image](https://i.imgur.com/l2oqogY.png)
 
-## **RF23 - Receber Newsletter.**
+## **RF18 - Recuperar Senha**
+
+#### Autor: @AfonsoDglan - Afonso Dglan.
+
+---
+
+### Revisor: @edjunior0 - Edson Almeida Silva Júnior
+
+| Item            | Descrição                                                                                                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Caso de uso     | Recuperar Senha.                                                                                                                                                                                                  |
+| Resumo          | É esperado que quando o cliente tiver o contato com a tela de login ele possa ter um link de recuperação de senha,ao clicar no link de recuperar senha abrira um modal com o campo de cpf para que o sistena identifique o usuário depois pede para escolher a forma de recuperação de senha por email ou sms. |
+| Ator principal  | Usuário utilizador da plataforma.                                                                                                                                                      |
+| Ator secundário | Não possui.                                                                                                                                                                        |
+| Pré-condição    | É necessário que o usuário tenha uma conta, conectado-á internet.                                                                                                                        |
+| Pós-condição    | É necessário que o usuário tenha sua própria conta.                                                                                                                                  |
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                          |
+| ------- | ------------------------------------------------------------------ |
+| Passo 1 | Entrar na página principal ver o catalogo de produtos              |
+| Passo 2 | Entrar na página de login                                          |
+| Passo 3 | Clicar no botão esqueceu a senha?                                  |
+| Passo 4 | Preencher o formúlario com o cpf ou cnpj                           |
+| Passo 5 | Preencher o recaptcha e escolher se vai querer recuperar a senha via email ou sms  |
+| Passo 6 | Ir no email ou sms recebido e entrar no link e será redirecionado para a página de recuperação de senha|
+| Passo 7 | Já na Página de recuperação de senha, preencher o formúlario com a nova senha|
+
+#### Campos
+
+| Campo   | Obrigatório                                              | Editável | Formato |
+| ------- | -------------------------------------------------------- | -------- | ------- |
+| Passo 1 | Clicar em entrar esqueceu a senha?                       |
+
+#### Campos do modal de recuperação de senha
+
+| Campo                  | Obrigatório | Editável | Formato |
+| ---------------------- | ----------- | -------- | ------- |
+| CPF ou CNPJ            | Sim         | sim      | Texto   |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
+
+
+#### Fluxo alternativo
+| Passos | Descrição |
+| ------ | --------- |
+| --     | --        |
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Eu enquanto "usuário comum" quero "poder recuperar minha conta após esquecer minha senha de forma segura". |  Eu enquanto "usuário comum" quero "poder recuperar minha conta após esquecer minha senha de forma segura".| Certifique-se que o usuário é capaz de **recuperar sua conta de forma segura e cadastrar uma nova senha.** |
+
+![image](https://raw.githubusercontent.com/AfonsoDglan/imagens/299de88d8c4c78b38721e66f5d10f3bd363f724a/form_nova_senha.png)
+![image](https://raw.githubusercontent.com/AfonsoDglan/imagens/299de88d8c4c78b38721e66f5d10f3bd363f724a/form_identificar_user.png)
+
+---
+
+## **RF19 - Recomendar produto relacionado**
+
+#### Autor: @edjunior - Edson Almeida Silva Júnior.
+
+---
+
+### Revisor: @AfonsoDglan - Afonso Dglan
+
+| Item            | Descrição                                                                                          |
+| --------------- | --------------------------------------------------------------------------------------------       |
+| Caso de uso     | RF19 - Recomendar produto relacionado                                                              |
+| Resumo          | Recomenda ao usuário produtos relacionados ao que está vendo no momento                            |
+| Ator principal  | Algum usuário - Visualiza produtos relacionados com o visto atual                                  |
+| Ator secundário | -                                                                                                  |
+| Pré-condição    | O(s) ator(es) já deve ter uma conta, estar logado e estar na tela de visualização de algum produto |
+| Pós-condição    | O item deve ser salvo na lista de desejos do usuário                                               |
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                                                                                           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------          |
+| Passo 1 | O ator, já na tela de vizualização do produto, visualiza abaixo uma lista com produtos relacionados com o que está vendo atualmente |
+| Passo 2 | Ao pressionar em algum produto, ele será direcionado para tela de visualização do produto em questão                                |
+
+#### Campos da aba de visualizar produtos
+
+| Campo | Obrigatório | Editável | Formato |
+| ----- | ----------- | -------- | ------- |
+| --    | --          | --       | --      |
+
+#### Opções de usuário
+
+| Opção                                     | Descrição                                                  | Atalho |
+| ----------------------------------------- | -------------------------------------------                | ------ |
+| Clicar no produto                         | Redireciona o usuário para tela de visualização do produto | --     |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
+
+
+#### Fluxo alternativo
+
+| Passos | Descrição |
+| ------ | --------- |
+| --     | --        |
+
+# User story
+
+**Persona um, usuário já na tela de visualização de um produto.**
+
+| Epic                                                                                                                                                                                                                                               | User Story                                                                                                                                                                                                                                               | Critério de aceitação                                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Como **um usuário já na tela de visualização de um produto** eu quero **poder visualizar novos produtos relacionado com o que estou vendo atualmente** para que **eu possa ser direcionado para o novo produto e possivelmente comprá-lo** | Enquanto **usuário já na tela de visualização de um produto** eu preciso ser capaz de **visualizar novos produtos relacionado com o que estou vendo atualmente** para **eu possa ser direcionado para o novo produto e possivelmente comprá-lo**. | Certifique-se de que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e visualizar produtos semelhantes**. |
+
+
+![imagem](https://uploaddeimagens.com.br/images/004/049/583/full/RF19_-_Recomendar_produto_relacionado.png?1664933122)
+
+
+## **RF 20 - Gerenciar produtos desejados**
+
+### Autor: @weltonSantana - Welton Santana de Andrade Junior
+
+---
+
+### Revisor: @ianasampaio - Antonia Iana Sampaio da Silva
+
+## Caso de Uso Expandido
+
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Gerenciar produtos desejado.
+Resumo         | Permitir que ao Usuário receba noticias e ofertas especificas sobre o produto.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário efetue o login na plataforma.
+Pós-condição   | Não se aplica.
+
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Com o produto já adicionado à lista de desejos por um determinado periodo.
+Passo 2 | O sistema enviará um e-mail para o usuário informando que o produto ainda está na lista de desejos.
+  
+
+  
+#### Campos da aba de gerenciar produtos desejados 
+
+ Campo     | Obrigatorio    | Editável | Formato  
+ --------- | ------------ | ------- | -------
+ --        | --          | --   | --  
+
+
+    
+#### Opções de usuário
+
+
+ Campo     | Descrição    | Atalho  
+ --------- | ------------ | -------
+ --        | --          | --   
+
+ 
+     
+ #### Relatório de usuário
+    
+ Campo     | Descrição    | Formato   
+ --------- | ------------ | -------
+ --        | --           | --   
+    
+
+#### Fluxo alternativo
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O usuário pode definir um lembrete na lista de desejos para que seja notificado caso o produto entre em promoção.
+Passo 2 | O sistema enviará um e-mail para o usuário caso o produto entre em promoção.
+
+
+ 
+
+
+# User story
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Como "usuário comum" eu quero "ser notificado" para "ter noticias do produto". | Como usuário eu  quero receber notificações sobre o produto que está na minha lista de desejos para que eu possa estar informado sobre futuras atualizações e promoções e assim poder adiquiri-lo de uma forma inteligente.  | Certifique-se que o usuário consegue **fazer login na própria conta, adicionar o produto que preferir à sua lista de desejos e selecionar a opção de ser notificado.**
+
+# Protótipo
+
+<img src="https://uploaddeimagens.com.br/images/004/051/440/full/Lembrete_.png?1665060643" alt="Drawing"><img/>
+
+---
+
+# Caso de uso **RF21**
+
+#### Autor: @ianasampaio - Antonia Iana Sampaio da Silva
+
+---
+
+#### Revisor: @weltonSantana - Welton Santana de Andrade Júnior
+
+Item           | Descrição
+---------------|----------
+Caso de uso    |RF21 - Compartilhar produto
+Resumo           |É esperado que, quando na página de visualização de produto, o usuário tenha um método para compartilhar o acesso a ele em alguma plataforma/rede.
+Ator principal |Usuário utilizador da plataforma e novos usuários.
+Ator secundário|Não possui.
+Pré-condição   |O(s) ator(es) deve ter acessado o sistema de vendas (site) e entrado na página de visualização de algum produto.
+Pós-condição   |Não se aplica.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator acessa o sistema de vendas e visualiza determinado produto
+Passo 2 | O sistema exibe um ícone/botão que permite o compartilhamento do acesso ao produto em alguma plataforma
+Passo 3 | Ao clicar no botão de compartilhamento o sistema exibe as opções de plataformas por meio das quais o usuário pode compartilhar o acesso ao produto
+Passo 4 | O usuário escolhe por qual plataforma deseja enviar o acesso ao produto
+
+#### Campos da aba de compartilhar produto
+
+
+Campo | Obrigatório | Editável | Formato
+------|-------------|----------|--------
+Compartilhar acesso ao produto   | Não          | Não       |Botão    
+
+#### Opções de usuário
+
+Opção                                | Descrição                              | Atalho
+-------------------------------------|-------------                           |-------
+Compartilhar acesso ao produto        | Ao clicar no botão de compartilhamento o sistema exibe as opções de plataformas por meio das quais o usuário pode compartilhar o produto| --
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+--    | --        | --
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+--          | --
+
+# User story
+
+**Persona um, usuário já na tela de visualização dos produtos.**
+
+Epic	       					 |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+“Como **um cliente online** eu quero **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.**” | Enquanto **um cliente online** eu preciso ser capaz de **compartilhar o acesso ao produto em alguma plataforma** para que **o produto possa ser visualizado pelas pessoas com quem eu compartilhar o acesso.** | Certifique-se de que o usuário é capaz de **acessar o site e clicar no botão de compartilhamento**.
+
+## Protótipo
+
+![imagem](https://i.ibb.co/zX3p7bL/Compartilhar-produto.png)
+![imagem](https://i.ibb.co/Tc5jk5p/Compartilhar-produto-2.png)
+
+## **RF22 - Acessar Redes Sociais**
+
+#### Autor: @JPeeMP - João Pedro Melo Póvoa.
+
+---
+
+### Revisor: @JoaoGabrielh - João Gabriel Alves de Souza
+
+| Item            | Descrição                                                                                                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Caso de uso     | Acessar Redes Sociais.                                                                                                                                                                                  |
+| Resumo          | É esperado que quando o cliente tenha contato com o layout principal do site, ele possa estabelecer visão com as redes da loja através dos ícones clicáveis caso seja cliente da loja ou um novo usuário, e que os usuários já possam clicar na logo das redes sociais e serem redirecionados para a página da loja nas redes sociais. |
+| Ator principal  | Usuário utilizador da plataforma e novos usuários.                                                                                                                                                      |
+| Ator secundário | Não possui.                                                                                                                                                                                             |
+| Pré-condição    | É necessário que o usuário esteja utilizando a plataforma, conectado a internet.                                                                                                                        |
+| Pós-condição    | É necessário que o usuário visualize a logo da rede social para que estabeleça contato (que esses ícones estejam visíveis).                                                                                                                                  |
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                          |
+| ------- | ------------------------------------------------------------------ |
+| Passo 1 | Entrar na página principal.                                        |
+| Passo 2 | Explorar a página principal                              |
+| Passo 3 | Identificar a logo das redes socias           |
+| Passo 4 | Clicar no ícone da rede social determinada                        |
+| Passo 5 | Ser redirecionado para a página da rede social |
+
+#### Ícones clicáveis
+
+| Ícone   | Obrigatório                                              | 
+| ------- | -------------------------------------------------------- | 
+| Passo 1 | Clicar no ícone da rede social  e ser redirecionado      |
+| Passo 2 | Esperar a página carregar ao ser redirecionado           |           
+
+
+#### Opções de usuário
+
+| Opção           | Descrição                                                                                             | Atalho |
+| --------------- | ----------------------------------------------------------------------------------------------------- | ------ |
+| Acessar a rede social | Ao clicar no ícone o usuário vai poder acessar as redes sociais da página |
+
+
+#### Fluxo alternativo
+
+| Passos      | Descrição                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| Passo 1.1   | Caso o usuário não clique no ícone, deve-se ter como visualizar o nome da página nas redes socias e continuar navegando na loja mesmo assim. |
+| Passo 2.1.1 | O usuário terá visivel as logos de todas as redes socias                               |
+| Passo 2.1.2 | O usuário tem a opção de clicar ou não                                         |
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Eu enquanto "usuário comum" quero "poder estabelecer contato com as redes sociais da loja" para "ter mais informação a respeito dos produto, e praticidade dentro  de uma experiências mais completa com a loja". | Enquanto "usuário comum" preciso ter mais informações a respeito dos produtos e da loja em geral de forma externa ao site | Certifique-se que o usuário é capaz de **identificar as redes sociais através dos logos e legendas** |
+
+
+# Prototipo
+
+![image](https://user-images.githubusercontent.com/45723261/194389560-44549b09-b719-429d-b9ed-ee9982b2373d.png)
+
+## Caso de uso **RF23** - 1.7 Receber newsletter
 
 #### Autor: @Lucka10 - Lucas Evangelista Freire.
 
@@ -1102,27 +1529,18 @@ Como um usuário comum, eu preciso acompanhar as atualizações do trajeto do me
 
 **Fluxo Alternativo**:<br>
 
-FA01 - O ator deseja se inscrever na newsletter, mas não optou durante o cadastro.
-
-| Passo   | Descrição                                 |
-| -----   | ----------------------------------------- |
-| Passo 1 | O ator não optou durante o cadastro.      |
-| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
-| Passo 3 | Ator ira clicar na checkbox de "desejo receber Newsletter" |
-| Passo 4 | Com a checkbox marcada, clicar em confirmar |
-| Passo 5 | O email do ator será adicionado a lista de emails. |
-| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da kabum". |
-
-
-FA02  -  Ator deseja cancelar sua inscrição da newsletter.
-| Passo   | Descrição                                 |
-| -----   | ----------------------------------------- |
-| Passo 1 | O ator deseja cancelar sua inscrição da newsletter  |
-| Passo 2 | Ator deverá ir na pagina de inscrição da newsletter |
-| Passo 3 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
-| Passo 4 | Com a checkbox marcada, clicar em confirmar |
-| Passo 5 | O email do ator será removido a lista de emails. |
-| Passo 6 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
+| Passo       | Descrição                                 |
+| ------------| ----------------------------------------- |
+| Passo 3.1.1 | Caso o ator deseje se inscrever na newsletter, mas não optou durante o cadastro O ator não optou durante o cadastro, ele deverá ir na pagina de inscrição da newsletter. |
+| Passo 3.1.2 | Ator ira clicar na checkbox de "desejo receber Newsletter". |
+| Passo 3.1.4 | Com a checkbox marcada, clicar em confirmar. |
+| Passo 3.1.5 | O email do ator será adicionado a lista de emails. |
+| Passo 3.1.6 | A pagina será atualizada, e será retornado uma mensagem "Bem vindo a newsletter da loja". |
+| Passo 3.2.1 | Caso o ator deseja cancelar sua inscrição da newsletter o ator deverá ir na pagina de inscrição da newsletter |
+| Passo 3.2.2 | Ator irá clicar na opção de "desejo cancelar minha inscrição da newsletter" |
+| Passo 3.2.3 | Com a checkbox marcada, clicar em confirmar |
+| Passo 3.2.4 | O email do ator será removido a lista de emails. |
+| Passo 3.2.5 | A pagina será atualizada, e será retornado uma mensagem "Sua inscrição foi cancelada". |
 
 ## User Stories
 
@@ -1134,4 +1552,177 @@ FA02  -  Ator deseja cancelar sua inscrição da newsletter.
 
 ![imagem](https://uploaddeimagens.com.br/images/004/051/062/original/cadcomnews.png?1665012699)
 ![imagem](https://uploaddeimagens.com.br/images/004/051/058/original/teladanews.png?1665012376)
+
+## **RF24 - Acompanhar oferta**
+
+#### Autor: @LarissaHirai - Larissa Mitie C. Hirai
+---
+
+### Revisor: @Peraefe - Fernanda Menezes Plessim de Melo
+
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Acompanhar oferta
+Resumo	       | Acompanhar as ofertas disponibilizadas pelo sistema
+Ator principal | Usuário utilizador do sistema
+Pré-condição   | Ter acesso a internet e estar na página de ofertas do sistema
+Pós-condição   | Ter acesso a todas as ofertas oferecidas
+
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | O ator deve ir na página inicial do sistema onde será exibido um botão “Ofertas” na barra de navegação e clicar no mesmo
+Passo 2 | O ator vai ser redirecionado para página de ofertas onde poderá acompanhar todas as ofertas e o tempo restante de cada
+
+
+#### Opções de usuário
+
+Opção                                | Descrição   
+-------------------------------------|-------------
+Visualizar catálogo de oferta | Estando na página para acompanhar oferta o ator terá acesso a todas ofertas disponibilizadas e o tempo restante.
+Visualizar produtos em oferta | Ao selecionar o produto expecífico o ator será direcionado para página expecífica do produto.
+Buscar por categoria | Ao selecionar essa opção o ator fará uma busca de produtos de acodo com a categoria desejada e selecionada.
+
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso não haja ofertas disponibilizadas naquele dia o sistema irá exibir um aviso mostrando que não existem ofertas naquele momento.
+Passo 2.1   | Caso o ator esteja em uma página que não tenha o botão “Ofertas” o ator deve voltar à página inicial do sistema e selecionar o botão “Ofertas” por lá.
+
+
+# User story
+
+
+**Persona um, usuário comum.**
+
+Epic  |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu como ator quero acessar a página de ofertas para acompanhar as ofertas disponibilizadas naquele período de tempo. | Enquanto ator eu preciso ser capaz de visualizar as ofertas gerais do sistema para selecionar o produto que desejo adquirir | Certifique-se que o ator possa acompanhar as ofertas e o tempo restante de cada
+
+
+# Protótipo
+
+
+![image](https://user-images.githubusercontent.com/91437673/194712935-be901c3b-ad1f-4b06-99af-9d49853a2193.png)
+
+
+## Caso de uso **RF25** - 1.9 Visualizar histórico de preços
+#### Peraefe - Fernanda Menezes Plessim de Melo
+---
+#### Revisor : @JoaoGabrielh - João Gabriel Alves de Souza.
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Visualizar histórico de preços do produto.
+Resumo           | É esperado que ao ver a página de produto, caso o usuário clique em "Histórico de preços do produto" seja mostrado um gráfico com os preços do produto dentro dos últimos 40 dias.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário esteja utilizando a plataforma, conectado à internet.
+Pós-condição   | Não possui.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Clicar em "Histórico de preços do produto".
+Passo 2 | Visualizar o gráfico.
+
+#### Opções de usuário
+
+Opção                                | Descrição   | Atalho
+-------------------------------------|-------------|-------
+Acessar o histórico de preços do produto                   | Ao clicar em "Histórico de preços do produto" ele deve ser mostrado o gráfico.| 
+Deslizar o cursor sob o gráfico            | Ao deslizar o cursor ele deve ser mostrado os preços do produto de acordo com as datas no gráfico.                       |
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1   | Caso o produto tenha apenas 40 dias de histórico ou menos, deve-se mostrar todo seu histórico no gráfico.
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu enquanto "usuário comum" quero "visualizar histórico de preços do produto" para "saber quando comprar". | Enquanto "usuário comum" eu preciso ser capaz de visualizar o histórico de preços de um produto em específico, com as datas e os preços em cada data. | Certifique-se que o usuário é capaz de **fazer login na própria conta, buscar uma série de produtos, visualizar um produto e o histórico de preços desse produto.**
+
+![image](https://user-images.githubusercontent.com/91492418/193618419-5a0dc77f-ce48-484a-a94e-a97c6d80d949.png)
+
+## Caso de uso **RF26** - 1.10 Visualizar home
+
+#### JoãoGabrielh - João Gabriel Alves de Souza
+---
+#### Revisor : João Pedro de Melo Pessoa (JPeeMP)
+
+Item           | Descrição
+---------------|----------
+Caso de uso    | Visualizar home.
+Resumo           | É esperado que ao pesquisar pela loja e entrar nela, clicar na logo da loja exibida no topo do site ou fazer login, o usuário se depare com a home, que dará a ele a possibilidade de ter uma visão sobre uma parte do catálogo de itens, botões para as redes sociais oficiais da loja, botão para fazer login ou ver a própria conta, botão para visualizar o carrinho, botão de sac, barra de busca de produtos, busca por categoria, ofertas do dia e permitirá que os produtos do catálogo mostrado inicialmente também sejam acessados.
+Ator principal | Usuário utilizador da plataforma.
+Ator secundário| Não possui.
+Pré-condição   | É necessário que o usuário tenha um browser, busque a loja ou esteja dentro do site dela e tenha acesso à internet.
+Pós-condição   | Ter acesso o site da loja.
+
+#### Fluxo principal
+
+Passos  | Descrição
+--------|----------
+Passo 1 | Buscar a loja em seu browser.
+Passo 2 | Clicar em cima do nome da loja após a busca.
+
+#### Campos da home
+
+Campo                                | Obrigatório | Editável | Formato
+-------------------------------------|-------------|----------|--------
+
+#### Opções de usuário
+
+Opção                                  | Descrição   | Atalho
+---------------------------------------|-------------|-------
+Acessar redes sociais                  | Ao clicar no botão com a logo das redes sociais, o usuário deve ser redirecionado para o perfil da loja na respectiva rede social.		  				 | 
+Visualizar catálogo                    | Estando na home o usuário deve ser capaz de visualizar o catálogo que deve aparecer na home. |
+Fazer login ou acessar a própria conta | Ao clicar no botão com símbolo de usuário, o usuário deve ser redirecionado para a página de login caso não esteja dentro de alguma conta, ou para a página da sua própria conta. |
+Visualizar carrinho		       | Ao clicar no botão de visualizar carrinho o usuário deve ir para a página de visualização do carrinho. |
+Botão de sac			       | Ao clicar no botão de sac o usuário deve ser redirecionado para o suporte, para efetuar alguma reclamação. |
+Barra de busca de produtos	       | Ao clicar na barra de busca de produtos o usuário deve ser capaz de buscar uma série de produtos que correspondam à sua busca. |
+Visualizar produto		       | Ao clicar em cima de um produto o usuário deve conseguir visualizar aquele produto em específico. |
+Botão de busca por categoria	       | Ao clicar no botão de busca por categoria o usuário deve realizar uma busca de produto personalizada com a categoria na qual o usuário clicou. |
+Carrossel de ofertas do dia	       | Ao clicar nos pequenos pontos ou nas setas do carrossel de ofertas do dia, o usuário deve ser capaz de ver os produtos ou a categoria que está de promoção no dia do acesso à página, e deve conseguir visualizar a categoria em promoção ou o produto em específico. |
+
+#### Relatório de usuário
+
+Campo | Descrição | Formato
+------|-----------|--------
+
+#### Fluxo alternativo
+
+Passos      | Descrição
+------------|----------
+Passo 1.1.1 | Caso o usuário já esteja dentro so dite da loja, para voltar para a home ele deve clicar em cima da logo da loja exibida no topo do site.
+Passo 2.1.2 | Caso o usuário tenha efetuado seu login, ele deve ser redirecionado para a home.
+Passo 1.1.3 | Caso o usuário faça o logout, ele deve ser redirecionado para a home.
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+Epic                                |User Story| Critério de aceitação
+-----------------------|----------|----------------------
+Eu enquanto "usuário comum" quero "acessar a home" para "ter uma visão inicial sobre o site". | Enquanto "usuário comum" eu preciso ser capaz de visualizar a home para ter uma visão geral sobre a loja e ter um local que me permita acessar parte das demais funcionalidades do site| Certifique-se que o usuário é capaz de **buscar a loja ou ser redirecionado para a home.**
+
+
+![rf26](https://github.com/JoaoGabrielh/requisitos/blob/main/visualizar%20home.png)
+
 

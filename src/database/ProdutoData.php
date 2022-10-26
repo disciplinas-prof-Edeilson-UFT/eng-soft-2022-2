@@ -53,11 +53,23 @@ class ProdutoData
   {
     include_once 'models/ProdutoModel.php';
 
-    $sql = "SELECT * FROM produto WHERE id_produto = ?";
+    $sql = "SELECT * FROM produto WHERE id_produto = $id_produto";
 
     $con = Connection::getConn();
     $stmt = $con->prepare($sql);
-    $stmt->bindValue(1, $id_produto);
+    $stmt->execute();
+
+    return $stmt->fetchAll(PDO::FETCH_CLASS);
+  }
+
+  public function selectByAny($data)
+  {
+    include_once 'models/ProdutoModel.php';
+
+    $sql = "SELECT * FROM produto WHERE nome_produto LIKE '%$data%'";
+
+    $con = Connection::getConn();
+    $stmt = $con->prepare($sql);
     $stmt->execute();
 
     return $stmt->fetchAll(PDO::FETCH_CLASS);

@@ -36,7 +36,7 @@ class CarrinhoData {
     public function selectCarrinho ($id_usuario){
         $conexao = Connection::getConn();
         $sql = "SELECT carrinho.quantidade_item_carrinho, produto.nome_produto, produto.preco_produto, produto.quantidade_produto, produto.descricao_produto
-        FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = usuario.id_usuario;";
+        FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1;";
         $result = $conexao -> query($sql);
         return $result;
     }

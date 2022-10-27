@@ -13,15 +13,19 @@ include './views/templates/cabecalho.php';
         <h3>PRODUTO E FRETE</h3>
         <button type="button">REMOVER TODOS OS PRODUTOS</button>
         <table>
+            <?php foreach ((array)$model->rows as $item) : ?>
             <tr>
             <th>Nome</th>
+            <th>Quantidade</th>
             <th>Preço</th>
             </tr>
 
             <tr>
-            <td> <?= $model[0]->nome_produto ?></td>
-            <td> <?= $model[0]->preco_produto ?></td>
+            <td> <?= $item->nome_produto ?></td>
+            <td> <?= $item->quantidade_item_carrinho ?></td>
+            <td> <?= $item->preco_produto ?></td>
             </tr>
+            <?php endforeach; ?>
         </table>
         <h4>FRETE:</h4>
     </div>

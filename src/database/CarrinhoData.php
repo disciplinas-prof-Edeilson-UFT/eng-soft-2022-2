@@ -30,12 +30,14 @@ class CarrinhoData {
 				WHERE id_produto = '$id_produto' AND id_usuario = 1";
 
 		$con -> query ($sql);
+
+        header('location: pages/VisualizarCarrinho.php');
 	
 	}
 
     public function selectCarrinho ($id_usuario){
         $conexao = Connection::getConn();
-        $sql = "SELECT carrinho.quantidade_item_carrinho, produto.nome_produto, produto.preco_produto, produto.quantidade_produto, produto.descricao_produto
+        $sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, produto.preco_produto
         FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1;";
         $result = $conexao -> query($sql);
         return $result;

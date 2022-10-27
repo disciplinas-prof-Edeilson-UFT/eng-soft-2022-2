@@ -33,7 +33,7 @@ class CarrinhoController {
 	public function getCarrinho(){
 		$classModel = new CarrinhoModel ();
 		$classModel -> selecionaCarrinho ();
-		require_once ("../views/pages/VisualizarCarrinho.php")
+		require_once ("../views/pages/VisualizarCarrinho.php");
 	}
 
 ?>

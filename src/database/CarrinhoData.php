@@ -12,7 +12,7 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
-include 'config/Connection.php';
+include './src/config/Connection.php';
 class CarrinhoData {
 
 	// Nesta função nós pegamos a conexão com o banco, construimos a string e executamos a query no banco de dados.
@@ -62,6 +62,8 @@ class CarrinhoData {
 		$con->execute();
 
 		$response = $con->fetch();
+
+		print_r($response);
 
     return array(
       "id_produto" => $response['id_usuario'],

@@ -5,7 +5,7 @@ namespace src\models;
 
 use src\database\CarrinhoData;
 
-include 'database/CarrinhoData.php';
+include("src/database/CarrinhoData.php");
 
 class CarrinhoModel
 {

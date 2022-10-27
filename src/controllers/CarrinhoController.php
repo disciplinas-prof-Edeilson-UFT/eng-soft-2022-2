@@ -4,18 +4,18 @@ namespace src\controllers;
 
 use src\models\CarrinhoModel;
 
-include 'models/CarrinhoModel.php';
+include("src/models/CarrinhoModel.php");
 
 class CarrinhoController
 {
-    private static $cartModel;
+    private $cartModel;
 
     public function __construct(){
         $this->cartModel = new CarrinhoModel();
     }
 
     private function productExists($userId, $productId) {
-        $response = $this->cartModel.findOnde($userId, $productId);
+        $response = $this->cartModel->findOne($userId, $productId);
         if (!$response) {
             return "Product is not in cart";
         }
@@ -27,7 +27,7 @@ class CarrinhoController
         if (!$productExists) {
             return $productExists;
         }
-        $this->cartModel.delete($userId, $productId);
+        $this->cartModel->delete($userId, $productId);
         return "Product deleted with success";
     }
 
@@ -41,6 +41,6 @@ class CarrinhoController
             return "Could not remove product quantity";
         }
 
-        $this->cartModel.update($quantity, $userId, $productId);
+        $this->cartModel->update($quantity, $userId, $productId);
     }
 }

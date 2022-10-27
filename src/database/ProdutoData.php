@@ -21,7 +21,7 @@ class ProdutoData
     return $stmt->fetchAll(PDO::FETCH_CLASS);
   }
 
-  //RECUPERAR PRODUTO POR ID. PORTANTO SO ESTÁ FUNCIONANDO QUANDO VC DETERMINA O ID NA CONSULTA, DEVE-SE USAR VARIÁVEL E PASSAR POR PARAMETRO
+  //RECUPERAR PRODUTO POR ID. PORTANTO SO ESTÁ FUNCIONANDO QUANDO VC DETERMINA O ID NA CONSULTA, DEVE-SE USAR VARIÁVEL E PASSAR POR PARAMETRO --- APAGAR NO LANÇAMENTO DA RELEASE
   public function selectProdutoById()
   {
     $sql = 'SELECT nome_produto, preco_produto, descricao_produto, id_produto FROM "produto" WHERE id_produto = 2';
@@ -31,7 +31,7 @@ class ProdutoData
 
     return $stmt->fetchAll(PDO::FETCH_CLASS);
   }
-  //NÃO ESTÁ FUNCIONANDO COMO DEVERIA ********************************************************
+  //NÃO ESTÁ FUNCIONANDO COMO DEVERIA ******************************************************** APAGAR NO LANÇAMENTO DA RELEASE
   public function all()
   {
     $con = Connection::getConn();
@@ -53,11 +53,23 @@ class ProdutoData
   {
     include_once 'models/ProdutoModel.php';
 
-    $sql = "SELECT * FROM produto WHERE id_produto = ?";
+    $sql = "SELECT * FROM produto WHERE id_produto = $id_produto";
 
     $con = Connection::getConn();
     $stmt = $con->prepare($sql);
-    $stmt->bindValue(1, $id_produto);
+    $stmt->execute();
+
+    return $stmt->fetchAll(PDO::FETCH_CLASS);
+  }
+
+  public function selectByAny($data)
+  {
+    include_once 'models/ProdutoModel.php';
+
+    $sql = "SELECT * FROM produto WHERE nome_produto LIKE '%$data%'";
+
+    $con = Connection::getConn();
+    $stmt = $con->prepare($sql);
     $stmt->execute();
 
     return $stmt->fetchAll(PDO::FETCH_CLASS);

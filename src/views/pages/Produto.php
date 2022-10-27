@@ -58,7 +58,7 @@ if ($_POST) {
       <form method = "POST"> 
       
       	<input type = "submit" name = "addcart" value = "adicionar produto ao carrinho">
-
+      
       </form>
     </tr>
   </table>

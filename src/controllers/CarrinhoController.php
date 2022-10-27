@@ -66,3 +66,5 @@ class CarrinhoController
         $model->update($quantity, $userId, $productId);
     }
 }
+
+?>

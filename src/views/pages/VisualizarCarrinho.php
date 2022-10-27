@@ -1,6 +1,6 @@
 <?php
 include '\views\templates\cabecalho.php';
-
+include __DIR__.'\controllers\CarrinhoController.php';
 ?>
 
 <body>

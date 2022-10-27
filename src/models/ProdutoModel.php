@@ -28,7 +28,7 @@ class ProdutoModel
     $this->rows = $data->select();
   }
 
-  //FUNCIONANDO PARCIALMENTE. *************************************************************************
+  //FUNCIONANDO PARCIALMENTE. ****************************** APAGAR NO LANÇAMENTO DA RELEASE
   public function getProduct()
   {
     include 'database/ProdutoData.php';
@@ -60,6 +60,8 @@ class ProdutoModel
 
     return $this->rows;
   }
+
+  //APAGAR NO LANÇAMENTO DA RELEASE
   //PROCURAR UM JEITO DE SETAR AS VARIÁVEIS LOCAIS COM OS DADOS PRESENTE NO BANCO **********************
   // public function setNomeProduto($nomeProduto)
   // {

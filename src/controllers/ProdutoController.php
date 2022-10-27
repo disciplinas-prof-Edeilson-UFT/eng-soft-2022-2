@@ -18,11 +18,11 @@ class ProdutoController
   {
     include 'models/ProdutoModel.php';
     $model = new ProdutoModel();
-    if(!empty($_GET['search'])){
+    if (!empty($_GET['search'])) {
       $data = $_GET['search'];
       $model->getByAny($data);
-    }else{
-      $model->getAllRows();  
+    } else {
+      $model->getAllRows();
     }
 
 
@@ -44,6 +44,7 @@ class ProdutoController
   }
 
 
+  //APAGAR NO LANÇAMENTO DA RELEASE
   // public static function unique()
   // {
   //   include 'models/ProdutoModel.php';

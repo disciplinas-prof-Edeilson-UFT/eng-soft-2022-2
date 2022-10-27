@@ -12,7 +12,7 @@ CREATE TABLE "produto" (
 	"nome_produto" varchar(255) NOT NULL,
 	"preco_produto" FLOAT NOT NULL,
 	"quantidade_produto" integer NOT NULL,
-	"descricao_produto" TEXT(255) NOT NULL,
+	"descricao_produto" TEXT NOT NULL,
 	"id_produto" serial NOT NULL,
 	CONSTRAINT "produto_pk" PRIMARY KEY ("id_produto")
 ) WITH (

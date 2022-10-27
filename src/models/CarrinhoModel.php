@@ -2,10 +2,15 @@
 
 
 namespace src\models;
-
+include("src/database/CarrinhoData.php");
 use src\database\CarrinhoData;
 
-include("src/database/CarrinhoData.php");
+echo "CHEGOU AQQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII";
+
+die();
+
+use src\config\Connection;
+
 
 class CarrinhoModel
 {
@@ -26,5 +31,20 @@ class CarrinhoModel
     $cartData = new CarrinhoData();
     $response = $cartData->getProduct($userId, $productId);
     return $response;
+  }
+
+  public function execute($id_produto)
+  {
+
+    $execution = new CarrinhoData();
+    $execution->addCarrinho($id_produto);
+  }
+
+  public function selecionaCarrinho()
+  {
+    include 'database/CarrinhoData.php';
+    $exec  = new CarrinhoData();
+
+    $rows = $exec->selectCarrinho();
   }
 }

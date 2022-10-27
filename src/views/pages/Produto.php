@@ -53,11 +53,11 @@ if ($_POST) {
       <td> <?= $model[0]->nome_produto ?></td>
       <td> <?= $model[0]->preco_produto ?></td>
       <td><?= $model[0]->descricao_produto ?></td>
-      <td> <a href="#"><button>Comprar</button></a></td>
+      
       
       <form method = "POST"> 
       
-      	<input type = "submit" name = "addcart" value = "adicionar produto ao carrinho">
+      	<input type = "submit" name = "addcart" value = "Comprar">
       
       </form>
     </tr>

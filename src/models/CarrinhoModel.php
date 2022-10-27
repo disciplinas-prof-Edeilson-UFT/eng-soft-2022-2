@@ -25,11 +25,11 @@ class CarrinhoModel {
 		
 	}
 
-    public function selecionaCarrinho($id_usuario){
+    public function selecionaCarrinho(){
         include 'database/CarrinhoData.php';
         $exec  = new CarrinhoData();
 
-        $this->rows = $exec->selectCarrinho($id_usuario);
+        $this->rows = $exec->selectCarrinho();
     }
 	
 }

@@ -29,7 +29,7 @@ class CarrinhoModel {
         include 'database/CarrinhoData.php';
         $exec  = new CarrinhoData();
 
-        $this->rows = $exec->selectCarrinho();
+        $this->rows = $exec->selectCarrinho($id_usuario);
     }
 	
 }

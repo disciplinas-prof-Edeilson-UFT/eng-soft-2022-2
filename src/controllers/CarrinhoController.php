@@ -35,5 +35,5 @@ class CarrinhoController {
 		$classModel -> selecionaCarrinho ();
 		require_once ("../views/pages/VisualizarCarrinho.php");
 	}
-
+}
 ?>

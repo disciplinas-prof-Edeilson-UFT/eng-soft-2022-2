@@ -24,6 +24,13 @@ class CarrinhoModel {
 		$execution -> addCarrinho($id_produto);
 		
 	}
+
+    public function selectCarrinho($id_usuario){
+        include 'database/CarrinhoData.php';
+        $exec  = new ProdutoData();
+
+        $this->rows = $exec->selectCarrinho();
+    }
 	
 }
 

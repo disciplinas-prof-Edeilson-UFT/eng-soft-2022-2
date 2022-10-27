@@ -26,13 +26,24 @@ class CarrinhoData {
 		
 		$con = Connection::getConn ();
 
-		$sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
-				WHERE id_produto = '$id_produto' AND id_usuario = 1";
+		// query para quantidade do item no carrinho
+		$sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_produto = '$id_produto'");
 
+		// Checa se o item ja existe no carrinho. 
+		// Se TRUE, o rowCount será maior que 0, realiza um UPDATE na quantidade_item_carrinho. 
+		// Se FALSE, o rowCount será igual a 0, adiciona uma nova tupla para o item.	
+		
+		if($sql->rowCount() > 0) :
+			$sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
+				WHERE id_produto = '$id_produto' AND id_usuario = 1";
+		else :
+			$sql =  "INSERT INTO CARRINHO VALUES (1,1,$id_produto)";
+		endif;
+
+		// Commit a query no Carrinho.
 		$con -> query ($sql);
-	
+
 	}
 
 }
-
 ?>

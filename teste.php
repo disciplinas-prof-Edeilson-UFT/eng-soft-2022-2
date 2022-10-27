@@ -7,7 +7,7 @@ use src\config\Connection;
 include("src/config/Connection.php");
 
 $fon = Connection::getConn();
-$response = $fon->prepare('SELECT * FROM "produto"');
+$response = $fon->prepare('SELECT * FROM "carrinho"');
 $response->execute();
 $resultado = [];
 
@@ -17,5 +17,6 @@ if ($response->rowCount() > 0) :
 else :
   $resultado = [];
 endif;
-
+echo '<pre>';
 print_r($resultado);
+echo '</pre>';

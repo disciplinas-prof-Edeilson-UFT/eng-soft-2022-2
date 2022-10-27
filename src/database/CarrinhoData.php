@@ -12,6 +12,7 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
+include 'config/Connection.php';
 class CarrinhoData {
 
 	// Nesta função nós pegamos a conexão com o banco, construimos a string e executamos a query no banco de dados.
@@ -33,6 +34,40 @@ class CarrinhoData {
 	
 	}
 
-}
+	public function removeFromCart($userId, $productId) {
+		$sql = "DELETE FROM carrinho WHERE id_usuario = ? AND id_produto = ?";
+		$con = Connection::getConn()->prepare($sql);
+		$con->bindValue(1, $userId);
+		$con->bindValue(2, $productId);
+		$con->execute();
+	}
 
-?>
+	public function updateCartProduct($userId, $productId, $quantity) {
+		$sql = "UPDATE carrinho SET quantidade_item_carrinho = ? WHERE id_usuario = ? AND id_produto = ? RETURNING quantidade_item_carrinho";
+		$con = Connection::getConn()->prepare($sql);
+		$con->bindValue(1, $quantity);
+		$con->bindValue(2, $userId);
+		$con->bindValue(3, $productId);
+		$con->execute();
+
+		$response = $con->fetch();
+    return $response;
+	}
+
+	public function getProduct($userId, $productId) {
+		$sql = "SELECT * FROM carrinho WHERE id_usuario = ? AND id_produto = ?";
+		$con = Connection::getConn()->prepare($sql);
+		$con->bindValue(1, $userId);
+		$con->bindValue(2, $productId);
+		$con->execute();
+
+		$response = $con->fetch();
+
+    return array(
+      "id_produto" => $response['id_usuario'],
+      "id_usuario" => $response['id_produto'],
+			"quantidade_item_carrinho" => $response['quantidade_item_carrinho']
+    );
+	}
+
+}

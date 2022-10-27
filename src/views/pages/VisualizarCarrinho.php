@@ -1,5 +1,5 @@
 <?php
-include './views/templates/cabecalho.php';
+include '\views\templates\cabecalho.php';
 
 ?>
 

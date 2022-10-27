@@ -17,9 +17,14 @@ class ProdutoController
   public static function index()
   {
     include 'models/ProdutoModel.php';
-
     $model = new ProdutoModel();
-    $model->getAllRows();
+    if(!empty($_GET['search'])){
+      $data = $_GET['search'];
+      $model->getByAny($data);
+    }else{
+      $model->getAllRows();  
+    }
+
 
     include 'views/pages/ListaProdutos.php';
     // var_dump($model);

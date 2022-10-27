@@ -1,5 +1,14 @@
 <?php
+use src\models\ProdutoModel;
+$model = new ProdutoModel();
 include './views/templates/cabecalho.php';
+
+if(!empty($_GET['search'])){
+  $data = $_GET['search'];
+   $model = $model->getById($data);
+ }else{
+  $model->rows = $model->rows;
+}
 ?>
 
 <head>
@@ -72,7 +81,7 @@ include './views/templates/cabecalho.php';
 <script>
   var search = document.getElementById('pesquisar');
   function searchData(){
-    window.location = 'produto?'+search.value;
+    window.location = 'produto?search='+search.value;
   }
 </script>
 

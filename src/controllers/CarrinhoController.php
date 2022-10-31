@@ -4,32 +4,62 @@
 
 namespace src\controllers;
 
-// Usaremos a classe do CarrinhoModel e a classe do CarrinhoData.
-
 use src\models\CarrinhoModel;
-use src\database\CarrinhoData;
+include __DIR__ .'/../models/CarrinhoModel.php';
 
-// Por um motivo que desconheço foi necessário incluir o CarrinhoModel.php por este método também.
+class CarrinhoController
+{
+    // Usaremos a classe do CarrinhoModel e a classe do CarrinhoData.
 
-include ("models/CarrinhoModel.php");
+    public function updateValue()
+    {
 
-class CarrinhoController {
-	
-	public function updateValue () {
-		
-		// Aqui é onde conseguiremos o id do produto que deve ser incrementado. Já que o id dele está na url, verificamos 
-		// primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
-		// execute que está na classe CarrinhoModel, passando o id do produto que está na url usando o get.
-		
-		if (isset ($_GET ['id_produto'])) {
+        // Aqui é onde conseguiremos o id do produto que deve ser incrementado. Já que o id dele está na url, verificamos 
+        // primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
+        // execute que está na classe CarrinhoModel, passando o id do produto que está na url usando o get.
 
-			$model = new CarrinhoModel ();
-			
-			$model = $model -> execute ($_GET ['id_produto']);
-		}
-	
-	}
-	
+        if (isset($_GET['id_produto'])) {
+            
+            $model = new CarrinhoModel();
+
+            $model = $model->execute($_GET['id_produto']);
+        }
+    }
+
+    private function productExists($userId, $productId)
+    {
+        $model = new CarrinhoModel();
+        $response = $model->findOne($userId, $productId);
+        if (!$response) {
+            return "Product is not in cart";
+        }
+        return $response;
+    }
+
+    public function removeProduct()
+    {
+        $model = new CarrinhoModel();
+        $model->delete(1);
+        return "Product deleted with success";
+    }
+
+    public function removeSomeProducts($quantity, $userId, $productId)
+    {
+        $productExists = $this->productExists($userId, $productId);
+        if (!$productExists) {
+            return $productExists;
+        }
+
+        if (!$productExists["quantidade_item_carrinho"] >= $quantity) {
+            return "Could not remove product quantity";
+        }
+        $model = new CarrinhoModel();
+        $model->update($quantity, $userId, $productId);
+    }
+
+    public function selecionaCarrinho() {
+        $model = new CarrinhoModel();
+        $response = $model->selecionaCarrinho();
+        return $response;
+    }
 }
-
-?>

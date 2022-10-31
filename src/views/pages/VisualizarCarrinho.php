@@ -1,5 +1,18 @@
 <?php
-include '\views\templates\cabecalho.php';
+
+use src\controllers\CarrinhoController;
+include __DIR__ .'/../../controllers/CarrinhoController.php';
+include __DIR__ .'/../templates/cabecalho.php';
+
+if ($_POST) {
+
+	if (isset ($_POST ['removecart'])) {
+
+		$removeCart = new CarrinhoController();
+		$removeCart->removeProduct();
+	}
+
+}
 
 ?>
 
@@ -11,9 +24,14 @@ include '\views\templates\cabecalho.php';
     </div>
     <div>
         <h3>PRODUTO E FRETE</h3>
-        <button type="button">REMOVER TODOS OS PRODUTOS</button>
+        <form method="POST">
+            <button name="removecart" type="submit">REMOVER TODOS OS PRODUTOS</button>
+        </form>
         <table>
-            <?php foreach ((array)$model->rows as $item) : ?>
+            <?php
+                $carrinhoController = new CarrinhoController();
+                $rows = $carrinhoController->selecionaCarrinho();
+                foreach ((array)$rows as $item) :?>
             <tr>
             <th>Nome</th>
             <th>Quantidade</th>

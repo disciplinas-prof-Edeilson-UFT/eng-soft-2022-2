@@ -5,6 +5,8 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
+include("../src/config/Connection.php");
+
 /* Classe que realiza comunicação com o banco de dados devio ao uso da classe Connection e o PDO. Ás funções contidas nessa classe muito com certeza serão usadas pelo Modelo referente, no caso ProdutoModel*/
 
 class ProdutoData
@@ -21,7 +23,7 @@ class ProdutoData
     return $stmt->fetchAll(PDO::FETCH_CLASS);
   }
 
-  //RECUPERAR PRODUTO POR ID. PORTANTO SO ESTÁ FUNCIONANDO QUANDO VC DETERMINA O ID NA CONSULTA, DEVE-SE USAR VARIÁVEL E PASSAR POR PARAMETRO
+  //RECUPERAR PRODUTO POR ID. PORTANTO SO ESTÁ FUNCIONANDO QUANDO VC DETERMINA O ID NA CONSULTA, DEVE-SE USAR VARIÁVEL E PASSAR POR PARAMETRO --- APAGAR NO LANÇAMENTO DA RELEASE
   public function selectProdutoById()
   {
     $sql = 'SELECT nome_produto, preco_produto, descricao_produto, id_produto FROM "produto" WHERE id_produto = 2';
@@ -31,7 +33,7 @@ class ProdutoData
 
     return $stmt->fetchAll(PDO::FETCH_CLASS);
   }
-  //NÃO ESTÁ FUNCIONANDO COMO DEVERIA ********************************************************
+  //NÃO ESTÁ FUNCIONANDO COMO DEVERIA ******************************************************** APAGAR NO LANÇAMENTO DA RELEASE
   public function all()
   {
     $con = Connection::getConn();

@@ -41,6 +41,7 @@
       width: 50px;
     }
 
+
     .sideR {
       display: flex;
       gap: 20px 90px;
@@ -48,6 +49,11 @@
 
     .buy img {
       width: 50px;
+
+    #buy img {
+      width: 50px;
+      padding: 50px;
+
     }
   </style>
 </head>

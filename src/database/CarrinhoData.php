@@ -9,11 +9,10 @@ namespace src\database;
 
 // Usaremos a classe de conexão com o banco de dados que está no heroku e também o pdo, a orientação a objetos do php.
 
-use JetBrains\PhpStorm\Internal\ReturnTypeContract;
 use src\config\Connection;
 use PDO;
 
-include '../config/Connection.php';
+include __DIR__ .'/../config/Connection.php';
 class CarrinhoData
 {
 
@@ -48,12 +47,11 @@ class CarrinhoData
 		$con->query($sql);
 	}
 
-	public function removeFromCart($userId, $productId)
+	public function removeFromCart($userId)
 	{
-		$sql = "DELETE FROM carrinho WHERE id_usuario = ? AND id_produto = ?";
+		$sql = "DELETE FROM carrinho WHERE id_usuario = ?";
 		$con = Connection::getConn()->prepare($sql);
 		$con->bindValue(1, $userId);
-		$con->bindValue(2, $productId);
 		$con->execute();
 	}
 
@@ -89,10 +87,12 @@ class CarrinhoData
 
 	public function selectCarrinho()
 	{
+
 		$conexao = Connection::getConn();
-		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, produto.preco_produto
-		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1;";
-		$result = $conexao->query($sql);
-		return $result;
+		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, produto.preco_produto, usuario.id_usuario
+		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
+		$stmt = $conexao->prepare($sql);
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
 }

@@ -2,22 +2,17 @@
 
 
 namespace src\models;
-include("src/database/CarrinhoData.php");
-use src\database\CarrinhoData;
-
-echo "CHEGOU AQQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII";
-
-die();
 
 use src\config\Connection;
-
+use src\database\CarrinhoData;
+include __DIR__ .'/../database/CarrinhoData.php';
 
 class CarrinhoModel
 {
-  public function delete($userId, $productId)
+  public function delete($userId)
   {
     $cartData = new CarrinhoData();
-    $cartData->removeFromCart($userId, $productId);
+    $cartData->removeFromCart($userId);
   }
 
   public function update($quantity, $userId, $productId)
@@ -42,9 +37,9 @@ class CarrinhoModel
 
   public function selecionaCarrinho()
   {
-    include 'database/CarrinhoData.php';
     $exec  = new CarrinhoData();
 
     $rows = $exec->selectCarrinho();
+    return $rows;
   }
 }

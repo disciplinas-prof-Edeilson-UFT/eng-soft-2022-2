@@ -5,8 +5,7 @@
 namespace src\controllers;
 
 use src\models\CarrinhoModel;
-include 'models\CarrinhoModel.php';
-
+include __DIR__ .'/../models/CarrinhoModel.php';
 
 class CarrinhoController
 {
@@ -19,7 +18,6 @@ class CarrinhoController
         // primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
         // execute que está na classe CarrinhoModel, passando o id do produto que está na url usando o get.
 
-        include 'models/CarrinhoModel.php';
         if (isset($_GET['id_produto'])) {
             
             $model = new CarrinhoModel();
@@ -30,7 +28,6 @@ class CarrinhoController
 
     private function productExists($userId, $productId)
     {
-        include 'models/CarrinhoModel.php';
         $model = new CarrinhoModel();
         $response = $model->findOne($userId, $productId);
         if (!$response) {
@@ -41,13 +38,8 @@ class CarrinhoController
 
     public function removeProduct()
     {
-        $productExists = $this->productExists(1, 7);
-        if (!$productExists) {
-            return $productExists;
-        }
-        include 'models/CarrinhoModel.php';
         $model = new CarrinhoModel();
-        $model->delete(1, 7);
+        $model->delete(1);
         return "Product deleted with success";
     }
 
@@ -61,10 +53,13 @@ class CarrinhoController
         if (!$productExists["quantidade_item_carrinho"] >= $quantity) {
             return "Could not remove product quantity";
         }
-        include 'models/CarrinhoModel.php';
         $model = new CarrinhoModel();
         $model->update($quantity, $userId, $productId);
     }
-}
 
-?>
+    public function selecionaCarrinho() {
+        $model = new CarrinhoModel();
+        $response = $model->selecionaCarrinho();
+        return $response;
+    }
+}

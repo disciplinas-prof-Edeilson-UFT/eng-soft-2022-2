@@ -1,11 +1,8 @@
 <?php
 
 use src\controllers\CarrinhoController;
-use src\database\CarrinhoData;
-include("../../database/CarrinhoData.php");
-include("../../controllers/CarrinhoController.php");
-
-include '/views/templates/cabecalho.php';
+include __DIR__ .'/../../controllers/CarrinhoController.php';
+include __DIR__ .'/../templates/cabecalho.php';
 
 if ($_POST) {
 
@@ -31,11 +28,10 @@ if ($_POST) {
             <button name="removecart" type="submit">REMOVER TODOS OS PRODUTOS</button>
         </form>
         <table>
-            <?php 
-                $model = new CarrinhoData();
-                $rows = $model->selectCarrinho();
-                foreach ((array)$rows as $item) :
-            ?>
+            <?php
+                $carrinhoController = new CarrinhoController();
+                $rows = $carrinhoController->selecionaCarrinho();
+                foreach ((array)$rows as $item) :?>
             <tr>
             <th>Nome</th>
             <th>Quantidade</th>

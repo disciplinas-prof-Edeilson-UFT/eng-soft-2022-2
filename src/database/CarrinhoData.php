@@ -12,7 +12,7 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
-include __DIR__ .'/../config/Connection.php';
+// include("../src/config/Connection.php");
 class CarrinhoData
 {
 

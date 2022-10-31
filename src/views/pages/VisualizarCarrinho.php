@@ -1,17 +1,17 @@
 <?php
 
 use src\controllers\CarrinhoController;
-include __DIR__ .'/../../controllers/CarrinhoController.php';
-include __DIR__ .'/../templates/cabecalho.php';
+
+include __DIR__ . '/../../controllers/CarrinhoController.php';
+include __DIR__ . '/../templates/cabecalho.php';
 
 if ($_POST) {
 
-	if (isset ($_POST ['removecart'])) {
+    if (isset($_POST['removecart'])) {
 
-		$removeCart = new CarrinhoController();
-		$removeCart->removeProduct();
-	}
-
+        $removeCart = new CarrinhoController();
+        $removeCart->removeProduct();
+    }
 }
 
 ?>
@@ -29,20 +29,20 @@ if ($_POST) {
         </form>
         <table>
             <?php
-                $carrinhoController = new CarrinhoController();
-                $rows = $carrinhoController->selecionaCarrinho();
-                foreach ((array)$rows as $item) :?>
-            <tr>
-            <th>Nome</th>
-            <th>Quantidade</th>
-            <th>Preço</th>
-            </tr>
+            $carrinhoController = new CarrinhoController();
+            $rows = $carrinhoController->selecionaCarrinho();
+            foreach ((array)$rows as $item) : ?>
+                <tr>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
 
-            <tr>
-            <td> <?= $item->nome_produto ?></td>
-            <td> <?= $item->quantidade_item_carrinho ?></td>
-            <td> <?= $item->preco_produto ?></td>
-            </tr>
+                <tr>
+                    <td> <?= $item->nome_produto ?></td>
+                    <td> <?= $item->quantidade_item_carrinho ?></td>
+                    <td> <?= $item->preco_produto ?></td>
+                </tr>
             <?php endforeach; ?>
         </table>
         <h4>FRETE:</h4>
@@ -53,7 +53,7 @@ if ($_POST) {
         <p>Frete:</p>
         <h4>Total:</h4>
         <button type="button">IR PARA O PAGAMENTO</button>
-        <button type="button">CONTINUAR COMPRANDO</button>
+        <a href="/produto"><button type="button">CONTINUAR COMPRANDO</button></a>
     </div>
 
 </body>

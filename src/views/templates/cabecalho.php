@@ -40,6 +40,11 @@
     #profile img {
       width: 50px;
     }
+
+    #buy img {
+      width: 50px;
+      padding: 50px;
+    }
   </style>
 </head>
 <header>
@@ -47,6 +52,9 @@
     <a id="logo" href="/produto">LOGO</a>
     <a href="#" id="profile">
       <img src="https://uploaddeimagens.com.br/images/004/064/618/thumb/user.png?1666047148">
+    </a>
+    <a href="/carrinho" id="buy">
+      <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG60.png">
     </a>
   </div>
 </header>

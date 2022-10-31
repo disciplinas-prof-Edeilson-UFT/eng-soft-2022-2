@@ -5,7 +5,8 @@
 namespace src\controllers;
 
 use src\models\CarrinhoModel;
-include __DIR__ .'/../models/CarrinhoModel.php';
+
+include __DIR__ . '/../models/CarrinhoModel.php';
 
 class CarrinhoController
 {
@@ -19,7 +20,7 @@ class CarrinhoController
         // execute que está na classe CarrinhoModel, passando o id do produto que está na url usando o get.
 
         if (isset($_GET['id_produto'])) {
-            
+
             $model = new CarrinhoModel();
 
             $model = $model->execute($_GET['id_produto']);
@@ -57,7 +58,8 @@ class CarrinhoController
         $model->update($quantity, $userId, $productId);
     }
 
-    public function selecionaCarrinho() {
+    public function selecionaCarrinho()
+    {
         $model = new CarrinhoModel();
         $response = $model->selecionaCarrinho();
         return $response;

@@ -3,9 +3,10 @@
 
 namespace src\models;
 
-use src\config\Connection;
 use src\database\CarrinhoData;
-include __DIR__ .'/../database/CarrinhoData.php';
+
+include __DIR__ . '/../database/CarrinhoData.php';
+// include("../src/config/Connection.php");
 
 class CarrinhoModel
 {

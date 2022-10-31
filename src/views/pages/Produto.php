@@ -7,20 +7,18 @@
 use src\controllers\CarrinhoController;
 
 include './views/templates/cabecalho.php';
-include ("controllers/CarrinhoController.php");
+include("controllers/CarrinhoController.php");
 
 // Se ocorrer um post é verificado se esse post é do botão de adicionar ao carrinho, e se for o objeto addcart é criado, e executa a
 // função update value da classe CarrinhoController.
 
 if ($_POST) {
 
-	if (isset ($_POST ['addcart'])) {
+  if (isset($_POST['addcart'])) {
 
-		$addcart = new CarrinhoController ();
-		$addcart -> updateValue();
-	
-	}
-
+    $addcart = new CarrinhoController();
+    $addcart->updateValue();
+  }
 }
 
 ?>
@@ -29,18 +27,16 @@ if ($_POST) {
 
 <body>
 
- <head>
- 
- 	<script>
+  <head>
 
- 		if (window.history.replaceState) {
+    <script>
+      if (window.history.replaceState) {
 
-	 		window.history.replaceState (null, null, window.location.href);
- 		}
+        window.history.replaceState(null, null, window.location.href);
+      }
+    </script>
 
- 	</script>
- 
- </head>
+  </head>
 
   <table>
     <tr>
@@ -51,14 +47,14 @@ if ($_POST) {
 
     <tr>
       <td> <?= $model[0]->nome_produto ?></td>
-      <td> <?= $model[0]->preco_produto ?></td>
+      <td> R$<?= $model[0]->preco_produto ?></td>
       <td><?= $model[0]->descricao_produto ?></td>
-      
-      
-      <form method = "POST"> 
-      
-      	<input type = "submit" name = "addcart" value = "Comprar">
-      
+
+
+      <form method="POST">
+
+        <input type="submit" name="addcart" value="Comprar">
+
       </form>
     </tr>
   </table>

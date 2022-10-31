@@ -31,6 +31,7 @@
       padding: 125px;
       font-weight: bold;
       text-decoration: none;
+      color: black;
     }
 
     #profile {

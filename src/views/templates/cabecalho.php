@@ -23,7 +23,6 @@
       height: 150px;
       display: flex;
       align-items: center;
-
     }
 
     #logo {
@@ -35,28 +34,40 @@
     }
 
     #profile {
-      margin-left: 60%;
+      margin-left: 560%;
     }
 
     #profile img {
       width: 50px;
     }
 
+
+    .sideR {
+      display: flex;
+      gap: 20px 90px;
+    }
+
+    .buy img {
+      width: 50px;
+
     #buy img {
       width: 50px;
       padding: 50px;
+
     }
   </style>
 </head>
 <header>
   <div id="cabeçalho">
     <a id="logo" href="/produto">LOGO</a>
-    <a href="#" id="profile">
-      <img src="https://uploaddeimagens.com.br/images/004/064/618/thumb/user.png?1666047148">
-    </a>
-    <a href="/carrinho" id="buy">
-      <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG60.png">
-    </a>
+    <div class="sideR">
+      <a href="#" id="profile">
+        <img src="https://uploaddeimagens.com.br/images/004/064/618/thumb/user.png?1666047148">
+      </a>
+      <a href="/carrinho" class=" buy">
+        <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG60.png">
+      </a>
+    </div>
   </div>
 </header>
 

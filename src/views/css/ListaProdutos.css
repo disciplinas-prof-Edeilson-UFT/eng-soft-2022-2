@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.global {
+    background-color: #4C586B;
+}
+
+.container {
+
+    text-align: center;
+    background-color: #4C586B;
+    padding: 20px;
+}
+
+.prodGrid {
+
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: auto auto auto;
+    margin-top: -80px;
+
+    padding: 120px;
+}
+
+.gridItem {
+    width: 500px;
+    padding: 60px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border: 2px solid;
+    border-radius: 70px;
+    background-color: #96a2b6;
+}
+
+.box-search {
+    background-color: #4C586B;
+
+}
+
+.box-search #pesquisar {
+    font-size: 25px;
+    border: 1px solid;
+    border-radius: 2px;
+    width: 500px;
+    height: 30px;
+    outline: 0;
+}
+
+.box-search #but {
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 2px;
+    width: 120px;
+    height: 30px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.box-search #but:hover {
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 2px;
+    width: 120px;
+    height: 30px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.button a {
+    background-color: #4C586B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 2px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.button a:hover {
+    background-color: #4C586B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 2px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 14px;
+}

@@ -4,31 +4,37 @@ include './views/templates/cabecalho.php';
 
 ?>
 
-<body>
-  <div class="box-search">
-    <input type="search" placeholder="Busque aqui" id="pesquisar">
-    <button onclick="searchData()">Buscar</button>
+<head>
+  <link rel="stylesheet" href="./views/css/ListaProdutos.css">
+</head>
+
+<body class="global">
+  <div class="container">
+    <div class="box-search">
+      <input type="search" placeholder="Busque aqui" id="pesquisar">
+      <button id="but" onclick="searchData()">Buscar</button>
+    </div>
+    <div class="prodGrid">
+      <table>
+        <?php foreach ((array)$model->rows as $item) : ?>
+          <div class="gridItem">
+            <img src="https://uploaddeimagens.com.br/images/004/084/732/full/produtoimagem.png?1667238087">
+            <div class="content">
+              <div class="info">
+                <p><?= $item->nome_produto ?> </p>
+                <p><?= $item->descricao_produto ?></p>
+                <p> R$<?= $item->preco_produto ?></p>
+              </div>
+              <div class="button">
+                <a href="/produto/unique?id_produto=<?= $item->id_produto ?>">Comprar</a>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; ?>
+
+      </table>
+    </div>
   </div>
-  <table>
-    <tr>
-      <th>Nome</th>
-      <th>Preço</th>
-      <th>Descrição</th>
-      <th>ID</th>
-    </tr>
-
-    <?php foreach ((array)$model->rows as $item) : ?>
-      <tr>
-        <td> <?= $item->nome_produto ?> </td>
-        <td> R$<?= $item->preco_produto ?></td>
-        <td><?= $item->descricao_produto ?></td>
-        <td><?= $item->id_produto ?> </td>
-        <td><a href="/produto/unique?id_produto=<?= $item->id_produto ?>"><button>Comprar</button></a></td>
-      </tr>
-    <?php endforeach; ?>
-
-  </table>
-
 </body>
 <script>
   var search = document.getElementById('pesquisar');

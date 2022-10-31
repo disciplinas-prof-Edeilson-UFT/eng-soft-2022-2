@@ -7,7 +7,7 @@
 use src\controllers\CarrinhoController;
 
 include './views/templates/cabecalho.php';
-include("controllers/CarrinhoController.php");
+include ("controllers/CarrinhoController.php");
 
 // Se ocorrer um post é verificado se esse post é do botão de adicionar ao carrinho, e se for o objeto addcart é criado, e executa a
 // função update value da classe CarrinhoController.
@@ -19,6 +19,7 @@ if ($_POST) {
     $addcart = new CarrinhoController();
     $addcart->updateValue();
   }
+
 }
 
 ?>
@@ -26,16 +27,36 @@ if ($_POST) {
 <html>
 
 <body>
+   <div class="box-search">
+    <input type="search" placeholder="Busque aqui" id="pesquisar">
+    <button onclick="searchData()">&#128269</button>
+  </div>
 
+  <div id="container">
+    <header>
+    <main>
+      <section id="produtos">
+        <section class="produtos">
+        <section class="produto">
+        <img src="../views/assets/img.jpg" width="195px">
+        <p><?= $model[0]->nome_produto ?></p>
+        <p><?= $model[0]->descricao_produto ?></p>
+        <p>R$<?= $model[0]->preco_produto ?></p>
+        </section>
+        <a href="#"><button>Comprar</button></a>
+        </section>
+       </section>
+    </main>
+  </div>
+</html>
   <head>
-
+  
     <script>
       if (window.history.replaceState) {
-
         window.history.replaceState(null, null, window.location.href);
       }
     </script>
-
+    
   </head>
 
   <table>
@@ -62,3 +83,4 @@ if ($_POST) {
 </body>
 
 </html>
+

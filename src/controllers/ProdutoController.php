@@ -3,7 +3,6 @@
 namespace src\controllers;
 
 use src\models\ProdutoModel;
-use src\database\ProdutoData;
 
 /* Camada de Controle que estão presente as regras de negocio referente às entidades, de forma geral, contem funções que manipulam os determinados eventos que devem acontecer na camada de visualização*/
 
@@ -16,7 +15,7 @@ class ProdutoController
 
   public static function index()
   {
-    include 'models/ProdutoModel.php';
+    include __DIR__ . '/../models/ProdutoModel.php';
     $model = new ProdutoModel();
     if (!empty($_GET['search'])) {
       $data = $_GET['search'];
@@ -26,20 +25,19 @@ class ProdutoController
     }
 
 
-    include 'views/pages/ListaProdutos.php';
+    include __DIR__ . '/../views/pages/ListaProdutos.php';
     // var_dump($model);
   }
 
   public static function unique()
   {
-    include 'models/ProdutoModel.php';
+    include __DIR__ . '/../models/ProdutoModel.php';
     $model = new ProdutoModel();
-    $var;
 
     if (isset($_GET['id_produto']))
       $model = $model->getById((int) $_GET['id_produto']);
 
-    include 'views/pages/Produto.php';
+    include __DIR__ . '/../views/pages/Produto.php';
     // var_dump($model);
   }
 

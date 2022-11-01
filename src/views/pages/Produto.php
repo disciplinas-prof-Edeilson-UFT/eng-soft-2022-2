@@ -14,55 +14,100 @@ include ("controllers/CarrinhoController.php");
 
 if ($_POST) {
 
-	if (isset ($_POST ['addcart'])) {
+	if (isset($_POST['addcart'])) {
 
-		$addcart = new CarrinhoController ();
-		$addcart -> updateValue();
-	
+		$addcart = new CarrinhoController();
+		$addcart->updateValue();
 	}
-
 }
 
 ?>
 
 <html>
 
-<body>
+	<head>
 
- <head>
- 
- 	<script>
+		<link rel="stylesheet" href="../views/css/Produto.css">
 
- 		if (window.history.replaceState) {
+		<script>
 
-	 		window.history.replaceState (null, null, window.location.href);
- 		}
+			if (window.history.replaceState) {
 
- 	</script>
- 
- </head>
+				window.history.replaceState(null, null, window.location.href);
+			}
 
-  <table>
-    <tr>
-      <th>Nome</th>
-      <th>Preço</th>
-      <th>Descrição</th>
-    </tr>
+			function alertaAdicionarCarrinho ()
+			{
 
-    <tr>
-      <td> <?= $model[0]->nome_produto ?></td>
-      <td> <?= $model[0]->preco_produto ?></td>
-      <td><?= $model[0]->descricao_produto ?></td>
-      <td> <a href="#"><button>Comprar</button></a></td>
-      
-      <form method = "POST"> 
-      
-      	<input type = "submit" name = "addcart" value = "adicionar produto ao carrinho">
-      
-      </form>
-    </tr>
-  </table>
+				alert ("item adicionado ao carrinho");
+			}
 
-</body>
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="box-search">
+
+			<input type="search" placeholder="Busque aqui" id="pesquisar">
+
+			<button id="but" onclick="searchData()">Buscar</button>
+
+		</div>
+
+		<div id="container">
+
+			<header>
+
+				<main>
+
+					<section id="produtos">
+
+						<section class="produtos">
+						
+							<section class="produto">
+							
+								<img src="../views/assets/img.jpg" width="195px">
+							
+								<table>
+								
+									<tr>
+									
+										<th>Nome</th>
+										<th>Preço</th>
+										<th>Descrição</th>
+										
+									</tr>
+
+									<tr>
+									
+										<td> <?= $model[0]->nome_produto ?></td>
+										<td> R$<?= $model[0]->preco_produto ?></td>
+										<td><?= $model[0]->descricao_produto ?></td>
+										
+									</tr>
+								
+								</table>
+
+							</section>
+
+							<form method="POST">
+
+								<input class = "button" type="submit" name="addcart" onclick = "alertaAdicionarCarrinho ()" value="Comprar">
+
+							</form>
+
+						</section>
+
+					</section>
+
+				</main>
+
+			</header>
+
+		</div>
+
+	</body>
 
 </html>

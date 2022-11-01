@@ -1,0 +1,73 @@
+th {
+	
+    background-color : #060;
+    color : #FFF;
+    border : #000 solid 1px;
+    width : 100%;
+    padding : 7px;
+    font-size : 20px;
+    border-collapse : collapse;
+    text-align : center;
+	
+}
+
+td {
+    width: 150px;
+    height: 30px;
+}
+
+.box-search {
+	background-color: #4C586B;
+
+}
+
+.box-search #pesquisar {
+	font-size: 25px;
+	border: 1px solid;
+	border-radius: 2px;
+	width: 500px;
+	height: 30px;
+	outline: 0;
+}
+
+.box-search #but {
+	font-size: 24px;
+	border: 1px solid;
+	border-radius: 2px;
+	width: 120px;
+	height: 30px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.box-search #but:hover {
+	font-size: 24px;
+	border: 1px solid;
+	border-radius: 2px;
+	width: 120px;
+	height: 30px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.button {
+	
+	padding: 15px 32px;
+	background: none;
+	border : #4c586b solid;
+	color : #4c586b;
+	text-align : center;
+	display : inline-block;
+	font-size : 16px;
+	border-radius : 4px;
+	cursor : pointer;
+	transition : 0.2s;
+}
+
+.button:hover {
+	
+	background : #4C586B;
+	padding : 15px 45px;
+	color : #ffffff;
+	transition : 0.2s;
+}

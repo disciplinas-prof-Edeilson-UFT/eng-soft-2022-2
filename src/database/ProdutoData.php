@@ -5,6 +5,8 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
+include("../src/config/Connection.php");
+
 /* Classe que realiza comunicação com o banco de dados devio ao uso da classe Connection e o PDO. Ás funções contidas nessa classe muito com certeza serão usadas pelo Modelo referente, no caso ProdutoModel*/
 
 class ProdutoData

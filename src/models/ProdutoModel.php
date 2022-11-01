@@ -4,8 +4,6 @@ namespace src\models;
 
 use src\database\ProdutoData;
 
-include("../src/config/Connection.php");
-
 /* Classe de Modelo da entidade, que vai fazer uso das funções predefinidas na camada database na qual fazem requisições ao banco de dados e em seguida manipular os objetos a fim de serem chamada por fim na camada Controller*/
 
 class ProdutoModel
@@ -22,7 +20,7 @@ class ProdutoModel
   /* Função que seta uma nova instancia do objeto da camada de database e recupera todas as linhas retornadas pela mesma em um vetor através da função da camada database "select()", feito isso essa função será chamada na camada de controllers */
   public function getAllRows()
   {
-    include 'database/ProdutoData.php';
+    include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
 
     $this->rows = $data->select();
@@ -31,7 +29,7 @@ class ProdutoModel
   //FUNCIONANDO PARCIALMENTE. ****************************** APAGAR NO LANÇAMENTO DA RELEASE
   public function getProduct()
   {
-    include 'database/ProdutoData.php';
+    include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
 
     $this->rows = $data->selectProdutoById();
@@ -39,7 +37,7 @@ class ProdutoModel
 
   public  function getById(int $id_produto)
   {
-    include 'database/ProdutoData.php';
+    include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
     // $linhas = new ProdutoData();
 
@@ -51,7 +49,7 @@ class ProdutoModel
 
   public  function getByAny($dado)
   {
-    include 'database/ProdutoData.php';
+    include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
     // $linhas = new ProdutoData();
 

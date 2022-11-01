@@ -95,4 +95,19 @@ class CarrinhoData
 		$stmt->execute();
 		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
+	
+	public function showPrice () {
+		
+		// É estabelecida a conexão com o banco de dados, e em seguida realizada uma query.
+		// A query retornará um dado que não pode ser mostrado diretamente na tela, então vamos usar uma função que vai
+		// transformar tudo que foi pego numa array e retornaremos o valor.
+		
+		$con = Connection :: getConn ();
+		$sql = "SELECT SUM (pr.preco_produto * cr.quantidade_item_carrinho) FROM PRODUTO AS pr
+		INNER JOIN CARRINHO as cr
+		ON pr.id_produto = cr.id_produto";
+		$con = $con -> query ($sql) -> fetchAll (PDO::FETCH_CLASS);
+		return $con;
+		
+	}
 }

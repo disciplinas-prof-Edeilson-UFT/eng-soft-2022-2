@@ -77,4 +77,11 @@ class CarrinhoController
 		return $value;
 		
 	}
+	
+	public function getCarrinho(){
+		$classModel = new CarrinhoModel ();
+		$classModel -> selecionaCarrinho ();
+		require_once ("../views/pages/VisualizarCarrinho.php");
+	}
 }
+?>

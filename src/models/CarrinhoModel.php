@@ -16,8 +16,7 @@ class CarrinhoModel
     $cartData->removeFromCart($userId);
   }
 
-  public function update($quantity, $userId, $productId)
-  {
+  public function update($quantity, $userId, $productId) {
     $cartData = new CarrinhoData();
     $cartData->updateCartProduct($quantity, $userId, $productId);
   }
@@ -42,5 +41,15 @@ class CarrinhoModel
 
     $rows = $exec->selectCarrinho();
     return $rows;
+  }
+  
+  public function showPrice () {
+  	
+	  $cartData = new CarrinhoData ();
+	  
+	  $value = $cartData -> showPrice ();
+	  
+	  return $value;
+  
   }
 }

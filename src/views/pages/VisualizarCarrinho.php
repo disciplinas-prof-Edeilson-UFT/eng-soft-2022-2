@@ -2,8 +2,8 @@
 
 use src\controllers\CarrinhoController;
 
-include __DIR__ . '/../../controllers/CarrinhoController.php';
-include __DIR__ . '/../templates/cabecalho.php';
+include './views/templates/cabecalho.php';
+include ("controllers/CarrinhoController.php");
 
 if ($_POST) {
 
@@ -15,6 +15,21 @@ if ($_POST) {
 }
 
 ?>
+
+<html>
+
+	<head>
+
+		<script>
+
+			if (window.history.replaceState) {
+
+				window.history.replaceState(null, null, window.location.href);
+			}
+
+		</script>
+	
+	</head>
 
 <body>
     <div>
@@ -49,7 +64,21 @@ if ($_POST) {
     </div>
     <div>
         <h3>RESUMO</h3>
-        <p>Valor dos Produtos:</p>
+		<p>Valor dos Produtos: 
+		
+			<?php
+			
+				// Criamos o objeto value e chamamos a classe do carrinho controllee, que vai chamar a função de mostrar o preco.
+				// O valor retornado está numa array, onde na posição 0 está o nosso objeto, e dentro dele temos a propriedade sum
+				// que foi obtida na query com nosso banco de dados. Nessa propriedade está o valor total do carrinho.
+			
+				$value = new CarrinhoController ();
+				$value = $value -> showPrice ();
+        
+				echo ($value[0]-> sum);
+			
+			?> 
+		</p>
         <p>Frete:</p>
         <h4>Total:</h4>
         <button type="button">IR PARA O PAGAMENTO</button>

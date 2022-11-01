@@ -64,4 +64,17 @@ class CarrinhoController
         $response = $model->selecionaCarrinho();
         return $response;
     }
+    
+	public function showPrice () {
+		
+		// Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
+		// para que ele possa ser mostrado na view.
+		
+		$value = new CarrinhoModel ();
+		
+		$value = $value -> showPrice ();
+		
+		return $value;
+		
+	}
 }

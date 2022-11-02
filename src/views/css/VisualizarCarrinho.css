@@ -1,16 +1,18 @@
 * {
-	padding: 0px;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .global {
-	background-color: #4C586B;
+  background-color: #4c586b;
 }
 
 .container {
   padding: 50px;
-  font-size:20px;
+  font-size: 20px;
+  display: flex;
+  width: 100%;
 }
 
 .addres {
@@ -18,9 +20,8 @@
   border: 2px solid white;
   border-radius: 12px;
   background-color: #96a2b6;
-  width:75%;
-  text-align:center;
-  position: absolute;
+  width: 100%;
+  text-align: center;
 }
 
 .addres input {
@@ -53,29 +54,26 @@
 }
 
 .prod {
-  padding:30px;
+  padding: 30px;
   border: 2px solid white;
   border-radius: 12px;
   background-color: #96a2b6;
-  width:75%;
-  text-align:left;
-  position: absolute;
-  margin-top:90px;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .prod h3 {
   margin-bottom: 15px;
-
 }
 
 .prod form {
-  margin-top:20px;
-  margin-bottom:50px;
-
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .bot button {
-  background : none;
+  background: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -86,32 +84,31 @@
   cursor: pointer;
   border: 2px solid white;
   border-radius: 4px;
-  transition : 0.2s;
+  transition: 0.2s;
 }
 
-.bot  button:hover {
-	background : #4C586B;
-	padding : 15px 45px;
-	color : #ffffff;
-	transition : 0.2s;
+.bot button:hover {
+  background: #4c586b;
+  padding: 15px 45px;
+  color: #ffffff;
+  transition: 0.2s;
 }
-
 
 .nutshell {
-  padding:5px;
+  padding: 5px;
   border: 2px solid white;
   border-radius: 12px;
   background-color: #96a2b6;
   width: 16%;
-  height:50%;
-  text-align:left;
-  margin-left: 1055px;
+  height: 50%;
+  text-align: left;
+  margin: 0 0 0 50px;
 }
 
 .nutshell button {
-  background : none;
+  background: none;
   color: white;
-  background-color: #4C586B;
+  background-color: #4c586b;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -124,9 +121,9 @@
 }
 
 .nutshell button:hover {
-  background : none;
+  background: none;
   color: white;
-  background-color: #4C586B;
+  background-color: #4c586b;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;

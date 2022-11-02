@@ -10,7 +10,6 @@ class ProdutoController
 {
 
   /* Função principal quando se trata da listagem dos produtos, ela basicamente instancia um novo objeto modelo e chama funções presentes na camada de Modelo que por sua vez comunica com a camada database */
-
   //View -> Controller -> Modelo -> Data
 
   public static function index()
@@ -26,7 +25,6 @@ class ProdutoController
 
 
     include __DIR__ . '/../views/pages/ListaProdutos.php';
-    // var_dump($model);
   }
 
   public static function unique()
@@ -38,19 +36,5 @@ class ProdutoController
       $model = $model->getById((int) $_GET['id_produto']);
 
     include __DIR__ . '/../views/pages/Produto.php';
-    // var_dump($model);
   }
-
-
-  //APAGAR NO LANÇAMENTO DA RELEASE
-  // public static function unique()
-  // {
-  //   include 'models/ProdutoModel.php';
-  //   $model = new ProdutoModel();
-  //   $model->getProduct();
-
-
-  //   include 'views/pages/Produto.php';
-  //   var_dump($model);
-  // }
 }

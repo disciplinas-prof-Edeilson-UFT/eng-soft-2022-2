@@ -1,7 +1,5 @@
 <?php
-
 include './views/templates/cabecalho.php';
-
 ?>
 
 <head>

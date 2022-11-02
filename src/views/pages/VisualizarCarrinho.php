@@ -6,7 +6,6 @@ include './views/templates/cabecalho.php';
 include("controllers/CarrinhoController.php");
 
 if ($_POST) {
-
     if (isset($_POST['removecart'])) {
 
         $removeCart = new CarrinhoController();
@@ -33,34 +32,36 @@ if ($_POST) {
 <body class="global">
 
     <div class="container">
-        <div class="addres">
-            <h3>SELECIONE O ENDEREÇO</h3>
-            <input type="text" required>
-            <button type="submit">Ok</button>
-        </div>
-        <div class="prod">
-            <h3>PRODUTO E FRETE</h3>
-            <table>
-                <tr>
-                    <th>Nome</th>
-                    <th>Quantidade</th>
-                    <th>Preço</th>
-                </tr>
-                <?php
-                $carrinhoController = new CarrinhoController();
-                $rows = $carrinhoController->selecionaCarrinho();
-                foreach ((array)$rows as $item) : ?>
+        <div style="width:100%" >
+            <div class="addres">
+                <h3>SELECIONE O ENDEREÇO</h3>
+                <input type="text" required>
+                <button type="submit">Ok</button>
+            </div>
+            <div class="prod">
+                <h3>PRODUTO E FRETE</h3>
+                <table>
                     <tr>
-                        <td> <?= $item->nome_produto ?></td>
-                        <td> <?= $item->quantidade_item_carrinho ?></td>
-                        <td> R$<?= $item->preco_produto ?></td>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
                     </tr>
-                <?php endforeach; ?>
-            </table>
-            <form class="bot" method="POST">
-                <button name="removecart" type="submit">REMOVER TODOS OS PRODUTOS</button>
-            </form>
-            <h4>FRETE:</h4>
+                    <?php
+                    $carrinhoController = new CarrinhoController();
+                    $rows = $carrinhoController->selecionaCarrinho();
+                    foreach ((array)$rows as $item) : ?>
+                        <tr>
+                            <td> <?= $item->nome_produto ?></td>
+                            <td> <?= $item->quantidade_item_carrinho ?></td>
+                            <td> R$<?= $item->preco_produto ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+                <form class="bot" method="POST">
+                    <button name="removecart" type="submit">REMOVER TODOS OS PRODUTOS</button>
+                </form>
+                <h4>FRETE:</h4>
+            </div>
         </div>
         <div class="nutshell">
             <h3>RESUMO</h3>

@@ -6,7 +6,6 @@ namespace src\models;
 use src\database\CarrinhoData;
 
 include __DIR__ . '/../database/CarrinhoData.php';
-// include("../src/config/Connection.php");
 
 class CarrinhoModel
 {
@@ -16,7 +15,8 @@ class CarrinhoModel
     $cartData->removeFromCart($userId);
   }
 
-  public function update($quantity, $userId, $productId) {
+  public function update($quantity, $userId, $productId)
+  {
     $cartData = new CarrinhoData();
     $cartData->updateCartProduct($quantity, $userId, $productId);
   }
@@ -42,14 +42,14 @@ class CarrinhoModel
     $rows = $exec->selectCarrinho();
     return $rows;
   }
-  
-  public function showPrice () {
-  	
-	  $cartData = new CarrinhoData ();
-	  
-	  $value = $cartData -> showPrice ();
-	  
-	  return $value;
-  
+
+  public function showPrice()
+  {
+
+    $cartData = new CarrinhoData();
+
+    $value = $cartData->showPrice();
+
+    return $value;
   }
 }

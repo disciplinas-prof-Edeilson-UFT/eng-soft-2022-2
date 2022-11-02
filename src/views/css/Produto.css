@@ -1,60 +1,69 @@
-th {
-	
-    background-color : #060;
-    color : #FFF;
-    border : #000 solid 1px;
-    width : 100%;
-    padding : 7px;
-    font-size : 20px;
-    border-collapse : collapse;
-    text-align : center;
-	
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-td {
-    width: 150px;
-    height: 30px;
-}
-
-.box-search {
+.global {
 	background-color: #4C586B;
-
 }
 
-.box-search #pesquisar {
-	font-size: 25px;
-	border: 1px solid;
-	border-radius: 2px;
-	width: 500px;
-	height: 30px;
-	outline: 0;
+.container {
+	margin: auto auto;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 20px;
+	padding: 50px;
+	position: relative;
+	font-size: 15px;
+	color: black;
+	background-color:#96a2b6;
+	width:92%;
+	height:30rem;
 }
 
-.box-search #but {
-	font-size: 24px;
-	border: 1px solid;
-	border-radius: 2px;
-	width: 120px;
-	height: 30px;
-	opacity: 1;
-	cursor: pointer;
+.main{
+	margin-left: 32px;
+	/* border: 1px solid white; */
+	display: flex;
+	justify-content: left;
+	position: relative;
 }
 
-.box-search #but:hover {
-	font-size: 24px;
-	border: 1px solid;
-	border-radius: 2px;
-	width: 120px;
-	height: 30px;
-	opacity: 0.5;
-	cursor: pointer;
+.photo {
+	/* border: 3px solid white; */
+	padding:85px;
+	display: flex;
+	justify-content:left;
+	position: absolute;
+}
+
+.end {
+	margin:auto;
+	/* border: 3px solid rgb(21, 255, 0); */
+	padding:50px;
+	font-size: 50px;
+}
+
+.price {
+	/* border: 3px solid rgb(255, 0, 0); */
+	padding: 40px;
+}
+
+/* .but {
+	border: 3px solid rgb(47, 0, 255);
+} */
+
+.but input {
+	display:flex;
+	margin-left: 43px;
+	color: white;
 }
 
 .button {
 	
 	padding: 15px 32px;
 	background: none;
-	border : #4c586b solid;
+	border : #ffffff solid;
 	color : #4c586b;
 	text-align : center;
 	display : inline-block;

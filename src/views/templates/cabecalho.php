@@ -27,14 +27,15 @@
 
     #logo {
       font-size: 50px;
-      padding: 125px;
+      padding: 15px;
       font-weight: bold;
       text-decoration: none;
       color: black;
+      margin-left: 100px;
     }
 
     #profile {
-      margin-left: 320%;
+      margin-left: 400%;
     }
 
     #profile img {

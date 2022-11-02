@@ -26,20 +26,10 @@ class ProdutoModel
     $this->rows = $data->select();
   }
 
-  //FUNCIONANDO PARCIALMENTE. ****************************** APAGAR NO LANÇAMENTO DA RELEASE
-  public function getProduct()
-  {
-    include __DIR__ . '/../database/ProdutoData.php';
-    $data = new ProdutoData();
-
-    $this->rows = $data->selectProdutoById();
-  }
-
   public  function getById(int $id_produto)
   {
     include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
-    // $linhas = new ProdutoData();
 
     $this->rows = $data->selectById($id_produto);
     $this->show = $data->select();
@@ -51,58 +41,10 @@ class ProdutoModel
   {
     include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
-    // $linhas = new ProdutoData();
 
     $this->rows = $data->selectByAny($dado);
     $this->show = $data->select();
 
     return $this->rows;
   }
-
-  //APAGAR NO LANÇAMENTO DA RELEASE
-  //PROCURAR UM JEITO DE SETAR AS VARIÁVEIS LOCAIS COM OS DADOS PRESENTE NO BANCO **********************
-  // public function setNomeProduto($nomeProduto)
-  // {
-  //   $this->nomeProduto = $nomeProduto;
-  // }
-
-  // public function setPrecoProduto(float $precoProduto)
-  // {
-  //   $this->precoProduto = $precoProduto;
-  // }
-
-  // public function setQuantidadeProduto(int $quantidadeProduto)
-  // {
-  //   $this->quantidadeProduto = $quantidadeProduto;
-  // }
-
-  // public function setDescricaoProduto(string $descricaoProduto)
-  // {
-  //   $this->descricaoProduto = $descricaoProduto;
-  // }
-
-  // public function getNomeProduto()
-  // {
-  //   return $this->nomeProduto;
-  // }
-
-  // public function getPrecoProduto()
-  // {
-  //   return $this->precoProduto;
-  // }
-
-  // public function getQuantidadeProduto()
-  // {
-  //   return $this->quantidadeProduto;
-  // }
-
-  // public function getDescricaoProduto()
-  // {
-  //   return $this->descricaoProduto;
-  // }
-
-  // public function getIdProduto()
-  // {
-  //   return $this->idProduto;
-  // }
 }

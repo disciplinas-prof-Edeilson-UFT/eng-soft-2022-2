@@ -53,6 +53,7 @@
     }
   </style>
 </head>
+
 <header>
   <div id="cabeçalho">
     <a id="logo" href="/produto">LOGO</a>

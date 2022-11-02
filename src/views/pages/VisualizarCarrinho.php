@@ -6,7 +6,6 @@ include './views/templates/cabecalho.php';
 include("controllers/CarrinhoController.php");
 
 if ($_POST) {
-
     if (isset($_POST['removecart'])) {
 
         $removeCart = new CarrinhoController();

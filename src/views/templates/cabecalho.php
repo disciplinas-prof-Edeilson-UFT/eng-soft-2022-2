@@ -34,7 +34,7 @@
     }
 
     #profile {
-      margin-left: 560%;
+      margin-left: 320%;
     }
 
     #profile img {
@@ -49,11 +49,6 @@
 
     .buy img {
       width: 50px;
-
-    #buy img {
-      width: 50px;
-      padding: 50px;
-
     }
   </style>
 </head>

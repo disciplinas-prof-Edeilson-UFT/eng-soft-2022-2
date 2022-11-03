@@ -51,7 +51,7 @@ if ($_POST) {
 
 			<div class="end">
 				<p class="price"> R$<?= $model[0]->preco_produto ?></p>
-				<form class="but" method="POST">
+				<form method="POST">
 					<input class="button" type="submit" name="addcart" onclick="alertaAdicionarCarrinho ()" value="Comprar">
 				</form>
 			</div>

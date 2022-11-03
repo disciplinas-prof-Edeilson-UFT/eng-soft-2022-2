@@ -33,14 +33,14 @@ if ($_POST) {
 
     <div class="container">
         <div style="width:100%" >
-            <div class="addres">
+            <div class="address">
                 <h3>SELECIONE O ENDEREÇO</h3>
                 <input type="text" required>
-                <button type="submit">Ok</button>
+                <button class = "button" type="submit">Ok</button>
             </div>
             <div class="prod">
                 <h3>PRODUTO E FRETE</h3>
-                <table>
+                <table class = "prod">
                     <tr>
                         <th>Nome</th>
                         <th>Quantidade</th>
@@ -57,8 +57,8 @@ if ($_POST) {
                         </tr>
                     <?php endforeach; ?>
                 </table>
-                <form class="bot" method="POST">
-                    <button name="removecart" type="submit">REMOVER TODOS OS PRODUTOS</button>
+                <form class="address" method="POST">
+                    <button class = "button" name="removecart" type="submit">REMOVER TODOS OS PRODUTOS</button>
                 </form>
                 <h4>FRETE:</h4>
             </div>
@@ -87,8 +87,8 @@ if ($_POST) {
             </p>
             <p>Frete:</p>
             <h4>Total:</h4>
-            <button type="button">IR PARA O PAGAMENTO</button>
-            <a href="/produto"><button type="button">CONTINUAR COMPRANDO</button></a>
+            <button class = "button" type="button">IR PARA O PAGAMENTO</button>
+            <a href="/produto"><button class = "button" type="button">CONTINUAR COMPRANDO</button></a>
         </div>
     </div>
 </body>

@@ -1,3 +1,15 @@
+/*
+
+Paleta
+
+#02031a - quase preto
+#021b2b - azul escuro
+#b10c43 - vermelho fosco
+#ff0841 - vermelho claro
+#ebdfcc - beige
+
+*/
+
 * {
   padding: 0px;
   margin: 0;
@@ -5,7 +17,7 @@
 }
 
 .global {
-  background-color: #4c586b;
+	background-color: #021b2b;
 }
 
 .container {
@@ -15,49 +27,52 @@
   width: 100%;
 }
 
-.addres {
-  padding: 5px;
-  border: 2px solid white;
-  border-radius: 12px;
-  background-color: #96a2b6;
-  width: 100%;
-  text-align: center;
+.address {
+	
+	color : #ebdfcc;
+	text-align: center;
+ 
 }
 
-.addres input {
-  font-size: 25px;
-  border: 1px solid;
-  border-radius: 2px;
-  width: 500px;
-  height: 30px;
-  outline: 0;
+.address input {
+	padding: 5px;
+	border : 2px #ff0841 solid;
+	border-radius: 12px;
+	background : none;
+	color : #ebdfcc;
+	width: 50%;
+	text-align: center;
 }
 
-.addres button {
-  font-size: 24px;
-  border: 1px solid;
-  border-radius: 2px;
-  width: 120px;
-  height: 30px;
-  opacity: 1;
-  cursor: pointer;
+.button {
+	background : none;
+	color: #ebdfcc;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 14px 2px;
+	cursor: pointer;
+	border: 2px solid #ff0841;
+	border-radius: 4px;
+	transition : 0.2s;
 }
 
-.addres button:hover {
-  font-size: 24px;
-  border: 1px solid;
-  border-radius: 2px;
-  width: 120px;
-  height: 30px;
-  opacity: 0.5;
-  cursor: pointer;
+.button:hover {
+	
+	background: #ff0841;
+	padding: 15px 45px;
+	transition: 0.2s;
+	
 }
 
 .prod {
   padding: 30px;
-  border: 2px solid white;
+  border : 2px #ff0841 solid;
   border-radius: 12px;
-  background-color: #96a2b6;
+  background-color: #021b2b;
+  color : #ebdfcc;
   width: 100%;
   text-align: left;
   margin-top: 20px;
@@ -72,65 +87,15 @@
   margin-bottom: 50px;
 }
 
-.bot button {
-  background: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 14px 2px;
-  cursor: pointer;
-  border: 2px solid white;
-  border-radius: 4px;
-  transition: 0.2s;
-}
-
-.bot button:hover {
-  background: #4c586b;
-  padding: 15px 45px;
-  color: #ffffff;
-  transition: 0.2s;
-}
 
 .nutshell {
   padding: 5px;
-  border: 2px solid white;
+  border : 2px #ff0841 solid;
   border-radius: 12px;
-  background-color: #96a2b6;
+  background-color: #021b2b;
+  color : #ebdfcc;
   width: 16%;
   height: 50%;
   text-align: left;
   margin: 0 0 0 50px;
-}
-
-.nutshell button {
-  background: none;
-  color: white;
-  background-color: #4c586b;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 14px 4px;
-  cursor: pointer;
-  border: 2px solid white;
-  border-radius: 4px;
-}
-
-.nutshell button:hover {
-  background: none;
-  color: white;
-  background-color: #4c586b;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 14px 4px;
-  cursor: pointer;
-  border: 2px solid black;
-  border-radius: 10px;
 }

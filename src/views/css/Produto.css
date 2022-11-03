@@ -1,3 +1,15 @@
+/*
+
+Paleta
+
+#02031a - quase preto
+#021b2b - azul escuro
+#b10c43 - vermelho fosco
+#ff0841 - vermelho claro
+#ebdfcc - beige
+
+*/
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,18 +17,18 @@
 }
 
 .global {
-	background-color: #4C586B;
+	background-color: #021b2b;
 }
 
 .container {
 	margin: auto auto;
-	border: 2px solid rgb(255, 255, 255);
+	border: 2px #ff0841 solid;
 	border-radius: 20px;
 	padding: 50px;
 	position: relative;
 	font-size: 15px;
-	color: black;
-	background-color:#96a2b6;
+	background : none;
+	color : #ebdfcc;
 	width:92%;
 	height:30rem;
 }
@@ -49,34 +61,25 @@
 	padding: 40px;
 }
 
-/* .but {
-	border: 3px solid rgb(47, 0, 255);
-} */
-
-.but input {
-	display:flex;
-	margin-left: 43px;
-	color: white;
-}
-
 .button {
 	
+	background : none;
+	color: #ebdfcc;
 	padding: 15px 32px;
-	background: none;
-	border : #ffffff solid;
-	color : #4c586b;
-	text-align : center;
-	display : inline-block;
-	font-size : 16px;
-	border-radius : 4px;
-	cursor : pointer;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 14px 2px;
+	cursor: pointer;
+	border: 2px solid #ff0841;
+	border-radius: 4px;
 	transition : 0.2s;
 }
 
 .button:hover {
 	
-	background : #4C586B;
+	background : #ff0841;
 	padding : 15px 45px;
-	color : #ffffff;
 	transition : 0.2s;
 }

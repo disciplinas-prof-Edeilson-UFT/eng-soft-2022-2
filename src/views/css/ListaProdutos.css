@@ -10,7 +10,9 @@ Paleta
 
 */
 
-* {
+body {
+    
+    background-color: #021b2b;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,7 +21,7 @@ Paleta
 .container {
 
     text-align: center;
-	background-color: #021b2b;
+    background-color: #021b2b;
     padding: 20px;
 }
 

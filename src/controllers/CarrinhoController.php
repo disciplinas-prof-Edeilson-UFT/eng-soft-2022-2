@@ -4,6 +4,8 @@
 
 namespace src\controllers;
 
+require_once 'vendor/autoload.php';
+
 use src\models\CarrinhoModel;
 
 include __DIR__ . '/../models/CarrinhoModel.php';
@@ -14,7 +16,6 @@ class CarrinhoController
 
     public function updateValue()
     {
-
         // Aqui é onde conseguiremos o id do produto que deve ser incrementado. Já que o id dele está na url, verificamos 
         // primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
         // execute que está na classe CarrinhoModel, passando o id do produto que está na url usando o get.
@@ -64,17 +65,17 @@ class CarrinhoController
         $response = $model->selecionaCarrinho();
         return $response;
     }
-    
-	public function showPrice () {
-		
-		// Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
-		// para que ele possa ser mostrado na view.
-		
-		$value = new CarrinhoModel ();
-		
-		$value = $value -> showPrice ();
-		
-		return $value;
-		
-	}
+
+    public function showPrice()
+    {
+
+        // Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
+        // para que ele possa ser mostrado na view.
+
+        $value = new CarrinhoModel();
+
+        $value = $value->showPrice();
+
+        return $value;
+    }
 }

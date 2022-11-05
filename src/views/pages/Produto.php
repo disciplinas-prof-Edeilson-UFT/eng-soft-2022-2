@@ -4,10 +4,11 @@
 // Usaremos a classe do CarrinhoController para quando o botão for clicado disparar as funções que irão adicionar o item ao carrinho
 // ou incrementar ele.
 
-use src\controllers\CarrinhoController;
 
-include './views/templates/cabecalho.php';
-include("controllers/CarrinhoController.php");
+require_once 'vendor/autoload.php';
+
+use src\controllers\CarrinhoController;
+use src\controllers\ProdutoController;
 
 // Se ocorrer um post é verificado se esse post é do botão de adicionar ao carrinho, e se for o objeto addcart é criado, e executa a
 // função update value da classe CarrinhoController.
@@ -26,7 +27,7 @@ if ($_POST) {
 <html>
 
 <head>
-	<link rel="stylesheet" href="../views/css/Produto.css">
+	<link rel="stylesheet" href="/src/views/css/Produto.css">
 	<script>
 		if (window.history.replaceState) {
 
@@ -44,13 +45,17 @@ if ($_POST) {
 
 	<div class="container">
 		<div class="main">
-			<h1> <?= $model[0]->nome_produto ?> <?= $model[0]->descricao_produto ?></h1>
+			<?php
+			$model = new ProdutoController();
+			$rows = $model->unique();
+			?>
+			<h1> <?= $rows[0]->nome_produto ?> <?= $rows[0]->descricao_produto ?></h1>
 			<div class="photo">
 				<img src="https://uploaddeimagens.com.br/images/004/084/732/full/produtoimagem.png?1667238087" width="210px">
 			</div>
 
 			<div class="end">
-				<p class="price"> R$<?= $model[0]->preco_produto ?></p>
+				<p class="price"> R$<?= $rows[0]->preco_produto ?></p>
 				<form method="POST">
 					<input class="button" type="submit" name="addcart" onclick="alertaAdicionarCarrinho ()" value="Comprar">
 				</form>

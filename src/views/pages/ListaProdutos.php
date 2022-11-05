@@ -1,9 +1,11 @@
 <?php
-include './views/templates/cabecalho.php';
+require_once 'vendor/autoload.php';
+
+use src\controllers\ProdutoController; // Falar com o edson sobre.
 ?>
 
 <head>
-  <link rel="stylesheet" href="./views/css/ListaProdutos.css">
+  <link rel="stylesheet" href="/src/views/css/ListaProdutos.css">
 </head>
 
 <html>
@@ -12,13 +14,16 @@ include './views/templates/cabecalho.php';
   <div class="container">
     <div class="box-search">
       <input type="search" placeholder="Busque aqui" id="pesquisar">
-      <button class = "button" id="but" onclick="searchData()">Buscar</button>
+      <button class="button" id="but" onclick="searchData()">Buscar</button>
     </div>
     <div class="prodGrid">
       <table>
-        <?php foreach ((array)$model->rows as $item) : ?>
+        <?php
+        $model = new ProdutoController();
+        $rows = $model->index();
+        foreach ((array)$rows as $item) : ?>
           <div class="gridItem">
-            <img class = "image" src="./views/assets/nt.jpg">
+            <img class="image" src="https://uploaddeimagens.com.br/images/004/084/732/full/produtoimagem.png?1667238087">
             <div class="content">
               <div class="info">
                 <p><?= $item->nome_produto ?> </p>

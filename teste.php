@@ -1,10 +1,10 @@
 <?php
 
-// require_once 'vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 use src\config\Connection;
 
-include("src/config/Connection.php");
+// include("src/config/Connection.php");
 
 $fon = Connection::getConn();
 $response = $fon->prepare('SELECT * FROM "carrinho"');

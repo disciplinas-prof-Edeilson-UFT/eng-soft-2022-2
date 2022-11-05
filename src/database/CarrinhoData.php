@@ -12,6 +12,8 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
+require_once 'vendor/autoload.php';
+
 class CarrinhoData
 {
 

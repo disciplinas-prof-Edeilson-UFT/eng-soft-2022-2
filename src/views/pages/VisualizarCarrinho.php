@@ -2,8 +2,7 @@
 
 use src\controllers\CarrinhoController;
 
-include './views/templates/cabecalho.php';
-include("controllers/CarrinhoController.php");
+require_once 'vendor/autoload.php';
 
 if ($_POST) {
     if (isset($_POST['removecart'])) {
@@ -19,7 +18,7 @@ if ($_POST) {
 
 <head>
 
-    <link rel="stylesheet" href="../views/css/VisualizarCarrinho.css">
+    <link rel="stylesheet" href="/src/views/css/VisualizarCarrinho.css">
     <script>
         if (window.history.replaceState) {
 
@@ -32,15 +31,15 @@ if ($_POST) {
 <body class="global">
 
     <div class="container">
-        <div style="width:100%" >
+        <div style="width:100%">
             <div class="address">
                 <h3>SELECIONE O ENDEREÇO</h3>
                 <input type="text" required>
-                <button class = "button" type="submit">Ok</button>
+                <button class="button" type="submit">Ok</button>
             </div>
             <div class="prod">
                 <h3>PRODUTO E FRETE</h3>
-                <table class = "prod">
+                <table class="prod">
                     <tr>
                         <th>Nome</th>
                         <th>Quantidade</th>
@@ -58,7 +57,7 @@ if ($_POST) {
                     <?php endforeach; ?>
                 </table>
                 <form class="address" method="POST">
-                    <button class = "button" name="removecart" type="submit">REMOVER TODOS OS PRODUTOS</button>
+                    <button class="button" name="removecart" type="submit">REMOVER TODOS OS PRODUTOS</button>
                 </form>
                 <h4>FRETE:</h4>
             </div>
@@ -87,8 +86,8 @@ if ($_POST) {
             </p>
             <p>Frete:</p>
             <h4>Total:</h4>
-            <button class = "button" type="button">IR PARA O PAGAMENTO</button>
-            <a href="/produto"><button class = "button" type="button">CONTINUAR COMPRANDO</button></a>
+            <button class="button" type="button">IR PARA O PAGAMENTO</button>
+            <a href="/produto"><button class="button" type="button">CONTINUAR COMPRANDO</button></a>
         </div>
     </div>
 </body>

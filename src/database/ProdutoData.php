@@ -40,9 +40,8 @@ class ProdutoData
 
   public function selectByAny($data)
   {
-    // include_once 'models/ProdutoModel.php';
 
-    $sql = "SELECT * FROM produto WHERE nome_produto LIKE '%$data%'";
+    $sql = "SELECT * FROM produto WHERE LOWER(nome_produto) LIKE LOWER('%$data%')";
 
     $con = Connection::getConn();
     $stmt = $con->prepare($sql);

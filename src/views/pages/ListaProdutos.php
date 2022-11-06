@@ -47,6 +47,12 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
   function searchData() {
     window.location = 'produto?search=' + search.value;
   }
+
+  search.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      searchData();
+    }
+  });
 </script>
 
 </html>

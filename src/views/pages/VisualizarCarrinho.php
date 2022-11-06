@@ -12,17 +12,13 @@ if ($_POST) {
     }
 
     if (isset($_POST['changequantityminus'])) {
-        if (isset($_POST['changequantityminus'])) {
-            $removeCart = new CarrinhoController();
-            $removeCart->removeSomeProducts(1, $_POST['changequantityminus'], -1);
-        }
+        $removeCart = new CarrinhoController();
+        $removeCart->removeSomeProducts(1, $_POST['changequantityminus'], -1);
     }
 
     if (isset($_POST['changequantityplus'])) {
-        if (isset($_POST['changequantityplus'])) {
-            $removeCart = new CarrinhoController();
-            $removeCart->removeSomeProducts(1, $_POST['changequantityplus'], 1);
-        }
+        $removeCart = new CarrinhoController();
+        $removeCart->removeSomeProducts(1, $_POST['changequantityplus'], 1);
     }
 }
 

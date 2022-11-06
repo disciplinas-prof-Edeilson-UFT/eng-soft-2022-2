@@ -56,7 +56,7 @@ if ($_POST) {
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="teste">Nome</th>
+                            <th class="firstitem">Nome</th>
                             <th>Quantidade</th>
                             <th>Preço</th>
                         </tr>
@@ -69,7 +69,7 @@ if ($_POST) {
                             $_POST['id_produto'] = $item->id_produto;
                         ?>
                             <tr>
-                                <td class="teste"> <?= $item->nome_produto ?></td>
+                                <td class="firstitem"> <?= $item->nome_produto ?></td>
                                 <td class="tableitem">
                                     <form method="POST">
                                         <div style="margin: 0 auto;">

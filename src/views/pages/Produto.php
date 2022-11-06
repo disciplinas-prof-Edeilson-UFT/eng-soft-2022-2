@@ -51,7 +51,7 @@ if ($_POST) {
 			?>
 			<h1> <?= $rows[0]->nome_produto ?> <?= $rows[0]->descricao_produto ?></h1>
 			<div class="photo">
-				<img src="https://uploaddeimagens.com.br/images/004/084/732/full/produtoimagem.png?1667238087" width="210px">
+				<img src="/src/views/assets/<?= $rows[0]->id_produto ?>.png" width="210px">
 			</div>
 
 			<div class="end">

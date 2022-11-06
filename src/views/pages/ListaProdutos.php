@@ -23,7 +23,7 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
         $rows = $model->index();
         foreach ((array)$rows as $item) : ?>
           <div class="gridItem">
-            <img class="image" src="https://uploaddeimagens.com.br/images/004/084/732/full/produtoimagem.png?1667238087">
+            <img class="image" src="/src/views/assets/<?= $item->id_produto ?>.png">
             <div class="content">
               <div class="info">
                 <p><?= $item->nome_produto ?> </p>

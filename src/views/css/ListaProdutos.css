@@ -34,8 +34,9 @@ body {
 }
 
 .gridItem {
-    margin:auto auto;
+    margin:auto auto auto;
     width: 300px;
+    height:325px;
     padding: 20px;
     font-size: 20px;
     text-align: center;
@@ -43,6 +44,7 @@ body {
 	border: 2px #ff0841 solid;
     border-radius: 40px;
 	background-color: #b10c43;
+    margin-left: -12px;
 }
 
 .image {

@@ -33,7 +33,7 @@ class CarrinhoController
         $model = new CarrinhoModel();
         $response = $model->findOne($userId, $productId);
         if (!$response) {
-            return "Product is not in cart";
+            return null;
         }
         return $response;
     }
@@ -45,18 +45,20 @@ class CarrinhoController
         return "Product deleted with success";
     }
 
-    public function removeSomeProducts($quantity, $userId, $productId)
+    public function removeSomeProducts($userId, $productId, $quantity)
     {
+        $model = new CarrinhoModel();
         $productExists = $this->productExists($userId, $productId);
         if (!$productExists) {
-            return $productExists;
+            return null;
+        }
+        $quantityToSave = $productExists["quantidade_item_carrinho"] + $quantity;
+        if ($quantityToSave < 1) {
+            $model->deleteOne($userId, $productId);
+            return;
         }
 
-        if (!$productExists["quantidade_item_carrinho"] >= $quantity) {
-            return "Could not remove product quantity";
-        }
-        $model = new CarrinhoModel();
-        $model->update($quantity, $userId, $productId);
+        $model->update($userId, $productId, $quantityToSave);
     }
 
     public function selecionaCarrinho()

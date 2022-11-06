@@ -10,6 +10,20 @@ if ($_POST) {
         $removeCart = new CarrinhoController();
         $removeCart->removeProduct();
     }
+
+    if (isset($_POST['changequantityminus'])) {
+        if (isset($_POST['changequantityminus'])) {
+            $removeCart = new CarrinhoController();
+            $removeCart->removeSomeProducts(1, $_POST['changequantityminus'], -1);
+        }
+    }
+
+    if (isset($_POST['changequantityplus'])) {
+        if (isset($_POST['changequantityplus'])) {
+            $removeCart = new CarrinhoController();
+            $removeCart->removeSomeProducts(1, $_POST['changequantityplus'], 1);
+        }
+    }
 }
 
 ?>
@@ -42,7 +56,7 @@ if ($_POST) {
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="teste" >Nome</th>
+                            <th class="teste">Nome</th>
                             <th>Quantidade</th>
                             <th>Preço</th>
                         </tr>
@@ -51,19 +65,21 @@ if ($_POST) {
                         <?php
                         $carrinhoController = new CarrinhoController();
                         $rows = $carrinhoController->selecionaCarrinho();
-                        foreach ((array)$rows as $item) : ?>
+                        foreach ((array)$rows as $item) :
+                            $_POST['id_produto'] = $item->id_produto;
+                        ?>
                             <tr>
                                 <td class="teste"> <?= $item->nome_produto ?></td>
-                                <td class="tableitem" > 
-                                    <form class="address" method="POST">
-                                        <div>
-                                            <button class="buttoncart" name="removecart" type="submit"> - </button>
+                                <td class="tableitem">
+                                    <form method="POST">
+                                        <div style="margin: 0 auto;">
+                                            <button class="buttoncart" name="changequantityminus" value="<?= $item->id_produto ?>" type="submit"> - </button>
                                             <?= $item->quantidade_item_carrinho ?>
-                                            <button class="buttoncart" name="removecart" type="submit"> + </button>
+                                            <button class="buttoncart" name="changequantityplus" value="<?= $item->id_produto ?>" type="submit"> + </button>
                                         </div>
-                                    </form> 
+                                    </form>
                                 </td>
-                                <td class="tableitem" > R$<?= $item->preco_produto ?></td>
+                                <td class="tableitem"> R$<?= $item->preco_produto ?></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

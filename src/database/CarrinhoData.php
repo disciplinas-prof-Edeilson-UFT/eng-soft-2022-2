@@ -56,9 +56,18 @@ class CarrinhoData
 		$con->execute();
 	}
 
+	public function removeOneProductFromCart($userId, $productId)
+	{
+		$sql = "DELETE FROM carrinho WHERE id_usuario = ? AND id_produto = ?";
+		$con = Connection::getConn()->prepare($sql);
+		$con->bindValue(1, $userId);
+		$con->bindValue(2, $productId);
+		$con->execute();
+	}
+
 	public function updateCartProduct($userId, $productId, $quantity)
 	{
-		$sql = "UPDATE carrinho SET quantidade_item_carrinho = ? WHERE id_usuario = ? AND id_produto = ? RETURNING quantidade_item_carrinho";
+		$sql = "UPDATE carrinho SET quantidade_item_carrinho = ? WHERE id_usuario = ? AND id_produto = ?";
 		$con = Connection::getConn()->prepare($sql);
 		$con->bindValue(1, $quantity);
 		$con->bindValue(2, $userId);
@@ -79,18 +88,14 @@ class CarrinhoData
 
 		$response = $con->fetch();
 
-		return array(
-			"id_produto" => $response['id_usuario'],
-			"id_usuario" => $response['id_produto'],
-			"quantidade_item_carrinho" => $response['quantidade_item_carrinho']
-		);
+		return $response;
 	}
 
 	public function selectCarrinho()
 	{
 
 		$conexao = Connection::getConn();
-		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, produto.preco_produto, usuario.id_usuario
+		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
 		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
 		$stmt = $conexao->prepare($sql);
 		$stmt->execute();

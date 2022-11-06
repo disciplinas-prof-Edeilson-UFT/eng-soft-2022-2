@@ -16,10 +16,15 @@ class CarrinhoModel
     $cartData->removeFromCart($userId);
   }
 
-  public function update($quantity, $userId, $productId)
+  public function deleteOne($userId, $productId) {
+    $cartData = new CarrinhoData();
+    $cartData->removeOneProductFromCart($userId, $productId);
+  }
+
+  public function update($userId, $productId, $quantity)
   {
     $cartData = new CarrinhoData();
-    $cartData->updateCartProduct($quantity, $userId, $productId);
+    $cartData->updateCartProduct($userId, $productId, $quantity);
   }
 
   public function findOne($userId, $productId)

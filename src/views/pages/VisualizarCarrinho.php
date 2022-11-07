@@ -27,19 +27,15 @@ if ($_POST) {
 <html>
 
 <head>
-
     <link rel="stylesheet" href="/src/views/css/VisualizarCarrinho.css">
     <script>
         if (window.history.replaceState) {
-
             window.history.replaceState(null, null, window.location.href);
         }
     </script>
-
 </head>
 
 <body class="global">
-
     <div class="container">
         <div style="width:100%">
             <div class="address">
@@ -89,23 +85,17 @@ if ($_POST) {
         <div class="nutshell">
             <h3>RESUMO</h3>
             <p>Valor dos Produtos:
-
                 <?php
-
                 // Criamos o objeto value e chamamos a classe do carrinho controllee, que vai chamar a função de mostrar o preco.
                 // O valor retornado está numa array, onde na posição 0 está o nosso objeto, e dentro dele temos a propriedade sum
                 // que foi obtida na query com nosso banco de dados. Nessa propriedade está o valor total do carrinho.
-
                 $value = new CarrinhoController();
                 $value = $value->showPrice();
-
                 function formatar($val)
                 {
                     return number_format($val, 2, '.', '');
                 }
-
                 echo "R$" . formatar($value[0]->sum);
-
                 ?>
             </p>
             <p>Frete:</p>

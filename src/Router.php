@@ -27,6 +27,7 @@ class Router
   private function routes()
   {
 
+    parse_str($this->url['query'], $params);
     $var = explode("/", $this->url['path']);
     // var_dump($this->method);
 

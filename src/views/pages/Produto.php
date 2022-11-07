@@ -3,16 +3,12 @@
 // O script na head do html impede a página de tentar reevio de post ao ser recarregada.
 // Usaremos a classe do CarrinhoController para quando o botão for clicado disparar as funções que irão adicionar o item ao carrinho
 // ou incrementar ele.
-
-
-require_once 'vendor/autoload.php';
-
 use src\controllers\CarrinhoController;
 use src\controllers\ProdutoController;
 
+require_once 'vendor/autoload.php';
 // Se ocorrer um post é verificado se esse post é do botão de adicionar ao carrinho, e se for o objeto addcart é criado, e executa a
 // função update value da classe CarrinhoController.
-
 if ($_POST) {
 
 	if (isset($_POST['addcart'])) {
@@ -21,7 +17,6 @@ if ($_POST) {
 		$addcart->updateValue();
 	}
 }
-
 ?>
 
 <html>
@@ -30,12 +25,10 @@ if ($_POST) {
 	<link rel="stylesheet" href="/src/views/css/Produto.css">
 	<script>
 		if (window.history.replaceState) {
-
 			window.history.replaceState(null, null, window.location.href);
 		}
 
 		function alertaAdicionarCarrinho() {
-
 			alert("item adicionado ao carrinho");
 		}
 	</script>
@@ -53,7 +46,6 @@ if ($_POST) {
 			<div class="photo">
 				<img src="/src/views/assets/<?= $rows[0]->id_produto ?>.png" width="210px">
 			</div>
-
 			<div class="end">
 				<p class="price"> R$<?= $rows[0]->preco_produto ?></p>
 				<form method="POST">

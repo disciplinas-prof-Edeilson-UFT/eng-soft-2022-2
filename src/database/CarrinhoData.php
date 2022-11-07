@@ -23,7 +23,6 @@ class CarrinhoData
 
 	public function addCarrinho($id_produto)
 	{
-
 		// Caso você vá fazer a part de adicionar item ao carrinho caso ele não esteja no carrinho, o código abaixo é de incrementar no
 		// carrinho caso o item já exista lá. Penso em fazer uma busca no banco tentando achar o item, se a quantidade dele for >= 1 ele
 		// já existe no carinho, logo o código abaixo é chamado, senão o item é inserido no carrinho.
@@ -93,7 +92,6 @@ class CarrinhoData
 
 	public function selectCarrinho()
 	{
-
 		$conexao = Connection::getConn();
 		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
 		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
@@ -104,11 +102,9 @@ class CarrinhoData
 
 	public function showPrice()
 	{
-
 		// É estabelecida a conexão com o banco de dados, e em seguida realizada uma query.
 		// A query retornará um dado que não pode ser mostrado diretamente na tela, então vamos usar uma função que vai
 		// transformar tudo que foi pego numa array e retornaremos o valor.
-
 		$con = Connection::getConn();
 		$sql = "SELECT SUM (pr.preco_produto * cr.quantidade_item_carrinho) FROM PRODUTO AS pr
 		INNER JOIN CARRINHO as cr

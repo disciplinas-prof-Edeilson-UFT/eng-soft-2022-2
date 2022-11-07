@@ -1,12 +1,10 @@
 <?php
 
-
 namespace src\models;
 
 use src\database\CarrinhoData;
 
 require_once 'vendor/autoload.php';
-include __DIR__ . '/../database/CarrinhoData.php';
 
 class CarrinhoModel
 {
@@ -16,7 +14,8 @@ class CarrinhoModel
     $cartData->removeFromCart($userId);
   }
 
-  public function deleteOne($userId, $productId) {
+  public function deleteOne($userId, $productId)
+  {
     $cartData = new CarrinhoData();
     $cartData->removeOneProductFromCart($userId, $productId);
   }
@@ -31,12 +30,12 @@ class CarrinhoModel
   {
     $cartData = new CarrinhoData();
     $response = $cartData->getProduct($userId, $productId);
+
     return $response;
   }
 
   public function execute($id_produto)
   {
-
     $execution = new CarrinhoData();
     $execution->addCarrinho($id_produto);
   }
@@ -44,16 +43,14 @@ class CarrinhoModel
   public function selecionaCarrinho()
   {
     $exec  = new CarrinhoData();
-
     $rows = $exec->selectCarrinho();
+
     return $rows;
   }
 
   public function showPrice()
   {
-
     $cartData = new CarrinhoData();
-
     $value = $cartData->showPrice();
 
     return $value;

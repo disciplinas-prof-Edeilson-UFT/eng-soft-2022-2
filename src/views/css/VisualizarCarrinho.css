@@ -58,6 +58,28 @@ Paleta
 	border-radius: 4px;
 	transition : 0.2s;
 }
+.buttoncart {
+	background : none;
+	color: #fff;
+	padding: 8px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 20px 15px;
+	cursor: pointer;
+	border: 2px solid #ff0841;
+	border-radius: 4px;
+	transition : 0.2s;
+}
+
+.buttoncart:hover {
+	
+	background: #ff0841;
+	padding: 8px 10px;
+	transition: 0.2s;
+	
+}
 
 .button:hover {
 	
@@ -98,4 +120,25 @@ Paleta
   height: 50%;
   text-align: left;
   margin: 0 0 0 50px;
+}
+
+
+.tableitem {
+  max-height: 20px;
+}
+
+.table {
+  margin: 10px 0 0 0;
+  background-color: #021b2b;
+  color : #ebdfcc;
+  width: 100%;
+  text-align: center;
+  border : 2px #ff0841 solid;
+  border-radius: 12px;
+  padding: 10px 0 0 0;
+}
+
+.table .teste {
+  text-align: left;
+  padding: 0 0 0 10px;
 }

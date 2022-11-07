@@ -24,6 +24,7 @@ class ProdutoController
     } else {
       $var = $model->getAllRows();
     }
+
     return $var;
   }
 

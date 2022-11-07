@@ -2,6 +2,7 @@
 require_once 'vendor/autoload.php';
 
 use src\controllers\ProdutoController; // Falar com o edson sobre.
+$i = 0;
 ?>
 
 <head>
@@ -16,6 +17,7 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
       <input type="search" placeholder="Busque aqui" id="pesquisar">
       <button class="button" id="but" onclick="searchData()">Buscar</button>
     </div>
+
     <div class="prodGrid">
       <table>
         <?php
@@ -35,10 +37,13 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
               </div>
             </div>
           </div>
-        <?php endforeach; ?>
-
+        <?php
+          $i++;
+        // var_dump($i);
+        endforeach; ?>
       </table>
     </div>
+    <p class="results"><?= $i ?> Resultados obtidos</p>
   </div>
 </body>
 <script>

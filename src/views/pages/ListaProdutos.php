@@ -2,7 +2,6 @@
 require_once 'vendor/autoload.php';
 
 use src\controllers\ProdutoController; // Falar com o edson sobre.
-$i = 0;
 ?>
 
 <head>
@@ -38,12 +37,10 @@ $i = 0;
             </div>
           </div>
         <?php
-          $i++;
-        // var_dump($i);
         endforeach; ?>
       </table>
     </div>
-    <p class="results"><?= $i ?> Resultados obtidos</p>
+    <p class="results"><?= count($rows) ?> Resultados obtidos</p>
   </div>
 </body>
 <script>

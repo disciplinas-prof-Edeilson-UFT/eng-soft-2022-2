@@ -3,6 +3,7 @@
 namespace src\routes;
 
 require_once 'vendor/autoload.php';
+include __DIR__ . '/./views/templates/cabecalho.php';
 
 class ProdutoRoute
 {

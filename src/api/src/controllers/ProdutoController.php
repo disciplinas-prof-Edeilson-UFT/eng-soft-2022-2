@@ -22,24 +22,24 @@ class ProdutoController
   }
 
   //AS duas funções uniqueShow Funcionam perfeitamente porem essa a seguir está mais de acordo com uma regra de negócio.
-  // public static function uniqueShow($produtoId)
-  // {
-  //   $model = new ProdutoModel();
-  //   $var = $model->selectById($produtoId);
-  //   if (!$var)
-  //     return array(
-  //       "message" => "Produto não encontrado"
-  //     );
-
-  //   return $var;
-  // }
-
-  public static function uniqueShow()
+  public static function uniqueShow($produtoId)
   {
     $model = new ProdutoModel();
-    if (isset($_GET['id_produto']))
-      $var = $model->selectById((int) $_GET['id_produto']);
+    $var = $model->selectById($produtoId);
+    if (!$var)
+      return array(
+        "message" => "Produto não encontrado"
+      );
 
     return $var;
   }
+
+  // public static function uniqueShow()
+  // {
+  //   $model = new ProdutoModel();
+  //   if (isset($_GET['id_produto']))
+  //     $var = $model->selectById((int) $_GET['id_produto']);
+
+  //   return $var;
+  // }
 }

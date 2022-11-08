@@ -4,6 +4,8 @@ require_once 'vendor/autoload.php';
 
 use src\config\Connection;
 use src\controllers\CarrinhoController;
+use src\api\src\routes\ProdutoRoute;
+
 
 // include("src/config/Connection.php");
 
@@ -23,5 +25,4 @@ use src\controllers\CarrinhoController;
 // echo '</pre>';
 
 $carrinhoController = new CarrinhoController();
-
 $carrinhoController->removeSomeProducts(1, 4, 1);

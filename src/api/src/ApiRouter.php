@@ -27,7 +27,7 @@ class ApiRouter
   public function apiRouting()
   {
     $carrinhoRoute = new CarrinhoRoute($this->method, $this->payload, $this->query);
-    $produtoRoute = new ProdutoRoute($this->method, $this->payload, $this->query, $this->params);
+    $produtoRoute = new ProdutoRoute($this->method, $this->payload, $this->query);
 
     switch ($this->path) {
       case self::PRODUTO:

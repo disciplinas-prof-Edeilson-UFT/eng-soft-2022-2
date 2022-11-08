@@ -8,7 +8,7 @@ use src\config\Connection;
 use src\database\CarrinhoData;
 
 require_once 'vendor/autoload.php';
-include __DIR__ . '/../database/CarrinhoData.php';
+// include __DIR__ . '/../database/CarrinhoData.php';
 
 class CarrinhoModel
 {

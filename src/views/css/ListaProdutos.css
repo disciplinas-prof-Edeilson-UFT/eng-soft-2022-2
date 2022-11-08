@@ -11,6 +11,11 @@ Paleta
 */
 
 body {
+<<<<<<< HEAD
+=======
+    
+    background-color: #021b2b;
+>>>>>>> ceced9e6498f0bb61cf8cc6d09054d89d06b2f30
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -33,8 +38,9 @@ body {
 }
 
 .gridItem {
-    margin:auto auto;
+    margin:auto auto auto;
     width: 300px;
+    height:325px;
     padding: 20px;
     font-size: 20px;
     text-align: center;
@@ -42,6 +48,7 @@ body {
 	border: 2px #ff0841 solid;
     border-radius: 40px;
 	background-color: #b10c43;
+    margin-left: -12px;
 }
 
 .image {
@@ -105,4 +112,9 @@ body {
 	padding : 15px 45px;
 	color : #ff0841;
 	transition : 0.2s;
+}
+
+.results {
+    color: white;
+    font-size: 20px;
 }

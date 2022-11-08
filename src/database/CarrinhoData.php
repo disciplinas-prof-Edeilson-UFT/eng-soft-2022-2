@@ -12,6 +12,8 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
+require_once 'vendor/autoload.php';
+
 class CarrinhoData
 {
 
@@ -21,7 +23,6 @@ class CarrinhoData
 
 	public function addCarrinho($id_produto)
 	{
-
 		// Caso você vá fazer a part de adicionar item ao carrinho caso ele não esteja no carrinho, o código abaixo é de incrementar no
 		// carrinho caso o item já exista lá. Penso em fazer uma busca no banco tentando achar o item, se a quantidade dele for >= 1 ele
 		// já existe no carinho, logo o código abaixo é chamado, senão o item é inserido no carrinho.
@@ -54,9 +55,18 @@ class CarrinhoData
 		$con->execute();
 	}
 
+	public function removeOneProductFromCart($userId, $productId)
+	{
+		$sql = "DELETE FROM carrinho WHERE id_usuario = ? AND id_produto = ?";
+		$con = Connection::getConn()->prepare($sql);
+		$con->bindValue(1, $userId);
+		$con->bindValue(2, $productId);
+		$con->execute();
+	}
+
 	public function updateCartProduct($userId, $productId, $quantity)
 	{
-		$sql = "UPDATE carrinho SET quantidade_item_carrinho = ? WHERE id_usuario = ? AND id_produto = ? RETURNING quantidade_item_carrinho";
+		$sql = "UPDATE carrinho SET quantidade_item_carrinho = ? WHERE id_usuario = ? AND id_produto = ?";
 		$con = Connection::getConn()->prepare($sql);
 		$con->bindValue(1, $quantity);
 		$con->bindValue(2, $userId);
@@ -77,18 +87,13 @@ class CarrinhoData
 
 		$response = $con->fetch();
 
-		return array(
-			"id_produto" => $response['id_usuario'],
-			"id_usuario" => $response['id_produto'],
-			"quantidade_item_carrinho" => $response['quantidade_item_carrinho']
-		);
+		return $response;
 	}
 
 	public function selectCarrinho()
 	{
-
 		$conexao = Connection::getConn();
-		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, produto.preco_produto, usuario.id_usuario
+		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
 		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
 		$stmt = $conexao->prepare($sql);
 		$stmt->execute();
@@ -97,11 +102,9 @@ class CarrinhoData
 
 	public function showPrice()
 	{
-
 		// É estabelecida a conexão com o banco de dados, e em seguida realizada uma query.
 		// A query retornará um dado que não pode ser mostrado diretamente na tela, então vamos usar uma função que vai
 		// transformar tudo que foi pego numa array e retornaremos o valor.
-
 		$con = Connection::getConn();
 		$sql = "SELECT SUM (pr.preco_produto * cr.quantidade_item_carrinho) FROM PRODUTO AS pr
 		INNER JOIN CARRINHO as cr

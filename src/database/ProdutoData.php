@@ -5,13 +5,12 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
-include("../src/config/Connection.php");
+require_once 'vendor/autoload.php';
+
 
 /* Classe que realiza comunicação com o banco de dados devio ao uso da classe Connection e o PDO. Ás funções contidas nessa classe muito com certeza serão usadas pelo Modelo referente, no caso ProdutoModel*/
-
 class ProdutoData
 {
-
   //Função que recupera atributos especificos da entidade Produto do banco de dados.
   public function select()
   {
@@ -25,8 +24,6 @@ class ProdutoData
 
   public function selectById(int $id_produto)
   {
-    include_once 'models/ProdutoModel.php';
-
     $sql = "SELECT * FROM produto WHERE id_produto = $id_produto";
 
     $con = Connection::getConn();
@@ -38,9 +35,7 @@ class ProdutoData
 
   public function selectByAny($data)
   {
-    include_once 'models/ProdutoModel.php';
-
-    $sql = "SELECT * FROM produto WHERE nome_produto LIKE '%$data%'";
+    $sql = "SELECT * FROM produto WHERE LOWER(nome_produto) LIKE LOWER('%$data%')";
 
     $con = Connection::getConn();
     $stmt = $con->prepare($sql);

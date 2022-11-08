@@ -1,9 +1,11 @@
 <?php
-include './views/templates/cabecalho.php';
+require_once 'vendor/autoload.php';
+
+use src\controllers\ProdutoController; // Falar com o edson sobre.
 ?>
 
 <head>
-  <link rel="stylesheet" href="./views/css/ListaProdutos.css">
+  <link rel="stylesheet" href="/src/views/css/ListaProdutos.css">
 </head>
 
 <html>
@@ -12,13 +14,17 @@ include './views/templates/cabecalho.php';
   <div class="container">
     <div class="box-search">
       <input type="search" placeholder="Busque aqui" id="pesquisar">
-      <button class = "button" id="but" onclick="searchData()">Buscar</button>
+      <button class="button" id="but" onclick="searchData()">Buscar</button>
     </div>
+
     <div class="prodGrid">
       <table>
-        <?php foreach ((array)$model->rows as $item) : ?>
+        <?php
+        $model = new ProdutoController();
+        $rows = $model->index();
+        foreach ((array)$rows as $item) : ?>
           <div class="gridItem">
-            <img class = "image" src="./views/assets/nt.jpg">
+            <img class="image" src="/src/views/assets/<?= $item->id_produto ?>.png">
             <div class="content">
               <div class="info">
                 <p><?= $item->nome_produto ?> </p>
@@ -30,10 +36,11 @@ include './views/templates/cabecalho.php';
               </div>
             </div>
           </div>
-        <?php endforeach; ?>
-
+        <?php
+        endforeach; ?>
       </table>
     </div>
+    <p class="results"><?= count($rows) ?> Resultados obtidos</p>
   </div>
 </body>
 <script>
@@ -42,6 +49,12 @@ include './views/templates/cabecalho.php';
   function searchData() {
     window.location = 'produto?search=' + search.value;
   }
+
+  search.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      searchData();
+    }
+  });
 </script>
 
 </html>

@@ -24,6 +24,12 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
   }
+    
+    body {
+    
+      background : #021b2b;
+      
+    }
   
   .cabeçalho {
   background: linear-gradient(#02031a, #021b2b);

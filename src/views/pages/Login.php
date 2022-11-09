@@ -60,6 +60,9 @@ if ($_POST) {
 				<input type = "text" name = "name" placeholder = "nome">
 				<input type = "password" name = "password" placeholder = "senha">
 				<input class = "button" type = "submit" value = "Login">
+				
+				<button class = "redirect" onclick = "window.location = '#'"> esqueci minha senha </button>
+				<button class = "redirect" onclick = "window.location = '#'"> não sou cadastrado </button>
 		
 			</form>
 		

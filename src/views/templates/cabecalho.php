@@ -1,10 +1,13 @@
 <?php 
 		
-	if (isset ($_GET ["logout"]) && ($_SESSION ["id"] != NULL)) {
+	if (isset ($_GET ["logout"]) && isset($_SESSION ["id"])) {
+		
+		// se a pessoa clicou em logout e estava logada, a sessão dela é encerrada.
 		
 		session_destroy ();
 		
 	}
+	
 ?>
 
 <html lang="pt-br">
@@ -19,6 +22,9 @@
         if (window.history.replaceState) {
         	
             <?php 
+            
+            // isso garante que caso a página sofra reload a sessão seja guardada, pois senão ela sumiria. Ela é guardada no cabeçalho
+            // pois pode ser reutilizada em outras páginas
             
             	session_commit ();
             

@@ -2,14 +2,15 @@
 
 namespace src\models;
 
+use src\database\UsuarioData;
+
 require_once 'vendor/autoload.php';
 
 class UserModel
 {
-    public function cadastro(){
+    public function cadastro_usuario($nome, $cpf){
         $cadastro=new UserData();
-
-        $cadastro->cadastro();
+        $cadastro->cadastro($nome, $cpf);
     }
 }
 

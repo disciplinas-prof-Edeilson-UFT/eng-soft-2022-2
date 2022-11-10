@@ -6,10 +6,11 @@ require_once ("vendor/autoload.php");
 
 class UsuarioData{
 
-public function cadastro(){
+public function cadastro($nome_usuario, $cpf_usuario){
     $con=Connection::getConn();
-$result = $con->query("INSERT INTO usuarios(nome,senha,email,telefone,sexo,data_nasc,cidade,estado,endereco) 
-        VALUES ('$nome','$senha','$email','$telefone','$sexo','$data_nasc','$cidade','$estado','$endereco')");
+    $sql = "INSERT INTO usuario(nome_usuario,cpf_usuario) 
+        VALUES ('$nome_usuario','$cpf_usuario')";
+    $result = $con->query($sql);
 }
 }
 

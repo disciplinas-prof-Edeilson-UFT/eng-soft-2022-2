@@ -145,6 +145,70 @@
   border-radius : 30px;
   }
   
+  .box-search #pesquisar {
+    
+	background : none;
+    font-size: 25px;
+	color : #ebdfcc;
+	border: 2px #ff0841 solid;
+    border-radius: 2px;
+    align-content : center;
+    margin-left : 23%;
+	padding : 4px;
+    width: 500px;
+    height: 30px;
+    outline: 0;
+}
+
+.box-search #but {
+	background : none;
+	color: #ebdfcc;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 14px 2px;
+	cursor: pointer;
+	border: 2px solid #ff0841;
+	border-radius: 4px;
+	transition : 0.2s;
+}
+
+.box-search #but:hover {
+	background : #ff0841;
+	padding : 15px 45px;
+	transition : 0.2s;
+}
+
+.button a{
+	background : none;
+	color: #ebdfcc;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 2px;
+    cursor: pointer;
+	border: 2px solid #021b2b;
+    border-radius: 4px;
+	transition : 0.2s;
+}
+
+.button a:hover {
+	
+	background : #021b2b;
+	padding : 15px 45px;
+	color : #ff0841;
+	transition : 0.2s;
+}
+
+.results {
+    color: white;
+    font-size: 20px;
+}
+  
   </style>
   
 </head>
@@ -188,6 +252,25 @@
       </a>
     </div>
   </div>
+  
+    <div class="box-search">
+      <input type="search" placeholder="Busque aqui" id="pesquisar">
+      <button class="button" id="but" onclick="searchData()">Buscar</button>
+    </div>
+    
+    <script>
+  var search = document.getElementById('pesquisar');
+
+  function searchData() {
+    window.location = 'produto?search=' + search.value;
+  }
+
+  search.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      searchData();
+    }
+  });
+</script>
 </header>
 
 </html>

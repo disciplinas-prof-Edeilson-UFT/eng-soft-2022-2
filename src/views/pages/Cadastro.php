@@ -1,16 +1,36 @@
-<?php ?>
-<!DOCTYPE html>
-<html lang="en">
+<?php
+
+use src\controllers\UserController;
+
+require_once 'vendor/autoload.php';
+
+
+?>
+<html>
 <head>
-    <link rel="stylesheet" href="./views/css/Cadastro.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="./views/css/open-iconic-bootstrap.css">
+	<link rel="stylesheet" href="./views/css/bootstrap.css">
+    <link rel = "stylesheet" href = "./views/css/Login.css">
    
 </head>
 <body>
-    <a href="home.php">Voltar</a>
+
+    <div class="container">
+    
+        <img src = "https://uploaddeimagens.com.br/images/004/064/618/thumb/user.png?1666047148">
+
+        <form method = "POST">
+            <input type = "nome" placeholder = "nome">
+            <input type = "cpf" placeholder = "cpf">
+            <input class = "button" type = "submit" value = "cadastro">
+    
+        </form>
+    
+    </div>
+    <!--<a href="home.php">Voltar</a>
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>
@@ -66,6 +86,6 @@
                 <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
-    </div>
+    </div>-->
 </body>
 </html>

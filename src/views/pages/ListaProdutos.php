@@ -2,6 +2,7 @@
 require_once 'vendor/autoload.php';
 
 use src\controllers\ProdutoController; // Falar com o edson sobre.
+
 ?>
 
 <head>
@@ -12,10 +13,6 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
 
 <body class="global">
   <div class="container">
-    <div class="box-search">
-      <input type="search" placeholder="Busque aqui" id="pesquisar">
-      <button class="button" id="but" onclick="searchData()">Buscar</button>
-    </div>
 
     <div class="prodGrid">
       <table>
@@ -43,18 +40,5 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
     <p class="results"><?= count($rows) ?> Resultados obtidos</p>
   </div>
 </body>
-<script>
-  var search = document.getElementById('pesquisar');
-
-  function searchData() {
-    window.location = 'produto?search=' + search.value;
-  }
-
-  search.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-      searchData();
-    }
-  });
-</script>
 
 </html>

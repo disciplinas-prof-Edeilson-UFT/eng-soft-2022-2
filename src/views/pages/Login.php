@@ -3,7 +3,7 @@
 require_once ("vendor/autoload.php");
 
 use src\controllers\UserController;
-
+$si = 0;
 if ($_POST) {
 	
 	// os envios do formulário são pegos, e dentro do if passados para a função. Se retornar 1 o usuário existe e o login funcionou, então
@@ -22,7 +22,34 @@ if ($_POST) {
 		
 	} else {
 		
-		echo ("tem algo errado");
+		echo ("
+		<body>
+		<!-- The Modal -->
+		<div id='myModal' class='modal'>
+		
+		  <!-- Modal content -->
+		  <div class='modal-content'>
+			<span class='close'></span>
+			<p>Autenticação Inválida!</br>Senha ou Usuario incorreta.</p>
+		  </div>
+		
+		</div>
+		
+		<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+	
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName('close')[0];
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target != modal) {
+			modal.style.display = 'none';
+		  }
+		}
+		</script>
+		</body>");
 		
 	}		
 }

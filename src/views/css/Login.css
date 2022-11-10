@@ -126,3 +126,31 @@ input:focus {
 	transition : 0.2s;
 	
 }
+
+/* The Modal (background) */
+.modal {
+	display:flex;
+	position:fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+	height: 20%; /* Full height */
+	border: #ff0841;
+	
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: #02031a;
+	margin: auto;
+	border-radius: 0%;
+	width: 100%;
+	color: white;
+	text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+  }

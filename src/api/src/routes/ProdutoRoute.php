@@ -32,11 +32,11 @@ class ProdutoRoute
     switch ($this->method) {
       case self::GET:
         if ($this->query['id_produto']) {
-          echo json_encode($produtoController->uniqueShow($this->query['id_produto']));
+          echo json_encode($produtoController->uniqueShow($this->query['id_produto'], JSON_PRETTY_PRINT));
           // echo json_encode($produtoController->uniqueShow());
           return;
         }
-        echo json_encode($produtoController->show());
+        echo json_encode($produtoController->show(), JSON_PRETTY_PRINT);
         break;
       case self::POST:
         break;

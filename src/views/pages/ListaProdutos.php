@@ -2,6 +2,20 @@
 require_once 'vendor/autoload.php';
 
 use src\controllers\ProdutoController; // Falar com o edson sobre.
+use src\models\ProdutoModel;
+
+
+$url = "http://localhost:3001/api/produto";
+$produto = file_get_contents($url);
+
+echo "<pre>";
+var_dump($produto);
+
+
+$var = json_decode($produto, true);
+var_dump($var, true);
+exit;
+
 ?>
 
 <head>

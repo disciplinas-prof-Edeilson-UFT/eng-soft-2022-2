@@ -30,7 +30,7 @@ if ($_POST) {
 		  <!-- Modal content -->
 		  <div class='modal-content'>
 			<span class='close'></span>
-			<p>Autenticação Inválida!</br>Senha ou Usuario incorreta.</p>
+			<p>Autenticação Inválida!</br>Senha ou Usuario incorreta.</br></br>Clique para fechar.</p>
 		  </div>
 		
 		</div>

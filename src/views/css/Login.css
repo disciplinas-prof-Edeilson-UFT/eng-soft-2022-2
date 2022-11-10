@@ -136,7 +136,7 @@ input:focus {
   	top: 50%;
   	transform: translate(-50%, -50%);
 	height: 20%; /* Full height */
-	border: #ff0841;
+	
 	
   }
   
@@ -144,10 +144,11 @@ input:focus {
   .modal-content {
 	background-color: #02031a;
 	margin: auto;
-	border-radius: 0%;
+	border-radius: 140px;
 	width: 100%;
 	color: white;
 	text-align: center;
+	border: #ff0841;
   }
   
   /* The Close Button */

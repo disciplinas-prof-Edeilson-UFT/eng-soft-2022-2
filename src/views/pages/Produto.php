@@ -11,10 +11,17 @@ require_once 'vendor/autoload.php';
 // função update value da classe CarrinhoController.
 if ($_POST) {
 
-	if (isset($_POST['addcart'])) {
+	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"])) {
 
 		$addcart = new CarrinhoController();
 		$addcart->updateValue();
+		
+		echo ("<script language = 'javascript'> alert ('item adicionado ao carrinho'); </script>");
+	}
+	
+	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"]) == 0) {
+
+		echo ("<script language = 'javascript'> window.location = '/usuario'; </script>");
 	}
 }
 ?>
@@ -23,15 +30,15 @@ if ($_POST) {
 
 <head>
 	<link rel="stylesheet" href="/src/views/css/Produto.css">
+	
 	<script>
+	
 		if (window.history.replaceState) {
 			window.history.replaceState(null, null, window.location.href);
 		}
-
-		function alertaAdicionarCarrinho() {
-			alert("item adicionado ao carrinho");
-		}
+		
 	</script>
+	
 </head>
 
 <body class="global">
@@ -49,7 +56,7 @@ if ($_POST) {
 			<div class="end">
 				<p class="price"> R$<?= $rows[0]->preco_produto ?></p>
 				<form method="POST">
-					<input class="button" type="submit" name="addcart" onclick="alertaAdicionarCarrinho ()" value="Comprar">
+					<input class="button" type="submit" name="addcart" value="Comprar">
 				</form>
 			</div>
 		</div>

@@ -18,7 +18,7 @@ if ($_POST) {
 		
 		// echo ($_SESSION ["usuario"]);
 		
-		echo ("<script language = 'javascript'> window.location = 'produto'; </script>");
+		echo ("<script language = 'javascript'> window.location = '/produto'; </script>");
 		
 	} else {
 		

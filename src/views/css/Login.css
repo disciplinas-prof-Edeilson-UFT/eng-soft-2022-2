@@ -1,13 +1,10 @@
 /*
-
 Paleta
-
 #02031a - quase preto
 #021b2b - azul escuro
 #b10c43 - vermelho fosco
 #ff0841 - vermelho claro
 #ebdfcc - beige
-
 */
 
 * {
@@ -133,8 +130,9 @@ input:focus {
 	position:fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
 	left: 50%;
-  	top: 50%;
+  	top: 30%;
   	transform: translate(-50%, -50%);
+  	width : 23%;
 	height: 20%; /* Full height */
 	
 	
@@ -144,8 +142,8 @@ input:focus {
   .modal-content {
 	background-color: #02031a;
 	margin: auto;
-	border-radius: 140px;
-	width: 100%;
+	border-radius: 300px;
+	width: 70%;
 	color: white;
 	text-align: center;
 	border: #ff0841;

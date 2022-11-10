@@ -5,16 +5,8 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
 use src\models\ProdutoModel;
 
 
-$url = "http://localhost:3001/api/produto";
-$produto = file_get_contents($url);
-
-echo "<pre>";
-var_dump($produto);
-
-
-$var = json_decode($produto, true);
-var_dump($var, true);
-exit;
+$url = "http://localhost:8001/api/produto";
+$produtos = json_decode(file_get_contents($url));
 
 ?>
 
@@ -36,7 +28,7 @@ exit;
         <?php
         $model = new ProdutoController();
         $rows = $model->index();
-        foreach ((array)$rows as $item) : ?>
+        foreach ((array)$produtos as $item) : ?>
           <div class="gridItem">
             <img class="image" src="/src/views/assets/<?= $item->id_produto ?>.png">
             <div class="content">
@@ -54,7 +46,7 @@ exit;
         endforeach; ?>
       </table>
     </div>
-    <p class="results"><?= count($rows) ?> Resultados obtidos</p>
+    <p class="results"><?= count($produtos) ?> Resultados obtidos</p>
   </div>
 </body>
 <script>

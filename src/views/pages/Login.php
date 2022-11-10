@@ -1,101 +1,66 @@
 <?php
 
-require_once ("vendor/autoload.php");
+// O script na head do html impede a página de tentar reevio de post ao ser recarregada.
+// Usaremos a classe do CarrinhoController para quando o botão for clicado disparar as funções que irão adicionar o item ao carrinho
+// ou incrementar ele.
+use src\controllers\CarrinhoController;
+use src\controllers\ProdutoController;
 
-use src\controllers\UserController;
-$si = 0;
+require_once 'vendor/autoload.php';
+// Se ocorrer um post é verificado se esse post é do botão de adicionar ao carrinho, e se for o objeto addcart é criado, e executa a
+// função update value da classe CarrinhoController.
 if ($_POST) {
-	
-	// os envios do formulário são pegos, e dentro do if passados para a função. Se retornar 1 o usuário existe e o login funcionou, então
-	// ele deve ser redirecionado para a outra página;
-	
-	$name = $_POST ["name"];
-	$password = $_POST ["password"];
-	
-	$user = new UserController ();
 
-	if ($user -> login ($name, $password) == 1) {
+	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"])) {
+
+		$addcart = new CarrinhoController();
+		$addcart->updateValue();
 		
-		// echo ($_SESSION ["usuario"]);
-		
-		echo ("<script language = 'javascript'> window.location = '/produto'; </script>");
-		
-	} else {
-		
-		echo ("
-		<body>
-		<!-- The Modal -->
-		<div id='myModal' class='modal'>
-		
-		  <!-- Modal content -->
-		  <div class='modal-content'>
-			<span class='close'></span>
-			<p>Autenticação Inválida!</br>Senha ou Usuario incorreta.</br></br>Clique para fechar.</p>
-		  </div>
-		
-		</div>
-		
-		<script>
-		// Get the modal
-		var modal = document.getElementById('myModal');
+		echo ("<script language = 'javascript'> alert ('item adicionado ao carrinho'); </script>");
+	}
 	
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName('close')[0];
-		
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		  if (event.target != modal) {
-			modal.style.display = 'none';
-		  }
-		}
-		</script>
-		</body>");
-		
-	}		
+	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"]) == 0) {
+
+		echo ("<script language = 'javascript'> window.location = '/usuario'; </script>");
+	}
 }
-
 ?>
 
 <html>
 
-	<head>
+<head>
+	<link rel="stylesheet" href="/src/views/css/Produto.css">
 	
-		<script>
-		
-			if (window.history.replaceState) {
+	<script>
+	
+		if (window.history.replaceState) {
 			window.history.replaceState(null, null, window.location.href);
-			}
+		}
+		
+	</script>
+	
+</head>
 
-			function alertaAdicionarCarrinho() {
-			alert("item adicionado ao carrinho");
-			}
-			
-		</script>
-	
-		<link rel = "stylesheet" href = "/src/views/css/Login.css">
-	
-	</head>
-	
-	<body>
-	
-		<div>
-		
-			<img src = "https://uploaddeimagens.com.br/images/004/064/618/thumb/user.png?1666047148">
-			
-			<form method = "POST">
-		
-				<input type = "text" name = "name" placeholder = "nome">
-				<input type = "password" name = "password" placeholder = "senha">
-				<input class = "button" type = "submit" value = "Login">
-				
-				<button class = "redirect" onclick = "window.location = '#'"> esqueci minha senha </button>
-				<button class = "redirect" onclick = "window.location = '#'"> não sou cadastrado </button>
-		
-			</form>
-		
+<body class="global">
+
+	<div class="container">
+		<div class="main">
+			<?php
+			$model = new ProdutoController();
+			$rows = $model->unique();
+			?>
+			<h1> <?= $rows[0]->nome_produto ?> <?= $rows[0]->descricao_produto ?></h1>
+			<div class="photo">
+				<img src="/src/views/assets/<?= $rows[0]->id_produto ?>.png" width="210px">
+			</div>
+			<div class="end">
+				<p class="price"> R$<?= $rows[0]->preco_produto ?></p>
+				<form method="POST">
+					<input class="button" type="submit" name="addcart" value="Comprar">
+				</form>
+			</div>
 		</div>
-	
-	
-	</body>
+	</div>
+</body>
 
 </html>

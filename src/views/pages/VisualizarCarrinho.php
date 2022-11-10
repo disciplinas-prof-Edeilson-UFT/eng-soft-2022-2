@@ -13,14 +13,21 @@ if ($_POST) {
 
     if (isset($_POST['changequantityminus'])) {
         $removeCart = new CarrinhoController();
-        $removeCart->removeSomeProducts(1, $_POST['changequantityminus'], -1);
+        $removeCart->removeSomeProducts($_SESSION ["id"], $_POST['changequantityminus'], -1);
     }
 
     if (isset($_POST['changequantityplus'])) {
         $removeCart = new CarrinhoController();
-        $removeCart->removeSomeProducts(1, $_POST['changequantityplus'], 1);
+        $removeCart->removeSomeProducts($_SESSION ["id"], $_POST['changequantityplus'], 1);
     }
 }
+
+        	
+    if (isset ($_SESSION ["id"]) == 0) {
+        			
+        echo ("<script language = 'javascript'> window.location = 'usuario' </script>");
+        			
+	}
 
 ?>
 

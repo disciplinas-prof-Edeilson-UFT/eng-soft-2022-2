@@ -1,10 +1,18 @@
 <?php 
 		
-	if (isset ($_GET ["logout"]) && isset($_SESSION ["id"])) {
+	if (isset ($_GET ["logout"])) {
 		
 		// se a pessoa clicou em logout e estava logada, a sessão dela é encerrada.
 		
 		session_destroy ();
+		
+	}
+	
+	if (isset ($_GET ["login"])) {
+		
+		// se a pessoa clicou em logout e estava logada, a sessão dela é encerrada.
+		
+		echo ("<script language = 'javascript'> window.location = '/usuario' </script>");
 		
 	}
 	
@@ -30,7 +38,6 @@
             
             ?>;
         }
-        
         
     </script>
   
@@ -155,7 +162,19 @@
         	
         		<form method = "GET" >
         		
-        			<input class = "button" type = "submit" name = "logout" value = "logout">
+        			<?php
+        			
+        			if (isset ($_SESSION ["id"])) {
+        			
+        				echo ("<input class = 'button' type = 'submit' name = 'logout' value = 'logout'>");
+        			
+					} else {
+						
+						echo ("<input class = 'button' type = 'submit' name = 'login' value = 'login'>");
+						
+					}
+        			
+        			?>
         		
         		</form>
         			
@@ -164,7 +183,7 @@
         
       </nav>
       
-      <a href="/carrinho" class=" buy">
+      <a href = "/carrinho" class = "buy">
         <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG60.png">
       </a>
     </div>

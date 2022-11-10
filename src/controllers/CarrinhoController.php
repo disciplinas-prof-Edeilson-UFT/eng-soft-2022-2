@@ -7,8 +7,7 @@ namespace src\controllers;
 require_once 'vendor/autoload.php';
 
 use src\models\CarrinhoModel;
-
-include __DIR__ . '/../models/CarrinhoModel.php';
+use src\services\Api;
 
 class CarrinhoController
 {
@@ -63,9 +62,14 @@ class CarrinhoController
 
     public function selecionaCarrinho()
     {
-        $model = new CarrinhoModel();
-        $response = $model->selecionaCarrinho();
+        $api = new Api();
+        $data = array();
+        $response = $api->carrinho()->get($data);
         return $response;
+        echo $response;
+        // $model = new CarrinhoModel();
+        // $response = $model->selecionaCarrinho();
+        // return $response;
     }
 
     public function showPrice()

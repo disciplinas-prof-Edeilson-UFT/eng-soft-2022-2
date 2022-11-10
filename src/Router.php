@@ -47,6 +47,7 @@ class Router
       case self::API:
         $apiRouter = new ApiRouter($var[2], $this->payload, $this->method, $query);
         $apiRouter->apiRouting();
+        break;
     }
   }
 

@@ -22,6 +22,9 @@ if ($_POST) {
     }
 }
 
+$url = "http://localhost:8001/api/carrinho";
+$carrinho = json_decode(file_get_contents($url));
+
 ?>
 
 <html>
@@ -59,9 +62,7 @@ if ($_POST) {
                     </thead>
                     <tbody>
                         <?php
-                        $carrinhoController = new CarrinhoController();
-                        $rows = $carrinhoController->selecionaCarrinho();
-                        foreach ((array)$rows as $item) :
+                        foreach ((array)$carrinho as $item) :
                             $_POST['id_produto'] = $item->id_produto;
                         ?>
                             <tr>

@@ -2,15 +2,36 @@
 
 namespace src\controllers;
 
-use src\models\ProdutoModel;
-
 require_once 'vendor/autoload.php';
+
+use src\models\ProdutoModel;
+use src\services\Api;
 
 // include __DIR__ . '/../models/ProdutoModel.php';
 /* Camada de Controle que estão presente as regras de negocio referente às entidades, de forma geral, contem funções que manipulam os determinados eventos que devem acontecer na camada de visualização*/
 
 class ProdutoController
 {
+
+  public function todosProdutos()
+  {
+    $api = new Api();
+    $data = array();
+    $response = $api->produto()->getTodos($data);
+    return $response;
+    echo $response;
+  }
+
+  public function umProduto($id)
+  {
+    $api = new Api();
+    $data = array();
+    $response = $api->produto()->getUm($id, $data); //COMO PASSAR O PRIMEIRO PARAMETRO
+    return $response;
+    echo $response;
+  }
+
+
 
   /* Função principal quando se trata da listagem dos produtos, ela basicamente instancia um novo objeto modelo e chama funções presentes na camada de Modelo que por sua vez comunica com a camada database */
   //View -> Controller -> Modelo -> Data

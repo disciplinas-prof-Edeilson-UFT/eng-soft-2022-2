@@ -10,6 +10,7 @@ require_once 'vendor/autoload.php';
 use src\controllers\CarrinhoController;
 use src\controllers\ProdutoController;
 
+$url = parse_url($_SERVER['REQUEST_URI']);
 // Se ocorrer um post é verificado se esse post é do botão de adicionar ao carrinho, e se for o objeto addcart é criado, e executa a
 // função update value da classe CarrinhoController.
 
@@ -46,8 +47,9 @@ if ($_POST) {
 	<div class="container">
 		<div class="main">
 			<?php
+			$var = explode("/", $url['path']);
 			$model = new ProdutoController();
-			$rows = $model->unique();
+			$rows = $model->umProduto($var[2]);
 			?>
 			<h1> <?= $rows[0]->nome_produto ?> <?= $rows[0]->descricao_produto ?></h1>
 			<div class="photo">

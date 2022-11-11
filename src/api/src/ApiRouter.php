@@ -12,7 +12,7 @@ class ApiRouter
   private $method;
   private $query;
 
-  const PRODUTO = 'produto';
+  const PRODUTO = 'produtos';
   const CARRINHO = 'carrinho';
   const USUARIO = 'usuario';
 

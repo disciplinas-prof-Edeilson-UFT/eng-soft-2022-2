@@ -31,7 +31,7 @@ class ProdutoRoute
     switch ($this->method) {
       case self::GET:
         // var_dump($this->params);
-        if ($this->params == 'unique') {
+        if ($this->params != 0) { //Primeiro problema a tratar
           include __DIR__ . '/../views/pages/Produto.php';
           return;
         }

@@ -13,7 +13,7 @@ class Router
   private $payload;
   private $method;
 
-  const PRODUTO = 'produto';
+  const PRODUTO = 'produtos';
   const CARRINHO = 'carrinho';
   const USUARIO = 'usuario';
   const API = "api";
@@ -33,13 +33,17 @@ class Router
       parse_str($this->url['query'], $query);
     }
 
+    $params = 0;
+    if (isset($var[2])) {
+      $params = $var[2];
+    }
     switch ($var[1]) {
       case self::PRODUTO:
-        $instancia = new ProdutoRoute($this->method, $this->payload, $query, $var[2]);
+        $instancia = new ProdutoRoute($this->method, $this->payload, $query, $params);
         $instancia->produtoRouting();
         break;
       case self::CARRINHO:
-        $instancia = new CarrinhoRoute($this->method, $this->payload, $query, $var[2]);
+        $instancia = new CarrinhoRoute($this->method, $this->payload, $query, $params);
         $instancia->carrinhoRouting();
         break;
       case self::USUARIO:

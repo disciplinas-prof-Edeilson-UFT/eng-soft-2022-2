@@ -1,12 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use src\controllers\ProdutoController; // Falar com o edson sobre.
-use src\models\ProdutoModel;
-
-
-$url = "http://localhost:8001/api/produto";
-$produtos = json_decode(file_get_contents($url));
+use src\controllers\ProdutoController;
 
 ?>
 
@@ -27,7 +22,7 @@ $produtos = json_decode(file_get_contents($url));
       <table>
         <?php
         $model = new ProdutoController();
-        $rows = $model->index();
+        $produtos = $model->todosProdutos();
         foreach ((array)$produtos as $item) : ?>
           <div class="gridItem">
             <img class="image" src="/src/views/assets/<?= $item->id_produto ?>.png">
@@ -38,7 +33,7 @@ $produtos = json_decode(file_get_contents($url));
                 <p> R$<?= $item->preco_produto ?></p>
               </div>
               <div class="button">
-                <a href="/produto/unique?id_produto=<?= $item->id_produto ?>">Comprar</a>
+                <a href="/produtos/<?= $item->id_produto ?>">Comprar</a>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ require_once 'vendor/autoload.php';
 
 class ApiConfig
 {
-  public function instance($apiUrl = "", $method, $data)
+  public function instance($apiUrl = '', $method = '', $data = '')
   {
 
     $baseUrl = "http://localhost:8080/api";

@@ -8,16 +8,24 @@ require_once 'vendor/autoload.php';
 
 class UserController
 {
-    public function cadastro_user(){
-        if(isset($_POST['opcao'])){
-            if($_POST['opcao'] == 'cadastro'){
-                $nome_usuario = $_POST['nome'];
-                $cpf_usuario = $_POST['cpf'];
-                $cadastro=new UserModel();
-                $cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
-            }
-        }
+    public function login ($name, $password) {
+		
+		// É retornado para a view o resultado da model.
+		
+		$user = new UserModel ();
+		
+		$user = $user -> login ($name, $password);
+		
+		return $user;
+	}
+    
+    public function cadastro_user($nome_usuario, $cpf_usuario){
+               
+        $cadastro=new UserModel();
+        $cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
+          
         
     }
+    
 }
 

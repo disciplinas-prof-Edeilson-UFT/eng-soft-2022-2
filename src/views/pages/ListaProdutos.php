@@ -40,18 +40,5 @@ use src\controllers\ProdutoController;
     <p class="results"><?= count($produtos) ?> Resultados obtidos</p>
   </div>
 </body>
-<script>
-  var search = document.getElementById('pesquisar');
-
-  function searchData() {
-    window.location = 'produtos?search=' + search.value;
-  }
-
-  search.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-      searchData();
-    }
-  });
-</script>
-
+  
 </html>

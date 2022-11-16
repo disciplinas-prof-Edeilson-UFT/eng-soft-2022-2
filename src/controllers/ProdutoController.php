@@ -2,6 +2,8 @@
 
 namespace src\controllers;
 
+
+
 require_once 'vendor/autoload.php';
 
 use src\models\ProdutoModel;
@@ -17,7 +19,12 @@ class ProdutoController
   {
     $api = new Api();
     $data = array();
-    $response = $api->produto()->getTodos($data);
+    if (!empty($_GET['search'])) {
+      $id = $_GET['search'];
+      $response = $api->produto()->getNome($id, $data);  //gambira
+    }else{
+      $response = $api->produto()->getTodos($data);
+    }
     return $response;
     echo $response;
   }

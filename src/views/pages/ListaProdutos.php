@@ -48,7 +48,7 @@ use src\controllers\ProdutoController;
   var search = document.getElementById('pesquisar');
 
   function searchData() {
-    window.location = 'produto?search=' + search.value;
+    window.location = 'produtos?search=' + search.value;
   }
 
   search.addEventListener("keydown", function(event) {

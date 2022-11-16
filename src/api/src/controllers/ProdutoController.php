@@ -11,12 +11,7 @@ class ProdutoController
   public static function show()
   {
     $model = new ProdutoModel();
-    if (!empty($_GET['search'])) {
-      $data = $_GET['search'];
-      $var = $model->selectByAny($data);
-    } else {
-      $var = $model->select();
-    }
+    $var = $model->select();
 
     return $var;
   }
@@ -26,6 +21,18 @@ class ProdutoController
   {
     $model = new ProdutoModel();
     $var = $model->selectById($produtoId);
+    if (!$var)
+      return array(
+        "message" => "Produto não encontrado"
+      );
+
+    return $var;
+  }
+
+  public static function anyShow($nomeProduto)
+  {
+    $model = new ProdutoModel();
+    $var = $model->selectByAny($nomeProduto);
     if (!$var)
       return array(
         "message" => "Produto não encontrado"

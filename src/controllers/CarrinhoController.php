@@ -13,18 +13,21 @@ class CarrinhoController
 {
     // Usaremos a classe do CarrinhoModel e a classe do CarrinhoData.
 
-    public function updateValue()
+    public function updateValue($idProduto)
     {
         // Aqui é onde conseguiremos o id do produto que deve ser incrementado. Já que o id dele está na url, verificamos 
         // primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
         // execute que está na classe CarrinhoModel, passando o id do produto que está na url usando o get.
 
-        if (isset($_GET['id_produto'])) {
+        // $model = new CarrinhoModel();
 
-            $model = new CarrinhoModel();
-
-            $model = $model->execute($_GET['id_produto']);
-        }
+        // $model = $model->execute($_GET['id_produto']);
+        $api = new Api();
+        $data = array(
+            "id_produto" => $idProduto
+        );
+        $response = $api->carrinho()->post($data);
+        return $response;
     }
 
     private function productExists($userId, $productId)
@@ -46,18 +49,13 @@ class CarrinhoController
 
     public function removeSomeProducts($userId, $productId, $quantity)
     {
-        $model = new CarrinhoModel();
-        $productExists = $this->productExists($userId, $productId);
-        if (!$productExists) {
-            return null;
-        }
-        $quantityToSave = $productExists["quantidade_item_carrinho"] + $quantity;
-        if ($quantityToSave < 1) {
-            $model->deleteOne($userId, $productId);
-            return;
-        }
-
-        $model->update($userId, $productId, $quantityToSave);
+        $api = new Api();
+        $data = array(
+            "quantidade" => $quantity,
+            "id_usuario" => $userId
+        );
+        $response = $api->carrinho()->put($data, $productId);
+        return $response;
     }
 
     public function selecionaCarrinho()

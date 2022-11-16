@@ -21,4 +21,16 @@ class CarrinhoFactory
   {
     return $this->apiConfig->instance("/carrinho", 'get', $data);
   }
+
+  public function put($data, $productId)
+  {
+    return $this->apiConfig->instance("/carrinho/".$productId, 'put', $data);
+  }
+
+  public function post($data)
+  {
+    return $this->apiConfig->instance("/carrinho", 'post', $data);
+  }
 }
+
+

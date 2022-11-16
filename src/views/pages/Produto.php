@@ -18,8 +18,9 @@ if ($_POST) {
 
 	if (isset($_POST['addcart'])) {
 
+		$var = explode("/", $url['path']);
 		$addcart = new CarrinhoController();
-		$addcart->updateValue();
+		$addcart->updateValue($var[2]);
 	}
 }
 

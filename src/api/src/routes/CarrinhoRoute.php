@@ -11,16 +11,18 @@ class CarrinhoRoute
   private $method;
   private $payload;
   private $query;
+  private $params;
   const GET = 'get';
   const POST = 'post';
-  const PATCH = 'patch';
+  const PUT = 'put';
   const DELETE = 'delete';
 
-  public function __construct($method, $payload, $query)
+  public function __construct($method, $payload, $query, $params)
   {
     $this->method = $method;
     $this->payload = $payload;
     $this->query = $query;
+    $this->params = $params;
   }
 
   public function carrinhoRouting()
@@ -30,21 +32,18 @@ class CarrinhoRoute
 
     switch ($this->method) {
       case self::GET:
-        // if ($this->query['id_user']) {
-        //   return;
-        // }
+        
         echo json_encode($carrinhoController->selecionaCarrinho());
         break;
       case self::POST:
-        if ($this->payload['quantidade']) {
-          echo json_encode($carrinhoController->removeSomeProducts($this->payload['id_usuario'], $this->payload['id_produto'], $this->payload['quantidade']));
-          return;
-        }
         echo json_encode($carrinhoController->updateValue($this->payload['id_produto']));
         break;
 
-      case self::PATCH:
-
+      case self::PUT:
+        if ($this->params != 0) {
+          echo json_encode($carrinhoController->removeSomeProducts($this->payload['id_usuario'], $this->params, $this->payload['quantidade']));
+          return;
+        }
         break;
 
       case self::DELETE:

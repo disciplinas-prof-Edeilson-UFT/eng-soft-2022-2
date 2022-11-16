@@ -34,7 +34,7 @@ class ApiRouter
       $params = $var[3];
     }
 
-    $carrinhoRoute = new CarrinhoRoute($this->method, $this->payload, $this->query);
+    $carrinhoRoute = new CarrinhoRoute($this->method, $this->payload, $this->query, $params);
     $produtoRoute = new ProdutoRoute($this->method, $this->payload, $this->query, $params);
 
     switch ($this->path) {

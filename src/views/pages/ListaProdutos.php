@@ -13,10 +13,6 @@ use src\controllers\ProdutoController;
 
 <body class="global">
   <div class="container">
-    <div class="box-search">
-      <input type="search" placeholder="Busque aqui" id="pesquisar">
-      <button class="button" id="but" onclick="searchData()">Buscar</button>
-    </div>
 
     <div class="prodGrid">
       <table>

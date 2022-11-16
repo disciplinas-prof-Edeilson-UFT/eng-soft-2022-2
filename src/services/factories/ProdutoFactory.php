@@ -22,6 +22,6 @@ class ProdutoFactory
 
   public function getUm($id, $data)
   {
-    return $this->apiConfig->instance("/produtos?id_produto=" . $id, 'get', $data); //AQUI
+    return $this->apiConfig->instance("/produtos/" . $id, 'get', $data); //AQUI
   }
 }

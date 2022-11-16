@@ -17,11 +17,12 @@ class ProdutoRoute
   const PATCH = 'patch';
   const DELETE = 'delete';
 
-  public function __construct($method, $payload, $query)
+  public function __construct($method, $payload, $query, $params)
   {
     $this->method = $method;
     $this->payload = $payload;
     $this->query = $query;
+    $this->params = $params;
   }
 
   public function produtoRouting()
@@ -31,8 +32,8 @@ class ProdutoRoute
 
     switch ($this->method) {
       case self::GET:
-        if ($this->query['id_produto']) {
-          echo json_encode($produtoController->uniqueShow($this->query['id_produto'], JSON_PRETTY_PRINT));
+        if ($this->params != 0) {
+          echo json_encode($produtoController->uniqueShow($this->params, JSON_PRETTY_PRINT));
           // echo json_encode($produtoController->uniqueShow());
           return;
         }

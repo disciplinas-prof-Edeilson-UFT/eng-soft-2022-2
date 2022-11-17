@@ -1,7 +1,8 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use src\controllers\ProdutoController; // Falar com o edson sobre.
+use src\controllers\ProdutoController;
+
 
 ?>
 
@@ -11,15 +12,21 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
 
 <html>
 
+<div class="box-search">
+  <input type="search" placeholder="Busque aqui" id="pesquisar">
+  <button class="button" id="but" onclick="searchData()">Buscar</button>
+</div>
+
 <body class="global">
   <div class="container">
+
 
     <div class="prodGrid">
       <table>
         <?php
         $model = new ProdutoController();
-        $rows = $model->index();
-        foreach ((array)$rows as $item) : ?>
+        $produtos = $model->todosProdutos();
+        foreach ((array)$produtos as $item) : ?>
           <div class="gridItem">
             <img class="image" src="/src/views/assets/<?= $item->id_produto ?>.png">
             <div class="content">
@@ -29,7 +36,7 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
                 <p> R$<?= $item->preco_produto ?></p>
               </div>
               <div class="button">
-                <a href="/produto/unique?id_produto=<?= $item->id_produto ?>">Comprar</a>
+                <a href="/produtos/<?= $item->id_produto ?>">Comprar</a>
               </div>
             </div>
           </div>
@@ -37,8 +44,21 @@ use src\controllers\ProdutoController; // Falar com o edson sobre.
         endforeach; ?>
       </table>
     </div>
-    <p class="results"><?= count($rows) ?> Resultados obtidos</p>
+    <p class="results"><?= count($produtos) ?> Resultados obtidos</p>
   </div>
 </body>
+<script>
+  var search = document.getElementById('pesquisar');
+
+  function searchData() {
+    window.location = 'produtos?search=' + search.value;
+  }
+
+  search.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      searchData();
+    }
+  });
+</script>
 
 </html>

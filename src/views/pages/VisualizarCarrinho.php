@@ -1,9 +1,7 @@
 <?php
 
 use src\controllers\CarrinhoController;
-
 require_once 'vendor/autoload.php';
-
 if ($_POST) {
     if (isset($_POST['removecart'])) {
 
@@ -13,21 +11,21 @@ if ($_POST) {
 
     if (isset($_POST['changequantityminus'])) {
         $removeCart = new CarrinhoController();
-        $removeCart->removeSomeProducts($_SESSION ["id"], $_POST['changequantityminus'], -1);
+        $removeCart->removeSomeProducts($_SESSION["id"], $_POST['changequantityminus'], -1);
     }
 
     if (isset($_POST['changequantityplus'])) {
         $removeCart = new CarrinhoController();
-        $removeCart->removeSomeProducts($_SESSION ["id"], $_POST['changequantityplus'], 1);
+        $removeCart->removeSomeProducts($_SESSION["id"], $_POST['changequantityplus'], 1);
     }
 }
 
-        	
-    if (isset ($_SESSION ["id"]) == 0) {
-        			
-        echo ("<script language = 'javascript'> window.location = 'usuario' </script>");
-        			
-	}
+if (isset($_SESSION["id"]) == 0) {
+
+    echo ("<script language = 'javascript'> alert ('você precisa estar logado para acessar o carrinho');</script>");
+
+    echo ("<script language = 'javascript'> window.location = 'login' </script>");
+}
 
 ?>
 
@@ -62,9 +60,12 @@ if ($_POST) {
                     </thead>
                     <tbody>
                         <?php
+                        $id = strval($_SESSION ['id']);
+                        //var_dump($id);
                         $carrinhoController = new CarrinhoController();
-                        $rows = $carrinhoController->selecionaCarrinho();
-                        foreach ((array)$rows as $item) :
+                        $var = $carrinhoController->selecionaCarrinho($id);
+                        //var_dump($var);
+                        foreach ((array)$var as $item) :
                             $_POST['id_produto'] = $item->id_produto;
                         ?>
                             <tr>
@@ -96,8 +97,10 @@ if ($_POST) {
                 // Criamos o objeto value e chamamos a classe do carrinho controllee, que vai chamar a função de mostrar o preco.
                 // O valor retornado está numa array, onde na posição 0 está o nosso objeto, e dentro dele temos a propriedade sum
                 // que foi obtida na query com nosso banco de dados. Nessa propriedade está o valor total do carrinho.
+                $id = strval($_SESSION ['id']);
                 $value = new CarrinhoController();
-                $value = $value->showPrice();
+                $value = $value->showPrice($id);
+
                 function formatar($val)
                 {
                     return number_format($val, 2, '.', '');
@@ -108,7 +111,7 @@ if ($_POST) {
             <p>Frete:</p>
             <h4>Total:</h4>
             <button class="button" type="button">IR PARA O PAGAMENTO</button>
-            <a href="/produto"><button class="button" type="button">CONTINUAR COMPRANDO</button></a>
+            <a href="/produtos"><button class="button" type="button">CONTINUAR COMPRANDO</button></a>
         </div>
     </div>
 </body>

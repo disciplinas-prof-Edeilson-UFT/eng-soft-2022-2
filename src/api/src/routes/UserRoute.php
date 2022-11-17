@@ -1,11 +1,12 @@
 <?php
 
-namespace src\routes;
+namespace src\api\src\routes;
+
+use src\api\src\controllers\UserController;
 
 require_once 'vendor/autoload.php';
-include __DIR__ . '/../views/templates/cabecalho.php';
 
-class CarrinhoRoute
+class UserRoute
 {
   private $method;
   private $payload;
@@ -13,7 +14,7 @@ class CarrinhoRoute
   private $params;
   const GET = 'get';
   const POST = 'post';
-  const PATCH = 'patch';
+  const PUT = 'put';
   const DELETE = 'delete';
 
   public function __construct($method, $payload, $query, $params)
@@ -24,20 +25,24 @@ class CarrinhoRoute
     $this->params = $params;
   }
 
-  public function carrinhoRouting()
-  {
+  public function userRouting() {
+
+    $userController = new UserController();
+
     switch ($this->method) {
       case self::GET:
-        include __DIR__ . '/../views/pages/VisualizarCarrinho.php';
+        
+        echo json_encode($userController -> retrieve ());
+        
         break;
-
       case self::POST:
-        include __DIR__ . '/../views/pages/VisualizarCarrinho.php';
-
+      
+        echo json_encode($userController -> addUser ($this->payload['nome_usuario'], $this->payload['cpf_usuario']));
+        
         break;
 
-      case self::PATCH:
-
+      case self::PUT:
+      
         break;
 
       case self::DELETE:
@@ -49,3 +54,5 @@ class CarrinhoRoute
     }
   }
 }
+
+?>

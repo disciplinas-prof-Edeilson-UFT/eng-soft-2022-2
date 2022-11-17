@@ -6,23 +6,35 @@
 use src\controllers\CarrinhoController;
 use src\controllers\ProdutoController;
 
+
+$url = parse_url($_SERVER['REQUEST_URI']);
 require_once 'vendor/autoload.php';
+
 // Se ocorrer um post é verificado se esse post é do botão de adicionar ao carrinho, e se for o objeto addcart é criado, e executa a
 // função update value da classe CarrinhoController.
+//var_dump($_SESSION);
 if ($_POST) {
 
 	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"])) {
-
+		$id = strval($_SESSION ["id"]);
+		$var = explode("/", $url['path']);
 		$addcart = new CarrinhoController();
-		$addcart->updateValue();
+		$addcart->updateValue($id,$var[2]);
 		
 		echo ("<script language = 'javascript'> alert ('item adicionado ao carrinho'); </script>");
+		
+	} else {
+		
+		echo ("<script language = 'javascript'> alert ('você precisa estar logado para acessar o carrinho');</script>");
+		
+		echo ("<script language = 'javascript'> window.location = '/login'; </script>");
+		
 	}
 	
-	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"]) == 0) {
+	//if (isset($_POST["addcart"]) && isset ($_SESSION ["id"]) == 0) {
 
-		echo ("<script language = 'javascript'> window.location = '/usuario'; </script>");
-	}
+		//echo ("<script language = 'javascript'> window.location = '/usuario'; </script>");
+	//}
 }
 ?>
 
@@ -36,7 +48,7 @@ if ($_POST) {
 		if (window.history.replaceState) {
 			window.history.replaceState(null, null, window.location.href);
 		}
-		
+
 	</script>
 	
 </head>
@@ -46,8 +58,9 @@ if ($_POST) {
 	<div class="container">
 		<div class="main">
 			<?php
+			$var = explode("/", $url['path']);
 			$model = new ProdutoController();
-			$rows = $model->unique();
+			$rows = $model->umProduto($var[2]);
 			?>
 			<h1> <?= $rows[0]->nome_produto ?> <?= $rows[0]->descricao_produto ?></h1>
 			<div class="photo">

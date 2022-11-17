@@ -1,11 +1,12 @@
 <?php
 
-namespace src\routes;
+namespace src\api\src\routes;
+
+use src\api\src\controllers\ProdutoController;
 
 require_once 'vendor/autoload.php';
-include __DIR__ . '/../views/templates/cabecalho.php';
 
-class CarrinhoRoute
+class ProdutoRoute
 {
   private $method;
   private $payload;
@@ -24,26 +25,26 @@ class CarrinhoRoute
     $this->params = $params;
   }
 
-  public function carrinhoRouting()
+  public function produtoRouting()
   {
+
+    $produtoController = new ProdutoController();
+
     switch ($this->method) {
       case self::GET:
-        include __DIR__ . '/../views/pages/VisualizarCarrinho.php';
+        if ($this->params != 0) {
+          echo json_encode($produtoController->uniqueShow($this->params, JSON_PRETTY_PRINT));
+          // echo json_encode($produtoController->uniqueShow());
+          return;
+        }
+        echo json_encode($produtoController->show(), JSON_PRETTY_PRINT);
         break;
-
       case self::POST:
-        include __DIR__ . '/../views/pages/VisualizarCarrinho.php';
-
         break;
-
       case self::PATCH:
-
         break;
-
       case self::DELETE:
-
         break;
-
       default:
         break;
     }

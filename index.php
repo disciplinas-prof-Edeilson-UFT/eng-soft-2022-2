@@ -1,10 +1,12 @@
 <?php
+error_reporting(E_ALL ^ E_WARNING);
 
 use src\Router;
 
 require_once 'vendor/autoload.php';
 
 $url = parse_url($_SERVER['REQUEST_URI']);
+error_reporting(E_ALL ^ E_WARNING);
 // var_dump($url['path']);
 $method = $_SERVER['REQUEST_METHOD'];
 $json = file_get_contents('php://input');

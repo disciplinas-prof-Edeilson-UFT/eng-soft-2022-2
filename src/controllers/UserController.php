@@ -1,11 +1,15 @@
 <?php
-
 namespace src\controllers;
 
 use src\models\UserModel;
+use src\services\Api;
+
+require_once 'vendor/autoload.php';
+
 use PDO;
 
 require_once 'vendor/autoload.php';
+
 
 
 class UserController {
@@ -18,17 +22,32 @@ class UserController {
 		
 		$user = $user -> login ($name, $password);
 		
-		return $user;
+		if ($user [0] -> nome_usuario == $name) {
+		 	
+			$_SESSION ["usuario"] = $user [0]-> nome_usuario;
+			$_SESSION ["cpf"] = $user [0] -> cpf_usuario;
+			$_SESSION ["id"] = $user [0] -> id_usuario;
+			
+			return 1;
+			
+		}
+		
 	}
-    
-    public function cadastro_user($nome_usuario, $cpf_usuario){
-               
-        $cadastro=new UserModel();
-        $cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
-          
-        
+	    
+	public function cadastro_user($nome_usuario, $cpf_usuario){
+		
+		$api = new Api();
+		$data = array(
+			"nome_usuario" => $nome_usuario, 
+			"cpf_usuario" => $cpf_usuario
+		);
+		$result = $api->user()->cadastro($data);
+		return $result;
+
+       //$cadastro=new UserModel();
+       //$cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
+
     }
     
 	
 }
-

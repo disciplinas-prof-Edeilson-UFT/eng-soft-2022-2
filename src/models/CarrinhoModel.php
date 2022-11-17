@@ -34,24 +34,25 @@ class CarrinhoModel
     return $response;
   }
 
-  public function execute($id_produto)
+  public function execute($id_usuario,$id_produto)
   {
     $execution = new CarrinhoData();
-    $execution->addCarrinho($id_produto);
+    $execution->addCarrinho($id_usuario,$id_produto);
   }
 
-  public function selecionaCarrinho()
+  public function selecionaCarrinho($id_usuario)
   {
     $exec  = new CarrinhoData();
-    $rows = $exec->selectCarrinho();
 
+    $rows = $exec->selectCarrinho($id_usuario);
     return $rows;
   }
 
-  public function showPrice()
+  public function showPrice($userid)
   {
     $cartData = new CarrinhoData();
-    $value = $cartData->showPrice();
+
+    $value = $cartData->showPrice($userid);
 
     return $value;
   }

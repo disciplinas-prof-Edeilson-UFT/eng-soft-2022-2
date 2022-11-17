@@ -16,7 +16,6 @@ class ProdutoController
     return $var;
   }
 
-  //AS duas funções uniqueShow Funcionam perfeitamente porem essa a seguir está mais de acordo com uma regra de negócio.
   public static function uniqueShow($produtoId)
   {
     $model = new ProdutoModel();
@@ -40,13 +39,4 @@ class ProdutoController
 
     return $var;
   }
-
-  // public static function uniqueShow()
-  // {
-  //   $model = new ProdutoModel();
-  //   if (isset($_GET['id_produto']))
-  //     $var = $model->selectById((int) $_GET['id_produto']);
-
-  //   return $var;
-  // }
 }

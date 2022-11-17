@@ -6,7 +6,6 @@ use PDO;
 use src\config\Connection;
 
 require_once 'vendor/autoload.php';
-// include __DIR__ . '/../database/ProdutoData.php';
 
 class ProdutoModel
 {

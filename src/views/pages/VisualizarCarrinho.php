@@ -61,8 +61,9 @@ if (isset($_SESSION["id"]) == 0) {
                     </thead>
                     <tbody>
                         <?php
+                        $userId = $_SESSION["id"];
                         $carrinhoController = new CarrinhoController();
-                        $var = $carrinhoController->selecionaCarrinho();
+                        $var = $carrinhoController->selecionaCarrinho($userId);
                         foreach ((array)$var as $item) :
                             $_POST['id_produto'] = $item->id_produto;
                         ?>

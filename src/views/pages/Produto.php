@@ -14,25 +14,24 @@ require_once 'vendor/autoload.php';
 // função update value da classe CarrinhoController.
 if ($_POST) {
 
-	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"])) {
+	if (isset($_POST["addcart"]) && isset($_SESSION["id"])) {
 
 		$var = explode("/", $url['path']);
 		$addcart = new CarrinhoController();
-		$addcart->updateValue($var[2]);
-		
+		$addcart->updateValue($_SESSION['id'], $var[2]);
+		echo $_SESSION['id'];
+
 		echo ("<script language = 'javascript'> alert ('item adicionado ao carrinho'); </script>");
-		
 	} else {
-		
+
 		echo ("<script language = 'javascript'> alert ('você precisa estar logado para acessar o carrinho');</script>");
-		
+
 		echo ("<script language = 'javascript'> window.location = '/login'; </script>");
-		
 	}
-	
+
 	//if (isset($_POST["addcart"]) && isset ($_SESSION ["id"]) == 0) {
 
-		//echo ("<script language = 'javascript'> window.location = '/usuario'; </script>");
+	//echo ("<script language = 'javascript'> window.location = '/usuario'; </script>");
 	//}
 }
 ?>
@@ -41,15 +40,13 @@ if ($_POST) {
 
 <head>
 	<link rel="stylesheet" href="/src/views/css/Produto.css">
-	
+
 	<script>
-	
 		if (window.history.replaceState) {
 			window.history.replaceState(null, null, window.location.href);
 		}
-
 	</script>
-	
+
 </head>
 
 <body class="global">

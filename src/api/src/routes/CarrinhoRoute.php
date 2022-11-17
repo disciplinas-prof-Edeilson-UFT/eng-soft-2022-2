@@ -32,11 +32,10 @@ class CarrinhoRoute
 
     switch ($this->method) {
       case self::GET:
-        
-        echo json_encode($carrinhoController->selecionaCarrinho());
+        echo json_encode($carrinhoController->selecionaCarrinho($this->params));
         break;
       case self::POST:
-        echo json_encode($carrinhoController->updateValue($this->payload['id_produto']));
+        echo json_encode($carrinhoController->updateValue($this->payload['id_usuario'], $this->payload['id_produto']));
         break;
 
       case self::PUT:

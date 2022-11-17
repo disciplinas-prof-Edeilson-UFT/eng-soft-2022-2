@@ -99,9 +99,10 @@ class CarrinhoData
 		$conexao = Connection::getConn();
 		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
 		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = $id_usuario INNER JOIN produto ON carrinho.id_produto = produto.id_produto";
-		$stmt = $conexao->query($sql)->fetchAll(PDO::FETCH_CLASS);
+		$stmt = $conexao->prepare($sql);
+		$stmt->execute();
 
-		return $stmt;
+		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
 
 	public function showPrice()
@@ -116,7 +117,9 @@ class CarrinhoData
 		$sql = "SELECT SUM (pr.preco_produto * cr.quantidade_item_carrinho) FROM PRODUTO AS pr
 		INNER JOIN CARRINHO as cr
 		ON pr.id_produto = cr.id_produto AND cr.id_usuario = $id_usuario";
-		$con = $con->query($sql)->fetchAll(PDO::FETCH_CLASS);
-		return $con;
+		$stmt = $con->prepare($sql);
+		$stmt->execute();
+
+		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
 }

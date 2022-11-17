@@ -2,18 +2,18 @@
 
 namespace src\api\src\controllers;
 
-require_once 'vendor/autoload.php';
+use src\api\src\models\CarrinhoModel;
 
-use src\models\CarrinhoModel;
+require_once 'vendor/autoload.php';
 
 
 class CarrinhoController
 {
-  public function updateValue($idProduto)
+  public function updateValue($userId, $idProduto)
   {
     try {
       $model = new CarrinhoModel();
-      $model = $model->execute($idProduto);
+      $model = $model->execute($userId, $idProduto);
       return array(
         "message" => "success"
       );
@@ -64,10 +64,10 @@ class CarrinhoController
     );
   }
 
-  public function selecionaCarrinho()
+  public function selecionaCarrinho($userId)
   {
     $model = new CarrinhoModel();
-    $response = $model->selecionaCarrinho();
+    $response = $model->selecionaCarrinho($userId);
     return $response;
   }
 }

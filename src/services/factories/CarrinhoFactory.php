@@ -17,14 +17,14 @@ class CarrinhoFactory
   }
 
 
-  public function get($data)
+  public function get($userId, $data)
   {
-    return $this->apiConfig->instance("/carrinho", 'get', $data);
+    return $this->apiConfig->instance("/carrinho/" . $userId, 'get', $data);
   }
 
   public function put($data, $productId)
   {
-    return $this->apiConfig->instance("/carrinho/".$productId, 'put', $data);
+    return $this->apiConfig->instance("/carrinho/" . $productId, 'put', $data);
   }
 
   public function post($data)
@@ -32,5 +32,3 @@ class CarrinhoFactory
     return $this->apiConfig->instance("/carrinho", 'post', $data);
   }
 }
-
-

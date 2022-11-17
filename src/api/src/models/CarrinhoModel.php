@@ -1,7 +1,7 @@
 <?php
 
 
-namespace src\models;
+namespace src\api\src\models;
 
 use PDO;
 use src\config\Connection;
@@ -55,7 +55,7 @@ class CarrinhoModel
     return $response;
   }
 
-  public function execute($id_produto)
+  public function execute($userId, $id_produto)
   {
 
     $con = Connection::getConn();
@@ -63,21 +63,23 @@ class CarrinhoModel
 
     if ($sql->rowCount() > 0) :
       $sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
-				WHERE id_produto = '$id_produto' AND id_usuario = 1";
+				WHERE id_produto = '$id_produto' AND id_usuario = '$userId'";
     else :
-      $sql =  "INSERT INTO CARRINHO VALUES (1,1,$id_produto)";
+      $sql =  "INSERT INTO CARRINHO VALUES ($userId,1,$id_produto)";
     endif;
 
     $con->query($sql);
   }
 
-  public function selecionaCarrinho()
+  public function selecionaCarrinho($userId)
   {
+
     $conexao = Connection::getConn();
     $sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
-		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
+		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = usuario.id_usuario INNER JOIN produto ON carrinho.id_produto = produto.id_produto WHERE carrinho.id_usuario = $userId";
     $stmt = $conexao->prepare($sql);
     $stmt->execute();
+
     return $stmt->fetchAll(PDO::FETCH_CLASS);
   }
 

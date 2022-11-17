@@ -21,11 +21,11 @@ class CarrinhoData
 	// O id do produto começa a ser pego na view, passado para a controller, passado para a model e aqui usamos ele para incrementar o item
 	//específico considerando que por hora, quem está utilizando o site é o usuário 1. 
 
-	public function addCarrinho ($id_produto)
+	public function addCarrinho($id_produto)
 	{
-		
-		$id_usuario = $_SESSION ["id"];
-		
+
+		$id_usuario = $_SESSION["id"];
+
 		// Caso você vá fazer a part de adicionar item ao carrinho caso ele não esteja no carrinho, o código abaixo é de incrementar no
 		// carrinho caso o item já exista lá. Penso em fazer uma busca no banco tentando achar o item, se a quantidade dele for >= 1 ele
 		// já existe no carinho, logo o código abaixo é chamado, senão o item é inserido no carrinho.
@@ -33,7 +33,7 @@ class CarrinhoData
 		$con = Connection::getConn();
 
 		// query para quantidade do item no carrinho
-		$sql = $con -> query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_usuario = $id_usuario AND id_produto = $id_produto");
+		$sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_usuario = $id_usuario AND id_produto = $id_produto");
 
 		// Checa se o item ja existe no carrinho. 
 		// Se TRUE, o rowCount será maior que 0, realiza um UPDATE na quantidade_item_carrinho. 
@@ -47,63 +47,68 @@ class CarrinhoData
 		endif;
 
 		// Commit a query no Carrinho.
-		$con -> query ($sql);
+		$con->query($sql);
 	}
 
-	public function removeFromCart ($userId) {
-		
-		$id_usuario = $_SESSION ["id"];
-		
-		$con = Connection::getConn ();
+	public function removeFromCart($userId)
+	{
+
+		$id_usuario = $_SESSION["id"];
+
+		$con = Connection::getConn();
 		$sql = "DELETE FROM carrinho WHERE id_usuario = $id_usuario";
-		$con -> query ($sql);
-		
+		$con->query($sql);
 	}
 
-	public function removeOneProductFromCart($userId, $productId) {
-		
+	public function removeOneProductFromCart($userId, $productId)
+	{
+
 		$con = Connection::getConn();
-		
+
 		$sql = "DELETE FROM carrinho WHERE id_usuario = $userId AND id_produto = $productId";
-		$con -> query ($sql);
+		$con->query($sql);
 	}
 
-	public function updateCartProduct($userId, $productId, $quantity) {
-		
+	public function updateCartProduct($userId, $productId, $quantity)
+	{
+
 		$con = Connection::getConn();
-		
+
 		$sql = "UPDATE carrinho SET quantidade_item_carrinho = $quantity WHERE id_usuario = $userId AND id_produto = $productId";
-		$response = $con-> query ($sql) -> fetch();
-		
+		$response = $con->query($sql)->fetch();
+
 		return $response;
 	}
 
-	public function getProduct($userId, $productId) {
-		
+	public function getProduct($userId, $productId)
+	{
+
 		$con = Connection::getConn();
-		
+
 		$sql = "SELECT * FROM carrinho WHERE id_usuario = $userId AND id_produto = $productId";
-		$response = $con -> query ($sql) -> fetch();
+		$response = $con->query($sql)->fetch();
 
 		return $response;
 	}
 
-	public function selectCarrinho () {
-		
-		$id_usuario = $_SESSION ["id"];
-		
-		$conexao = Connection::getConn ();
+	public function selectCarrinho()
+	{
+
+		$id_usuario = $_SESSION["id"];
+
+		$conexao = Connection::getConn();
 		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
-		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = $id_usuario INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
-		$stmt = $conexao -> query ($sql) -> fetchAll (PDO::FETCH_CLASS);;
-		
+		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = $id_usuario INNER JOIN produto ON carrinho.id_produto = produto.id_produto";
+		$stmt = $conexao->query($sql)->fetchAll(PDO::FETCH_CLASS);
+
 		return $stmt;
 	}
 
-	public function showPrice () {
-		
-		$id_usuario = $_SESSION ["id"];
-		
+	public function showPrice()
+	{
+
+		$id_usuario = $_SESSION["id"];
+
 		// É estabelecida a conexão com o banco de dados, e em seguida realizada uma query.
 		// A query retornará um dado que não pode ser mostrado diretamente na tela, então vamos usar uma função que vai
 		// transformar tudo que foi pego numa array e retornaremos o valor.

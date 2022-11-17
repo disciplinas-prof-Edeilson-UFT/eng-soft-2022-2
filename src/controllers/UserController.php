@@ -33,17 +33,14 @@ class UserController {
 		}
 		
 	}
-	
-    
-    //public function cadastro_user($nome_usuario, $cpf_usuario){
+	    
+    public function cadastro_user($nome_usuario, $cpf_usuario){
                
-      //  $cadastro=new UserModel();
-       // $cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
+       $cadastro=new UserModel();
+       $cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
           
         
-    //}
+    }
     
 	
 }
-?>
-

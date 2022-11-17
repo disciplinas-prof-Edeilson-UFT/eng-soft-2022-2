@@ -16,11 +16,18 @@ $url = parse_url($_SERVER['REQUEST_URI']);
 
 if ($_POST) {
 
-	if (isset($_POST['addcart'])) {
+	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"])) {
 
 		$var = explode("/", $url['path']);
 		$addcart = new CarrinhoController();
 		$addcart->updateValue($var[2]);
+		
+		echo ("<script language = 'javascript'> alert ('item adicionado ao carrinho'); </script>");
+		
+	} else {
+		
+		echo ("<script language = 'javascript'> window.location = '/login'; </script>");
+		
 	}
 }
 
@@ -34,11 +41,6 @@ if ($_POST) {
 		if (window.history.replaceState) {
 
 			window.history.replaceState(null, null, window.location.href);
-		}
-
-		function alertaAdicionarCarrinho() {
-
-			alert("item adicionado ao carrinho");
 		}
 	</script>
 </head>

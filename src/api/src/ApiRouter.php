@@ -4,6 +4,7 @@ namespace src\api\src;
 
 use src\api\src\routes\CarrinhoRoute;
 use src\api\src\routes\ProdutoRoute;
+use src\api\src\routes\UserRoute;
 
 class ApiRouter
 {
@@ -14,7 +15,7 @@ class ApiRouter
 
   const PRODUTO = 'produtos';
   const CARRINHO = 'carrinho';
-  const USUARIO = 'usuario';
+  const USUARIO = 'usuarios';
 
   public function __construct($path, $payload, $method, $query)
   {
@@ -36,6 +37,7 @@ class ApiRouter
 
     $carrinhoRoute = new CarrinhoRoute($this->method, $this->payload, $this->query, $params);
     $produtoRoute = new ProdutoRoute($this->method, $this->payload, $this->query, $params);
+    $userRoute = new UserRoute ($this->method, $this->payload, $this->query, $params);
 
     switch ($this->path) {
       case self::PRODUTO:
@@ -45,8 +47,10 @@ class ApiRouter
         $carrinhoRoute->carrinhoRouting();
         break;
       case self::USUARIO:
-        echo "USUARIO";
+      	$userRoute -> userRouting ();
         break;
     }
   }
 }
+
+?>

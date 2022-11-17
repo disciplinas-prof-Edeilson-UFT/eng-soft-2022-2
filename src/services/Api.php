@@ -4,11 +4,11 @@ namespace src\services;
 
 use src\services\factories\CarrinhoFactory;
 use src\services\factories\ProdutoFactory;
+use src\services\factories\UserFactory;
 
 require_once 'vendor/autoload.php';
 
-class Api
-{
+class Api {
 
   public function carrinho()
   {
@@ -23,4 +23,14 @@ class Api
     $produtoFactory = new ProdutoFactory($config);
     return $produtoFactory;
   }
+  
+  public function user () {
+  	
+  	$config = new ApiConfig ();
+  	$userFactory = new UserFactory ($config);
+  	return $userFactory;
+  	
+  }
 }
+
+?>

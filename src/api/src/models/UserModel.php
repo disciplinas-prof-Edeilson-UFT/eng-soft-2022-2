@@ -38,6 +38,14 @@ class UserModel {
 		return $con;
 		
 	}
+
+	public function insertUser ($nome_usuario, $cpf_usuario){
+		$con=Connection::getConn();
+        $sql = "INSERT INTO usuario(nome_usuario,cpf_usuario) 
+            VALUES ('$nome_usuario','$cpf_usuario')";
+        $result = $con->query($sql);
+		return $result;
+	}
   
 }
 

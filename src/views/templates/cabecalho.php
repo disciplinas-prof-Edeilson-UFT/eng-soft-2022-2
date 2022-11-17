@@ -253,21 +253,21 @@ if (isset($_GET["perfil"])) {
   <!-- <div class="box-search">
       <input type="search" placeholder="Busque aqui" id="pesquisar">
       <button class="button" id="but" onclick="searchData()">Buscar</button>
-    </div> -->
+    </div>
+    
+    <script>
+  var search = document.getElementById('pesquisar');
 
-  <script>
-    var search = document.getElementById('pesquisar');
+  function searchData() {
+    window.location = 'produtos?search=' + search.value;
+  }
 
-    function searchData() {
-      window.location = 'produtos?search=' + search.value;
+  search.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      searchData();
     }
-
-    search.addEventListener("keydown", function(event) {
-      if (event.key === "Enter") {
-        searchData();
-      }
-    });
-  </script>
+  });
+</script> -->
 </header>
 
 </html>

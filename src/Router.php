@@ -6,7 +6,7 @@ use src\routes\ProdutoRoute;
 use src\routes\CarrinhoRoute;
 use src\routes\UsuarioRoute;
 
-include __DIR__ . '/./views/templates/cabecalho.php';
+session_start ();
 
 class Router
 {
@@ -35,10 +35,12 @@ class Router
 
     switch ($var[1]) {
       case self::PRODUTO:
+        include __DIR__ . '/./views/templates/cabecalho.php';
         $instancia = new ProdutoRoute($this->method, $this->payload, $this->query, $var[2]);
         $instancia->produtoRouting();
         break;
       case self::CARRINHO:
+        include __DIR__ . '/./views/templates/cabecalho.php';
         $instancia = new CarrinhoRoute($this->method, $this->payload, $this->query);
         $instancia->carrinhoRouting();
         break;
@@ -47,9 +49,7 @@ class Router
         $instancia->usuarioRouting();
         break;
       case self::CADASTRO:
-        echo("Veio até aqui 1");
         $instancia = new UsuarioRoute ($this->method, $this->payload, $this->query);
-        echo("Veio até aqui 2");
         $instancia->usuarioRouting_cadastro();
         break;
     }

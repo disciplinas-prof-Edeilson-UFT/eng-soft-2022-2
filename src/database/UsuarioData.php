@@ -1,8 +1,17 @@
 <?php
+// A view faz um pedido para o controller, o controller faz um pedido para a model, a model faz o pedido para 
+//a data e a data executa a query.
+
+// É dado um nome para o documento CarrinhoData.php . Esse nome é o que nós iremos nos referir no use src\ .
+
 namespace src\database;
+
+// Usaremos a classe de conexão com o banco de dados que está no heroku e também o pdo, a orientação a objetos do php.
+
 use src\config\Connection;
 use PDO;
-require_once ("vendor/autoload.php");
+
+require_once 'vendor/autoload.php';
 
 class UsuarioData{
 

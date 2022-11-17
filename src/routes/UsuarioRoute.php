@@ -48,20 +48,18 @@ class UsuarioRoute
 
   public function usuarioRouting_cadastro()
   {
-    echo("Veio até aqui 3");
     switch ($this->method) {
       case self::GET:
         include __DIR__ . '/../views/pages/Cadastro.php';
         break;
 
       case self::POST:
-        echo("Veio até aqui 4");
         include __DIR__ . '/../views/pages/Cadastro.php';
 
         break;
 
       case self::PATCH:
-        
+
         break;
 
       case self::DELETE:
@@ -72,6 +70,5 @@ class UsuarioRoute
         break;
     }
   }
-  
- 
+
 }

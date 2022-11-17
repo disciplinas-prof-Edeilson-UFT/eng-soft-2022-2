@@ -22,6 +22,20 @@ use src\controllers\CarrinhoController;
 // print_r($resultado);
 // echo '</pre>';
 
-$carrinhoController = new CarrinhoController();
+//$carrinhoController = new CarrinhoController();
 
-$carrinhoController->removeSomeProducts(1, 4, 1);
+//$carrinhoController->removeSomeProducts(1, 4, 1);
+
+$fon = Connection::getConn();
+$response = $fon->prepare('SELECT * FROM "usuario"');
+$response->execute();
+$resultado = [];
+if ($response->rowCount() > 0) :
+  $resultado = $response->fetchAll(PDO::FETCH_ASSOC);
+  $resultado;
+else :
+  $resultado = [];
+endif;
+echo '<pre>';
+print_r($resultado);
+echo '</pre>';

@@ -10,17 +10,10 @@ require_once 'vendor/autoload.php';
 
 class CarrinhoController
 {
-    // Usaremos a classe do CarrinhoModel e a classe do CarrinhoData.
 
-    public function updateValue($idUsuario,$idProduto)
+    public function updateValue($idUsuario, $idProduto)
     {
-        // Aqui é onde conseguiremos o id do produto que deve ser incrementado. Já que o id dele está na url, verificamos 
-        // primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
-        // execute que está na classe CarrinhoModel, passando o id do produto que está na url usando o get.
 
-        // $model = new CarrinhoModel();
-
-        // $model = $model->execute($_GET['id_produto']);
         $api = new Api();
         $data = array(
             "id_produto" => $idProduto,
@@ -28,12 +21,6 @@ class CarrinhoController
         );
         $response = $api->carrinho()->post($data);
         return $response;
-
-       // if (isset($_GET['id_produto'])) {
-
-         //   $model = new CarrinhoModel();
-           // $model = $model->execute($_GET['id_produto']);
-        //}
     }
 
     private function productExists($userId, $productId)
@@ -73,9 +60,6 @@ class CarrinhoController
         $response = $api->carrinho()->get($data);
         return $response;
         echo $response;
-        // $model = new CarrinhoModel();
-        // $response = $model->selecionaCarrinho();
-        // return $response;
     }
 
     public function showPrice($userid)
@@ -91,4 +75,3 @@ class CarrinhoController
         return $value;
     }
 }
-?>

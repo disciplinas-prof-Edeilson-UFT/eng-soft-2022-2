@@ -21,7 +21,7 @@ class CarrinhoData
 	// O id do produto começa a ser pego na view, passado para a controller, passado para a model e aqui usamos ele para incrementar o item
 	//específico considerando que por hora, quem está utilizando o site é o usuário 1. 
 
-	public function addCarrinho($id_produto)
+	public function addCarrinho($id_usuario,$id_produto)
 	{
 
 		// Caso você vá fazer a part de adicionar item ao carrinho caso ele não esteja no carrinho, o código abaixo é de incrementar no
@@ -31,7 +31,7 @@ class CarrinhoData
 		$con = Connection::getConn();
 
 		// query para quantidade do item no carrinho
-		$sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_produto = '$id_produto'");
+		$sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario'");
 
 		// Checa se o item ja existe no carrinho. 
 		// Se TRUE, o rowCount será maior que 0, realiza um UPDATE na quantidade_item_carrinho. 
@@ -39,9 +39,9 @@ class CarrinhoData
 
 		if ($sql->rowCount() > 0) :
 			$sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
-				WHERE id_produto = '$id_produto' AND id_usuario = 1";
+				WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario'";
 		else :
-			$sql =  "INSERT INTO CARRINHO VALUES (1,1,$id_produto)";
+			$sql =  "INSERT INTO CARRINHO VALUES (1,$id_usuario,$id_produto)";
 		endif;
 
 		// Commit a query no Carrinho.

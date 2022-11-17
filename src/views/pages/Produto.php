@@ -13,11 +13,11 @@ use src\controllers\ProdutoController;
 $url = parse_url($_SERVER['REQUEST_URI']);
 // Se ocorrer um post é verificado se esse post é do botão de adicionar ao carrinho, e se for o objeto addcart é criado, e executa a
 // função update value da classe CarrinhoController.
-var_dump($_SESSION);
+//var_dump($_SESSION);
 if ($_POST) {
 
 	if (isset($_POST["addcart"]) && isset ($_SESSION ["id"])) {
-		$id = $_SESSION ["id"];
+		$id = strval($_SESSION ["id"]);
 		$var = explode("/", $url['path']);
 		$addcart = new CarrinhoController();
 		$addcart->updateValue($id,$var[2]);

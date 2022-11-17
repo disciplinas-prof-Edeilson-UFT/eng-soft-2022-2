@@ -34,11 +34,11 @@ class CarrinhoModel
     return $response;
   }
 
-  public function execute($id_produto)
+  public function execute($id_usuario,$id_produto)
   {
 
     $execution = new CarrinhoData();
-    $execution->addCarrinho($id_produto);
+    $execution->addCarrinho($id_usuario,$id_produto);
   }
 
   public function selecionaCarrinho()

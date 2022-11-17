@@ -21,7 +21,7 @@ class CarrinhoData
 	// O id do produto começa a ser pego na view, passado para a controller, passado para a model e aqui usamos ele para incrementar o item
 	//específico considerando que por hora, quem está utilizando o site é o usuário 1. 
 
-	public function addCarrinho($id_produto)
+	public function addCarrinho($id_produto, $id_usuario)
 	{
 
 		// Caso você vá fazer a part de adicionar item ao carrinho caso ele não esteja no carrinho, o código abaixo é de incrementar no
@@ -39,9 +39,9 @@ class CarrinhoData
 
 		if ($sql->rowCount() > 0) :
 			$sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
-				WHERE id_produto = '$id_produto' AND id_usuario = 1";
+				WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario'";
 		else :
-			$sql =  "INSERT INTO CARRINHO VALUES (1,1,$id_produto)";
+			$sql =  "INSERT INTO CARRINHO VALUES (1,$id_usuario,$id_produto)";
 		endif;
 
 		// Commit a query no Carrinho.
@@ -91,12 +91,12 @@ class CarrinhoData
 		return $response;
 	}
 
-	public function selectCarrinho()
+	public function selectCarrinho($id_usuario)
 	{
 
 		$conexao = Connection::getConn();
 		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
-		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
+		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = usuario.'$id_usuario' INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
 		$stmt = $conexao->prepare($sql);
 		$stmt->execute();
 		return $stmt->fetchAll(PDO::FETCH_CLASS);

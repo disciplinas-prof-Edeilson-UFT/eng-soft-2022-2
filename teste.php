@@ -24,6 +24,38 @@ use src\services\Api;
  print_r($resultado);
  echo '</pre>';
 
+ $fon = Connection::getConn();
+ $response = $fon->prepare('SELECT * FROM "usuario"');
+ $response->execute();
+ $resultado = [];
+
+ if ($response->rowCount() > 0) :
+   $resultado = $response->fetchAll(PDO::FETCH_ASSOC);
+   $resultado;
+ else :
+   $resultado = [];
+ endif;
+ echo '<pre>';
+ print_r($resultado);
+ echo '</pre>';
+
+ $fon = Connection::getConn();
+ $response = $fon->prepare('SELECT * FROM "produto"');
+ $response->execute();
+ $resultado = [];
+
+ if ($response->rowCount() > 0) :
+   $resultado = $response->fetchAll(PDO::FETCH_ASSOC);
+   $resultado;
+ else :
+   $resultado = [];
+ endif;
+ echo '<pre>';
+ print_r($resultado);
+ echo '</pre>';
+
+ 
+
 //$carrinhoController = new CarrinhoController();
 
 //var_dump($carrinhoController->selecionaCarrinho());

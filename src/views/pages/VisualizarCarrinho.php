@@ -1,7 +1,6 @@
 <?php
 
 use src\controllers\CarrinhoController;
-
 require_once 'vendor/autoload.php';
 if ($_POST) {
     if (isset($_POST['removecart'])) {
@@ -116,7 +115,7 @@ if (isset ($_SESSION ["id"]) == 0) {
             <p>Frete:</p>
             <h4>Total:</h4>
             <button class="button" type="button">IR PARA O PAGAMENTO</button>
-            <a href="/produto"><button class="button" type="button">CONTINUAR COMPRANDO</button></a>
+            <a href="/produtos"><button class="button" type="button">CONTINUAR COMPRANDO</button></a>
         </div>
     </div>
 </body>

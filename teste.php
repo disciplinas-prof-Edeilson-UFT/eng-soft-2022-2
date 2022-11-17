@@ -7,26 +7,58 @@ use src\controllers\CarrinhoController;
 use src\api\src\routes\ProdutoRoute;
 use src\services\Api;
 
-// include("src/config/Connection.php");
+ include("src/config/Connection.php");
 
-// $fon = Connection::getConn();
-// $response = $fon->prepare('SELECT * FROM "carrinho"');
-// $response->execute();
-// $resultado = [];
+ $fon = Connection::getConn();
+ $response = $fon->prepare('SELECT * FROM "carrinho"');
+ $response->execute();
+ $resultado = [];
 
-// if ($response->rowCount() > 0) :
-//   $resultado = $response->fetchAll(PDO::FETCH_ASSOC);
-//   $resultado;
-// else :
-//   $resultado = [];
-// endif;
-// echo '<pre>';
-// print_r($resultado);
-// echo '</pre>';
+ if ($response->rowCount() > 0) :
+   $resultado = $response->fetchAll(PDO::FETCH_ASSOC);
+   $resultado;
+ else :
+   $resultado = [];
+ endif;
+ echo '<pre>';
+ print_r($resultado);
+ echo '</pre>';
 
-$carrinhoController = new CarrinhoController();
+ $fon = Connection::getConn();
+ $response = $fon->prepare('SELECT * FROM "usuario"');
+ $response->execute();
+ $resultado = [];
 
-var_dump($carrinhoController->selecionaCarrinho());
+ if ($response->rowCount() > 0) :
+   $resultado = $response->fetchAll(PDO::FETCH_ASSOC);
+   $resultado;
+ else :
+   $resultado = [];
+ endif;
+ echo '<pre>';
+ print_r($resultado);
+ echo '</pre>';
+
+ $fon = Connection::getConn();
+ $response = $fon->prepare('SELECT * FROM "produto"');
+ $response->execute();
+ $resultado = [];
+
+ if ($response->rowCount() > 0) :
+   $resultado = $response->fetchAll(PDO::FETCH_ASSOC);
+   $resultado;
+ else :
+   $resultado = [];
+ endif;
+ echo '<pre>';
+ print_r($resultado);
+ echo '</pre>';
+
+ 
+
+//$carrinhoController = new CarrinhoController();
+
+//var_dump($carrinhoController->selecionaCarrinho());
 
 // $url = "http://localhost:8080/api/carrinho";
 

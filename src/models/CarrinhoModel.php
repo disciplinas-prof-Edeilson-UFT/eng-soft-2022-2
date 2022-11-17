@@ -1,11 +1,10 @@
 <?php
 
-
 namespace src\models;
 
 use src\database\CarrinhoData;
 
-include __DIR__ . '/../database/CarrinhoData.php';
+require_once 'vendor/autoload.php';
 
 class CarrinhoModel
 {
@@ -15,40 +14,45 @@ class CarrinhoModel
     $cartData->removeFromCart($userId);
   }
 
-  public function update($quantity, $userId, $productId)
+  public function deleteOne($userId, $productId)
   {
     $cartData = new CarrinhoData();
-    $cartData->updateCartProduct($quantity, $userId, $productId);
+    $cartData->removeOneProductFromCart($userId, $productId);
+  }
+
+  public function update($userId, $productId, $quantity)
+  {
+    $cartData = new CarrinhoData();
+    $cartData->updateCartProduct($userId, $productId, $quantity);
   }
 
   public function findOne($userId, $productId)
   {
     $cartData = new CarrinhoData();
     $response = $cartData->getProduct($userId, $productId);
+
     return $response;
   }
 
-  public function execute($id_produto)
+  public function execute($id_usuario,$id_produto)
   {
-
     $execution = new CarrinhoData();
-    $execution->addCarrinho($id_produto);
+    $execution->addCarrinho($id_usuario,$id_produto);
   }
 
-  public function selecionaCarrinho()
+  public function selecionaCarrinho($id_usuario)
   {
     $exec  = new CarrinhoData();
 
-    $rows = $exec->selectCarrinho();
+    $rows = $exec->selectCarrinho($id_usuario);
     return $rows;
   }
 
-  public function showPrice()
+  public function showPrice($userid)
   {
-
     $cartData = new CarrinhoData();
 
-    $value = $cartData->showPrice();
+    $value = $cartData->showPrice($userid);
 
     return $value;
   }

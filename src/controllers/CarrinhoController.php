@@ -1,30 +1,26 @@
 <?php
-
 // É dado um nome para o documento CarrinhoController.php . Esse nome é o que nós iremos nos referir no use src\ .
-
 namespace src\controllers;
 
 use src\models\CarrinhoModel;
+use src\services\Api;
 
-include __DIR__ . '/../models/CarrinhoModel.php';
+require_once 'vendor/autoload.php';
+
 
 class CarrinhoController
 {
-    // Usaremos a classe do CarrinhoModel e a classe do CarrinhoData.
 
-    public function updateValue()
+    public function updateValue($idUsuario, $idProduto)
     {
 
-        // Aqui é onde conseguiremos o id do produto que deve ser incrementado. Já que o id dele está na url, verificamos 
-        // primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
-        // execute que está na classe CarrinhoModel, passando o id do produto que está na url usando o get.
-
-        if (isset($_GET['id_produto'])) {
-
-            $model = new CarrinhoModel();
-
-            $model = $model->execute($_GET['id_produto']);
-        }
+        $api = new Api();
+        $data = array(
+            "id_produto" => $idProduto,
+            "id_usuario" => $idUsuario
+        );
+        $response = $api->carrinho()->post($data);
+        return $response;
     }
 
     private function productExists($userId, $productId)
@@ -32,7 +28,7 @@ class CarrinhoController
         $model = new CarrinhoModel();
         $response = $model->findOne($userId, $productId);
         if (!$response) {
-            return "Product is not in cart";
+            return null;
         }
         return $response;
     }
@@ -44,37 +40,38 @@ class CarrinhoController
         return "Product deleted with success";
     }
 
-    public function removeSomeProducts($quantity, $userId, $productId)
+    public function removeSomeProducts($userId, $productId, $quantity)
     {
-        $productExists = $this->productExists($userId, $productId);
-        if (!$productExists) {
-            return $productExists;
-        }
-
-        if (!$productExists["quantidade_item_carrinho"] >= $quantity) {
-            return "Could not remove product quantity";
-        }
-        $model = new CarrinhoModel();
-        $model->update($quantity, $userId, $productId);
-    }
-
-    public function selecionaCarrinho()
-    {
-        $model = new CarrinhoModel();
-        $response = $model->selecionaCarrinho();
+        $api = new Api();
+        $data = array(
+            "quantidade" => $quantity,
+            "id_usuario" => $userId
+        );
+        $response = $api->carrinho()->put($data, $productId);
         return $response;
     }
-    
-	public function showPrice () {
-		
-		// Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
-		// para que ele possa ser mostrado na view.
-		
-		$value = new CarrinhoModel ();
-		
-		$value = $value -> showPrice ();
-		
-		return $value;
-		
-	}
+
+    public function selecionaCarrinho($userId)
+    {
+        $api = new Api();
+        $data = array(
+            "id_usuario" => $userId
+        );
+        $response = $api->carrinho()->get($data);
+        return $response;
+        echo $response;
+    }
+
+    public function showPrice($userid)
+    {
+
+        // Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
+        // para que ele possa ser mostrado na view.
+
+        $value = new CarrinhoModel();
+
+        $value = $value->showPrice($userid);
+
+        return $value;
+    }
 }

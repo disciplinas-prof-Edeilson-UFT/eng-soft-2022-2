@@ -12,6 +12,8 @@ namespace src\database;
 use src\config\Connection;
 use PDO;
 
+require_once 'vendor/autoload.php';
+
 class CarrinhoData
 {
 
@@ -19,8 +21,10 @@ class CarrinhoData
 	// O id do produto começa a ser pego na view, passado para a controller, passado para a model e aqui usamos ele para incrementar o item
 	//específico considerando que por hora, quem está utilizando o site é o usuário 1. 
 
-	public function addCarrinho($id_produto)
+	public function addCarrinho($id_usuario,$id_produto)
 	{
+
+		//$id_usuario = $_SESSION["id"];
 
 		// Caso você vá fazer a part de adicionar item ao carrinho caso ele não esteja no carrinho, o código abaixo é de incrementar no
 		// carrinho caso o item já exista lá. Penso em fazer uma busca no banco tentando achar o item, se a quantidade dele for >= 1 ele
@@ -29,7 +33,7 @@ class CarrinhoData
 		$con = Connection::getConn();
 
 		// query para quantidade do item no carrinho
-		$sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_produto = '$id_produto'");
+		$sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario';");
 
 		// Checa se o item ja existe no carrinho. 
 		// Se TRUE, o rowCount será maior que 0, realiza um UPDATE na quantidade_item_carrinho. 
@@ -37,9 +41,9 @@ class CarrinhoData
 
 		if ($sql->rowCount() > 0) :
 			$sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
-				WHERE id_produto = '$id_produto' AND id_usuario = 1";
+				WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario';";
 		else :
-			$sql =  "INSERT INTO CARRINHO VALUES (1,1,$id_produto)";
+			$sql =  "INSERT INTO CARRINHO VALUES (1,$id_usuario,$id_produto)";
 		endif;
 
 		// Commit a query no Carrinho.
@@ -48,64 +52,70 @@ class CarrinhoData
 
 	public function removeFromCart($userId)
 	{
-		$sql = "DELETE FROM carrinho WHERE id_usuario = ?";
-		$con = Connection::getConn()->prepare($sql);
-		$con->bindValue(1, $userId);
-		$con->execute();
+
+		$id_usuario = $_SESSION["id"];
+
+		$con = Connection::getConn();
+		$sql = "DELETE FROM carrinho WHERE id_usuario = $id_usuario";
+		$con->query($sql);
+	}
+
+	public function removeOneProductFromCart($userId, $productId)
+	{
+
+		$con = Connection::getConn();
+
+		$sql = "DELETE FROM carrinho WHERE id_usuario = $userId AND id_produto = $productId";
+		$con->query($sql);
 	}
 
 	public function updateCartProduct($userId, $productId, $quantity)
 	{
-		$sql = "UPDATE carrinho SET quantidade_item_carrinho = ? WHERE id_usuario = ? AND id_produto = ? RETURNING quantidade_item_carrinho";
-		$con = Connection::getConn()->prepare($sql);
-		$con->bindValue(1, $quantity);
-		$con->bindValue(2, $userId);
-		$con->bindValue(3, $productId);
-		$con->execute();
 
-		$response = $con->fetch();
+		$con = Connection::getConn();
+
+		$sql = "UPDATE carrinho SET quantidade_item_carrinho = $quantity WHERE id_usuario = $userId AND id_produto = $productId";
+		$response = $con->query($sql)->fetch();
+
 		return $response;
 	}
 
 	public function getProduct($userId, $productId)
 	{
-		$sql = "SELECT * FROM carrinho WHERE id_usuario = ? AND id_produto = ?";
-		$con = Connection::getConn()->prepare($sql);
-		$con->bindValue(1, $userId);
-		$con->bindValue(2, $productId);
-		$con->execute();
 
-		$response = $con->fetch();
+		$con = Connection::getConn();
 
-		return array(
-			"id_produto" => $response['id_usuario'],
-			"id_usuario" => $response['id_produto'],
-			"quantidade_item_carrinho" => $response['quantidade_item_carrinho']
-		);
+		$sql = "SELECT * FROM carrinho WHERE id_usuario = $userId AND id_produto = $productId";
+		$response = $con->query($sql)->fetch();
+
+		return $response;
 	}
 
-	public function selectCarrinho()
+	public function selectCarrinho($userid)
 	{
 
+		$id_usuario = $_SESSION["id"];
+
 		$conexao = Connection::getConn();
-		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, produto.preco_produto, usuario.id_usuario
-		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
+		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
+		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = usuario.id_usuario INNER JOIN produto ON carrinho.id_produto = produto.id_produto WHERE carrinho.id_usuario = '$userid';";
 		$stmt = $conexao->prepare($sql);
 		$stmt->execute();
 		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
 
-	public function showPrice()
+	public function showPrice($userid)
 	{
+
+		$id_usuario = $_SESSION["id"];
 
 		// É estabelecida a conexão com o banco de dados, e em seguida realizada uma query.
 		// A query retornará um dado que não pode ser mostrado diretamente na tela, então vamos usar uma função que vai
 		// transformar tudo que foi pego numa array e retornaremos o valor.
-
 		$con = Connection::getConn();
 		$sql = "SELECT SUM (pr.preco_produto * cr.quantidade_item_carrinho) FROM PRODUTO AS pr
 		INNER JOIN CARRINHO as cr
-		ON pr.id_produto = cr.id_produto";
+		ON pr.id_produto = cr.id_produto WHERE cr.id_usuario = '$userid';";
 		$con = $con->query($sql)->fetchAll(PDO::FETCH_CLASS);
 		return $con;
 	}

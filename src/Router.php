@@ -19,6 +19,7 @@ class Router
   const CARRINHO = 'carrinho';
   const USUARIO = 'usuario';
   CONST LOGIN = "login";
+  CONST PERFIL = "perfil";
   const API = "api";
 
   public function __construct($url, $payload, $method)
@@ -62,6 +63,11 @@ class Router
       case self::API:
         $apiRouter = new ApiRouter($var[2], $this->payload, $this->method, $query);
         $apiRouter->apiRouting();
+        break;
+      case self::PERFIL:
+        $instancia = new UserRoute ($this->method, $this->payload, $this->query);
+        $instancia -> perfilRouting ();
+        
         break;
     }
   }

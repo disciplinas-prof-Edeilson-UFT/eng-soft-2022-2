@@ -34,7 +34,6 @@ class ProdutoRoute
       case self::GET:
         if ($this->params != 0) {
           echo json_encode($produtoController->uniqueShow($this->params, JSON_PRETTY_PRINT));
-          // echo json_encode($produtoController->uniqueShow());
           return;
         }
         echo json_encode($produtoController->show(), JSON_PRETTY_PRINT);

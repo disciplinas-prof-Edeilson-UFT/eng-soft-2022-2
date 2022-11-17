@@ -1,7 +1,8 @@
 <?php
 
 namespace src\services\factories;
-use src\api\src\controllers\ProdutoController as controller ;
+
+use src\api\src\controllers\ProdutoController as controller;
 
 use src\services\ApiConfig;
 
@@ -23,13 +24,13 @@ class ProdutoFactory
 
   public function getUm($id, $data)
   {
-    return $this->apiConfig->instance("/produtos/$id", 'get', $data); //AQUI
+    return $this->apiConfig->instance("/produtos/$id", 'get', $data);
   }
 
   public function getNome($nome, $data)
   {
     $controller = new controller();
-    $response = $controller->anyShow($nome);  // coisa mais feia ainda (foi uq deu pra fazer pra prox interação)
+    $response = $controller->anyShow($nome);
 
     return $response;
   }

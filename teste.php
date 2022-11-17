@@ -88,4 +88,3 @@ use src\services\Api;
 
 // $fon = $teste->carrinho()->get($data);
 // var_dump($fon);
-

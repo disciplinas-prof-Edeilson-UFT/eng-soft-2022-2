@@ -1,0 +1,44 @@
+/*
+Paleta
+#02031a - quase preto
+#021b2b - azul escuro
+#b10c43 - vermelho fosco
+#ff0841 - vermelho claro
+#ebdfcc - beige
+*/
+.box-search{
+    display: none;
+}
+#img-info{
+	position: absolute;
+	background : #ff0841;
+	border-radius : 140px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -75px;
+}
+#info-perfil{
+	position: relative;
+	width : 50%;
+	height : 70%;
+	border : 2px #ff0841 solid;
+	border-radius : 50px;
+	margin : 0 auto;
+	display : flex;
+	flex-direction : column;
+	align-content : center;
+    align-items: center;
+	margin-top : 30px;	
+}
+.info{
+    margin-top: 100px;
+}
+h2, span{
+    color: #ff0841;
+}
+p{
+    color: #ebdfcc;
+}

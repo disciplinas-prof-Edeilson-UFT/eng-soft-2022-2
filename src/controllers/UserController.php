@@ -6,9 +6,17 @@ use src\services\Api;
 
 require_once 'vendor/autoload.php';
 
+use PDO;
+
+require_once 'vendor/autoload.php';
+
+
+
 class UserController {
 	
 	public function login ($name, $password) {
+		
+		// É retornado para a view o resultado da model.
 		
 		$user = new UserModel ();
 		
@@ -25,7 +33,14 @@ class UserController {
 		}
 		
 	}
+	    
+    public function cadastro_user($nome_usuario, $cpf_usuario){
+               
+       $cadastro=new UserModel();
+       $cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
+          
+        
+    }
+    
 	
 }
-
-?>

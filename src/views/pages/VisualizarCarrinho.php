@@ -1,7 +1,6 @@
 <?php
 
 use src\controllers\CarrinhoController;
-
 require_once 'vendor/autoload.php';
 if ($_POST) {
     if (isset($_POST['removecart'])) {
@@ -61,8 +60,11 @@ if (isset($_SESSION["id"]) == 0) {
                     </thead>
                     <tbody>
                         <?php
+                        $id = strval($_SESSION ['id']);
+                        //var_dump($id);
                         $carrinhoController = new CarrinhoController();
-                        $var = $carrinhoController->selecionaCarrinho();
+                        $var = $carrinhoController->selecionaCarrinho($id);
+                        //var_dump($var);
                         foreach ((array)$var as $item) :
                             $_POST['id_produto'] = $item->id_produto;
                         ?>
@@ -95,8 +97,10 @@ if (isset($_SESSION["id"]) == 0) {
                 // Criamos o objeto value e chamamos a classe do carrinho controllee, que vai chamar a função de mostrar o preco.
                 // O valor retornado está numa array, onde na posição 0 está o nosso objeto, e dentro dele temos a propriedade sum
                 // que foi obtida na query com nosso banco de dados. Nessa propriedade está o valor total do carrinho.
+                $id = strval($_SESSION ['id']);
                 $value = new CarrinhoController();
-                $value = $value->showPrice();
+                $value = $value->showPrice($id);
+
                 function formatar($val)
                 {
                     return number_format($val, 2, '.', '');

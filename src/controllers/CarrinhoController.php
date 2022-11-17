@@ -12,7 +12,7 @@ class CarrinhoController
 {
     // Usaremos a classe do CarrinhoModel e a classe do CarrinhoData.
 
-    public function updateValue($idProduto)
+    public function updateValue($idUsuario,$idProduto)
     {
         // Aqui é onde conseguiremos o id do produto que deve ser incrementado. Já que o id dele está na url, verificamos 
         // primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
@@ -23,7 +23,8 @@ class CarrinhoController
         // $model = $model->execute($_GET['id_produto']);
         $api = new Api();
         $data = array(
-            "id_produto" => $idProduto
+            "id_produto" => $idProduto,
+            "id_usuario" => $idUsuario
         );
         $response = $api->carrinho()->post($data);
         return $response;
@@ -63,10 +64,12 @@ class CarrinhoController
         return $response;
     }
 
-    public function selecionaCarrinho()
+    public function selecionaCarrinho($userId)
     {
         $api = new Api();
-        $data = array();
+        $data = array(
+            "id_usuario" => $userId
+        );
         $response = $api->carrinho()->get($data);
         return $response;
         echo $response;
@@ -75,25 +78,17 @@ class CarrinhoController
         // return $response;
     }
 
-    
-	public function showPrice () {
-		
-		// Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
-		// para que ele possa ser mostrado na view.
-		
-		$value = new CarrinhoModel ();
-		
-		$value = $value -> showPrice ();
-		
-		return $value;
-		
-	}
-	
-//	public function getCarrinho(){
-	//	$classModel = new CarrinhoModel ();
-		//$classModel -> selecionaCarrinho ();
-		//require_once ("../views/pages/VisualizarCarrinho.php");
-	//}
+    public function showPrice($userid)
+    {
 
+        // Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
+        // para que ele possa ser mostrado na view.
+
+        $value = new CarrinhoModel();
+
+        $value = $value->showPrice($userid);
+
+        return $value;
+    }
 }
 ?>

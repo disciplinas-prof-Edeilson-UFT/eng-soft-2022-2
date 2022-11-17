@@ -9,11 +9,11 @@ use src\models\CarrinhoModel;
 
 class CarrinhoController
 {
-  public function updateValue($idProduto)
+  public function updateValue($idUsuario,$idProduto)
   {
     try {
       $model = new CarrinhoModel();
-      $model = $model->execute($idProduto);
+      $model = $model->execute($idUsuario,$idProduto);
       return array(
         "message" => "success"
       );
@@ -64,10 +64,10 @@ class CarrinhoController
     );
   }
 
-  public function selecionaCarrinho()
+  public function selecionaCarrinho($id_usuario)
   {
     $model = new CarrinhoModel();
-    $response = $model->selecionaCarrinho();
+    $response = $model->selecionaCarrinho($id_usuario);
     return $response;
   }
 }

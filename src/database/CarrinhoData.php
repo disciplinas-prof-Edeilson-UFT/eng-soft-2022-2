@@ -21,10 +21,10 @@ class CarrinhoData
 	// O id do produto começa a ser pego na view, passado para a controller, passado para a model e aqui usamos ele para incrementar o item
 	//específico considerando que por hora, quem está utilizando o site é o usuário 1. 
 
-	public function addCarrinho($id_produto)
+	public function addCarrinho($id_usuario,$id_produto)
 	{
 
-		$id_usuario = $_SESSION["id"];
+		//$id_usuario = $_SESSION["id"];
 
 		// Caso você vá fazer a part de adicionar item ao carrinho caso ele não esteja no carrinho, o código abaixo é de incrementar no
 		// carrinho caso o item já exista lá. Penso em fazer uma busca no banco tentando achar o item, se a quantidade dele for >= 1 ele
@@ -33,7 +33,7 @@ class CarrinhoData
 		$con = Connection::getConn();
 
 		// query para quantidade do item no carrinho
-		$sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_usuario = $id_usuario AND id_produto = $id_produto");
+		$sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario';");
 
 		// Checa se o item ja existe no carrinho. 
 		// Se TRUE, o rowCount será maior que 0, realiza um UPDATE na quantidade_item_carrinho. 
@@ -41,7 +41,7 @@ class CarrinhoData
 
 		if ($sql->rowCount() > 0) :
 			$sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
-				WHERE id_produto = $id_produto AND id_usuario = $id_usuario";
+				WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario';";
 		else :
 			$sql =  "INSERT INTO CARRINHO VALUES (1,$id_usuario,$id_produto)";
 		endif;
@@ -91,20 +91,20 @@ class CarrinhoData
 		return $response;
 	}
 
-	public function selectCarrinho()
+	public function selectCarrinho($userid)
 	{
 
 		$id_usuario = $_SESSION["id"];
 
 		$conexao = Connection::getConn();
 		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
-		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = $id_usuario INNER JOIN produto ON carrinho.id_produto = produto.id_produto";
-		$stmt = $conexao->query($sql)->fetchAll(PDO::FETCH_CLASS);
-
-		return $stmt;
+		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = usuario.id_usuario INNER JOIN produto ON carrinho.id_produto = produto.id_produto WHERE carrinho.id_usuario = '$userid';";
+		$stmt = $conexao->prepare($sql);
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
 
-	public function showPrice()
+	public function showPrice($userid)
 	{
 
 		$id_usuario = $_SESSION["id"];
@@ -115,7 +115,7 @@ class CarrinhoData
 		$con = Connection::getConn();
 		$sql = "SELECT SUM (pr.preco_produto * cr.quantidade_item_carrinho) FROM PRODUTO AS pr
 		INNER JOIN CARRINHO as cr
-		ON pr.id_produto = cr.id_produto AND cr.id_usuario = $id_usuario";
+		ON pr.id_produto = cr.id_produto WHERE cr.id_usuario = '$userid';";
 		$con = $con->query($sql)->fetchAll(PDO::FETCH_CLASS);
 		return $con;
 	}

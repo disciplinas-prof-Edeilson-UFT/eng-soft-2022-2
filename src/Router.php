@@ -51,12 +51,8 @@ class Router
         $instancia->produtoRouting();
         break;
       case self::CARRINHO:
-        //MUIT ESTRANHO ESSE ROTEAMENTO AQUI
         $instancia = new CarrinhoRoute($this->method, $this->payload, $query, $params);
-        // include __DIR__ . '/./views/templates/cabecalho.php';
         $instancia->carrinhoRouting();
-        // $instancia2 = new ProdutoRoute($this->method, $this->payload, $this->query, $var[2]);
-        // $instancia2->produtoRouting();
         break;
       case self::USUARIO:
         $instancia = new UsuarioRoute($this->method, $this->payload, $this->query);

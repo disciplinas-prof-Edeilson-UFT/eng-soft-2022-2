@@ -24,7 +24,7 @@ use src\services\Api;
 // print_r($resultado);
 // echo '</pre>';
 
-$carrinhoController = new CarrinhoController();
+//$carrinhoController = new CarrinhoController();
 
 var_dump($carrinhoController->selecionaCarrinho());
 
@@ -56,4 +56,3 @@ var_dump($carrinhoController->selecionaCarrinho());
 
 // $fon = $teste->carrinho()->get($data);
 // var_dump($fon);
-

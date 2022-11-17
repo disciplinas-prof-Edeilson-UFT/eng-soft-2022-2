@@ -9,38 +9,28 @@ require_once 'vendor/autoload.php';
 
 class ProdutoModel
 {
-  // public string $nomeProduto;
-  // public float  $precoProduto;
-  // public  int $quantidadeProduto;
-  // public string $descricaoProduto;
-  // public int $idProduto;
-
-
   /* Função que seta uma nova instancia do objeto da camada de database e recupera todas as linhas retornadas pela mesma em um vetor através da função da camada database "select()", feito isso essa função será chamada na camada de controllers */
   public function getAllRows()
   {
-    // include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
-
     $rows = $data->select();
+
     return $rows;
   }
 
   public  function getById(int $id_produto)
   {
-    // include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
-
     $rows = $data->selectById($id_produto);
+
     return $rows;
   }
 
   public  function getByAny($dado)
   {
-    // include __DIR__ . '/../database/ProdutoData.php';
     $data = new ProdutoData();
-
     $rows = $data->selectByAny($dado);
+
     return $rows;
   }
 }

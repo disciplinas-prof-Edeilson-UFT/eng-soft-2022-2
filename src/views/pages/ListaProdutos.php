@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
-
 use src\controllers\ProdutoController;
+
 
 ?>
 
@@ -40,5 +40,4 @@ use src\controllers\ProdutoController;
     <p class="results"><?= count($produtos) ?> Resultados obtidos</p>
   </div>
 </body>
-  
 </html>

@@ -6,6 +6,8 @@ use src\api\src\ApiRouter;
 use src\routes\ProdutoRoute;
 use src\routes\CarrinhoRoute;
 use src\routes\UserRoute;
+use src\routes\UsuarioRoute;
+
 
 session_start ();
 
@@ -21,6 +23,8 @@ class Router
   CONST LOGIN = "login";
   CONST PERFIL = "perfil";
   const API = "api";
+  const CADASTRO = 'cadastro';
+
 
   public function __construct($url, $payload, $method)
   {
@@ -32,6 +36,7 @@ class Router
   private function routes()
   {
 
+    parse_str($this->url['query'], $params);
     $var = explode("/", $this->url['path']);
     if ($this->url['query']) {
       parse_str($this->url['query'], $query);
@@ -48,18 +53,27 @@ class Router
         break;
       case self::CARRINHO:
         $instancia = new CarrinhoRoute($this->method, $this->payload, $query, $params);
+        include __DIR__ . '/./views/templates/cabecalho.php';
+        $instancia = new ProdutoRoute($this->method, $this->payload, $this->query, $var[2]);
+        $instancia->produtoRouting();
+        break;
+      case self::CARRINHO:
+        include __DIR__ . '/./views/templates/cabecalho.php';
+        $instancia = new CarrinhoRoute($this->method, $this->payload, $this->query);
         $instancia->carrinhoRouting();
         break;
       case self::USUARIO:
+        $instancia = new UsuarioRoute ($this->method, $this->payload, $this->query);
+        $instancia->usuarioRouting();
         break;
-        
-        case self::LOGIN:
-        
+      case self::CADASTRO:
+        $instancia = new UsuarioRoute ($this->method, $this->payload, $this->query);
+        $instancia->usuarioRouting_cadastro();
+        break; 
+      case self::LOGIN:  
       	$instancia = new UserRoute ($this->method, $this->payload, $this->query);
         $instancia -> loginRouting ();
-        
         break;
-        
       case self::API:
         $apiRouter = new ApiRouter($var[2], $this->payload, $this->method, $query);
         $apiRouter->apiRouting();
@@ -67,7 +81,6 @@ class Router
       case self::PERFIL:
         $instancia = new UserRoute ($this->method, $this->payload, $this->query);
         $instancia -> perfilRouting ();
-        
         break;
     }
   }

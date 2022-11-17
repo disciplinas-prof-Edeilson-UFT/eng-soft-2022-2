@@ -1,13 +1,12 @@
 <?php
-
 // É dado um nome para o documento CarrinhoController.php . Esse nome é o que nós iremos nos referir no use src\ .
-
 namespace src\controllers;
-
-require_once 'vendor/autoload.php';
 
 use src\models\CarrinhoModel;
 use src\services\Api;
+
+require_once 'vendor/autoload.php';
+
 
 class CarrinhoController
 {
@@ -28,6 +27,12 @@ class CarrinhoController
         );
         $response = $api->carrinho()->post($data);
         return $response;
+
+       // if (isset($_GET['id_produto'])) {
+
+         //   $model = new CarrinhoModel();
+           // $model = $model->execute($_GET['id_produto']);
+        //}
     }
 
     private function productExists($userId, $productId)
@@ -70,16 +75,25 @@ class CarrinhoController
         // return $response;
     }
 
-    public function showPrice()
-    {
+    
+	public function showPrice () {
+		
+		// Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
+		// para que ele possa ser mostrado na view.
+		
+		$value = new CarrinhoModel ();
+		
+		$value = $value -> showPrice ();
+		
+		return $value;
+		
+	}
+	
+//	public function getCarrinho(){
+	//	$classModel = new CarrinhoModel ();
+		//$classModel -> selecionaCarrinho ();
+		//require_once ("../views/pages/VisualizarCarrinho.php");
+	//}
 
-        // Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
-        // para que ele possa ser mostrado na view.
-
-        $value = new CarrinhoModel();
-
-        $value = $value->showPrice();
-
-        return $value;
-    }
 }
+?>

@@ -11,14 +11,10 @@
 	if (isset ($_GET ["login"])) {
 		
 		// se a pessoa clicou em logout e estava logada, a sessão dela é encerrada.
-		
 		echo ("<script language = 'javascript'> window.location = '/login' </script>");
-		
 	}
   if (isset ($_GET ["perfil"])) {
-		
 		// se a pessoa clicou em logout e estava logada, a sessão dela é encerrada.
-		
 		echo ("<script language = 'javascript'> window.location = '/perfil' </script>");
 		
 	}

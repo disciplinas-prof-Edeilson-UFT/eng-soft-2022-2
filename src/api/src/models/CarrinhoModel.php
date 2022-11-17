@@ -63,9 +63,9 @@ class CarrinhoModel
 
     if ($sql->rowCount() > 0) :
       $sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
-				WHERE id_produto = '$id_produto' AND id_usuario = '$userId'";
+				WHERE id_produto = '$id_produto' AND id_usuario = $userId";
     else :
-      $sql =  "INSERT INTO CARRINHO VALUES ($userId,1,$id_produto)";
+      $sql =  "INSERT INTO CARRINHO VALUES (1,$userId,$id_produto)";
     endif;
 
     $con->query($sql);

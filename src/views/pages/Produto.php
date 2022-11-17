@@ -19,7 +19,6 @@ if ($_POST) {
 		$var = explode("/", $url['path']);
 		$addcart = new CarrinhoController();
 		$addcart->updateValue($_SESSION['id'], $var[2]);
-		echo $_SESSION['id'];
 
 		echo ("<script language = 'javascript'> alert ('item adicionado ao carrinho'); </script>");
 	} else {

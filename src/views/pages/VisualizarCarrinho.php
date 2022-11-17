@@ -63,10 +63,14 @@ if (isset ($_SESSION ["id"]) == 0) {
                     </thead>
                     <tbody>
                         <?php
-                        $carrinhoController = new CarrinhoController();
-                        $var = $carrinhoController->selecionaCarrinho();
-                        foreach ((array)$var as $item) :
-                            $_POST['id_produto'] = $item->id_produto;
+                        var_dump($_SESSION);
+                    
+                        if (isset ($_SESSION ["id"])) {
+                            $id = $_SESSION ["id"];
+                            $carrinhoController = new CarrinhoController();
+                            $var = $carrinhoController->selecionaCarrinho($id);
+                            foreach ((array)$var as $item) :
+                                $_POST['id_produto'] = $item->id_produto;
                         ?>
                             <tr>
                                 <td class="firstitem"> <?= $item->nome_produto ?></td>
@@ -81,7 +85,7 @@ if (isset ($_SESSION ["id"]) == 0) {
                                 </td>
                                 <td class="tableitem"> R$<?= $item->preco_produto ?></td>
                             </tr>
-                        <?php endforeach; ?>
+                        <?php endforeach; }?>
                     </tbody>
                 </table>
                 <form class="address" method="POST">

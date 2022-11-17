@@ -71,11 +71,11 @@ class CarrinhoModel
     $con->query($sql);
   }
 
-  public function selecionaCarrinho()
+  public function selecionaCarrinho($id_usuario)
   {
     $conexao = Connection::getConn();
     $sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
-		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
+		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = usuario.'$id_usuario' INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
     $stmt = $conexao->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_CLASS);

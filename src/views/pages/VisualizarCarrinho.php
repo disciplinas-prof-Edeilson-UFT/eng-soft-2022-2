@@ -23,9 +23,9 @@ if ($_POST) {
 
 if (isset ($_SESSION ["id"]) == 0) {
         			
-        echo ("<script language = 'javascript'> window.location = 'login' </script>");
+        echo ("<script language = 'javascript'> alert ('você precisa estar logado para acessar o carrinho');</script>");
 	
-	echo ("<script language = 'javascript'> alert ('você precisa estar logado para acessar o carrinho');</script>");
+	echo ("<script language = 'javascript'> window.location = 'login' </script>");
         			
 	}
 

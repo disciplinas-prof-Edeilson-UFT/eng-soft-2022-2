@@ -13,7 +13,7 @@ class CarrinhoController
 {
     // Usaremos a classe do CarrinhoModel e a classe do CarrinhoData.
 
-    public function updateValue($idProduto)
+    public function updateValue($idUsuario,$idProduto)
     {
         // Aqui é onde conseguiremos o id do produto que deve ser incrementado. Já que o id dele está na url, verificamos 
         // primeiramente se ele realmente está lá, e se estiver criamos o objeto model e mandamos ele executar a função 
@@ -24,7 +24,8 @@ class CarrinhoController
         // $model = $model->execute($_GET['id_produto']);
         $api = new Api();
         $data = array(
-            "id_produto" => $idProduto
+            "id_produto" => $idProduto,
+            "id_usuario" => $idUsuario
         );
         $response = $api->carrinho()->post($data);
         return $response;

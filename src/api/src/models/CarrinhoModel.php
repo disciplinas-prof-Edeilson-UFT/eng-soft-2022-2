@@ -55,17 +55,17 @@ class CarrinhoModel
     return $response;
   }
 
-  public function execute($id_produto)
+  public function execute($id_usuario,$id_produto)
   {
 
     $con = Connection::getConn();
-    $sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_produto = '$id_produto'");
+    $sql = $con->query("SELECT quantidade_item_carrinho FROM CARRINHO WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario'");
 
     if ($sql->rowCount() > 0) :
       $sql = "UPDATE CARRINHO SET quantidade_item_carrinho = quantidade_item_carrinho + 1
-				WHERE id_produto = '$id_produto' AND id_usuario = 1";
+				WHERE id_produto = '$id_produto' AND id_usuario = '$id_usuario'";
     else :
-      $sql =  "INSERT INTO CARRINHO VALUES (1,1,$id_produto)";
+      $sql =  "INSERT INTO CARRINHO VALUES (1,$id_usuario,$id_produto)";
     endif;
 
     $con->query($sql);

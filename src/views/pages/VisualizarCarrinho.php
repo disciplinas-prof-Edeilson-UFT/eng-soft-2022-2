@@ -1,7 +1,6 @@
 <?php
 
 use src\controllers\CarrinhoController;
-
 require_once 'vendor/autoload.php';
 if ($_POST) {
     if (isset($_POST['removecart'])) {

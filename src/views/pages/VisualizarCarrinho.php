@@ -12,22 +12,21 @@ if ($_POST) {
 
     if (isset($_POST['changequantityminus'])) {
         $removeCart = new CarrinhoController();
-        $removeCart->removeSomeProducts($_SESSION ["id"], $_POST['changequantityminus'], -1);
+        $removeCart->removeSomeProducts($_SESSION["id"], $_POST['changequantityminus'], -1);
     }
 
     if (isset($_POST['changequantityplus'])) {
         $removeCart = new CarrinhoController();
-        $removeCart->removeSomeProducts($_SESSION ["id"], $_POST['changequantityplus'], 1);
+        $removeCart->removeSomeProducts($_SESSION["id"], $_POST['changequantityplus'], 1);
     }
 }
 
-if (isset ($_SESSION ["id"]) == 0) {
-        			
-        echo ("<script language = 'javascript'> alert ('você precisa estar logado para acessar o carrinho');</script>");
-	
-	echo ("<script language = 'javascript'> window.location = 'login' </script>");
-        			
-	}
+if (isset($_SESSION["id"]) == 0) {
+
+    echo ("<script language = 'javascript'> alert ('você precisa estar logado para acessar o carrinho');</script>");
+
+    echo ("<script language = 'javascript'> window.location = 'login' </script>");
+}
 
 ?>
 
@@ -118,7 +117,7 @@ if (isset ($_SESSION ["id"]) == 0) {
             <p>Frete:</p>
             <h4>Total:</h4>
             <button class="button" type="button">IR PARA O PAGAMENTO</button>
-            <a href="/produto"><button class="button" type="button">CONTINUAR COMPRANDO</button></a>
+            <a href="/produtos"><button class="button" type="button">CONTINUAR COMPRANDO</button></a>
         </div>
     </div>
 </body>

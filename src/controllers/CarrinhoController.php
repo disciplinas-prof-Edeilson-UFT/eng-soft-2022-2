@@ -59,10 +59,12 @@ class CarrinhoController
         return $response;
     }
 
-    public function selecionaCarrinho()
+    public function selecionaCarrinho($userId)
     {
         $api = new Api();
-        $data = array();
+        $data = array(
+            "id_usuario" => $userId
+        );
         $response = $api->carrinho()->get($data);
         return $response;
         echo $response;
@@ -71,7 +73,7 @@ class CarrinhoController
         // return $response;
     }
 
-    public function showPrice()
+    public function showPrice($userid)
     {
 
         // Vamos criar o objeto value e fazer ele chamar a função de mostrar o preco total do carrinho, e vamos retornar eese valor
@@ -79,7 +81,7 @@ class CarrinhoController
 
         $value = new CarrinhoModel();
 
-        $value = $value->showPrice();
+        $value = $value->showPrice($userid);
 
         return $value;
     }

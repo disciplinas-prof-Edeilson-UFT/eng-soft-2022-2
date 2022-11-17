@@ -64,10 +64,10 @@ class CarrinhoController
     );
   }
 
-  public function selecionaCarrinho()
+  public function selecionaCarrinho($userid)
   {
     $model = new CarrinhoModel();
-    $response = $model->selecionaCarrinho();
+    $response = $model->selecionaCarrinho($userid);
     return $response;
   }
 }

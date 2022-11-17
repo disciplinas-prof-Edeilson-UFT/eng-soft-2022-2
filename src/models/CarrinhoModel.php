@@ -41,20 +41,20 @@ class CarrinhoModel
     $execution->addCarrinho($id_usuario,$id_produto);
   }
 
-  public function selecionaCarrinho()
+  public function selecionaCarrinho($userid)
   {
     $exec  = new CarrinhoData();
 
-    $rows = $exec->selectCarrinho();
+    $rows = $exec->selectCarrinho($userid);
     return $rows;
   }
 
-  public function showPrice()
+  public function showPrice($userid)
   {
 
     $cartData = new CarrinhoData();
 
-    $value = $cartData->showPrice();
+    $value = $cartData->showPrice($userid);
 
     return $value;
   }

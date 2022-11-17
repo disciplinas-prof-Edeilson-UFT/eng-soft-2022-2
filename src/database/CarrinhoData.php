@@ -91,18 +91,18 @@ class CarrinhoData
 		return $response;
 	}
 
-	public function selectCarrinho()
+	public function selectCarrinho($userid)
 	{
 
 		$conexao = Connection::getConn();
 		$sql = "SELECT produto.nome_produto, carrinho.quantidade_item_carrinho, carrinho.id_produto, produto.preco_produto, usuario.id_usuario
-		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = 1 INNER JOIN produto ON carrinho.id_produto = produto.id_produto;";
+		FROM carrinho INNER JOIN usuario ON carrinho.id_usuario = usuario.id_usuario INNER JOIN produto ON carrinho.id_produto = produto.id_produto WHERE carrinho.id_usuario = '$userid';";
 		$stmt = $conexao->prepare($sql);
 		$stmt->execute();
 		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
 
-	public function showPrice()
+	public function showPrice($userid)
 	{
 
 		// É estabelecida a conexão com o banco de dados, e em seguida realizada uma query.
@@ -112,7 +112,7 @@ class CarrinhoData
 		$con = Connection::getConn();
 		$sql = "SELECT SUM (pr.preco_produto * cr.quantidade_item_carrinho) FROM PRODUTO AS pr
 		INNER JOIN CARRINHO as cr
-		ON pr.id_produto = cr.id_produto";
+		ON pr.id_produto = cr.id_produto WHERE cr.id_usuario = '$userid';";
 		$con = $con->query($sql)->fetchAll(PDO::FETCH_CLASS);
 		return $con;
 	}

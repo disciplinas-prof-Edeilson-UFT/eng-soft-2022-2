@@ -59,11 +59,11 @@ class CarrinhoController
         return $response;
     }
 
-    public function selecionaCarrinho()
+    public function selecionaCarrinho($id_usuario)
     {
         $api = new Api();
         $data = array();
-        $response = $api->carrinho()->get($data);
+        $response = $api->carrinho()->get($id_usuario, $data);
         return $response;
         echo $response;
         // $model = new CarrinhoModel();

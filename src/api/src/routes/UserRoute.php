@@ -37,7 +37,7 @@ class UserRoute
         break;
       case self::POST:
       
-        echo json_encode($userController -> retrieve ());
+        echo json_encode($userController -> addUser ($this->payload['nome_usuario'], $this->payload['cpf_usuario']));
         
         break;
 

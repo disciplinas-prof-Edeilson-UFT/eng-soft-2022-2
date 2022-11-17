@@ -22,6 +22,10 @@ class UserFactory {
   	return $this -> apiConfig -> instance ("/usuarios/$name", "get", $data);
   	
   }
+
+  public function cadastro ($data){
+    return $this->apiConfig->instance("/usuarios", "post", $data);
+  }
   
 }
 

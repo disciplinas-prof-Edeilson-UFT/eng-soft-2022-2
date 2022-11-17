@@ -32,6 +32,12 @@ class UserController {
 		return $user;
 		
 	}
+
+	public function addUser($nome_usuario, $cpf_usuario){
+		$model = new UserModel;
+		$model = $model->insertUser($nome_usuario, $cpf_usuario);
+		return $model;
+	}
 	
 }
 

@@ -75,6 +75,31 @@ class UserRoute
         break;
     }
   }
+
+  public function usuarioRouting_cadastro()
+  {
+    switch ($this->method) {
+      case self::GET:
+        include __DIR__ . '/../views/pages/Cadastro.php';
+        break;
+
+      case self::POST:
+        include __DIR__ . '/../views/pages/Cadastro.php';
+
+        break;
+
+      case self::PATCH:
+
+        break;
+
+      case self::DELETE:
+
+        break;
+
+      default:
+        break;
+    }
+  }
 }
 
 ?>

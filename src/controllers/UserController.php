@@ -34,12 +34,19 @@ class UserController {
 		
 	}
 	    
-    public function cadastro_user($nome_usuario, $cpf_usuario){
-               
-       $cadastro=new UserModel();
-       $cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
-          
-        
+	public function cadastro_user($nome_usuario, $cpf_usuario){
+		
+		$api = new Api();
+		$data = array(
+			"nome_usuario" => $nome_usuario, 
+			"cpf_usuario" => $cpf_usuario
+		);
+		$result = $api->user()->cadastro($data);
+		return $result;
+
+       //$cadastro=new UserModel();
+       //$cadastro->cadastro_usuario($nome_usuario, $cpf_usuario);
+
     }
     
 	

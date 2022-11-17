@@ -24,10 +24,11 @@ class Api {
     return $produtoFactory;
   }
   
-  public function user () {
+  public function user() 
+  {
   	
-  	$config = new ApiConfig ();
-  	$userFactory = new UserFactory ($config);
+  	$config = new ApiConfig();
+  	$userFactory = new UserFactory($config);
   	return $userFactory;
   	
   }

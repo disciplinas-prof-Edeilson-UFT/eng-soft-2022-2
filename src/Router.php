@@ -63,7 +63,7 @@ class Router
         $instancia->usuarioRouting();
         break;
       case self::CADASTRO:
-        $instancia = new UsuarioRoute($this->method, $this->payload, $this->query);
+        $instancia = new UserRoute($this->method, $this->payload, $this->query);
         $instancia->usuarioRouting_cadastro();
         break;
       case self::LOGIN:

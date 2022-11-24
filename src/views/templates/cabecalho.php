@@ -3,8 +3,8 @@
 if (isset($_GET["logout"])) {
 
   // se a pessoa clicou em logout e estava logada, a sessão dela é encerrada.
-
   session_destroy();
+  echo ("<script language = 'javascript'> window.location = '/produtos' </script>");
 }
 
 if (isset($_GET["login"])) {
